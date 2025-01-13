@@ -1,0 +1,20 @@
+android_sdk_config:
+  add_gradle_deps: true
+  android_example: "example/"
+
+summarizer:
+  backend: asm
+
+output:
+  dart:
+    path: lib/bindings.dart
+    structure: single_file
+
+log_level: all
+
+source_path:
+  - "android/src/main/java/"
+
+classes:
+  - "com.example.pdf.PDFViewController"
+  - "com.example.pdf.PDFStatusListener"
