@@ -146,6 +146,11 @@ class _PdfViewerPageState extends State<PdfViewerPage> {
       ),
     );
     example.setPdfStatusListener(listener);
+    final count = example.getPageCount();
+    if (count > 0) {
+      totalPages = count;
+      setState(() {});
+    }
   }
 
   @override
