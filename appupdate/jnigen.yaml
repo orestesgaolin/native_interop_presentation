@@ -1,0 +1,34 @@
+android_sdk_config:
+  add_gradle_deps: true
+  android_example: "example/"
+
+classes:
+  - com.google.android.play.core.appupdate.AppUpdateManager
+  - com.google.android.play.core.appupdate.AppUpdateManagerFactory
+  - com.google.android.play.core.appupdate.AppUpdateInfo
+  - com.google.android.play.core.appupdate.AppUpdateOptions
+  - com.google.android.play.core.install.model.AppUpdateType
+  - com.google.android.play.core.install.model.InstallStatus
+  - com.google.android.play.core.install.model.InstallErrorCode
+  - com.google.android.play.core.install.model.UpdateAvailability
+  - com.google.android.play.core.install.model.UpdatePrecondition
+  - com.google.android.play.core.install.model.ActivityResult
+  - com.google.android.play.core.install.InstallStateUpdatedListener
+  - com.google.android.play.core.listener.StateUpdatedListener
+  - com.google.android.play.core.install.InstallState
+  - com.google.android.play.core.install.InstallException
+  - com.google.android.play.core.install.InstallStateUpdatedListener
+  - com.google.android.gms.tasks.Task
+  - com.google.android.gms.tasks.OnSuccessListener
+  - com.google.android.gms.tasks.OnFailureListener
+  - com.google.android.gms.tasks.OnCompleteListener
+  - com.google.android.gms.tasks.OnCanceledListener
+  - com.google.android.gms.tasks.OnTokenCanceledListener
+  - com.google.android.gms.tasks.RuntimeExecutionException
+
+output:
+  dart:
+    path: "lib/appupdate_bindings.g.dart"
+    structure: "single_file"
+
+log_level: all
