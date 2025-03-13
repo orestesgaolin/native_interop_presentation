@@ -1,7 +1,7 @@
+// ignore_for_file: avoid_print
+
 import 'package:appupdate/appupdate_bindings.g.dart';
 import 'package:flutter/material.dart';
-import 'package:jni/_internal.dart';
-import 'dart:async';
 
 import 'package:jni/jni.dart';
 
@@ -24,11 +24,82 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
   bool isCanceled = false;
   List<String> logs = [];
   Stopwatch? stopwatch;
+  int? installStatus;
+
+  late OnSuccessListener<InstallStatus> onInstallSuccessListener;
+  late OnFailureListener onFailureListener;
+  late OnCanceledListener onCanceledListener;
+  late OnSuccessListener<AppUpdateInfo> onAppUpdateSuccessListener;
+  late InstallStateUpdatedListener installStateUpdatedListener;
 
   @override
   void initState() {
     super.initState();
     stopwatch = Stopwatch()..start();
+    onInstallSuccessListener = OnSuccessListener.implement(
+      $OnSuccessListener(
+        onSuccess$async: true,
+        TResult: InstallStatus.type,
+        onSuccess: (result) {
+          localPrint('Update success $result');
+        },
+      ),
+    );
+    onFailureListener = OnFailureListener.implement(
+      $OnFailureListener(
+        onFailure$async: true,
+        onFailure: (e) {
+          localPrint('Update failed');
+          localPrint(e.toString());
+        },
+      ),
+    );
+    onCanceledListener = OnCanceledListener.implement(
+      $OnCanceledListener(
+        onCanceled: () {
+          localPrint('Canceled');
+          setState(() {
+            isCanceled = true;
+          });
+        },
+      ),
+    );
+
+    onAppUpdateSuccessListener = OnSuccessListener.implement(
+      $OnSuccessListener<AppUpdateInfo>(
+        onSuccess$async: true,
+        TResult: AppUpdateInfo.type,
+        onSuccess: (result) {
+          setState(() {
+            installStatus = result?.installStatus();
+            appUpdateInfo = result;
+          });
+        },
+      ),
+    );
+    installStateUpdatedListener = InstallStateUpdatedListener.implement(
+      $InstallStateUpdatedListener(
+        onStateUpdate$async: true,
+        onStateUpdate: (state) {
+          final status = state.installStatus();
+          final bytes = state.bytesDownloaded();
+          final total = state.totalBytesToDownload();
+          final progress = (bytes / total) * 100;
+          final isCanceled = state.installErrorCode();
+
+          setState(() {
+            installStatus = status;
+          });
+
+          final message = 'State update: ${mapInstallStatus(status)} '
+              'Progress: ${progress.toStringAsFixed(2)}% '
+              'Bytes: $bytes/$total '
+              'Canceled: $isCanceled';
+
+          localPrint(message);
+        },
+      ),
+    );
   }
 
   void updateTest() {
@@ -36,48 +107,16 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
     final context = JObject.fromReference(Jni.getCachedApplicationContext());
     manager = AppUpdateManagerFactory.create(context);
 
-    localPrint('Got manager instance: ${manager}');
+    localPrint('Got manager instance: $manager');
     appInfoTask = manager?.getAppUpdateInfo();
 
-    localPrint('Got app info task: ${appInfoTask}');
+    localPrint('Got app info task: $appInfoTask');
 
-    appInfoTask?.addOnSuccessListener(
-      OnSuccessListener.implement(
-        $OnSuccessListener<AppUpdateInfo>(
-          onSuccess$async: true,
-          TResult: AppUpdateInfo.type,
-          onSuccess: (result) {
-            setState(() {
-              appUpdateInfo = result;
-            });
-          },
-        ),
-      ),
-    );
+    appInfoTask?.addOnSuccessListener(onAppUpdateSuccessListener);
 
-    appInfoTask?.addOnFailureListener(
-      OnFailureListener.implement(
-        $OnFailureListener(
-          onFailure$async: true,
-          onFailure: (e) {
-            localPrint(e.toString());
-          },
-        ),
-      ),
-    );
+    appInfoTask?.addOnFailureListener(onFailureListener);
 
-    appInfoTask?.addOnCanceledListener(
-      OnCanceledListener.implement(
-        $OnCanceledListener(
-          onCanceled: () {
-            localPrint('Canceled');
-            setState(() {
-              isCanceled = true;
-            });
-          },
-        ),
-      ),
-    );
+    appInfoTask?.addOnCanceledListener(onCanceledListener);
   }
 
   @override
@@ -138,7 +177,7 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
                   'Start FLEXIBLE update flow',
                 ),
               ),
-            if (appUpdateInfo?.installStatus() == InstallStatus.DOWNLOADED)
+            if (installStatus == InstallStatus.DOWNLOADED)
               ElevatedButton(
                 onPressed: () {
                   localPrint('Complete update');
@@ -149,11 +188,9 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
                 ),
               ),
             if (isCanceled) Text('Canceled'),
-            ...logs
-                .map(
-                  (e) => Text(e),
-                )
-                .toList(),
+            ...logs.map(
+              (e) => Text(e),
+            ),
           ],
         ),
       ),
@@ -161,70 +198,29 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
   }
 
   void onFlexibleUpdate() {
-    final activity = JObject.fromReference(Jni.getCurrentActivity());
+    try {
+      final activity = JObject.fromReference(Jni.getCurrentActivity());
 
-    final allowed = appUpdateInfo!.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE);
+      final allowed = appUpdateInfo!.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE);
 
-    if (!allowed) {
-      localPrint('Update type not allowed');
-      return;
+      if (!allowed) {
+        localPrint('Update type not allowed');
+        return;
+      }
+
+      _updateTask = manager?.startUpdateFlow(
+        appUpdateInfo!,
+        activity,
+        AppUpdateOptions.newBuilder(AppUpdateType.FLEXIBLE).setAllowAssetPackDeletion(true).build(),
+      );
+
+      manager?.registerListener(installStateUpdatedListener);
+      _updateTask?.addOnSuccessListener(onInstallSuccessListener);
+      _updateTask?.addOnFailureListener(onFailureListener);
+      _updateTask?.addOnCanceledListener(onCanceledListener);
+    } catch (e) {
+      localPrint(e.toString());
     }
-
-    _updateTask = manager?.startUpdateFlow(
-      appUpdateInfo!,
-      activity,
-      AppUpdateOptions.newBuilder(AppUpdateType.FLEXIBLE)
-          .setAllowAssetPackDeletion(true)
-          .build(),
-    );
-
-    // Not possible to inherit non-overriden methods of the interface
-    // hence we need to provide super class implementation and cast it to the subclass
-    manager?.registerListener(
-      StateUpdatedListener.implement(
-        $StateUpdatedListener(
-          StateT: InstallState.type,
-          onStateUpdate$async: true,
-          onStateUpdate: (state) {
-            localPrint('State update: ${state}');
-          },
-        ),
-      ).as(InstallStateUpdatedListener.type),
-    );
-
-    _updateTask?.addOnSuccessListener(
-      OnSuccessListener.implement(
-        $OnSuccessListener(
-          onSuccess$async: true,
-          TResult: InstallStatus.type,
-          onSuccess: (result) {
-            localPrint('Update success ${result}');
-          },
-        ),
-      ),
-    );
-
-    _updateTask?.addOnFailureListener(
-      OnFailureListener.implement(
-        $OnFailureListener(
-          onFailure$async: true,
-          onFailure: (e) {
-            localPrint('Update failed');
-            localPrint(e.toString());
-          },
-        ),
-      ),
-    );
-
-    _updateTask?.addOnCanceledListener(
-      OnCanceledListener.implement(
-        $OnCanceledListener(
-          onCanceled: () {
-            localPrint('Update canceled');
-          },
-        ),
-      ),
-    );
   }
 
   void onImmediateUpdate() {
@@ -240,52 +236,19 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
     _updateTask = manager?.startUpdateFlow(
       appUpdateInfo!,
       activity,
-      AppUpdateOptions.newBuilder(AppUpdateType.IMMEDIATE)
-          .setAllowAssetPackDeletion(true)
-          .build(),
+      AppUpdateOptions.newBuilder(AppUpdateType.IMMEDIATE).setAllowAssetPackDeletion(true).build(),
     );
 
-    _updateTask?.addOnSuccessListener(
-      OnSuccessListener.implement(
-        $OnSuccessListener(
-          onSuccess$async: true,
-          TResult: InstallStatus.type,
-          onSuccess: (result) {
-            localPrint('Update success ${result}');
-          },
-        ),
-      ),
-    );
-
-    _updateTask?.addOnFailureListener(
-      OnFailureListener.implement(
-        $OnFailureListener(
-          onFailure$async: true,
-          onFailure: (e) {
-            localPrint('Update failed');
-            localPrint(e.toString());
-          },
-        ),
-      ),
-    );
-
-    _updateTask?.addOnCanceledListener(
-      OnCanceledListener.implement(
-        $OnCanceledListener(
-          onCanceled: () {
-            localPrint('Update canceled');
-          },
-        ),
-      ),
-    );
+    _updateTask?.addOnSuccessListener(onAppUpdateSuccessListener);
+    _updateTask?.addOnFailureListener(onFailureListener);
+    _updateTask?.addOnCanceledListener(onCanceledListener);
   }
 
   String convertToUpdateAvailability() {
     final value = appUpdateInfo!.updateAvailability();
 
     return switch (value) {
-      UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS =>
-        'DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS',
+      UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS => 'DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS',
       UpdateAvailability.UPDATE_AVAILABLE => 'UPDATE_AVAILABLE',
       UpdateAvailability.UPDATE_NOT_AVAILABLE => 'UPDATE_NOT_AVAILABLE',
       UpdateAvailability.UNKNOWN => 'UNKNOWN',
@@ -296,6 +259,10 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
   String convertToInstallStatus() {
     final value = appUpdateInfo!.installStatus();
 
+    return mapInstallStatus(value);
+  }
+
+  String mapInstallStatus(int value) {
     return switch (value) {
       InstallStatus.DOWNLOADED => 'DOWNLOADED',
       InstallStatus.DOWNLOADING => 'DOWNLOADING',

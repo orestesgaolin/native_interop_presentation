@@ -2954,6 +2954,31 @@ class InstallStateUpdatedListener extends jni$_.JObject {
   /// The type which includes information such as the signature of this class.
   static const nullableType = $InstallStateUpdatedListener$NullableType();
   static const type = $InstallStateUpdatedListener$Type();
+  static final _id_onStateUpdate = _class.instanceMethodId(
+    r'onStateUpdate',
+    r'(Lcom/google/android/play/core/install/InstallState;)V',
+  );
+
+  static final _onStateUpdate = jni$_.ProtectedJniExtensions.lookup<
+              jni$_.NativeFunction<
+                  jni$_.JThrowablePtr Function(
+                      jni$_.Pointer<jni$_.Void>,
+                      jni$_.JMethodIDPtr,
+                      jni$_.VarArgs<(jni$_.Pointer<jni$_.Void>,)>)>>(
+          'globalEnv_CallVoidMethod')
+      .asFunction<
+          jni$_.JThrowablePtr Function(jni$_.Pointer<jni$_.Void>,
+              jni$_.JMethodIDPtr, jni$_.Pointer<jni$_.Void>)>();
+
+  /// from: `public abstract void onStateUpdate(com.google.android.play.core.install.InstallState object)`
+  void onStateUpdate(
+    InstallState object,
+  ) {
+    final _$object = object.reference;
+    _onStateUpdate(reference.pointer, _id_onStateUpdate as jni$_.JMethodIDPtr,
+            _$object.pointer)
+        .check();
+  }
 
   /// Maps a specific port to the implemented interface.
   static final core$_.Map<int, $InstallStateUpdatedListener> _$impls = {};
@@ -2985,6 +3010,13 @@ class InstallStateUpdatedListener extends jni$_.JObject {
     try {
       final $d = $i.methodDescriptor.toDartString(releaseOriginal: true);
       final $a = $i.args;
+      if ($d ==
+          r'onStateUpdate(Lcom/google/android/play/core/install/InstallState;)V') {
+        _$impls[$p]!.onStateUpdate(
+          $a![0]!.as(const $InstallState$Type(), releaseOriginal: true),
+        );
+        return jni$_.nullptr;
+      }
     } catch (e) {
       return jni$_.ProtectedJniExtensions.newDartException(e);
     }
@@ -3010,7 +3042,10 @@ class InstallStateUpdatedListener extends jni$_.JObject {
       r'com.google.android.play.core.install.InstallStateUpdatedListener',
       $p,
       _$invokePointer,
-      [],
+      [
+        if ($impl.onStateUpdate$async)
+          r'onStateUpdate(Lcom/google/android/play/core/install/InstallState;)V',
+      ],
     );
     final $a = $p.sendPort.nativePort;
     _$impls[$a] = $impl;
@@ -3028,11 +3063,27 @@ class InstallStateUpdatedListener extends jni$_.JObject {
 }
 
 abstract base mixin class $InstallStateUpdatedListener {
-  factory $InstallStateUpdatedListener() = _$InstallStateUpdatedListener;
+  factory $InstallStateUpdatedListener({
+    required void Function(InstallState object) onStateUpdate,
+    bool onStateUpdate$async,
+  }) = _$InstallStateUpdatedListener;
+
+  void onStateUpdate(InstallState object);
+  bool get onStateUpdate$async => false;
 }
 
 final class _$InstallStateUpdatedListener with $InstallStateUpdatedListener {
-  _$InstallStateUpdatedListener();
+  _$InstallStateUpdatedListener({
+    required void Function(InstallState object) onStateUpdate,
+    this.onStateUpdate$async = false,
+  }) : _onStateUpdate = onStateUpdate;
+
+  final void Function(InstallState object) _onStateUpdate;
+  final bool onStateUpdate$async;
+
+  void onStateUpdate(InstallState object) {
+    return _onStateUpdate(object);
+  }
 }
 
 final class $InstallStateUpdatedListener$NullableType
@@ -3677,6 +3728,151 @@ final class $InstallState$Type extends jni$_.JObjType<InstallState> {
   bool operator ==(Object other) {
     return other.runtimeType == ($InstallState$Type) &&
         other is $InstallState$Type;
+  }
+}
+
+/// from: `com.google.android.play.core.install.InstallException`
+class InstallException extends jni$_.JObject {
+  @jni$_.internal
+  @core$_.override
+  final jni$_.JObjType<InstallException> $type;
+
+  @jni$_.internal
+  InstallException.fromReference(
+    jni$_.JReference reference,
+  )   : $type = type,
+        super.fromReference(reference);
+
+  static final _class = jni$_.JClass.forName(
+      r'com/google/android/play/core/install/InstallException');
+
+  /// The type which includes information such as the signature of this class.
+  static const nullableType = $InstallException$NullableType();
+  static const type = $InstallException$Type();
+  static final _id_getErrorCode = _class.instanceMethodId(
+    r'getErrorCode',
+    r'()I',
+  );
+
+  static final _getErrorCode = jni$_.ProtectedJniExtensions.lookup<
+          jni$_.NativeFunction<
+              jni$_.JniResult Function(
+                jni$_.Pointer<jni$_.Void>,
+                jni$_.JMethodIDPtr,
+              )>>('globalEnv_CallIntMethod')
+      .asFunction<
+          jni$_.JniResult Function(
+            jni$_.Pointer<jni$_.Void>,
+            jni$_.JMethodIDPtr,
+          )>();
+
+  /// from: `public int getErrorCode()`
+  int getErrorCode() {
+    return _getErrorCode(
+            reference.pointer, _id_getErrorCode as jni$_.JMethodIDPtr)
+        .integer;
+  }
+
+  static final _id_new$ = _class.constructorId(
+    r'(I)V',
+  );
+
+  static final _new$ = jni$_.ProtectedJniExtensions.lookup<
+          jni$_.NativeFunction<
+              jni$_.JniResult Function(
+                  jni$_.Pointer<jni$_.Void>,
+                  jni$_.JMethodIDPtr,
+                  jni$_.VarArgs<(jni$_.Int32,)>)>>('globalEnv_NewObject')
+      .asFunction<
+          jni$_.JniResult Function(
+              jni$_.Pointer<jni$_.Void>, jni$_.JMethodIDPtr, int)>();
+
+  /// from: `public void <init>(int i)`
+  /// The returned object must be released after use, by calling the [release] method.
+  factory InstallException(
+    int i,
+  ) {
+    return InstallException.fromReference(
+        _new$(_class.reference.pointer, _id_new$ as jni$_.JMethodIDPtr, i)
+            .reference);
+  }
+}
+
+final class $InstallException$NullableType
+    extends jni$_.JObjType<InstallException?> {
+  @jni$_.internal
+  const $InstallException$NullableType();
+
+  @jni$_.internal
+  @core$_.override
+  String get signature =>
+      r'Lcom/google/android/play/core/install/InstallException;';
+
+  @jni$_.internal
+  @core$_.override
+  InstallException? fromReference(jni$_.JReference reference) =>
+      reference.isNull
+          ? null
+          : InstallException.fromReference(
+              reference,
+            );
+  @jni$_.internal
+  @core$_.override
+  jni$_.JObjType get superType => const jni$_.JObjectNullableType();
+
+  @jni$_.internal
+  @core$_.override
+  jni$_.JObjType<InstallException?> get nullableType => this;
+
+  @jni$_.internal
+  @core$_.override
+  final superCount = 1;
+
+  @core$_.override
+  int get hashCode => ($InstallException$NullableType).hashCode;
+
+  @core$_.override
+  bool operator ==(Object other) {
+    return other.runtimeType == ($InstallException$NullableType) &&
+        other is $InstallException$NullableType;
+  }
+}
+
+final class $InstallException$Type extends jni$_.JObjType<InstallException> {
+  @jni$_.internal
+  const $InstallException$Type();
+
+  @jni$_.internal
+  @core$_.override
+  String get signature =>
+      r'Lcom/google/android/play/core/install/InstallException;';
+
+  @jni$_.internal
+  @core$_.override
+  InstallException fromReference(jni$_.JReference reference) =>
+      InstallException.fromReference(
+        reference,
+      );
+  @jni$_.internal
+  @core$_.override
+  jni$_.JObjType get superType => const jni$_.JObjectNullableType();
+
+  @jni$_.internal
+  @core$_.override
+  jni$_.JObjType<InstallException?> get nullableType =>
+      const $InstallException$NullableType();
+
+  @jni$_.internal
+  @core$_.override
+  final superCount = 1;
+
+  @core$_.override
+  int get hashCode => ($InstallException$Type).hashCode;
+
+  @core$_.override
+  bool operator ==(Object other) {
+    return other.runtimeType == ($InstallException$Type) &&
+        other is $InstallException$Type;
   }
 }
 
@@ -5793,151 +5989,6 @@ final class $OnTokenCanceledListener$Type
   bool operator ==(Object other) {
     return other.runtimeType == ($OnTokenCanceledListener$Type) &&
         other is $OnTokenCanceledListener$Type;
-  }
-}
-
-/// from: `com.google.android.play.core.install.InstallException`
-class InstallException extends jni$_.JObject {
-  @jni$_.internal
-  @core$_.override
-  final jni$_.JObjType<InstallException> $type;
-
-  @jni$_.internal
-  InstallException.fromReference(
-    jni$_.JReference reference,
-  )   : $type = type,
-        super.fromReference(reference);
-
-  static final _class = jni$_.JClass.forName(
-      r'com/google/android/play/core/install/InstallException');
-
-  /// The type which includes information such as the signature of this class.
-  static const nullableType = $InstallException$NullableType();
-  static const type = $InstallException$Type();
-  static final _id_getErrorCode = _class.instanceMethodId(
-    r'getErrorCode',
-    r'()I',
-  );
-
-  static final _getErrorCode = jni$_.ProtectedJniExtensions.lookup<
-          jni$_.NativeFunction<
-              jni$_.JniResult Function(
-                jni$_.Pointer<jni$_.Void>,
-                jni$_.JMethodIDPtr,
-              )>>('globalEnv_CallIntMethod')
-      .asFunction<
-          jni$_.JniResult Function(
-            jni$_.Pointer<jni$_.Void>,
-            jni$_.JMethodIDPtr,
-          )>();
-
-  /// from: `public int getErrorCode()`
-  int getErrorCode() {
-    return _getErrorCode(
-            reference.pointer, _id_getErrorCode as jni$_.JMethodIDPtr)
-        .integer;
-  }
-
-  static final _id_new$ = _class.constructorId(
-    r'(I)V',
-  );
-
-  static final _new$ = jni$_.ProtectedJniExtensions.lookup<
-          jni$_.NativeFunction<
-              jni$_.JniResult Function(
-                  jni$_.Pointer<jni$_.Void>,
-                  jni$_.JMethodIDPtr,
-                  jni$_.VarArgs<(jni$_.Int32,)>)>>('globalEnv_NewObject')
-      .asFunction<
-          jni$_.JniResult Function(
-              jni$_.Pointer<jni$_.Void>, jni$_.JMethodIDPtr, int)>();
-
-  /// from: `public void <init>(int i)`
-  /// The returned object must be released after use, by calling the [release] method.
-  factory InstallException(
-    int i,
-  ) {
-    return InstallException.fromReference(
-        _new$(_class.reference.pointer, _id_new$ as jni$_.JMethodIDPtr, i)
-            .reference);
-  }
-}
-
-final class $InstallException$NullableType
-    extends jni$_.JObjType<InstallException?> {
-  @jni$_.internal
-  const $InstallException$NullableType();
-
-  @jni$_.internal
-  @core$_.override
-  String get signature =>
-      r'Lcom/google/android/play/core/install/InstallException;';
-
-  @jni$_.internal
-  @core$_.override
-  InstallException? fromReference(jni$_.JReference reference) =>
-      reference.isNull
-          ? null
-          : InstallException.fromReference(
-              reference,
-            );
-  @jni$_.internal
-  @core$_.override
-  jni$_.JObjType get superType => const jni$_.JObjectNullableType();
-
-  @jni$_.internal
-  @core$_.override
-  jni$_.JObjType<InstallException?> get nullableType => this;
-
-  @jni$_.internal
-  @core$_.override
-  final superCount = 1;
-
-  @core$_.override
-  int get hashCode => ($InstallException$NullableType).hashCode;
-
-  @core$_.override
-  bool operator ==(Object other) {
-    return other.runtimeType == ($InstallException$NullableType) &&
-        other is $InstallException$NullableType;
-  }
-}
-
-final class $InstallException$Type extends jni$_.JObjType<InstallException> {
-  @jni$_.internal
-  const $InstallException$Type();
-
-  @jni$_.internal
-  @core$_.override
-  String get signature =>
-      r'Lcom/google/android/play/core/install/InstallException;';
-
-  @jni$_.internal
-  @core$_.override
-  InstallException fromReference(jni$_.JReference reference) =>
-      InstallException.fromReference(
-        reference,
-      );
-  @jni$_.internal
-  @core$_.override
-  jni$_.JObjType get superType => const jni$_.JObjectNullableType();
-
-  @jni$_.internal
-  @core$_.override
-  jni$_.JObjType<InstallException?> get nullableType =>
-      const $InstallException$NullableType();
-
-  @jni$_.internal
-  @core$_.override
-  final superCount = 1;
-
-  @core$_.override
-  int get hashCode => ($InstallException$Type).hashCode;
-
-  @core$_.override
-  bool operator ==(Object other) {
-    return other.runtimeType == ($InstallException$Type) &&
-        other is $InstallException$Type;
   }
 }
 

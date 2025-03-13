@@ -2,6 +2,9 @@ android_sdk_config:
   add_gradle_deps: true
   android_example: "example/"
 
+source_path:
+  - android/src/main/
+
 classes:
   - com.google.android.play.core.appupdate.AppUpdateManager
   - com.google.android.play.core.appupdate.AppUpdateManagerFactory
