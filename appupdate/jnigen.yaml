@@ -20,7 +20,6 @@ classes:
   - com.google.android.play.core.listener.StateUpdatedListener
   - com.google.android.play.core.install.InstallState
   - com.google.android.play.core.install.InstallException
-  - com.google.android.play.core.install.InstallStateUpdatedListener
   - com.google.android.gms.tasks.Task
   - com.google.android.gms.tasks.OnSuccessListener
   - com.google.android.gms.tasks.OnFailureListener
