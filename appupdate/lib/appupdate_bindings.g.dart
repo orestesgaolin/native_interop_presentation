@@ -35,6 +35,443 @@ import 'dart:core' as core$_;
 import 'package:jni/_internal.dart' as jni$_;
 import 'package:jni/jni.dart' as jni$_;
 
+/// from: `dev.roszkowski.appupdate.InstallStateUpdatedListenerProxy$InstallStateCallbackInterface`
+class InstallStateUpdatedListenerProxy$InstallStateCallbackInterface
+    extends jni$_.JObject {
+  @jni$_.internal
+  @core$_.override
+  final jni$_
+      .JObjType<InstallStateUpdatedListenerProxy$InstallStateCallbackInterface>
+      $type;
+
+  @jni$_.internal
+  InstallStateUpdatedListenerProxy$InstallStateCallbackInterface.fromReference(
+    jni$_.JReference reference,
+  )   : $type = type,
+        super.fromReference(reference);
+
+  static final _class = jni$_.JClass.forName(
+      r'dev/roszkowski/appupdate/InstallStateUpdatedListenerProxy$InstallStateCallbackInterface');
+
+  /// The type which includes information such as the signature of this class.
+  static const nullableType =
+      $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$NullableType();
+  static const type =
+      $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$Type();
+  static final _id_onStateUpdate = _class.instanceMethodId(
+    r'onStateUpdate',
+    r'(Lcom/google/android/play/core/install/InstallState;)V',
+  );
+
+  static final _onStateUpdate = jni$_.ProtectedJniExtensions.lookup<
+              jni$_.NativeFunction<
+                  jni$_.JThrowablePtr Function(
+                      jni$_.Pointer<jni$_.Void>,
+                      jni$_.JMethodIDPtr,
+                      jni$_.VarArgs<(jni$_.Pointer<jni$_.Void>,)>)>>(
+          'globalEnv_CallVoidMethod')
+      .asFunction<
+          jni$_.JThrowablePtr Function(jni$_.Pointer<jni$_.Void>,
+              jni$_.JMethodIDPtr, jni$_.Pointer<jni$_.Void>)>();
+
+  /// from: `public abstract void onStateUpdate(com.google.android.play.core.install.InstallState installState)`
+  void onStateUpdate(
+    InstallState installState,
+  ) {
+    final _$installState = installState.reference;
+    _onStateUpdate(reference.pointer, _id_onStateUpdate as jni$_.JMethodIDPtr,
+            _$installState.pointer)
+        .check();
+  }
+
+  /// Maps a specific port to the implemented interface.
+  static final core$_
+      .Map<int, $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface>
+      _$impls = {};
+  static jni$_.JObjectPtr _$invoke(
+    int port,
+    jni$_.JObjectPtr descriptor,
+    jni$_.JObjectPtr args,
+  ) {
+    return _$invokeMethod(
+      port,
+      jni$_.MethodInvocation.fromAddresses(
+        0,
+        descriptor.address,
+        args.address,
+      ),
+    );
+  }
+
+  static final jni$_.Pointer<
+          jni$_.NativeFunction<
+              jni$_.JObjectPtr Function(
+                  jni$_.Int64, jni$_.JObjectPtr, jni$_.JObjectPtr)>>
+      _$invokePointer = jni$_.Pointer.fromFunction(_$invoke);
+
+  static jni$_.Pointer<jni$_.Void> _$invokeMethod(
+    int $p,
+    jni$_.MethodInvocation $i,
+  ) {
+    try {
+      final $d = $i.methodDescriptor.toDartString(releaseOriginal: true);
+      final $a = $i.args;
+      if ($d ==
+          r'onStateUpdate(Lcom/google/android/play/core/install/InstallState;)V') {
+        _$impls[$p]!.onStateUpdate(
+          $a![0]!.as(const $InstallState$Type(), releaseOriginal: true),
+        );
+        return jni$_.nullptr;
+      }
+    } catch (e) {
+      return jni$_.ProtectedJniExtensions.newDartException(e);
+    }
+    return jni$_.nullptr;
+  }
+
+  static void implementIn(
+    jni$_.JImplementer implementer,
+    $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface $impl,
+  ) {
+    late final jni$_.RawReceivePort $p;
+    $p = jni$_.RawReceivePort(($m) {
+      if ($m == null) {
+        _$impls.remove($p.sendPort.nativePort);
+        $p.close();
+        return;
+      }
+      final $i = jni$_.MethodInvocation.fromMessage($m);
+      final $r = _$invokeMethod($p.sendPort.nativePort, $i);
+      jni$_.ProtectedJniExtensions.returnResult($i.result, $r);
+    });
+    implementer.add(
+      r'dev.roszkowski.appupdate.InstallStateUpdatedListenerProxy$InstallStateCallbackInterface',
+      $p,
+      _$invokePointer,
+      [
+        if ($impl.onStateUpdate$async)
+          r'onStateUpdate(Lcom/google/android/play/core/install/InstallState;)V',
+      ],
+    );
+    final $a = $p.sendPort.nativePort;
+    _$impls[$a] = $impl;
+  }
+
+  factory InstallStateUpdatedListenerProxy$InstallStateCallbackInterface.implement(
+    $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface $impl,
+  ) {
+    final $i = jni$_.JImplementer();
+    implementIn($i, $impl);
+    return InstallStateUpdatedListenerProxy$InstallStateCallbackInterface
+        .fromReference(
+      $i.implementReference(),
+    );
+  }
+}
+
+abstract base mixin class $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface {
+  factory $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface({
+    required void Function(InstallState installState) onStateUpdate,
+    bool onStateUpdate$async,
+  }) = _$InstallStateUpdatedListenerProxy$InstallStateCallbackInterface;
+
+  void onStateUpdate(InstallState installState);
+  bool get onStateUpdate$async => false;
+}
+
+final class _$InstallStateUpdatedListenerProxy$InstallStateCallbackInterface
+    with $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface {
+  _$InstallStateUpdatedListenerProxy$InstallStateCallbackInterface({
+    required void Function(InstallState installState) onStateUpdate,
+    this.onStateUpdate$async = false,
+  }) : _onStateUpdate = onStateUpdate;
+
+  final void Function(InstallState installState) _onStateUpdate;
+  final bool onStateUpdate$async;
+
+  void onStateUpdate(InstallState installState) {
+    return _onStateUpdate(installState);
+  }
+}
+
+final class $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$NullableType
+    extends jni$_
+    .JObjType<InstallStateUpdatedListenerProxy$InstallStateCallbackInterface?> {
+  @jni$_.internal
+  const $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$NullableType();
+
+  @jni$_.internal
+  @core$_.override
+  String get signature =>
+      r'Ldev/roszkowski/appupdate/InstallStateUpdatedListenerProxy$InstallStateCallbackInterface;';
+
+  @jni$_.internal
+  @core$_.override
+  InstallStateUpdatedListenerProxy$InstallStateCallbackInterface? fromReference(
+          jni$_.JReference reference) =>
+      reference.isNull
+          ? null
+          : InstallStateUpdatedListenerProxy$InstallStateCallbackInterface
+              .fromReference(
+              reference,
+            );
+  @jni$_.internal
+  @core$_.override
+  jni$_.JObjType get superType => const jni$_.JObjectType();
+
+  @jni$_.internal
+  @core$_.override
+  jni$_
+      .JObjType<InstallStateUpdatedListenerProxy$InstallStateCallbackInterface?>
+      get nullableType => this;
+
+  @jni$_.internal
+  @core$_.override
+  final superCount = 1;
+
+  @core$_.override
+  int get hashCode =>
+      ($InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$NullableType)
+          .hashCode;
+
+  @core$_.override
+  bool operator ==(Object other) {
+    return other.runtimeType ==
+            ($InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$NullableType) &&
+        other
+            is $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$NullableType;
+  }
+}
+
+final class $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$Type
+    extends jni$_
+    .JObjType<InstallStateUpdatedListenerProxy$InstallStateCallbackInterface> {
+  @jni$_.internal
+  const $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$Type();
+
+  @jni$_.internal
+  @core$_.override
+  String get signature =>
+      r'Ldev/roszkowski/appupdate/InstallStateUpdatedListenerProxy$InstallStateCallbackInterface;';
+
+  @jni$_.internal
+  @core$_.override
+  InstallStateUpdatedListenerProxy$InstallStateCallbackInterface fromReference(
+          jni$_.JReference reference) =>
+      InstallStateUpdatedListenerProxy$InstallStateCallbackInterface
+          .fromReference(
+        reference,
+      );
+  @jni$_.internal
+  @core$_.override
+  jni$_.JObjType get superType => const jni$_.JObjectType();
+
+  @jni$_.internal
+  @core$_.override
+  jni$_
+      .JObjType<InstallStateUpdatedListenerProxy$InstallStateCallbackInterface?>
+      get nullableType =>
+          const $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$NullableType();
+
+  @jni$_.internal
+  @core$_.override
+  final superCount = 1;
+
+  @core$_.override
+  int get hashCode =>
+      ($InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$Type)
+          .hashCode;
+
+  @core$_.override
+  bool operator ==(Object other) {
+    return other.runtimeType ==
+            ($InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$Type) &&
+        other
+            is $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$Type;
+  }
+}
+
+/// from: `dev.roszkowski.appupdate.InstallStateUpdatedListenerProxy`
+class InstallStateUpdatedListenerProxy extends jni$_.JObject {
+  @jni$_.internal
+  @core$_.override
+  final jni$_.JObjType<InstallStateUpdatedListenerProxy> $type;
+
+  @jni$_.internal
+  InstallStateUpdatedListenerProxy.fromReference(
+    jni$_.JReference reference,
+  )   : $type = type,
+        super.fromReference(reference);
+
+  static final _class = jni$_.JClass.forName(
+      r'dev/roszkowski/appupdate/InstallStateUpdatedListenerProxy');
+
+  /// The type which includes information such as the signature of this class.
+  static const nullableType = $InstallStateUpdatedListenerProxy$NullableType();
+  static const type = $InstallStateUpdatedListenerProxy$Type();
+  static final _id_new$ = _class.constructorId(
+    r'(Ldev/roszkowski/appupdate/InstallStateUpdatedListenerProxy$InstallStateCallbackInterface;)V',
+  );
+
+  static final _new$ = jni$_.ProtectedJniExtensions.lookup<
+              jni$_.NativeFunction<
+                  jni$_.JniResult Function(
+                      jni$_.Pointer<jni$_.Void>,
+                      jni$_.JMethodIDPtr,
+                      jni$_.VarArgs<(jni$_.Pointer<jni$_.Void>,)>)>>(
+          'globalEnv_NewObject')
+      .asFunction<
+          jni$_.JniResult Function(jni$_.Pointer<jni$_.Void>,
+              jni$_.JMethodIDPtr, jni$_.Pointer<jni$_.Void>)>();
+
+  /// from: `public void <init>(dev.roszkowski.appupdate.InstallStateUpdatedListenerProxy$InstallStateCallbackInterface installStateCallbackInterface)`
+  /// The returned object must be released after use, by calling the [release] method.
+  factory InstallStateUpdatedListenerProxy(
+    InstallStateUpdatedListenerProxy$InstallStateCallbackInterface
+        installStateCallbackInterface,
+  ) {
+    final _$installStateCallbackInterface =
+        installStateCallbackInterface.reference;
+    return InstallStateUpdatedListenerProxy.fromReference(_new$(
+            _class.reference.pointer,
+            _id_new$ as jni$_.JMethodIDPtr,
+            _$installStateCallbackInterface.pointer)
+        .reference);
+  }
+
+  static final _id_getCallback = _class.instanceMethodId(
+    r'getCallback',
+    r'()Ldev/roszkowski/appupdate/InstallStateUpdatedListenerProxy$InstallStateCallbackInterface;',
+  );
+
+  static final _getCallback = jni$_.ProtectedJniExtensions.lookup<
+          jni$_.NativeFunction<
+              jni$_.JniResult Function(
+                jni$_.Pointer<jni$_.Void>,
+                jni$_.JMethodIDPtr,
+              )>>('globalEnv_CallObjectMethod')
+      .asFunction<
+          jni$_.JniResult Function(
+            jni$_.Pointer<jni$_.Void>,
+            jni$_.JMethodIDPtr,
+          )>();
+
+  /// from: `public final dev.roszkowski.appupdate.InstallStateUpdatedListenerProxy$InstallStateCallbackInterface getCallback()`
+  /// The returned object must be released after use, by calling the [release] method.
+  InstallStateUpdatedListenerProxy$InstallStateCallbackInterface getCallback() {
+    return _getCallback(
+            reference.pointer, _id_getCallback as jni$_.JMethodIDPtr)
+        .object<InstallStateUpdatedListenerProxy$InstallStateCallbackInterface>(
+            const $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface$Type());
+  }
+
+  static final _id_onStateUpdate = _class.instanceMethodId(
+    r'onStateUpdate',
+    r'(Lcom/google/android/play/core/install/InstallState;)V',
+  );
+
+  static final _onStateUpdate = jni$_.ProtectedJniExtensions.lookup<
+              jni$_.NativeFunction<
+                  jni$_.JThrowablePtr Function(
+                      jni$_.Pointer<jni$_.Void>,
+                      jni$_.JMethodIDPtr,
+                      jni$_.VarArgs<(jni$_.Pointer<jni$_.Void>,)>)>>(
+          'globalEnv_CallVoidMethod')
+      .asFunction<
+          jni$_.JThrowablePtr Function(jni$_.Pointer<jni$_.Void>,
+              jni$_.JMethodIDPtr, jni$_.Pointer<jni$_.Void>)>();
+
+  /// from: `public void onStateUpdate(com.google.android.play.core.install.InstallState installState)`
+  void onStateUpdate(
+    InstallState installState,
+  ) {
+    final _$installState = installState.reference;
+    _onStateUpdate(reference.pointer, _id_onStateUpdate as jni$_.JMethodIDPtr,
+            _$installState.pointer)
+        .check();
+  }
+}
+
+final class $InstallStateUpdatedListenerProxy$NullableType
+    extends jni$_.JObjType<InstallStateUpdatedListenerProxy?> {
+  @jni$_.internal
+  const $InstallStateUpdatedListenerProxy$NullableType();
+
+  @jni$_.internal
+  @core$_.override
+  String get signature =>
+      r'Ldev/roszkowski/appupdate/InstallStateUpdatedListenerProxy;';
+
+  @jni$_.internal
+  @core$_.override
+  InstallStateUpdatedListenerProxy? fromReference(jni$_.JReference reference) =>
+      reference.isNull
+          ? null
+          : InstallStateUpdatedListenerProxy.fromReference(
+              reference,
+            );
+  @jni$_.internal
+  @core$_.override
+  jni$_.JObjType get superType => const jni$_.JObjectNullableType();
+
+  @jni$_.internal
+  @core$_.override
+  jni$_.JObjType<InstallStateUpdatedListenerProxy?> get nullableType => this;
+
+  @jni$_.internal
+  @core$_.override
+  final superCount = 1;
+
+  @core$_.override
+  int get hashCode => ($InstallStateUpdatedListenerProxy$NullableType).hashCode;
+
+  @core$_.override
+  bool operator ==(Object other) {
+    return other.runtimeType ==
+            ($InstallStateUpdatedListenerProxy$NullableType) &&
+        other is $InstallStateUpdatedListenerProxy$NullableType;
+  }
+}
+
+final class $InstallStateUpdatedListenerProxy$Type
+    extends jni$_.JObjType<InstallStateUpdatedListenerProxy> {
+  @jni$_.internal
+  const $InstallStateUpdatedListenerProxy$Type();
+
+  @jni$_.internal
+  @core$_.override
+  String get signature =>
+      r'Ldev/roszkowski/appupdate/InstallStateUpdatedListenerProxy;';
+
+  @jni$_.internal
+  @core$_.override
+  InstallStateUpdatedListenerProxy fromReference(jni$_.JReference reference) =>
+      InstallStateUpdatedListenerProxy.fromReference(
+        reference,
+      );
+  @jni$_.internal
+  @core$_.override
+  jni$_.JObjType get superType => const jni$_.JObjectNullableType();
+
+  @jni$_.internal
+  @core$_.override
+  jni$_.JObjType<InstallStateUpdatedListenerProxy?> get nullableType =>
+      const $InstallStateUpdatedListenerProxy$NullableType();
+
+  @jni$_.internal
+  @core$_.override
+  final superCount = 1;
+
+  @core$_.override
+  int get hashCode => ($InstallStateUpdatedListenerProxy$Type).hashCode;
+
+  @core$_.override
+  bool operator ==(Object other) {
+    return other.runtimeType == ($InstallStateUpdatedListenerProxy$Type) &&
+        other is $InstallStateUpdatedListenerProxy$Type;
+  }
+}
+
 /// from: `com.google.android.play.core.appupdate.AppUpdateManager`
 class AppUpdateManager extends jni$_.JObject {
   @jni$_.internal

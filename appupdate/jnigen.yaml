@@ -6,6 +6,7 @@ source_path:
   - android/src/main/
 
 classes:
+  - dev.roszkowski.appupdate.InstallStateUpdatedListenerProxy
   - com.google.android.play.core.appupdate.AppUpdateManager
   - com.google.android.play.core.appupdate.AppUpdateManagerFactory
   - com.google.android.play.core.appupdate.AppUpdateInfo

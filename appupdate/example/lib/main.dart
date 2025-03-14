@@ -30,7 +30,7 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
   late OnFailureListener onFailureListener;
   late OnCanceledListener onCanceledListener;
   late OnSuccessListener<AppUpdateInfo> onAppUpdateSuccessListener;
-  late InstallStateUpdatedListener installStateUpdatedListener;
+  late InstallStateUpdatedListenerProxy$InstallStateCallbackInterface installStateUpdatedListener;
 
   @override
   void initState() {
@@ -77,8 +77,8 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
         },
       ),
     );
-    installStateUpdatedListener = InstallStateUpdatedListener.implement(
-      $InstallStateUpdatedListener(
+    installStateUpdatedListener = InstallStateUpdatedListenerProxy$InstallStateCallbackInterface.implement(
+      $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface(
         onStateUpdate$async: true,
         onStateUpdate: (state) {
           final status = state.installStatus();
@@ -214,7 +214,9 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
         AppUpdateOptions.newBuilder(AppUpdateType.FLEXIBLE).setAllowAssetPackDeletion(true).build(),
       );
 
-      manager?.registerListener(installStateUpdatedListener);
+      manager?.registerListener(
+        InstallStateUpdatedListenerProxy(installStateUpdatedListener).as(InstallStateUpdatedListener.type),
+      );
       _updateTask?.addOnSuccessListener(onInstallSuccessListener);
       _updateTask?.addOnFailureListener(onFailureListener);
       _updateTask?.addOnCanceledListener(onCanceledListener);
