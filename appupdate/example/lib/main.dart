@@ -84,7 +84,7 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
           final status = state.installStatus();
           final bytes = state.bytesDownloaded();
           final total = state.totalBytesToDownload();
-          final progress = (bytes / total) * 100;
+          final progress = total > 0 ? (bytes / total) * 100 : 0;
           final isCanceled = state.installErrorCode();
 
           setState(() {
@@ -97,6 +97,10 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
               'Canceled: $isCanceled';
 
           localPrint(message);
+
+          if (status == InstallStatus.DOWNLOADED) {
+            localPrint('Downloaded, press Check for update to complete');
+          }
         },
       ),
     );
@@ -113,9 +117,7 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
     localPrint('Got app info task: $appInfoTask');
 
     appInfoTask?.addOnSuccessListener(onAppUpdateSuccessListener);
-
     appInfoTask?.addOnFailureListener(onFailureListener);
-
     appInfoTask?.addOnCanceledListener(onCanceledListener);
   }
 
