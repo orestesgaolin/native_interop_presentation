@@ -1,0 +1,30 @@
+name: android_intent
+description: "Plugin to send Android Intents from Flutter"
+version: 0.0.1
+homepage:
+repository: 
+issue_tracker: 
+
+environment:
+  sdk: ^3.8.1
+  flutter: ">=3.3.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  jni: ^0.14.2
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  jnigen: ^0.14.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        ffiPlugin: true
+        package: com.example.android_intent
+        pluginClass: ActivityResultListenerProxy

@@ -1,0 +1,18 @@
+android_sdk_config:
+  add_gradle_deps: true
+  android_example: "example/"
+
+source_path:
+  - "android/src/main/java"
+classes:
+  - "android.content.Intent"
+  - "android.content.Context"
+  - "android.app.Activity"
+  - "android.net.Uri"
+  - "android.provider.ContactsContract"
+  - "com.example.android_intent.ActivityResultListenerProxy"
+
+output:
+  dart:
+    path: "lib/src/bindings.dart"
+    structure: "single_file"
