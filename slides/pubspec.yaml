@@ -1,0 +1,35 @@
+name: slides
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  fl_chart: ^1.1.0
+  flutter:
+    sdk: flutter
+  flutter_deck:
+    path: /Users/dominik/Projects/tmp/flutter_deck/packages/flutter_deck
+  flutter_deck_web_client:
+    path: /Users/dominik/Projects/tmp/flutter_deck/packages/flutter_deck_web_client
+  flutter_shaders: ^0.1.3
+  google_fonts: ^6.3.1
+  syntax_highlight: ^0.5.0
+  intl: ^0.20.2
+  mesh: ^0.5.0
+  collection: ^1.19.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  shaders:
+    - shaders/noise_shader.frag
+    - shaders/lava_shader.frag
