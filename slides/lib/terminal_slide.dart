@@ -16,6 +16,7 @@ class TerminalSlide extends FlutterDeckSlideWidget {
          configuration: FlutterDeckSlideConfiguration(
            route: '/terminal',
            title: title,
+           steps: commands.length,
            header: FlutterDeckHeaderConfiguration(
              title: title,
              showHeader: true,
@@ -103,12 +104,15 @@ class TerminalSlide extends FlutterDeckSlideWidget {
                 child: Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(16),
-                  child: TerminalAnimator(
-                    commands: commands,
-                    animationSpeed: animationSpeed,
-                    animationCurve: animationCurve,
-                    lineDelay: lineDelay,
-                    prompt: prompt,
+                  child: FlutterDeckSlideStepsBuilder(
+                    builder: (context, stepNumber) => TerminalAnimator(
+                      commands: commands,
+                      index: stepNumber - 1,
+                      animationSpeed: animationSpeed,
+                      animationCurve: animationCurve,
+                      lineDelay: lineDelay,
+                      prompt: prompt,
+                    ),
                   ),
                 ),
               ),
@@ -142,6 +146,7 @@ class TerminalAnimator extends StatefulWidget {
     required this.animationCurve,
     required this.lineDelay,
     required this.prompt,
+    required this.index,
   });
 
   final List<TerminalCommand> commands;
@@ -149,6 +154,7 @@ class TerminalAnimator extends StatefulWidget {
   final Curve animationCurve;
   final Duration lineDelay;
   final String prompt;
+  final int index;
 
   @override
   State<TerminalAnimator> createState() => _TerminalAnimatorState();
@@ -162,6 +168,7 @@ class _TerminalAnimatorState extends State<TerminalAnimator> with TickerProvider
   int _currentCharIndex = 0;
   bool _showCursor = true;
   bool _isTypingCommand = true;
+  bool _animationInProgress = false;
 
   late AnimationController _cursorController;
   late Timer _typingTimer;
@@ -171,6 +178,17 @@ class _TerminalAnimatorState extends State<TerminalAnimator> with TickerProvider
     super.initState();
     _setupCursorAnimation();
     _startAnimation();
+  }
+
+  @override
+  void didUpdateWidget(covariant TerminalAnimator oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.index != widget.index) {
+      if (_animationInProgress) {
+        return;
+      }
+      _startAnimation();
+    }
   }
 
   void _setupCursorAnimation() {
@@ -189,6 +207,16 @@ class _TerminalAnimatorState extends State<TerminalAnimator> with TickerProvider
   void _startAnimation() {
     if (_currentCommandIndex >= widget.commands.length) {
       _cursorController.stop();
+      _animationInProgress = false;
+      setState(() {
+        _showCursor = false;
+      });
+      return;
+    }
+    if (_currentCommandIndex > widget.index) {
+      _animationInProgress = false;
+      // If the current command index exceeds the step index, we should not type further.
+      _cursorController.stop();
       setState(() {
         _showCursor = false;
       });
@@ -196,6 +224,7 @@ class _TerminalAnimatorState extends State<TerminalAnimator> with TickerProvider
     }
 
     final command = widget.commands[_currentCommandIndex];
+    _animationInProgress = true;
 
     if (_isTypingCommand) {
       _typeCommand(command.command);

@@ -447,7 +447,7 @@ class NativeListSlide extends FlutterDeckSlideWidget {
            speakerNotes: '',
            steps: 7,
            header: FlutterDeckHeaderConfiguration(
-             title: 'The native packages ecosystem',
+             title: 'The native interop packages ecosystem',
              showHeader: true,
            ),
          ),

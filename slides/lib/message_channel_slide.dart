@@ -7,13 +7,42 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:slides/code_highlight_slide.dart';
 
+get slides => [
+  (dartCode, 1, '', 'main.dart', 'dart'),
+  (dartCode, 1, '8-10', 'main.dart', 'dart'),
+  (engineCodeDart, 1, '7-11', 'flutter/lib/src/services/platform_channel.dart', 'dart'),
+  (stringCodec, 1, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart'),
+  (stringCodec, 2, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart'),
+  (binaryMessengerCode, 1, '', 'flutter/lib/src/services/binding.dart', 'dart'),
+  (binaryMessengerCode, 2, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart'),
+  (binaryMessengerCode, 3, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart'),
+  (platformDispatcherCode, 1, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart'),
+  (platformDispatcherCode, 2, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart'),
+  (cppEngineCode1, 1, '', 'flutter/engine/src/flutter/lib/ui/window/platform_configuration.cc', 'dart'),
+  (cppEngineCode, 1, '', 'engine/src/flutter/shell/platform/embedder/embedder_engine.cc', 'dart'),
+  (swiftCode, 1, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
+  (swiftCode, 2, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
+  (objcCode, 1, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
+  (objcCode, 2, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
+  (objcCode, 3, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
+  (engineObjcCode, 1, engineObjcHigh, objcPath, 'dart'),
+  (engineObjcCode, 2, engineObjcHigh, objcPath, 'dart'),
+  (engineObjcCode, 3, engineObjcHigh, objcPath, 'dart'),
+  (dartEntryPointCode, 1, dartEntryPointHighlights, dartEntryPointPath, 'dart'),
+  // (dartEntryPointCode, 1, '', dartEntryPointPath, 'dart'),
+  (dartCode, 1, '9', 'main.dart', 'dart'),
+
+  // 5 => (objcCode, 5),
+  // 6 => (dartCode, 1),
+];
+
 class MessageChannelSlide extends FlutterDeckSlideWidget {
   MessageChannelSlide({
     super.key,
   }) : super(
          configuration: FlutterDeckSlideConfiguration(
            route: '/message-channel',
-           steps: 20,
+           steps: slides.length-1,
            title: 'Message Channel Flow',
            header: FlutterDeckHeaderConfiguration(title: 'How does a simple Message Channel work?'),
          ),
@@ -102,34 +131,6 @@ class _MyChannelWidgetState extends State<MyChannelWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final slides = [
-      (dartCode, 1, '', 'main.dart', 'dart'),
-      (dartCode, 1, '8-10', 'main.dart', 'dart'),
-      (engineCodeDart, 1, '7-11', 'flutter/lib/src/services/platform_channel.dart', 'dart'),
-      (stringCodec, 1, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart'),
-      (stringCodec, 2, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart'),
-      (binaryMessengerCode, 1, '', 'flutter/lib/src/services/binding.dart', 'dart'),
-      (binaryMessengerCode, 2, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart'),
-      (binaryMessengerCode, 3, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart'),
-      (platformDispatcherCode, 1, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart'),
-      (platformDispatcherCode, 2, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart'),
-      (cppEngineCode1, 1, '', 'flutter/engine/src/flutter/lib/ui/window/platform_configuration.cc', 'dart'),
-      (cppEngineCode, 1, '', 'engine/src/flutter/shell/platform/embedder/embedder_engine.cc', 'dart'),
-      (swiftCode, 1, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
-      (swiftCode, 2, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
-      (objcCode, 1, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
-      (objcCode, 2, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
-      (objcCode, 3, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
-      (engineObjcCode, 1, engineObjcHigh, objcPath, 'dart'),
-      (engineObjcCode, 2, engineObjcHigh, objcPath, 'dart'),
-      (engineObjcCode, 3, engineObjcHigh, objcPath, 'dart'),
-      (dartEntryPointCode, 1, dartEntryPointHighlights, dartEntryPointPath, 'dart'),
-      (dartEntryPointCode, 1, dartEntryPointHighlights, dartEntryPointPath, 'dart'),
-
-      // 5 => (objcCode, 5),
-      // 6 => (dartCode, 1),
-    ];
-
     var slide = slides[widget.step];
     final code = slide.$1;
     final stepNumber = slide.$2;
