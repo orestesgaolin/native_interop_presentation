@@ -1,18 +1,20 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_deck_web_client/flutter_deck_web_client.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:slides/01_agenda.dart';
+import 'package:slides/animated_bokeh_background.dart';
 import 'package:slides/animated_mesh_gradient_background.dart';
 import 'package:slides/channels_and_codecs_slide.dart';
-import 'package:slides/code_highlight_slide.dart';
+import 'package:slides/clever_slide.dart';
+import 'package:slides/footer.dart';
 import 'package:slides/lava_gradient_background.dart';
 import 'package:slides/message_channel_slide.dart';
+import 'package:slides/native_dart_slide.dart';
 import 'package:slides/other_talks.dart';
 import 'package:slides/simple_table.dart';
-import 'package:slides/stats_slide.dart';
+import 'package:slides/terminal_slide.dart';
 
 void main() async {
   runApp(const MainApp());
@@ -169,7 +171,7 @@ class _MainAppState extends State<MainApp> {
         },
       ),
       FlutterDeckSlide.bigFact(
-        title: 'Flutter gives you freedom to choose',
+        title: 'Flutter native interop is great',
         theme: darkTheme,
         backgroundBuilder: (context) {
           return const AnimatedMeshGradientBackground();
@@ -180,61 +182,167 @@ class _MainAppState extends State<MainApp> {
           speakerNotes: '',
         ),
       ),
-      SizedBox.expand(
-        child: Image.asset(
-          'assets/visible-person.png',
-          fit: BoxFit.cover,
+      FlutterDeckSlide.blank(
+        configuration: const FlutterDeckSlideConfiguration(
+          route: '/visible',
+          title: 'Visible',
+          speakerNotes: '',
+          steps: 4,
+        ),
+        backgroundBuilder: (context) {
+          return SizedBox.expand(
+            child: Image.asset(
+              'assets/visible-person.png',
+              fit: BoxFit.cover,
+            ),
+          );
+        },
+        theme: darkTheme,
+
+        builder: (context) => FlutterDeckBulletListTheme(
+          data: FlutterDeckBulletListThemeData(
+            textStyle: darkTheme.textTheme.bodyLarge,
+          ),
+          child: Builder(
+            builder: (context) {
+              return Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // FlutterDeckHeader(title: 'Visible'),
+                    Image.asset(
+                      'assets/visible.png',
+                      height: 50,
+                    ),
+                    const SizedBox(height: 32),
+                    FlutterDeckBulletList(
+                      useSteps: true,
+                      stepOffset: 1,
+                      items: [
+                        'symptoms tracker for people with chronic conditions',
+                        'a lot of native integrations',
+                        'experimenting with native interop',
+                      ],
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
         ),
       ),
 
       agendaSlide(),
+      FlutterDeckSlide.bigFact(
+        title: 'Platform Channels',
+        subtitle: 'Message Channel, Method Channel, Event Channel',
+        configuration: const FlutterDeckSlideConfiguration(
+          route: '/platform-channels',
+          title: 'platform-channels',
+        ),
+      ),
+      FlutterDeckSlide.bigFact(
+        title: 'Platform Channels',
+        subtitle: 'Easy, flexible but verbose',
+        configuration: const FlutterDeckSlideConfiguration(
+          route: '/platform-channels-1',
+          title: 'platform-channels-1',
+        ),
+      ),
       // StatsSlide(),
       MessageChannelSlide(),
+      CleverSlide(),
+      // FlutterDeckSlide.custom(
+      //   configuration: const FlutterDeckSlideConfiguration(
+      //     route: '/embedders',
+      //     title: 'Embedders',
+      //     speakerNotes: '',
+      //   ),
+      //   builder: (context) {
+      //     return Center(
+      //       child: Padding(
+      //         padding: const EdgeInsets.all(64.0),
+      //         child: SimpleTable(
+      //           data: [
+      //             [
+      //               'Dart',
+      //               'BinaryMessenger (Dart)',
+      //             ],
+      //             [
+      //               'Android',
+      //               'DartExecutor (JNI)',
+      //             ],
+      //             [
+      //               'iOS/macOS',
+      //               'FlutterEngine via proxy (Obj-C)',
+      //             ],
+      //             [
+      //               'Windows',
+      //               'FlutterDesktopEngine (C++)',
+      //             ],
+      //           ],
+      //         ),
+      //       ),
+      //     );
+      //   },
+      // ),
+      ChannelsAndCodecsSlide(),
+      // ThreadsSlide(),
       FlutterDeckSlide.bigFact(
-        title: 'It\'s incredibly clever',
-        subtitle:
-            'This pattern is repeated across Android, iOS, macOS, Windows, Linux\n'
-            'and expands to MethodChannel, EventChannel, and other codecs',
-        configuration: const FlutterDeckSlideConfiguration(
-          route: '/clever',
-          title: 'Clever',
-        ),
-      ),
-      FlutterDeckSlide.custom(
-        configuration: const FlutterDeckSlideConfiguration(
-          route: '/embedders',
-          title: 'Embedders',
-          speakerNotes: '',
-        ),
-        builder: (context) {
-          return Center(
-            child: Padding(
-              padding: const EdgeInsets.all(64.0),
-              child: SimpleTable(
-                data: [
-                  [
-                    'Dart',
-                    'BinaryMessenger (Dart)',
-                  ],
-                  [
-                    'Android',
-                    'DartExecutor (JNI)',
-                  ],
-                  [
-                    'iOS/macOS',
-                    'FlutterEngine via proxy (Obj-C)',
-                  ],
-                  [
-                    'Windows',
-                    'FlutterDesktopEngine (C++)',
-                  ],
-                ],
-              ),
-            ),
-          );
+        theme: darkTheme,
+        title: 'Native Interop',
+        backgroundBuilder: (context) {
+          return const AnimatedBokehBackground();
         },
       ),
-      ChannelsAndCodecsSlide(),
+      NativeDartSlide(),
+      NativeListSlide(),
+      TerminalSlide(
+        title: 'Setting up jnigen',
+        commands: [
+          TerminalCommand(
+            command: 'flutter create --template=plugin_ffi my_native_plugin',
+
+            output: [
+              'Creating project my_native_plugin...',
+              'Running "flutter pub get" in my_native_plugin...',
+              '✓ Project created successfully!',
+            ],
+          ),
+          TerminalCommand(
+            command: 'cd my_native_plugin',
+            output: [''],
+          ),
+          TerminalCommand(
+            command: 'flutter pub add ffi',
+            output: ['Resolving dependencies...', '+ ffi 2.1.0', 'Changed 1 dependency!'],
+          ),
+          TerminalCommand(
+            command: 'flutter run',
+            output: [
+              'Launching lib/main.dart on Chrome in debug mode...',
+              'Building application for the web...',
+              '✓ Built build/web',
+              'Flutter app is running at http://localhost:43625',
+            ],
+          ),
+        ],
+      ),
+
+      // FlutterDeckSlide.bigFact(
+      //   title: 'Challenges with Platform Channels',
+      //   subtitle: 'Boilerplate, verbosity, and lack of type safety',
+      //   theme: darkTheme,
+      //   backgroundBuilder: (context) {
+      //     return const AnimatedMeshGradientBackground();
+      //   },
+      //   configuration: const FlutterDeckSlideConfiguration(
+      //     route: '/challenges',
+      //     title: 'Challenges',
+      //     speakerNotes: '',
+      //   ),
+      // ),
       FlutterDeckSlide.blank(
         configuration: FlutterDeckSlideConfiguration(
           route: '/other-talks',
@@ -287,7 +395,6 @@ class _MainAppState extends State<MainApp> {
         ),
         child: FlutterDeckApp(
           client: FlutterDeckWebClient(),
-
           speakerInfo: FlutterDeckSpeakerInfo(
             name: author,
             description: 'Lead at Visible, GDE in Flutter',
@@ -299,11 +406,12 @@ class _MainAppState extends State<MainApp> {
           lightTheme: lightTheme,
 
           configuration: FlutterDeckConfiguration(
+            transition: FlutterDeckTransition.fade(),
+
             footer: FlutterDeckFooterConfiguration(
               showFooter: true,
               showSlideNumbers: true,
               showSocialHandle: true,
-
               widget: Footer(
                 author: author,
                 website: website,
@@ -313,14 +421,12 @@ class _MainAppState extends State<MainApp> {
 
             progressIndicator: FlutterDeckProgressIndicator.gradient(
               gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
                 colors: [Colors.pink, Colors.purple],
               ),
               backgroundColor: Colors.black,
             ),
             controls: FlutterDeckControlsConfiguration(
-              presenterToolbarVisible: false,
+              presenterToolbarVisible: true,
             ),
           ),
           isPresenterView: widget.isPresenterView,
@@ -331,37 +437,82 @@ class _MainAppState extends State<MainApp> {
   }
 }
 
-class Footer extends StatelessWidget {
-  const Footer({
+class NativeListSlide extends FlutterDeckSlideWidget {
+  const NativeListSlide({
     super.key,
-    required this.author,
-    required this.website,
-    required this.title,
-  });
-  final String author;
-  final String website;
-  final String title;
+  }) : super(
+         configuration: const FlutterDeckSlideConfiguration(
+           route: '/native-list',
+           title: 'Native packages',
+           speakerNotes: '',
+           steps: 7,
+           header: FlutterDeckHeaderConfiguration(
+             title: 'The native packages ecosystem',
+             showHeader: true,
+           ),
+         ),
+       );
 
   @override
   Widget build(BuildContext context) {
-    final footerTheme = FlutterDeckTheme.of(context).footerTheme;
-    final bodySmall = FlutterDeckTheme.of(context).textTheme.bodySmall;
-    return Row(
-      spacing: 16,
-      children: [
-        Text(
-          title,
-          style: footerTheme.socialHandleTextStyle?.copyWith(
-            fontSize: bodySmall.fontSize,
+    return FlutterDeckSlide.blank(
+      configuration: this.configuration,
+      builder: (context) {
+        return Padding(
+          padding: const EdgeInsets.symmetric(
+            horizontal: 32.0,
           ),
-        ),
-        Text(
-          '$author | $website',
-          style: footerTheme.socialHandleTextStyle?.copyWith(
-            fontSize: bodySmall.fontSize,
+          child: FlutterDeckBulletList(
+            useSteps: true,
+            stepOffset: 1,
+            items: [
+              'ffi',
+              'ffigen',
+              'jni',
+              'jnigen',
+              'objective_c, swift2objc',
+              'swiftgen',
+            ],
           ),
-        ),
-      ],
+        );
+      },
+    );
+  }
+}
+
+class ThreadsSlide extends FlutterDeckSlideWidget {
+  const ThreadsSlide({
+    super.key,
+  }) : super(
+         configuration: const FlutterDeckSlideConfiguration(
+           route: '/threading',
+           title: 'Threading',
+           speakerNotes: '',
+           steps: 5,
+           header: FlutterDeckHeaderConfiguration(
+             title: '"The Thread Merging"',
+             showHeader: true,
+           ),
+         ),
+       );
+
+  @override
+  Widget build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      configuration: this.configuration,
+
+      builder: (context) {
+        return FlutterDeckBulletList(
+          useSteps: true,
+          stepOffset: 1,
+          items: [
+            'https://github.com/flutter/flutter/issues/150525',
+            // 'Platform thread',
+            // 'Background threads (Dart VM)',
+            // 'Thread merging',
+          ],
+        );
+      },
     );
   }
 }

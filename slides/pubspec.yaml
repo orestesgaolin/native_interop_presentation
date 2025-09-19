@@ -33,3 +33,4 @@ flutter:
   shaders:
     - shaders/noise_shader.frag
     - shaders/lava_shader.frag
+    - shaders/bokeh_shader.frag

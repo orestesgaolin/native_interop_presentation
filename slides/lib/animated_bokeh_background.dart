@@ -1,18 +1,16 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_shaders/flutter_shaders.dart';
-import 'package:mesh/mesh.dart';
 
-class LavaGradientBackground extends StatefulWidget {
-  const LavaGradientBackground({super.key});
+class AnimatedBokehBackground extends StatefulWidget {
+  const AnimatedBokehBackground({super.key});
 
   @override
-  State<LavaGradientBackground> createState() => _LavaGradientBackgroundState();
+  State<AnimatedBokehBackground> createState() => _AnimatedBokehBackgroundState();
 }
 
-class _LavaGradientBackgroundState extends State<LavaGradientBackground> with SingleTickerProviderStateMixin {
+class _AnimatedBokehBackgroundState extends State<AnimatedBokehBackground> with SingleTickerProviderStateMixin {
   late final Ticker controller;
   final ValueNotifier<int> animation = ValueNotifier(0);
 
@@ -46,8 +44,8 @@ class _LavaGradientBackgroundState extends State<LavaGradientBackground> with Si
               (image, size, canvas) {
                 shader.setFloat(0, size.width);
                 shader.setFloat(1, size.height);
-                shader.setFloat(2, animation.value / 2000);
-                shader.setFloat(3, 0.04);
+                shader.setFloat(2, animation.value / 5000);
+                // shader.setFloat(3, 0.04);
                 canvas.drawRect(
                   Rect.fromLTWH(0, 0, size.width, size.height),
                   Paint()..shader = shader,
@@ -56,7 +54,7 @@ class _LavaGradientBackgroundState extends State<LavaGradientBackground> with Si
               child: SizedBox.expand(),
             );
           },
-          assetKey: 'shaders/lava_shader.frag',
+          assetKey: 'shaders/bokeh_shader.frag',
         );
       },
     );

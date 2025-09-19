@@ -13,9 +13,9 @@ class MessageChannelSlide extends FlutterDeckSlideWidget {
   }) : super(
          configuration: FlutterDeckSlideConfiguration(
            route: '/message-channel',
-           steps: 16,
+           steps: 20,
            title: 'Message Channel Flow',
-           header: FlutterDeckHeaderConfiguration(title: 'Message Channel Flow'),
+           header: FlutterDeckHeaderConfiguration(title: 'How does a simple Message Channel work?'),
          ),
        );
 
@@ -102,27 +102,40 @@ class _MyChannelWidgetState extends State<MyChannelWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final (code, stepNumber, highlights, filePath, language) = switch (widget.step) {
-      1 => (dartCode, 1, '8-10', 'main.dart', 'dart'),
-      2 => (engineCodeDart, 1, '', 'flutter/lib/src/services/platform_channel.dart', 'dart'),
-      3 => (stringCodec, 1, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart'),
-      4 => (stringCodec, 2, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart'),
-      5 => (cppEngineCode, 1, '', 'engine/src/flutter/shell/platform/embedder/embedder_engine.cc', 'dart'),
-      6 => (swiftCode, 1, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
-      7 => (swiftCode, 2, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
-      8 => (objcCode, 1, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
-      9 => (objcCode, 2, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
-      10 => (objcCode, 3, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
-      11 => (engineObjcCode, 1, engineObjcHigh, objcPath, 'dart'),
-      12 => (engineObjcCode, 2, engineObjcHigh, objcPath, 'dart'),
-      13 => (engineObjcCode, 3, engineObjcHigh, objcPath, 'dart'),
-      14 => (engineObjcCode, 4, engineObjcHigh, objcPath, 'dart'),
-      15 => (engineObjcCode, 5, engineObjcHigh, objcPath, 'dart'),
+    final slides = [
+      (dartCode, 1, '', 'main.dart', 'dart'),
+      (dartCode, 1, '8-10', 'main.dart', 'dart'),
+      (engineCodeDart, 1, '7-11', 'flutter/lib/src/services/platform_channel.dart', 'dart'),
+      (stringCodec, 1, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart'),
+      (stringCodec, 2, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart'),
+      (binaryMessengerCode, 1, '', 'flutter/lib/src/services/binding.dart', 'dart'),
+      (binaryMessengerCode, 2, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart'),
+      (binaryMessengerCode, 3, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart'),
+      (platformDispatcherCode, 1, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart'),
+      (platformDispatcherCode, 2, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart'),
+      (cppEngineCode1, 1, '', 'flutter/engine/src/flutter/lib/ui/window/platform_configuration.cc', 'dart'),
+      (cppEngineCode, 1, '', 'engine/src/flutter/shell/platform/embedder/embedder_engine.cc', 'dart'),
+      (swiftCode, 1, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
+      (swiftCode, 2, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
+      (objcCode, 1, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
+      (objcCode, 2, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
+      (objcCode, 3, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
+      (engineObjcCode, 1, engineObjcHigh, objcPath, 'dart'),
+      (engineObjcCode, 2, engineObjcHigh, objcPath, 'dart'),
+      (engineObjcCode, 3, engineObjcHigh, objcPath, 'dart'),
+      (dartEntryPointCode, 1, dartEntryPointHighlights, dartEntryPointPath, 'dart'),
+      (dartEntryPointCode, 1, dartEntryPointHighlights, dartEntryPointPath, 'dart'),
+
       // 5 => (objcCode, 5),
       // 6 => (dartCode, 1),
-      _ => ('// End of code', 1, '', '', 'dart'),
-    };
+    ];
 
+    var slide = slides[widget.step];
+    final code = slide.$1;
+    final stepNumber = slide.$2;
+    final highlights = slide.$3;
+    final filePath = slide.$4;
+    final language = slide.$5;
     var parseHighlights = _parseHighlights(highlights);
     return Stack(
       children: [
@@ -232,6 +245,12 @@ Future<void> sendMessage(String message) async {
 }''';
 
 final engineCodeDart = '''
+final BinaryMessenger? _binaryMessenger;
+
+/// Sends the specified [message] to the platform plugins on this channel.
+///
+/// Returns a [Future] which completes to the received response, which may
+/// be null.
 Future<T?> send(T message) async {
   final data = codec.encodeMessage(message);
   final response = await _binaryMessenger.send(name, data);
@@ -256,6 +275,130 @@ class StringCodec implements MessageCodec<String> {
     }
     return ByteData.sublistView(utf8.encode(message));
   }
+}''';
+
+String get binaryMessengerHighlights => '|20|31-32';
+String get binaryMessengerCode => '''
+/// The default implementation of [BinaryMessenger].
+///
+/// This messenger sends messages from the app-side to the platform-side and
+/// dispatches incoming messages from the platform-side to the appropriate
+/// handler.
+class _DefaultBinaryMessenger extends BinaryMessenger {
+  const _DefaultBinaryMessenger._();
+
+  @override
+  Future<void> handlePlatformMessage(
+    String channel,
+    ByteData? message,
+    ui.PlatformMessageResponseCallback? callback,
+  ) async {
+    ui.channelBuffers.push(channel, message, (ByteData? data) => callback?.call(data));
+  }
+
+  @override
+  Future<ByteData?> send(String channel, ByteData? message) {
+    final Completer<ByteData?> completer = Completer<ByteData?>();
+    // ui.PlatformDispatcher.instance is accessed directly instead of using
+    // ServicesBinding.instance.platformDispatcher because this method might be
+    // invoked before any binding is initialized. This issue was reported in
+    // #27541. It is not ideal to statically access
+    // ui.PlatformDispatcher.instance because the PlatformDispatcher may be
+    // dependency injected elsewhere with a different instance. However, static
+    // access at this location seems to be the least bad option.
+    // TODO(ianh): Use ServicesBinding.instance once we have better diagnostics
+    // on that getter.
+    ui.PlatformDispatcher.instance.sendPlatformMessage(channel, message, (ByteData? reply) {
+      try {
+        completer.complete(reply);
+      } catch (exception, stack) {
+        FlutterError.reportError(
+          FlutterErrorDetails(
+            exception: exception,
+            stack: stack,
+            library: 'services library',
+            context: ErrorDescription('during a platform message response callback'),
+          ),
+        );
+      }
+    });
+    return completer.future;
+  }''';
+
+String get platformDispatcherHighlights => '|31-35';
+String get platformDispatcherCode => '''
+/// Sends a message to a platform-specific plugin.
+///
+/// The `name` parameter determines which plugin receives the message. The
+/// `data` parameter contains the message payload and is typically UTF-8
+/// encoded JSON but can be arbitrary data. If the plugin replies to the
+/// message, `callback` will be called with the response.
+///
+/// The framework invokes [callback] in the same zone in which this method was
+/// called.
+void sendPlatformMessage(String name, ByteData? data, PlatformMessageResponseCallback? callback) {
+  final String? error = _sendPlatformMessage(
+    name,
+    _zonedPlatformMessageResponseCallback(callback),
+    data,
+  );
+  if (error != null) {
+    throw Exception(error);
+  }
+}
+
+String? _sendPlatformMessage(
+  String name,
+  PlatformMessageResponseCallback? callback,
+  ByteData? data,
+) => __sendPlatformMessage(name, callback, data);
+
+@Native<Handle Function(Handle, Handle, Handle)>(
+  symbol: 'PlatformConfigurationNativeApi::SendPlatformMessage',
+)
+external static String? __sendPlatformMessage(
+  String name,
+  PlatformMessageResponseCallback? callback,
+  ByteData? data,
+);
+
+/// Sends a message to a platform-specific plugin via a [SendPort].
+///
+/// This operates similarly to [sendPlatformMessage] but is used when sending
+/// messages from background isolates. The [port] parameter allows Flutter to
+/// know which isolate to send the result to. The [name] parameter is the name
+/// of the channel communication will happen on. The [data] parameter is the
+/// payload of the message. The [identifier] parameter is a unique integer
+/// assigned to the message.
+void sendPortPlatformMessage(String name, ByteData? data, int identifier, SendPort port) {
+  final String? error = _sendPortPlatformMessage(name, identifier, port.nativePort, data);
+  if (error != null) {
+    throw Exception(error);
+  }
+}''';
+
+///flutter/engine/src/flutter/lib/ui/window/platform_configuration.cc
+String get cppEngineCode1 => '''
+Dart_Handle PlatformConfigurationNativeApi::SendPlatformMessage(
+    const std::string& name,
+    Dart_Handle callback,
+    Dart_Handle data_handle) {
+  UIDartState* dart_state = UIDartState::Current();
+
+  if (!dart_state->platform_configuration()) {
+    return tonic::ToDart(
+        "SendPlatformMessage only works on the root isolate, see "
+        "SendPortPlatformMessage.");
+  }
+
+  fml::RefPtr<PlatformMessageResponse> response;
+  if (!Dart_IsNull(callback)) {
+    response = fml::MakeRefCounted<PlatformMessageResponseDart>(
+        tonic::DartPersistentValue(dart_state, callback),
+        dart_state->GetTaskRunners().GetUITaskRunner(), name);
+  }
+
+  return HandlePlatformMessage(dart_state, name, data_handle, response);
 }''';
 
 String get cppEngineCode => '''
@@ -300,7 +443,7 @@ myChannel.setMessageHandler {
 }''';
 
 String get objcPath => 'engine/src/flutter/shell/platform/darwin/macos/framework/Source/FlutterEngine.mm';
-String get engineObjcHigh => '|6-8|39-45|47-48|50';
+String get engineObjcHigh => '|6-8|46-47';
 String get engineObjcCode => '''
 @interface FlutterEngine () <FlutterBinaryMessenger,
                              FlutterMouseCursorPluginDelegate,
@@ -357,4 +500,12 @@ String get engineObjcCode => '''
       NSLog(@"Failed to release the response handle (%d).", release_result);
     };
   }
+}''';
+
+String get dartEntryPointPath => 'flutter/engine/src/flutter/lib/ui/hooks.dart';
+String get dartEntryPointHighlights => '1-5';
+String get dartEntryPointCode => '''
+@pragma('vm:entry-point')
+void _dispatchPlatformMessage(String name, ByteData? data, int responseId) {
+  PlatformDispatcher.instance._dispatchPlatformMessage(name, data, responseId);
 }''';
