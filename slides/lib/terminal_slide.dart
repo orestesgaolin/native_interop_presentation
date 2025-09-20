@@ -96,6 +96,16 @@ class TerminalSlide extends FlutterDeckSlideWidget {
                         fontSize: 14,
                       ),
                     ),
+                    Spacer(),
+                    FlutterDeckSlideStepsBuilder(
+                      builder: (context, stepNumber) => Text(
+                        'Step ${stepNumber}/${commands.length}',
+                        style: GoogleFonts.sourceCodePro(
+                          color: Colors.white38,
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),

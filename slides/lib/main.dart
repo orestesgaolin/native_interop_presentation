@@ -1,5 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_deck_web_client/flutter_deck_web_client.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,12 +10,16 @@ import 'package:slides/animated_mesh_gradient_background.dart';
 import 'package:slides/channels_and_codecs_slide.dart';
 import 'package:slides/clever_slide.dart';
 import 'package:slides/footer.dart';
+import 'package:slides/kotlin_interop_slides.dart';
 import 'package:slides/lava_gradient_background.dart';
 import 'package:slides/message_channel_slide.dart';
+import 'package:slides/more_jnigen_slide.dart';
 import 'package:slides/native_dart_slide.dart';
 import 'package:slides/other_talks.dart';
-import 'package:slides/simple_table.dart';
-import 'package:slides/terminal_slide.dart';
+import 'package:slides/swift_interop_slide.dart';
+
+double _codeSize = 28;
+double get codeSize => _codeSize;
 
 void main() async {
   runApp(const MainApp());
@@ -253,40 +258,7 @@ class _MainAppState extends State<MainApp> {
       // StatsSlide(),
       MessageChannelSlide(),
       CleverSlide(),
-      // FlutterDeckSlide.custom(
-      //   configuration: const FlutterDeckSlideConfiguration(
-      //     route: '/embedders',
-      //     title: 'Embedders',
-      //     speakerNotes: '',
-      //   ),
-      //   builder: (context) {
-      //     return Center(
-      //       child: Padding(
-      //         padding: const EdgeInsets.all(64.0),
-      //         child: SimpleTable(
-      //           data: [
-      //             [
-      //               'Dart',
-      //               'BinaryMessenger (Dart)',
-      //             ],
-      //             [
-      //               'Android',
-      //               'DartExecutor (JNI)',
-      //             ],
-      //             [
-      //               'iOS/macOS',
-      //               'FlutterEngine via proxy (Obj-C)',
-      //             ],
-      //             [
-      //               'Windows',
-      //               'FlutterDesktopEngine (C++)',
-      //             ],
-      //           ],
-      //         ),
-      //       ),
-      //     );
-      //   },
-      // ),
+
       ChannelsAndCodecsSlide(),
       // ThreadsSlide(),
       FlutterDeckSlide.bigFact(
@@ -298,51 +270,30 @@ class _MainAppState extends State<MainApp> {
       ),
       NativeDartSlide(),
       NativeListSlide(),
-      TerminalSlide(
-        title: 'Setting up jnigen',
-        commands: [
-          TerminalCommand(
-            command: 'flutter create --template=plugin_ffi my_native_plugin',
-
-            output: [
-              'Creating project my_native_plugin...',
-              'Running "flutter pub get" in my_native_plugin...',
-              '✓ Project created successfully!',
-            ],
-          ),
-          TerminalCommand(
-            command: 'cd my_native_plugin',
-            output: [''],
-          ),
-          TerminalCommand(
-            command: 'flutter pub add ffi',
-            output: ['Resolving dependencies...', '+ ffi 2.1.0', 'Changed 1 dependency!'],
-          ),
-          TerminalCommand(
-            command: 'flutter run',
-            output: [
-              'Launching lib/main.dart on Chrome in debug mode...',
-              'Building application for the web...',
-              '✓ Built build/web',
-              'Flutter app is running at http://localhost:43625',
-            ],
-          ),
-        ],
+      SwiftInteropSlide(),
+      FlutterDeckSlide.bigFact(
+        title: 'Code generation',
+        subtitle: 'Less boilerplate, more type safety',
+        configuration: const FlutterDeckSlideConfiguration(
+          route: '/codegen',
+          title: 'codegen',
+        ),
       ),
+      FlutterDeckSlide.bigFact(
+        title: 'jnigen/swiftgen',
+        subtitle: 'Usage example',
+        configuration: const FlutterDeckSlideConfiguration(
+          route: '/gen-packages',
+          title: 'Gen packages',
+        ),
+      ),
+      KotlinInteropSlide(),
+      KotlinInteropCodeSlide(),
+      KotlinRunSlide(),
+      DartInteropCodeSlide(),
+      AndroidEmulatorRunSlide(),
 
-      // FlutterDeckSlide.bigFact(
-      //   title: 'Challenges with Platform Channels',
-      //   subtitle: 'Boilerplate, verbosity, and lack of type safety',
-      //   theme: darkTheme,
-      //   backgroundBuilder: (context) {
-      //     return const AnimatedMeshGradientBackground();
-      //   },
-      //   configuration: const FlutterDeckSlideConfiguration(
-      //     route: '/challenges',
-      //     title: 'Challenges',
-      //     speakerNotes: '',
-      //   ),
-      // ),
+      MoreJnigenSlide(),
       FlutterDeckSlide.blank(
         configuration: FlutterDeckSlideConfiguration(
           route: '/other-talks',
@@ -387,50 +338,77 @@ class _MainAppState extends State<MainApp> {
         ),
       ),
     ];
-    return DefaultTextStyle(
-      style: GoogleFonts.bricolageGrotesque(),
-      child: FlutterDeckBulletListTheme(
-        data: FlutterDeckBulletListThemeData(
-          textStyle: lightTheme.textTheme.bodyLarge,
-        ),
-        child: FlutterDeckApp(
-          client: FlutterDeckWebClient(),
-          speakerInfo: FlutterDeckSpeakerInfo(
-            name: author,
-            description: 'Lead at Visible, GDE in Flutter',
-            socialHandle: '@OrestesGaolin',
-            imagePath: null,
+    return Shortcuts(
+      shortcuts: {
+        SingleActivator(LogicalKeyboardKey.equal): const ZoomInIntent(),
+        SingleActivator(LogicalKeyboardKey.minus): const ZoomOutIntent(),
+      },
+      child: Actions(
+        actions: {
+          ZoomInIntent: CallbackAction<ZoomInIntent>(
+            onInvoke: (intent) {
+              print('Zoom in');
+              _codeSize = _codeSize + 2;
+              setState(() {});
+              return true;
+            },
           ),
-          themeMode: ThemeMode.light,
-          darkTheme: darkTheme,
-          lightTheme: lightTheme,
-
-          configuration: FlutterDeckConfiguration(
-            transition: FlutterDeckTransition.fade(),
-
-            footer: FlutterDeckFooterConfiguration(
-              showFooter: true,
-              showSlideNumbers: true,
-              showSocialHandle: true,
-              widget: Footer(
-                author: author,
-                website: website,
-                title: title,
-              ),
+          ZoomOutIntent: CallbackAction<ZoomOutIntent>(
+            onInvoke: (intent) {
+              print('Zoom out');
+              _codeSize = _codeSize - 2;
+              setState(() {});
+              return true;
+            },
+          ),
+        },
+        child: DefaultTextStyle(
+          style: GoogleFonts.bricolageGrotesque(),
+          child: FlutterDeckBulletListTheme(
+            data: FlutterDeckBulletListThemeData(
+              textStyle: lightTheme.textTheme.bodyLarge,
             ),
+            child: FlutterDeckApp(
+              client: FlutterDeckWebClient(),
 
-            progressIndicator: FlutterDeckProgressIndicator.gradient(
-              gradient: LinearGradient(
-                colors: [Colors.pink, Colors.purple],
+              speakerInfo: FlutterDeckSpeakerInfo(
+                name: author,
+                description: 'Lead at Visible, GDE in Flutter',
+                socialHandle: '@OrestesGaolin',
+                imagePath: null,
               ),
-              backgroundColor: Colors.black,
-            ),
-            controls: FlutterDeckControlsConfiguration(
-              presenterToolbarVisible: true,
+              themeMode: ThemeMode.light,
+              darkTheme: darkTheme,
+              lightTheme: lightTheme,
+
+              configuration: FlutterDeckConfiguration(
+                transition: FlutterDeckTransition.fade(),
+
+                footer: FlutterDeckFooterConfiguration(
+                  showFooter: true,
+                  showSlideNumbers: true,
+                  showSocialHandle: true,
+                  widget: Footer(
+                    author: author,
+                    website: website,
+                    title: title,
+                  ),
+                ),
+
+                progressIndicator: FlutterDeckProgressIndicator.gradient(
+                  gradient: LinearGradient(
+                    colors: [Colors.pink, Colors.purple],
+                  ),
+                  backgroundColor: Colors.black,
+                ),
+                controls: FlutterDeckControlsConfiguration(
+                  presenterToolbarVisible: true,
+                ),
+              ),
+              isPresenterView: widget.isPresenterView,
+              slides: slides,
             ),
           ),
-          isPresenterView: widget.isPresenterView,
-          slides: slides,
         ),
       ),
     );
@@ -515,4 +493,12 @@ class ThreadsSlide extends FlutterDeckSlideWidget {
       },
     );
   }
+}
+
+class ZoomInIntent extends Intent {
+  const ZoomInIntent();
+}
+
+class ZoomOutIntent extends Intent {
+  const ZoomOutIntent();
 }

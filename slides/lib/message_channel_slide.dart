@@ -278,7 +278,7 @@ class StringCodec implements MessageCodec<String> {
   }
 }''';
 
-String get binaryMessengerHighlights => '|20|31-32';
+String get binaryMessengerHighlights => '|19|30';
 String get binaryMessengerCode => '''
 /// The default implementation of [BinaryMessenger].
 ///
@@ -326,7 +326,7 @@ class _DefaultBinaryMessenger extends BinaryMessenger {
     return completer.future;
   }''';
 
-String get platformDispatcherHighlights => '|31-35';
+String get platformDispatcherHighlights => '|30-34';
 String get platformDispatcherCode => '''
 /// Sends a message to a platform-specific plugin.
 ///
@@ -444,7 +444,7 @@ myChannel.setMessageHandler {
 }''';
 
 String get objcPath => 'engine/src/flutter/shell/platform/darwin/macos/framework/Source/FlutterEngine.mm';
-String get engineObjcHigh => '|6-8|46-47';
+String get engineObjcHigh => '|6-8|45-46';
 String get engineObjcCode => '''
 @interface FlutterEngine () <FlutterBinaryMessenger,
                              FlutterMouseCursorPluginDelegate,

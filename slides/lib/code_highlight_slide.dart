@@ -1,7 +1,8 @@
+import 'package:flutter_auto_size_text/flutter_auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:slides/main.dart';
 import 'package:syntax_highlight/syntax_highlight.dart';
 
 const _speakerNotes = '''
@@ -122,6 +123,7 @@ class _CodeViewerState extends State<CodeViewer> {
       language: widget.language,
     );
     _code = highlighter.highlight(widget.code);
+    // split code into newlines and group it into lines
     initialized = true;
 
     setState(() {});
@@ -151,7 +153,7 @@ class _CodeViewerState extends State<CodeViewer> {
     final firstHighlightedLine = widget.highlightSteps[widget.stepNumber - 1].isNotEmpty
         ? widget.highlightSteps[widget.stepNumber - 1].first
         : 1;
-    final lineHeight = 32 * 1.4; // fontSize * height
+    final lineHeight = codeSize * 1.4; // fontSize * height
     final topPadding = 3 * lineHeight;
     final targetOffset = (firstHighlightedLine - 1) * lineHeight - topPadding + padding;
 
@@ -167,16 +169,19 @@ class _CodeViewerState extends State<CodeViewer> {
   @override
   Widget build(BuildContext context) {
     final highlightedLines = widget.highlightSteps[widget.stepNumber - 1];
+    final lineHeight = 1.5;
 
     final lines = widget.code.split('\n');
     var textStyle = TextStyle(
       color: Colors.grey,
       fontFamily: GoogleFonts.firaCode().fontFamily,
-      fontSize: 32,
-      height: 1.4,
+      fontSize: codeSize,
+      height: lineHeight,
       // ligatures
-      fontFeatures: [const FontFeature.alternativeFractions()],
+      fontFeatures: [],
     );
+
+    final leftMargin = lines.length > 99 ? codeSize * 1.3 + 16 : codeSize * 1.3;
 
     if (!initialized) {
       return SizedBox();
@@ -206,7 +211,8 @@ class _CodeViewerState extends State<CodeViewer> {
                   color: Colors.white,
                   fontFamily: GoogleFonts.firaCode().fontFamily,
                   fontSize: 16,
-                  height: 1.4,
+                  height: lineHeight,
+
                   // ligatures
                   fontFeatures: [const FontFeature.alternativeFractions()],
                 ),
@@ -219,31 +225,38 @@ class _CodeViewerState extends State<CodeViewer> {
               child: Stack(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 48.0),
-                    child: SelectableText.rich(
-                      _code!,
-                      style: textStyle,
-                      textAlign: TextAlign.left,
-                      textWidthBasis: TextWidthBasis.longestLine,
+                    padding: EdgeInsets.only(left: leftMargin + 8),
+                    child: SelectionArea(
+                      child: Text.rich(
+                        _code!,
+                        style: textStyle,
+                        textAlign: TextAlign.left,
+                        softWrap: false,
+                      ),
                     ),
                   ),
                   IgnorePointer(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+
                       children: List.generate(lines.length, (index) {
                         final lineNumber = index + 1;
                         final isHighlighted = highlightedLines.contains(
                           lineNumber,
                         );
-                    
+
                         return Row(
                           children: [
                             SizedBox(
-                              width: 40,
-                              child: Text(
-                                '$lineNumber',
-                                style: textStyle,
+                              width: leftMargin,
+                              height: codeSize * lineHeight,
+                              child: Text.rich(
+                                TextSpan(
+                                  text: '$lineNumber',
+                                  style: textStyle,
+                                ),
                                 textAlign: TextAlign.right,
+                                maxLines: 1,
                               ),
                             ),
                             const SizedBox(width: 8),
@@ -251,8 +264,10 @@ class _CodeViewerState extends State<CodeViewer> {
                               child: AnimatedContainer(
                                 duration: const Duration(milliseconds: 300),
                                 padding: const EdgeInsets.all(8.0),
-                                color: isHighlighted ? Colors.yellow.withOpacity(0.2) : Colors.transparent,
-                                height: textStyle.fontSize! * textStyle.height!,
+                                color: isHighlighted
+                                    ? Colors.yellow.withOpacity(0.2)
+                                    : Colors.grey.withOpacity(index % 2 == 0 ? 0.05 : 0.0),
+                                height: codeSize * lineHeight,
                               ),
                             ),
                           ],

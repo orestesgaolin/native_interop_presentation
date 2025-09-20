@@ -7,9 +7,11 @@ environment:
   sdk: ^3.9.2
 
 dependencies:
+
   fl_chart: ^1.1.0
   flutter:
     sdk: flutter
+  flutter_auto_size_text: ^4.1.0
   flutter_deck:
     path: /Users/dominik/Projects/tmp/flutter_deck/packages/flutter_deck
   flutter_deck_web_client:
@@ -20,6 +22,9 @@ dependencies:
   intl: ^0.20.2
   mesh: ^0.5.0
   collection: ^1.19.1
+  objective_c: ^8.1.0
+  ffi: ^2.1.4
+  chewie: ^1.13.0
 
 dev_dependencies:
   flutter_test:

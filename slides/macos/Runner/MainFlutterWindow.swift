@@ -18,6 +18,22 @@ class MainFlutterWindow: NSWindow {
             reply(FlutterError(code: "INVALID_ARGUMENT", message: "Expected a string", details: nil))
         }
     }
+    
+    let benchmarkChannel = FlutterMethodChannel(name: "com.example/benchmark", binaryMessenger: flutterViewController.engine.binaryMessenger)
+    benchmarkChannel.setMethodCallHandler { (call: FlutterMethodCall, result: @escaping FlutterResult) in
+        if call.method == "add" {
+            if let args = call.arguments as? [String: Any],
+               let a = args["a"] as? Int,
+               let b = args["b"] as? Int {
+                let sum = a + b
+                result(sum)
+            } else {
+                result(FlutterError(code: "INVALID_ARGUMENT", message: "Expected arguments 'a' and 'b'", details: nil))
+            }
+        } else {
+            result(FlutterMethodNotImplemented)
+        }
+    }
 
     RegisterGeneratedPlugins(registry: flutterViewController)
 
