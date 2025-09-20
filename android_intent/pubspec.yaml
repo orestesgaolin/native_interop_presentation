@@ -1,9 +1,7 @@
 name: android_intent
 description: "Plugin to send Android Intents from Flutter"
 version: 0.0.1
-homepage:
-repository: 
-issue_tracker: 
+publish_to: none
 
 environment:
   sdk: ^3.8.1
