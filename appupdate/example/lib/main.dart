@@ -30,7 +30,8 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
   late OnFailureListener onFailureListener;
   late OnCanceledListener onCanceledListener;
   late OnSuccessListener<AppUpdateInfo> onAppUpdateSuccessListener;
-  late InstallStateUpdatedListenerProxy$InstallStateCallbackInterface installStateUpdatedListener;
+  late InstallStateUpdatedListenerProxy$InstallStateCallbackInterface
+      installStateUpdatedListener;
 
   @override
   void initState() {
@@ -77,7 +78,9 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
         },
       ),
     );
-    installStateUpdatedListener = InstallStateUpdatedListenerProxy$InstallStateCallbackInterface.implement(
+    installStateUpdatedListener =
+        InstallStateUpdatedListenerProxy$InstallStateCallbackInterface
+            .implement(
       $InstallStateUpdatedListenerProxy$InstallStateCallbackInterface(
         onStateUpdate$async: true,
         onStateUpdate: (state) {
@@ -203,7 +206,8 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
     try {
       final activity = JObject.fromReference(Jni.getCurrentActivity());
 
-      final allowed = appUpdateInfo!.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE);
+      final allowed =
+          appUpdateInfo!.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE);
 
       if (!allowed) {
         localPrint('Update type not allowed');
@@ -213,11 +217,14 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
       _updateTask = manager?.startUpdateFlow(
         appUpdateInfo!,
         activity,
-        AppUpdateOptions.newBuilder(AppUpdateType.FLEXIBLE).setAllowAssetPackDeletion(true).build(),
+        AppUpdateOptions.newBuilder(AppUpdateType.FLEXIBLE)
+            .setAllowAssetPackDeletion(true)
+            .build(),
       );
 
       manager?.registerListener(
-        InstallStateUpdatedListenerProxy(installStateUpdatedListener).as(InstallStateUpdatedListener.type),
+        InstallStateUpdatedListenerProxy(installStateUpdatedListener)
+            .as(InstallStateUpdatedListener.type),
       );
       _updateTask?.addOnSuccessListener(onInstallSuccessListener);
       _updateTask?.addOnFailureListener(onFailureListener);
@@ -240,7 +247,9 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
     _updateTask = manager?.startUpdateFlow(
       appUpdateInfo!,
       activity,
-      AppUpdateOptions.newBuilder(AppUpdateType.IMMEDIATE).setAllowAssetPackDeletion(true).build(),
+      AppUpdateOptions.newBuilder(AppUpdateType.IMMEDIATE)
+          .setAllowAssetPackDeletion(true)
+          .build(),
     );
 
     _updateTask?.addOnSuccessListener(onAppUpdateSuccessListener);
@@ -252,7 +261,8 @@ class _AppUpdatePageState extends State<AppUpdatePage> {
     final value = appUpdateInfo!.updateAvailability();
 
     return switch (value) {
-      UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS => 'DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS',
+      UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS =>
+        'DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS',
       UpdateAvailability.UPDATE_AVAILABLE => 'UPDATE_AVAILABLE',
       UpdateAvailability.UPDATE_NOT_AVAILABLE => 'UPDATE_NOT_AVAILABLE',
       UpdateAvailability.UNKNOWN => 'UNKNOWN',

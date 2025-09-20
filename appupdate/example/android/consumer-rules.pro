@@ -1,0 +1,8 @@
+-keep class io.flutter.plugin.editing.** { *; }
+-keep class com.google.android.play.core.appupdate.** { *; }
+-keep class com.google.android.play.core.install.model.** { *; }
+-keep class com.google.android.play.core.install.** { *; }
+-keep class com.google.android.gms.tasks.** { *; }
+-keep class com.google.android.play.core.listener.StateUpdatedListener { *; }
+-keep class com.google.android.play.core.install.InstallStateUpdatedListener { *; }
+-keep class dev.roszkowski.appupdate.** { *; }

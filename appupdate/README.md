@@ -1,92 +1,107 @@
-# appupdate
+# AppUpdate
 
-A new Flutter FFI plugin project.
+A Flutter plugin for implementing Google Play In-App Updates using JNI bindings to directly access the Google Play Core App Update API.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter
-[FFI plugin](https://flutter.dev/to/ffi-package),
-a specialized package that includes native code directly invoked with Dart FFI.
+- **Flexible Updates**: Download updates in the background while users continue to use the app
+- **Immediate Updates**: Force users to update before they can continue using the app
+- **Update Availability Check**: Query Google Play to check if an app update is available
+- **Progress Monitoring**: Track download and installation progress with real-time callbacks
+- **Error Handling**: Handle update failures, cancellations, and various error states
+- **Direct JNI Integration**: Uses JNI bindings for direct access to native Android APIs
 
-## Project structure
+## Platform Support
 
-This template uses the following structure:
+Currently supports:
 
-* `src`: Contains the native source code, and a CmakeFile.txt file for building
-  that source code into a dynamic library.
+- ✅ Android (API level 21+)
+- ❌ iOS (In-App Updates are not available on iOS)
 
-* `lib`: Contains the Dart code that defines the API of the plugin, and which
-  calls into the native code using `dart:ffi`.
+## Usage
 
-* platform folders (`android`, `ios`, `windows`, etc.): Contains the build files
-  for building and bundling the native code library with the platform application.
+### Basic Setup
 
-## Building and bundling native code
+```dart
+import 'package:appupdate/appupdate.dart';
 
-The `pubspec.yaml` specifies FFI plugins as follows:
+// Initialize the App Update Manager
+final context = JObject.fromReference(Jni.getCachedApplicationContext());
+final manager = AppUpdateManagerFactory.create(context);
 
-```yaml
-  plugin:
-    platforms:
-      some_platform:
-        ffiPlugin: true
+// Check for available updates
+final appInfoTask = manager.getAppUpdateInfo();
 ```
 
-This configuration invokes the native build for the various target platforms
-and bundles the binaries in Flutter applications using these FFI plugins.
+### Flexible Update Flow
 
-This can be combined with dartPluginClass, such as when FFI is used for the
-implementation of one platform in a federated plugin:
+```dart
+// Start a flexible update
+final activity = JObject.fromReference(Jni.getCurrentActivity());
+final updateTask = manager.startUpdateFlow(
+  appUpdateInfo,
+  activity,
+  AppUpdateOptions.newBuilder(AppUpdateType.FLEXIBLE)
+    .setAllowAssetPackDeletion(true)
+    .build(),
+);
 
-```yaml
-  plugin:
-    implements: some_other_plugin
-    platforms:
-      some_platform:
-        dartPluginClass: SomeClass
-        ffiPlugin: true
+// Monitor installation progress
+manager.registerListener(installStateListener);
 ```
 
-A plugin can have both FFI and method channels:
+### Immediate Update Flow
 
-```yaml
-  plugin:
-    platforms:
-      some_platform:
-        pluginClass: SomeName
-        ffiPlugin: true
+```dart
+// Start an immediate update
+final updateTask = manager.startUpdateFlow(
+  appUpdateInfo,
+  activity,
+  AppUpdateOptions.newBuilder(AppUpdateType.IMMEDIATE)
+    .setAllowAssetPackDeletion(true)
+    .build(),
+);
 ```
 
-The native build systems that are invoked by FFI (and method channel) plugins are:
+## Example
 
-* For Android: Gradle, which invokes the Android NDK for native builds.
-  * See the documentation in android/build.gradle.
-* For iOS and MacOS: Xcode, via CocoaPods.
-  * See the documentation in ios/appupdate.podspec.
-  * See the documentation in macos/appupdate.podspec.
-* For Linux and Windows: CMake.
-  * See the documentation in linux/CMakeLists.txt.
-  * See the documentation in windows/CMakeLists.txt.
+See the [example](example/) directory for a complete implementation showing how to:
 
-## Binding to native code
+- Check for updates
+- Handle both flexible and immediate update flows
+- Monitor progress and handle errors
+- Complete the installation process
 
-To use the native code, bindings in Dart are needed.
-To avoid writing these by hand, they are generated from the header file
-(`src/appupdate.h`) by `package:ffigen`.
-Regenerate the bindings by running `dart run ffigen --config ffigen.yaml`.
+## Technical Details
 
-## Invoking native code
+This plugin uses:
 
-Very short-running native functions can be directly invoked from any isolate.
-For example, see `sum` in `lib/appupdate.dart`.
+- **JNI (Java Native Interface)** for direct integration with Android APIs
+- **jnigen** for generating Dart bindings from Java classes
+- **Google Play Core App Update API** for the underlying update functionality
 
-Longer-running functions should be invoked on a helper isolate to avoid
-dropping frames in Flutter applications.
-For example, see `sumAsync` in `lib/appupdate.dart`.
+The plugin generates bindings for the following key classes:
 
-## Flutter help
+- `AppUpdateManager` and `AppUpdateManagerFactory`
+- `AppUpdateInfo` and `AppUpdateOptions`
+- `InstallStateUpdatedListener` and related callback interfaces
+- Various enums for update types, install status, and error codes
 
-For help getting started with Flutter, view our
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Testing in-app updates with Google Play Internal App Sharing
 
+To test in-app updates, you can use Google Play's Internal App Sharing feature. This allows you to upload your app and test updates without going through the full release process.
+
+1. Enable Internal App Sharing in your Play Console.
+2. Upload your app's APK or App Bundle built with this plugin.
+3. Install the app from the above version.
+4. Build and upload a new version with a higher version code.
+5. Wait few minutes, you may need to open Google Play few times to see the update.
+6. Open the app and trigger the update flow to test the in-app update functionality.
+
+## Contributing
+
+This plugin is part of a presentation on native interoperability in Flutter. Contributions are welcome!
+
+## License
+
+See the [LICENSE](LICENSE) file for details.
