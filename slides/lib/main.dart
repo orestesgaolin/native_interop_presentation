@@ -1,10 +1,13 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_deck_web_client/flutter_deck_web_client.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:slides/01_agenda.dart';
+import 'package:slides/other_talks_slide.dart';
+import 'package:slides/swiftgen_slide.dart';
+import 'package:slides/topics.dart';
 import 'package:slides/animated_bokeh_background.dart';
 import 'package:slides/animated_mesh_gradient_background.dart';
 import 'package:slides/channels_and_codecs_slide.dart';
@@ -17,6 +20,7 @@ import 'package:slides/more_jnigen_slide.dart';
 import 'package:slides/native_dart_slide.dart';
 import 'package:slides/other_talks.dart';
 import 'package:slides/swift_interop_slide.dart';
+import 'package:slides/webview_mermaid.dart';
 
 double _codeSize = 28;
 double get codeSize => _codeSize;
@@ -238,7 +242,7 @@ class _MainAppState extends State<MainApp> {
         ),
       ),
 
-      agendaSlide(),
+      topicsSlide(),
       FlutterDeckSlide.bigFact(
         title: 'Platform Channels',
         subtitle: 'Message Channel, Method Channel, Event Channel',
@@ -260,6 +264,49 @@ class _MainAppState extends State<MainApp> {
       CleverSlide(),
 
       ChannelsAndCodecsSlide(),
+      FlutterDeckSlide.blank(
+        configuration: const FlutterDeckSlideConfiguration(
+          route: '/platform-channels-summary',
+          steps: 5,
+          title: 'Platform Channels summary',
+
+          header: FlutterDeckHeaderConfiguration(
+            showHeader: true,
+            title: 'Platform Channels',
+          ),
+        ),
+        builder: (context) {
+          return FlutterDeckSlideStepsBuilder(
+            builder: (context, stepNumber) => Stack(
+              children:
+                  [
+                        ['easy to set up\nin minutes', 'verbose - a bit\nof boilerplate code', 'debuggable'],
+                        [
+                          'not type safe',
+                          'can be extended\nwith Pigeon',
+                          'basically unchanged\nAPI since 945cfc3 in 2017',
+                        ],
+                        ['commonly understood\nby Flutter developers', 'can be accessed from\nbackground isolate', 'not the quickest'],
+                      ]
+                      .mapIndexed(
+                        (x, e) => e.mapIndexed((y, e) {
+                          return Align(
+                            alignment: Alignment((x - 1).toDouble(), (y - 1).toDouble()),
+                            child: Text(
+                              e,
+                              style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
+                              textAlign: TextAlign.center,
+                            ),
+                          );
+                        }),
+                      )
+                      .toList()
+                      .expand((x) => x)
+                      .toList(),
+            ),
+          );
+        },
+      ),
       // ThreadsSlide(),
       FlutterDeckSlide.bigFact(
         theme: darkTheme,
@@ -292,8 +339,8 @@ class _MainAppState extends State<MainApp> {
       KotlinRunSlide(),
       DartInteropCodeSlide(),
       AndroidEmulatorRunSlide(),
-
       MoreJnigenSlide(),
+      SwiftGenSlide(),
       FlutterDeckSlide.blank(
         configuration: FlutterDeckSlideConfiguration(
           route: '/other-talks',
@@ -307,27 +354,14 @@ class _MainAppState extends State<MainApp> {
         ),
         theme: lightTheme,
         builder: (context) {
-          return FlutterDeckSlideStepsBuilder(
-            builder: (context, stepNumber) => GridView.count(
-              crossAxisCount: 2,
-              childAspectRatio: 3.5,
-              mainAxisSpacing: 32,
-              crossAxisSpacing: 32,
-              children: listOfTalks.mapIndexed((i, e) {
-                return TalkTile(
-                  talk: e,
-                  isHighlighted: stepNumber - 1 == i,
-                );
-              }).toList(),
-            ),
-          );
+          return OtherTalksSlide();
         },
       ),
       FlutterDeckSlide.bigFact(
         title: 'Thank you',
         subtitle:
             'roszkowski.dev/plugins\n\n'
-            'roszkowski.dev/shaders-gallery',
+            'roszkowski.dev/shaders_gallery',
         backgroundBuilder: (context) => const LavaGradientBackground(),
         theme: darkTheme,
         configuration: FlutterDeckSlideConfiguration(
@@ -335,8 +369,10 @@ class _MainAppState extends State<MainApp> {
           footer: FlutterDeckFooterConfiguration(
             showFooter: false,
           ),
+          showProgress: false,
         ),
       ),
+      MoreWebInteropSlide(),
     ];
     return Shortcuts(
       shortcuts: {

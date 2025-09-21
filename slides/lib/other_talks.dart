@@ -28,6 +28,7 @@
 // Roundtable, Advanced, Flutter Multiplatform, Architecture, Enterprise/Tech Leadership, Fluttercon
 // Flutter Forum
 
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
@@ -86,10 +87,18 @@ final listOfTalks = [
 ];
 
 class TalkTile extends StatelessWidget {
-  const TalkTile({super.key, required this.talk, required this.isHighlighted});
+  const TalkTile({
+    super.key,
+    required this.talk,
+    required this.isHighlighted,
+    required this.titleGroup,
+    required this.detailsGroup,
+  });
 
   final Talk talk;
   final bool isHighlighted;
+  final AutoSizeGroup titleGroup;
+  final AutoSizeGroup detailsGroup;
 
   @override
   Widget build(BuildContext context) {
@@ -118,32 +127,46 @@ class TalkTile extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 spacing: 8,
                 children: [
-                  Text.rich(
+                  AutoSizeText.rich(
                     TextSpan(
                       text: talk.title,
                     ),
                     style: header,
+                    minFontSize: 20,
+                    group: titleGroup,
+                    maxLines: 2,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        spacing: 8,
-                        children: [
-                          Text(
-                            talk.speaker,
-                            style: smallerSubHeader.copyWith(color: Colors.deepOrange),
-                          ),
-                          Text(
-                            talk.location,
-                            style: smallerSubHeader,
-                          ),
-                        ],
-                      ),
-                      Text(talk.time, style: subHeader),
-                    ],
+                  Expanded(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          spacing: 8,
+                          children: [
+                            Flexible(
+                              child: AutoSizeText(
+                                talk.speaker,
+                                style: smallerSubHeader.copyWith(color: Colors.deepOrange),
+                                group: detailsGroup,
+                              ),
+                            ),
+                            Flexible(
+                              child: AutoSizeText(
+                                talk.location,
+                                style: smallerSubHeader,
+                                group: detailsGroup,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          talk.time,
+                          style: subHeader,
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),

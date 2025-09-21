@@ -1,4 +1,4 @@
-import 'package:flutter_auto_size_text/flutter_auto_size_text.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -205,17 +205,35 @@ class _CodeViewerState extends State<CodeViewer> {
                   topRight: Radius.circular(8),
                 ),
               ),
-              child: Text(
-                widget.fileName!,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: GoogleFonts.firaCode().fontFamily,
-                  fontSize: 16,
-                  height: lineHeight,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      widget.fileName!,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: GoogleFonts.firaCode().fontFamily,
+                        fontSize: 16,
+                        height: lineHeight,
 
-                  // ligatures
-                  fontFeatures: [const FontFeature.alternativeFractions()],
-                ),
+                        // ligatures
+                        fontFeatures: [const FontFeature.alternativeFractions()],
+                      ),
+                    ),
+                  ),
+                  Text(
+                    '${widget.stepNumber}/${widget.highlightSteps.length}',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: GoogleFonts.firaCode().fontFamily,
+                      fontSize: 16,
+                      height: lineHeight,
+
+                      // ligatures
+                      fontFeatures: [const FontFeature.alternativeFractions()],
+                    ),
+                  ),
+                ],
               ),
             ),
           Expanded(

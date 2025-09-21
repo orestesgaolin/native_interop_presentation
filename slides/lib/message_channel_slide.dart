@@ -6,6 +6,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:slides/code_highlight_slide.dart';
+import 'package:slides/webview_mermaid.dart';
 
 get slides => [
   (dartCode, 1, '', 'main.dart', 'dart'),
@@ -18,8 +19,15 @@ get slides => [
   (binaryMessengerCode, 3, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart'),
   (platformDispatcherCode, 1, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart'),
   (platformDispatcherCode, 2, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart'),
+  (
+    engineCodeOnPlatform,
+    1,
+    engineCodeOnPlatformHighlights,
+    'flutter/engine/src/flutter/shell/platform/darwin/macos/framework/Source/FlutterEngine.mm',
+    'dart',
+  ),
   (cppEngineCode1, 1, '', 'flutter/engine/src/flutter/lib/ui/window/platform_configuration.cc', 'dart'),
-  (cppEngineCode, 1, '', 'engine/src/flutter/shell/platform/embedder/embedder_engine.cc', 'dart'),
+  // (cppEngineCode, 1, '', 'engine/src/flutter/shell/platform/embedder/embedder_engine.cc', 'dart'),
   (swiftCode, 1, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
   (swiftCode, 2, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
   (objcCode, 1, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
@@ -42,7 +50,7 @@ class MessageChannelSlide extends FlutterDeckSlideWidget {
   }) : super(
          configuration: FlutterDeckSlideConfiguration(
            route: '/message-channel',
-           steps: slides.length-1,
+           steps: slides.length - 1,
            title: 'Message Channel Flow',
            header: FlutterDeckHeaderConfiguration(title: 'How does a simple Message Channel work?'),
          ),
@@ -138,6 +146,21 @@ class _MyChannelWidgetState extends State<MyChannelWidget> {
     final filePath = slide.$4;
     final language = slide.$5;
     var parseHighlights = _parseHighlights(highlights);
+    var mermaid = '''
+sequenceDiagram
+    participant D as Dart
+    participant C as C++ Engine
+    participant I as ObjC Engine
+    participant S as Swift Host
+
+
+    D->>C:
+    C->>I:
+    I->>S:
+    S->>I:
+    I->>C:
+    C->>D:
+''';
     return Stack(
       children: [
         Positioned.fill(
@@ -150,6 +173,18 @@ class _MyChannelWidgetState extends State<MyChannelWidget> {
               highlightSteps: parseHighlights,
               stepNumber: stepNumber,
               fileName: filePath.isEmpty ? null : filePath,
+            ),
+          ),
+        ),
+        Positioned(
+          right: 0,
+          bottom: 0,
+          width: 600,
+          height: 220,
+          child: Opacity(
+            opacity: 0.6,
+            child: WebViewMermaid(
+              mermaid: mermaid,
             ),
           ),
         ),
@@ -380,6 +415,7 @@ void sendPortPlatformMessage(String name, ByteData? data, int identifier, SendPo
 
 ///flutter/engine/src/flutter/lib/ui/window/platform_configuration.cc
 String get cppEngineCode1 => '''
+// called via ffi from /platform_dispatcher.dart
 Dart_Handle PlatformConfigurationNativeApi::SendPlatformMessage(
     const std::string& name,
     Dart_Handle callback,
@@ -509,4 +545,46 @@ String get dartEntryPointCode => '''
 @pragma('vm:entry-point')
 void _dispatchPlatformMessage(String name, ByteData? data, int responseId) {
   PlatformDispatcher.instance._dispatchPlatformMessage(name, data, responseId);
+}''';
+
+String get engineCodeOnPlatformHighlights => '';
+
+String get engineCodeOnPlatform => '''
+- (void)engineCallbackOnPlatformMessage:(const FlutterPlatformMessage*)message {
+  NSData* messageData = nil;
+  if (message->message_size > 0) {
+    messageData = [NSData dataWithBytesNoCopy:(void*)message->message
+                                       length:message->message_size
+                                 freeWhenDone:NO];
+  }
+  NSString* channel = @(message->channel);
+  __block const FlutterPlatformMessageResponseHandle* responseHandle = message->response_handle;
+  __block FlutterEngine* weakSelf = self;
+  NSMutableArray* isResponseValid = self.isResponseValid;
+  FlutterEngineSendPlatformMessageResponseFnPtr sendPlatformMessageResponse =
+      _embedderAPI.SendPlatformMessageResponse;
+  FlutterBinaryReply binaryResponseHandler = ^(NSData* response) {
+    @synchronized(isResponseValid) {
+      if (![isResponseValid[0] boolValue]) {
+        // Ignore, engine was killed.
+        return;
+      }
+      if (responseHandle) {
+        sendPlatformMessageResponse(weakSelf->_engine, responseHandle,
+                                    static_cast<const uint8_t*>(response.bytes), response.length);
+        responseHandle = NULL;
+      } else {
+        NSLog(@"Error: Message responses can be sent only once. Ignoring duplicate response "
+               "on channel '%@'.",
+              channel);
+      }
+    }
+  };
+
+  FlutterEngineHandlerInfo* handlerInfo = _messengerHandlers[channel];
+  if (handlerInfo) {
+    handlerInfo.handler(messageData, binaryResponseHandler);
+  } else {
+    binaryResponseHandler(nil);
+  }
 }''';

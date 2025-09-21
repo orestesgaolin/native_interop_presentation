@@ -35,100 +35,128 @@ class TerminalSlide extends FlutterDeckSlideWidget {
   Widget build(BuildContext context) {
     return FlutterDeckSlide.blank(
       builder: (context) => Center(
-        child: Container(
-          margin: const EdgeInsets.all(32),
-          decoration: BoxDecoration(
-            color: const Color(0xFF1E1E1E),
-            borderRadius: BorderRadius.circular(12),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.3),
-                blurRadius: 20,
-                offset: const Offset(0, 10),
-              ),
-            ],
-          ),
-          child: Column(
-            children: [
-              // Terminal header
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                decoration: const BoxDecoration(
-                  color: Color(0xFF2D2D2D),
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(12),
-                    topRight: Radius.circular(12),
-                  ),
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 12,
-                      height: 12,
-                      decoration: const BoxDecoration(
-                        color: Color(0xFFFF5F56),
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Container(
-                      width: 12,
-                      height: 12,
-                      decoration: const BoxDecoration(
-                        color: Color(0xFFFFBD2E),
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Container(
-                      width: 12,
-                      height: 12,
-                      decoration: const BoxDecoration(
-                        color: Color(0xFF27CA3F),
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                    const SizedBox(width: 16),
-                    Text(
-                      'Terminal',
-                      style: GoogleFonts.sourceCodePro(
-                        color: Colors.white,
-                        fontSize: 14,
-                      ),
-                    ),
-                    Spacer(),
-                    FlutterDeckSlideStepsBuilder(
-                      builder: (context, stepNumber) => Text(
-                        'Step ${stepNumber}/${commands.length}',
-                        style: GoogleFonts.sourceCodePro(
-                          color: Colors.white38,
-                          fontSize: 14,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              // Terminal content
-              Expanded(
-                child: Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(16),
-                  child: FlutterDeckSlideStepsBuilder(
-                    builder: (context, stepNumber) => TerminalAnimator(
-                      commands: commands,
-                      index: stepNumber - 1,
-                      animationSpeed: animationSpeed,
-                      animationCurve: animationCurve,
-                      lineDelay: lineDelay,
-                      prompt: prompt,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
+        child: TerminalContent(
+          commands: commands,
+          animationSpeed: animationSpeed,
+          animationCurve: animationCurve,
+          lineDelay: lineDelay,
+          prompt: prompt,
         ),
+      ),
+    );
+  }
+}
+
+class TerminalContent extends StatelessWidget {
+  const TerminalContent({
+    super.key,
+    required this.commands,
+    this.animationSpeed = const Duration(milliseconds: 25),
+    this.lineDelay = const Duration(milliseconds: 500),
+    this.animationCurve = Curves.linear,
+    this.prompt = '\$ ',
+  });
+
+  final List<TerminalCommand> commands;
+  final Duration animationSpeed;
+  final Curve animationCurve;
+  final Duration lineDelay;
+  final String prompt;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.all(32),
+      decoration: BoxDecoration(
+        color: const Color(0xFF1E1E1E),
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.3),
+            blurRadius: 20,
+            offset: const Offset(0, 10),
+          ),
+        ],
+      ),
+      child: Column(
+        children: [
+          // Terminal header
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            decoration: const BoxDecoration(
+              color: Color(0xFF2D2D2D),
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(12),
+                topRight: Radius.circular(12),
+              ),
+            ),
+            child: Row(
+              children: [
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: const BoxDecoration(
+                    color: Color(0xFFFF5F56),
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: const BoxDecoration(
+                    color: Color(0xFFFFBD2E),
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: const BoxDecoration(
+                    color: Color(0xFF27CA3F),
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Text(
+                  'Terminal',
+                  style: GoogleFonts.sourceCodePro(
+                    color: Colors.white,
+                    fontSize: 14,
+                  ),
+                ),
+                Spacer(),
+                FlutterDeckSlideStepsBuilder(
+                  builder: (context, stepNumber) => Text(
+                    'Step ${stepNumber}/${commands.length}',
+                    style: GoogleFonts.sourceCodePro(
+                      color: Colors.white38,
+                      fontSize: 14,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          // Terminal content
+          Expanded(
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(16),
+              child: FlutterDeckSlideStepsBuilder(
+                builder: (context, stepNumber) => TerminalAnimator(
+                  commands: commands,
+                  index: stepNumber - 1,
+                  animationSpeed: animationSpeed,
+                  animationCurve: animationCurve,
+                  lineDelay: lineDelay,
+                  prompt: prompt,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -1,5 +1,50 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:slides/code_highlight_slide.dart';
+
+class MoreWebInteropSlide extends FlutterDeckSlideWidget {
+  const MoreWebInteropSlide({
+    super.key,
+  }) : super(
+         configuration: const FlutterDeckSlideConfiguration(
+           route: '/web-interop-more',
+           title: 'More web interop',
+           speakerNotes: '',
+           header: FlutterDeckHeaderConfiguration(
+             title: 'More about web interop',
+             showHeader: true,
+           ),
+           hidden: true,
+           steps: 4,
+         ),
+       );
+
+  @override
+  Widget build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      configuration: configuration,
+      builder: (context) {
+        return FlutterDeckSlideStepsBuilder(
+          builder: (context, stepNumber) {
+            return Column(
+              children: [
+                FlutterDeckBulletList(
+                  useSteps: true,
+                  stepOffset: 1,
+                  items: [
+                    'https://pub.dev/packages/web',
+                    'https://github.com/dart-lang/web/tree/main/web_generator',
+                    'https://dart.dev/interop/js-interop',
+                  ],
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+}
 
 class MoreJnigenSlide extends FlutterDeckSlideWidget {
   const MoreJnigenSlide({
@@ -30,9 +75,9 @@ class MoreJnigenSlide extends FlutterDeckSlideWidget {
                   useSteps: true,
                   stepOffset: 1,
                   items: [
-                    'works with app source code, plugins, compiled jars',
+                    'works with app source code, plugins, compiled jars (Android, Windows, Linux)',
                     'at Visible we used it to generate bindings for Java obfuscated SDK',
-                    'works for Android, Windows and Linux',
+                    'ongoing work to port path_provider_android (#9770)',
                   ],
                 ),
                 Expanded(

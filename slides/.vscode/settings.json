@@ -1,4 +1,5 @@
 {
-    "workbench.colorCustomizations": {},
-    "dart.lineLength": 140
+  "workbench.colorCustomizations": {},
+  "dart.lineLength": 140,
+  "dart.flutterSdkPath": ".fvm/versions/master"
 }

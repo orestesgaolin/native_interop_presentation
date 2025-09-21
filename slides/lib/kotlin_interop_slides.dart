@@ -91,7 +91,7 @@ class _MyVideoPlayerState extends State<MyVideoPlayer> {
 }
 
 get dartSlides {
-  final dartLines = '|23-38|32-33|61-71|41-47';
+  final dartLines = '|23-38|32-33|61-70|41-47';
   final jniLines = '|40|108-120';
   return [
     (dartCode, 1, dartLines, dartFileName, 'dart'),
@@ -243,7 +243,7 @@ class KotlinInteropCodeSlide extends FlutterDeckSlideWidget {
           speakerNotes: '',
           steps: slides.length,
           header: FlutterDeckHeaderConfiguration(
-            title: 'Necessary code',
+            title: 'Necessary code on the Android/Kotlin side',
             showHeader: true,
           ),
         ),
@@ -473,7 +473,6 @@ class _MainAppState extends State<MainApp> {
               ? Text('Refresh to load packages')
               : ListView.builder(
                   itemCount: packages.length,
-
                   itemBuilder: (context, index) {
                     return ListTile(
                       title: Text(packages[index]),
