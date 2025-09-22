@@ -87,6 +87,7 @@ class CodeViewer extends StatefulWidget {
     required this.highlightSteps,
     required this.stepNumber,
     this.fileName,
+    this.linesOffset,
   });
 
   final String code;
@@ -94,6 +95,7 @@ class CodeViewer extends StatefulWidget {
   final List<List<int>> highlightSteps;
   final int stepNumber;
   final String? fileName;
+  final int? linesOffset;
 
   @override
   State<CodeViewer> createState() => _CodeViewerState();
@@ -181,7 +183,14 @@ class _CodeViewerState extends State<CodeViewer> {
       fontFeatures: [],
     );
 
-    final leftMargin = lines.length > 99 ? codeSize * 1.3 + 16 : codeSize * 1.3;
+    final over100 = lines.length > 99 || (widget.linesOffset ?? 0) > 99;
+    final over1000 = lines.length > 999 || (widget.linesOffset ?? 0) > 999;
+
+    final leftMargin = over100
+        ? over1000
+              ? codeSize * 1.3 + 32
+              : codeSize * 1.3 + 16
+        : codeSize * 1.3;
 
     if (!initialized) {
       return SizedBox();
@@ -270,7 +279,7 @@ class _CodeViewerState extends State<CodeViewer> {
                               height: codeSize * lineHeight,
                               child: Text.rich(
                                 TextSpan(
-                                  text: '$lineNumber',
+                                  text: '${lineNumber + (widget.linesOffset ?? 0)}',
                                   style: textStyle,
                                 ),
                                 textAlign: TextAlign.right,

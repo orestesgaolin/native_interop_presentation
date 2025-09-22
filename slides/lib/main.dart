@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_deck_web_client/flutter_deck_web_client.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:slides/animated_shake_shader.dart';
+import 'package:slides/final_words_slide.dart';
 import 'package:slides/other_talks_slide.dart';
 import 'package:slides/swiftgen_slide.dart';
 import 'package:slides/topics.dart';
@@ -219,7 +221,6 @@ class _MainAppState extends State<MainApp> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // FlutterDeckHeader(title: 'Visible'),
                     Image.asset(
                       'assets/visible.png',
                       height: 50,
@@ -246,6 +247,7 @@ class _MainAppState extends State<MainApp> {
       FlutterDeckSlide.bigFact(
         title: 'Platform Channels',
         subtitle: 'Message Channel, Method Channel, Event Channel',
+
         configuration: const FlutterDeckSlideConfiguration(
           route: '/platform-channels',
           title: 'platform-channels',
@@ -267,9 +269,7 @@ class _MainAppState extends State<MainApp> {
       FlutterDeckSlide.blank(
         configuration: const FlutterDeckSlideConfiguration(
           route: '/platform-channels-summary',
-          steps: 5,
           title: 'Platform Channels summary',
-
           header: FlutterDeckHeaderConfiguration(
             showHeader: true,
             title: 'Platform Channels',
@@ -341,6 +341,7 @@ class _MainAppState extends State<MainApp> {
       AndroidEmulatorRunSlide(),
       MoreJnigenSlide(),
       SwiftGenSlide(),
+      FinalWordsSlide(),
       FlutterDeckSlide.blank(
         configuration: FlutterDeckSlideConfiguration(
           route: '/other-talks',
@@ -459,7 +460,7 @@ class NativeListSlide extends FlutterDeckSlideWidget {
            route: '/native-list',
            title: 'Native packages',
            speakerNotes: '',
-           steps: 7,
+           steps: 8,
            header: FlutterDeckHeaderConfiguration(
              title: 'The native interop packages ecosystem',
              showHeader: true,
@@ -480,12 +481,13 @@ class NativeListSlide extends FlutterDeckSlideWidget {
             useSteps: true,
             stepOffset: 1,
             items: [
-              'ffi',
-              'ffigen',
+              'ffi (Dart 2.5, 2019)',
+              'ffigen (2020-2021)',
               'jni',
-              'jnigen',
-              'objective_c, swift2objc',
-              'swiftgen',
+              'jnigen (2022)',
+              'objective_c',
+              'swift2objc (2025)',
+              'swiftgen (202?)',
             ],
           ),
         );

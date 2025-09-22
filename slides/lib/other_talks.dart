@@ -50,7 +50,7 @@ class Talk {
 
 final listOfTalks = [
   Talk(
-    title: 'How to design a Dart package with hooks',
+    title: 'How to design a Dart package with hooks (package:intl4x)',
     time: 'Today 11:20 AM',
     speaker: 'Moritz Sümmermann',
     tags: 'Lightning talk, Introductory and overview, Dart FFI, Open Source Contributions, Fluttercon',
@@ -78,11 +78,18 @@ final listOfTalks = [
     location: 'Widget Way',
   ),
   Talk(
+    title: 'From Kotlin to Native and back: accessing native macOS API in Compose Multiplatform',
+    time: 'Thursday 03:45 PM',
+    speaker: 'Marco Gomiero',
+    tags: '',
+    location: 'Studio Stage (Droidcon)',
+  ),
+  Talk(
     title: 'Surviving the Long Game: Maintaining Flutter Apps Over Time',
     time: 'Friday 01:15 PM',
     speaker: 'Dominik Roszkowski, Simon Lightfoot',
     tags: 'Roundtable, Advanced, Flutter Multiplatform, Architecture, Enterprise/Tech Leadership, Fluttercon',
-    location: 'Flutter Forum',
+    location: 'Flutter Forum (Roundtable)',
   ),
 ];
 

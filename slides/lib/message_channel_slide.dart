@@ -9,40 +9,174 @@ import 'package:slides/code_highlight_slide.dart';
 import 'package:slides/webview_mermaid.dart';
 
 get slides => [
-  (dartCode, 1, '', 'main.dart', 'dart'),
-  (dartCode, 1, '8-10', 'main.dart', 'dart'),
-  (engineCodeDart, 1, '7-11', 'flutter/lib/src/services/platform_channel.dart', 'dart'),
-  (stringCodec, 1, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart'),
-  (stringCodec, 2, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart'),
-  (binaryMessengerCode, 1, '', 'flutter/lib/src/services/binding.dart', 'dart'),
-  (binaryMessengerCode, 2, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart'),
-  (binaryMessengerCode, 3, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart'),
-  (platformDispatcherCode, 1, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart'),
-  (platformDispatcherCode, 2, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart'),
-  (
-    engineCodeOnPlatform,
-    1,
-    engineCodeOnPlatformHighlights,
-    'flutter/engine/src/flutter/shell/platform/darwin/macos/framework/Source/FlutterEngine.mm',
-    'dart',
-  ),
-  (cppEngineCode1, 1, '', 'flutter/engine/src/flutter/lib/ui/window/platform_configuration.cc', 'dart'),
+  (dartCode, 1, '', 'main.dart', 'dart', 0),
+  (dartCode, 1, '8-10', 'main.dart', 'dart', 0),
+  (engineCodeDart, 1, '7-11', 'flutter/lib/src/services/platform_channel.dart', 'dart', 241),
+  (stringCodec, 1, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart', 57),
+  (stringCodec, 2, stringCodecHighlights, 'flutter/lib/src/services/message_codecs.dart', 'dart', 57),
+  (binaryMessengerCode, 1, '', 'flutter/lib/src/services/binding.dart', 'dart', 0),
+  (binaryMessengerCode, 2, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart', 0),
+  (binaryMessengerCode, 3, binaryMessengerHighlights, 'flutter/lib/src/services/binding.dart', 'dart', 0),
+  (platformDispatcherCode, 1, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart', 645),
+  (platformDispatcherCode, 2, platformDispatcherHighlights, 'sky_engine/lib/ui/platform_dispatcher.dart', 'dart', 645),
+  (cppEngineCode1, 1, '', cppEnginePath, 'dart', 556),
+  (engineCodeOnPlatform, 1, engineCodeOnPlatformHighlights, engineCodeOnPlatformPath, 'dart', 1247),
+  (engineCodeOnPlatform, 2, engineCodeOnPlatformHighlights, engineCodeOnPlatformPath, 'dart', 1247),
   // (cppEngineCode, 1, '', 'engine/src/flutter/shell/platform/embedder/embedder_engine.cc', 'dart'),
-  (swiftCode, 1, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
-  (swiftCode, 2, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift'),
-  (objcCode, 1, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
-  (objcCode, 2, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
-  (objcCode, 3, objcHighlights, 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm', 'dart'),
-  (engineObjcCode, 1, engineObjcHigh, objcPath, 'dart'),
-  (engineObjcCode, 2, engineObjcHigh, objcPath, 'dart'),
-  (engineObjcCode, 3, engineObjcHigh, objcPath, 'dart'),
-  (dartEntryPointCode, 1, dartEntryPointHighlights, dartEntryPointPath, 'dart'),
+  (swiftCode, 1, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift', 0),
+  (swiftCode, 2, '1-5|10-12', 'Runner/MainFlutterWindow.swift', 'swift', 0),
+  (objcCode, 1, objcHighlights, objcCodePath, 'dart', 0),
+  (objcCode, 2, objcHighlights, objcCodePath, 'dart', 0),
+  (objcCode, 3, objcHighlights, objcCodePath, 'dart', 0),
+  (engineObjcCode, 1, engineObjcHigh, objcPath, 'dart', 0),
+  (engineObjcCode, 2, engineObjcHigh, objcPath, 'dart', 0),
+  (engineObjcCode, 3, engineObjcHigh, objcPath, 'dart', 0),
+  (dartEntryPointCode, 1, dartEntryPointHighlights, dartEntryPointPath, 'dart', 0),
   // (dartEntryPointCode, 1, '', dartEntryPointPath, 'dart'),
-  (dartCode, 1, '9', 'main.dart', 'dart'),
+  (dartCode, 1, '9', 'main.dart', 'dart', 0),
 
   // 5 => (objcCode, 5),
   // 6 => (dartCode, 1),
 ];
+
+mermaid(int stepNumber) => switch (stepNumber) {
+  < 9 =>
+    '''
+sequenceDiagram
+    box LightGreen
+    participant D as Dart
+    end
+    participant C as C++ Engine
+    participant I as ObjC Engine
+    participant S as Swift Host
+
+    D->>C:
+    C->>I:
+    I->>S:
+    S->>I:
+    I->>C:
+    C->>D:
+''',
+  < 10 =>
+    '''
+sequenceDiagram
+    box LightGreen
+    participant D as Dart
+    participant C as C++ Engine
+    end
+    participant I as ObjC Engine
+    participant S as Swift Host
+
+    D->>C:
+    C->>I:
+    I->>S:
+    S->>I:
+    I->>C:
+    C->>D:
+''',
+  < 11 =>
+    '''
+sequenceDiagram
+    participant D as Dart
+    box LightGreen
+    participant C as C++ Engine
+    end
+    participant I as ObjC Engine
+    participant S as Swift Host
+
+    D->>C:
+    C->>I:
+    I->>S:
+    S->>I:
+    I->>C:
+    C->>D:
+''',
+  < 13 =>
+    '''
+sequenceDiagram
+    participant D as Dart
+    participant C as C++ Engine
+    box LightGreen
+    participant I as ObjC Engine
+    end
+    participant S as Swift Host
+
+    D->>C:
+    C->>I:
+    I->>S:
+    S->>I:
+    I->>C:
+    C->>D:
+''',
+  < 15 =>
+    '''
+sequenceDiagram
+    participant D as Dart
+    participant C as C++ Engine
+    participant I as ObjC Engine
+    box LightGreen
+    participant S as Swift Host
+    end
+
+    D->>C:
+    C->>I:
+    I->>S:
+    S->>I:
+    I->>C:
+    C->>D:
+''',
+  < 21 =>
+    '''
+sequenceDiagram
+    participant D as Dart
+    participant C as C++ Engine
+    box LightGreen
+    participant I as ObjC Engine
+    end
+    participant S as Swift Host
+
+    D->>C:
+    C->>I:
+    I->>S:
+    S->>I:
+    I->>C:
+    C->>D:
+''',
+  < 22 =>
+    '''
+sequenceDiagram
+    box LightGreen
+    participant D as Dart
+    participant C as C++ Engine
+    end
+    participant I as ObjC Engine
+    participant S as Swift Host
+
+    D->>C:
+    C->>I:
+    I->>S:
+    S->>I:
+    I->>C:
+    C->>D:
+''',
+  _ =>
+    '''
+sequenceDiagram
+    box LightGreen
+    participant D as Dart
+    end
+    participant C as C++ Engine
+    participant I as ObjC Engine
+    participant S as Swift Host
+
+    D->>C:
+    C->>I:
+    I->>S:
+    S->>I:
+    I->>C:
+    C->>D:
+''',
+};
 
 class MessageChannelSlide extends FlutterDeckSlideWidget {
   MessageChannelSlide({
@@ -71,7 +205,21 @@ class MessageChannelSlide extends FlutterDeckSlideWidget {
                       fontFamily: GoogleFonts.sourceCodePro().fontFamily,
                     ),
                   ),
-              child: MyChannelWidget(step: stepNumber),
+              child: Stack(
+                children: [
+                  MyChannelWidget(step: stepNumber),
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Text(
+                      stepNumber.toString(),
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.black12,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             );
           },
         ),
@@ -145,22 +293,9 @@ class _MyChannelWidgetState extends State<MyChannelWidget> {
     final highlights = slide.$3;
     final filePath = slide.$4;
     final language = slide.$5;
+    final offset = slide.$6;
     var parseHighlights = _parseHighlights(highlights);
-    var mermaid = '''
-sequenceDiagram
-    participant D as Dart
-    participant C as C++ Engine
-    participant I as ObjC Engine
-    participant S as Swift Host
 
-
-    D->>C:
-    C->>I:
-    I->>S:
-    S->>I:
-    I->>C:
-    C->>D:
-''';
     return Stack(
       children: [
         Positioned.fill(
@@ -173,6 +308,7 @@ sequenceDiagram
               highlightSteps: parseHighlights,
               stepNumber: stepNumber,
               fileName: filePath.isEmpty ? null : filePath,
+              linesOffset: offset,
             ),
           ),
         ),
@@ -184,7 +320,7 @@ sequenceDiagram
           child: Opacity(
             opacity: 0.6,
             child: WebViewMermaid(
-              mermaid: mermaid,
+              mermaid: mermaid(widget.step),
             ),
           ),
         ),
@@ -240,6 +376,7 @@ sequenceDiagram
 }
 
 String get objcHighlights => '|20-25|10-17';
+String get objcCodePath => 'engine/src/flutter/shell/platform/darwin/common/framework/Source/FlutterCodecs.mm';
 final objcCode = '''
 @implementation FlutterStringCodec
 + (instancetype)sharedInstance {
@@ -414,6 +551,7 @@ void sendPortPlatformMessage(String name, ByteData? data, int identifier, SendPo
 }''';
 
 ///flutter/engine/src/flutter/lib/ui/window/platform_configuration.cc
+String get cppEnginePath => 'flutter/engine/src/flutter/lib/ui/window/platform_configuration.cc';
 String get cppEngineCode1 => '''
 // called via ffi from /platform_dispatcher.dart
 Dart_Handle PlatformConfigurationNativeApi::SendPlatformMessage(
@@ -480,7 +618,7 @@ myChannel.setMessageHandler {
 }''';
 
 String get objcPath => 'engine/src/flutter/shell/platform/darwin/macos/framework/Source/FlutterEngine.mm';
-String get engineObjcHigh => '|6-8|45-46';
+String get engineObjcHigh => '|6-8|43-46';
 String get engineObjcCode => '''
 @interface FlutterEngine () <FlutterBinaryMessenger,
                              FlutterMouseCursorPluginDelegate,
@@ -547,8 +685,8 @@ void _dispatchPlatformMessage(String name, ByteData? data, int responseId) {
   PlatformDispatcher.instance._dispatchPlatformMessage(name, data, responseId);
 }''';
 
-String get engineCodeOnPlatformHighlights => '';
-
+String get engineCodeOnPlatformHighlights => '33-35|14';
+String get engineCodeOnPlatformPath => 'flutter/engine/src/flutter/shell/platform/darwin/macos/framework/Source/FlutterEngine.mm';
 String get engineCodeOnPlatform => '''
 - (void)engineCallbackOnPlatformMessage:(const FlutterPlatformMessage*)message {
   NSData* messageData = nil;

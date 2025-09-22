@@ -7,14 +7,19 @@ import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:slides/code_highlight_slide.dart';
 
+// TODO: add example of using the Swift via ObjC via ffigen?
+
 class SwiftInteropSlide extends FlutterDeckSlideWidget {
   SwiftInteropSlide({super.key})
     : super(
         configuration: FlutterDeckSlideConfiguration(
           route: '/swift-interop',
 
-          title: 'Swift Interop via ffi',
-          header: FlutterDeckHeaderConfiguration(title: 'Swift Interop via ffi'),
+          title: 'Swift Interop via ffi via C (not Obj-C)',
+          header: FlutterDeckHeaderConfiguration(
+            title: 'Swift Interop via ffi via C (not Obj-C)',
+            showHeader: true,
+          ),
         ),
       );
 
@@ -166,7 +171,7 @@ class _SlideInteropCalcState extends State<SlideInteropCalc> {
 }
 
 String get swiftCode => '''
-@_cdecl("add")
+@_cdecl("add") //_cdecl is the default calling convention for C and C++ programs
 func add(_ a: Int, _ b: Int) -> Int {
   return a + b
 }''';

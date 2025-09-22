@@ -8,6 +8,7 @@ import 'package:flutter_deck/src/flutter_deck_layout.dart';
 import 'package:flutter_deck/src/templates/slide_base.dart';
 import 'package:flutter_deck/src/theme/templates/flutter_deck_big_fact_slide_theme.dart';
 import 'package:flutter_deck/src/widgets/widgets.dart';
+import 'package:slides/animated_shake_shader.dart';
 
 /// A slide widget that represents a big fact slide.
 ///
@@ -39,6 +40,7 @@ class MyFlutterDeckBigFactSlide extends StatelessWidget {
     this.footerBuilder,
     this.headerBuilder,
     super.key,
+    this.shake = false,
   });
 
   /// The title of the slide.
@@ -55,6 +57,10 @@ class MyFlutterDeckBigFactSlide extends StatelessWidget {
 
   /// A builder for the header of the slide.
   final WidgetBuilder? headerBuilder;
+
+  /// Whether to apply a shaking effect to the title
+
+  final bool shake;
 
   Widget _buildFooter(BuildContext context) =>
       footerBuilder?.call(context) ?? FlutterDeckFooter.fromConfiguration(configuration: context.flutterDeck.configuration.footer);
@@ -75,9 +81,16 @@ class MyFlutterDeckBigFactSlide extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Flexible(
-                child: AutoSizeText(title, style: theme.titleTextStyle, textAlign: TextAlign.center, maxLines: 1),
-              ),
+              if (shake)
+                AnimatedShake(
+                  child: Flexible(
+                    child: AutoSizeText(title, style: theme.titleTextStyle, textAlign: TextAlign.center, maxLines: 1),
+                  ),
+                )
+              else
+                Flexible(
+                  child: AutoSizeText(title, style: theme.titleTextStyle, textAlign: TextAlign.center, maxLines: 1),
+                ),
               subtitleBuilder(context),
               // if (subtitleBuilder != null) ...[
               //   const SizedBox(height: 16),

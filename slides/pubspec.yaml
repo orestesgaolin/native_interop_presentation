@@ -40,3 +40,4 @@ flutter:
     - shaders/noise_shader.frag
     - shaders/lava_shader.frag
     - shaders/bokeh_shader.frag
+    - shaders/shake_shader.frag

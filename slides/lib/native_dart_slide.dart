@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:slides/animated_shake_shader.dart';
 import 'package:slides/lava_gradient_background.dart';
 
 class NativeDartSlide extends FlutterDeckSlideWidget {
@@ -18,9 +19,11 @@ class NativeDartSlide extends FlutterDeckSlideWidget {
     return FlutterDeckSlide.blank(
       builder: (context) {
         return Center(
-          child: Image.asset(
-            'assets/dart-native-gh.png',
-            fit: BoxFit.cover,
+          child: AnimatedShake(
+            child: Image.asset(
+              'assets/dart-native-gh.png',
+              fit: BoxFit.cover,
+            ),
           ),
         );
       },
