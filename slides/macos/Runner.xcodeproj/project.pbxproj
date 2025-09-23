@@ -30,6 +30,9 @@
 		60C59695940AEA2C88BF3583 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C4C6CC54477F68DF29E787 /* Pods_Runner.framework */; };
 		AE3DCB7EAD1E290C3D172BDF /* Pods_RunnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD188DDFCE6E872780B5A344 /* Pods_RunnerTests.framework */; };
 		B428FA782E7E8D8B00E40017 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B428FA772E7E8D8700E40017 /* Calculator.swift */; };
+		B440072F2E8289F2007E2B28 /* calculator.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B440072E2E8289F2007E2B28 /* calculator.dylib */; };
+		B44007302E828A1E007E2B28 /* calculator.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = B440072E2E8289F2007E2B28 /* calculator.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B44007352E82AD5A007E2B28 /* calculator.dylib in Resources */ = {isa = PBXBuildFile; fileRef = B440072E2E8289F2007E2B28 /* calculator.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B44007302E828A1E007E2B28 /* calculator.dylib in Bundle Framework */,
 			);
 			name = "Bundle Framework";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +90,7 @@
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		B12F5F2C0321B5EF90C87613 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		B428FA772E7E8D8700E40017 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		B440072E2E8289F2007E2B28 /* calculator.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = calculator.dylib; sourceTree = "<group>"; };
 		BF5061513A124DA450EF2694 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		DCFADF60A623EA02EA0A79DB /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		DD188DDFCE6E872780B5A344 /* Pods_RunnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B440072F2E8289F2007E2B28 /* calculator.dylib in Frameworks */,
 				60C59695940AEA2C88BF3583 /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +210,7 @@
 		D73912EC22F37F3D000D13A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B440072E2E8289F2007E2B28 /* calculator.dylib */,
 				70C4C6CC54477F68DF29E787 /* Pods_Runner.framework */,
 				DD188DDFCE6E872780B5A344 /* Pods_RunnerTests.framework */,
 			);
@@ -317,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44007352E82AD5A007E2B28 /* calculator.dylib in Resources */,
 				33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */,
 				33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */,
 			);
@@ -583,6 +591,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -717,6 +729,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -738,6 +754,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				PROVISIONING_PROFILE_SPECIFIER = "";

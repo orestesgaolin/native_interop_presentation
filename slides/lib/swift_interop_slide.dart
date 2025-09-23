@@ -5,6 +5,7 @@ import 'package:objective_c/objective_c.dart' as objc;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:slides/calculator_bindings.dart';
 import 'package:slides/code_highlight_slide.dart';
 
 // TODO: add example of using the Swift via ObjC via ffigen?
@@ -95,6 +96,11 @@ class _SlideInteropCalcState extends State<SlideInteropCalc> {
   int? _result;
   int a = 0;
   int b = 0;
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   int invokeAdd(int a, int b) {
     final nativeLib = ffi.DynamicLibrary.process();
@@ -198,13 +204,26 @@ class _SwiftBenchmarkContentState extends State<SwiftBenchmarkContent> {
   late MethodChannel _methodChannel;
   Timer? _progressBarTimer;
   Duration _ffiDuration = Duration.zero;
+  Duration _swiftgenDuration = Duration.zero;
   Duration _methodChannelDuration = Duration.zero;
   int _count = 100000;
+  Calculator? calculator;
+
+  int Function(int p1, int p2)? addFunction;
+
+  void initializeFfi() {
+    final nativeLib = ffi.DynamicLibrary.process();
+    addFunction ??= nativeLib.lookupFunction<ffi.Int32 Function(ffi.Int32, ffi.Int32), int Function(int, int)>('add');
+    if (addFunction == null) {
+      throw Exception('Function not found');
+    }
+  }
 
   int invokeAdd(int a, int b) {
-    final nativeLib = ffi.DynamicLibrary.process();
-    final addFunction = nativeLib.lookupFunction<ffi.Int32 Function(ffi.Int32, ffi.Int32), int Function(int, int)>('add');
-    final result = addFunction(a, b);
+    if (addFunction == null) {
+      throw Exception('Function not found');
+    }
+    final result = addFunction!(a, b);
     return result;
   }
 
@@ -213,15 +232,34 @@ class _SwiftBenchmarkContentState extends State<SwiftBenchmarkContent> {
     return result ?? 0;
   }
 
+  void initializeSwiftBindings() {
+    final nativeLib = ffi.DynamicLibrary.open('calculator.dylib');
+    nativeLib.providesSymbol('Calculator');
+    calculator = Calculator();
+    final result = calculator?.addS(1, unnamed: 1);
+    assert(result == 2);
+  }
+
+  int invokeAddBindings(int a, int b) {
+    if (calculator == null) {
+      throw Exception('Not initialized');
+    }
+    final result = calculator!.addS(a, unnamed: b);
+    return result;
+  }
+
   @override
   void initState() {
     super.initState();
     _methodChannel = const MethodChannel('com.example/benchmark');
+    initializeSwiftBindings();
+    initializeFfi();
   }
 
   void runBenchmark() async {
     final stopwatch = Stopwatch()..start();
 
+    initializeFfi();
     for (var i = 0; i < _count; i++) {
       invokeAdd(i, i);
     }
@@ -233,6 +271,20 @@ class _SwiftBenchmarkContentState extends State<SwiftBenchmarkContent> {
       _ffiDuration = Duration(milliseconds: ffiTime);
     });
 
+    stopwatch.reset();
+    stopwatch.start();
+
+    initializeSwiftBindings();
+
+    for (var i = 0; i < _count; i++) {
+      invokeAddBindings(i, i);
+    }
+    stopwatch.stop();
+    final swiftgenTime = stopwatch.elapsedMilliseconds;
+    setState(() {
+      _swiftgenDuration = Duration(milliseconds: swiftgenTime);
+    });
+    print('Swiftgen Time: $swiftgenTime ms');
     stopwatch.reset();
     stopwatch.start();
 
@@ -287,6 +339,30 @@ class _SwiftBenchmarkContentState extends State<SwiftBenchmarkContent> {
                   ),
               ],
             ),
+            Stack(
+              clipBehavior: Clip.none,
+              children: [
+                AnimatedContainer(
+                  duration: _swiftgenDuration,
+                  height: 64,
+                  width: _swiftgenDuration.inMilliseconds / 10,
+                  color: Colors.blue,
+                ),
+                if (_swiftgenDuration > Duration.zero)
+                  Positioned(
+                    left: 8,
+                    top: 0,
+                    bottom: 0,
+                    child: Center(
+                      child: Text(
+                        'swiftgen ${_swiftgenDuration.inMilliseconds} ms',
+                        style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+
             Stack(
               clipBehavior: Clip.none,
               children: [
