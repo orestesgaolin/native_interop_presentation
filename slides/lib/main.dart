@@ -5,7 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_deck_web_client/flutter_deck_web_client.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:slides/animated_circle_shader.dart';
 import 'package:slides/animated_shake_shader.dart';
+import 'package:slides/block_thread.dart';
 import 'package:slides/final_words_slide.dart';
 import 'package:slides/other_talks_slide.dart';
 import 'package:slides/swiftgen_slide.dart';
@@ -235,6 +237,8 @@ class _MainAppState extends State<MainApp> {
                         'experimenting with native interop',
                       ],
                     ),
+                    Spacer(),
+                    Text('makevisible.com', style: darkTheme.textTheme.bodyMedium),
                   ],
                 ),
               );
@@ -266,6 +270,20 @@ class _MainAppState extends State<MainApp> {
       CleverSlide(),
 
       ChannelsAndCodecsSlide(),
+      FlutterDeckSlide.blank(
+        configuration: const FlutterDeckSlideConfiguration(
+          route: '/block-thread',
+          title: 'Threading',
+          speakerNotes: '',
+          header: FlutterDeckHeaderConfiguration(
+            showHeader: true,
+            title: 'Threading - Platform and UI Thread Merge #150525',
+          ),
+        ),
+        builder: (context) {
+          return BlockThreadContent();
+        },
+      ),
       FlutterDeckSlide.blank(
         configuration: const FlutterDeckSlideConfiguration(
           route: '/platform-channels-summary',
@@ -340,6 +358,15 @@ class _MainAppState extends State<MainApp> {
       DartInteropCodeSlide(),
       AndroidEmulatorRunSlide(),
       MoreJnigenSlide(),
+      FlutterDeckSlide.bigFact(
+        title: 'swiftgen',
+        subtitle: 'What about Swift?',
+        configuration: const FlutterDeckSlideConfiguration(
+          route: '/swiftgen-intro',
+          title: 'Swiftgen intro',
+        ),
+        backgroundBuilder: (context) => AnimatedCircleShader(),
+      ),
       SwiftGenSlide(),
       FinalWordsSlide(),
       FlutterDeckSlide.blank(

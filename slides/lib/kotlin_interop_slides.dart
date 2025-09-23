@@ -1,4 +1,4 @@
-import 'package:chewie/chewie.dart';
+import 'package:video_player/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:slides/code_highlight_slide.dart';
@@ -45,28 +45,24 @@ class MyVideoPlayer extends StatefulWidget {
 
 class _MyVideoPlayerState extends State<MyVideoPlayer> {
   late VideoPlayerController _controller;
-  late ChewieController _chewieController;
 
   @override
   void initState() {
     super.initState();
     _controller = VideoPlayerController.asset('assets/android.mp4', viewType: VideoViewType.platformView);
+    
     _initialize();
   }
 
   Future<void> _initialize() async {
     await _controller.initialize();
-    _chewieController = ChewieController(
-      videoPlayerController: _controller,
-      autoPlay: true,
-      looping: true,
-    );
+    _controller.play();
+    _controller.setLooping(true);
   }
 
   @override
   void dispose() {
     _controller.dispose();
-    _chewieController.dispose();
     super.dispose();
   }
 

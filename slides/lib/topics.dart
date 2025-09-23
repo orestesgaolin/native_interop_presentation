@@ -19,7 +19,7 @@ FlutterDeckSlideWidget topicsSlide() {
     ),
     configuration: const FlutterDeckSlideConfiguration(
       route: '/agenda',
-      steps: 10,
+      steps: 12,
       title: 'Agenda',
 
       header: FlutterDeckHeaderConfiguration(showHeader: false),
@@ -39,6 +39,7 @@ class ThisSlideCard extends StatelessWidget {
     required this.showItemsOnFollowingSteps,
     this.headerGroup,
     this.itemGroup,
+    this.dim = false,
   });
 
   final String title;
@@ -49,6 +50,7 @@ class ThisSlideCard extends StatelessWidget {
   final bool showItemsOnFollowingSteps;
   final AutoSizeGroup? headerGroup;
   final AutoSizeGroup? itemGroup;
+  final bool dim;
 
   @override
   Widget build(BuildContext context) {
@@ -69,8 +71,9 @@ class ThisSlideCard extends StatelessWidget {
       opacity: currentStep > showOnStep ? 1 : 0,
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: dim ? Colors.white10: Colors.white,
           borderRadius: BorderRadius.circular(8),
+         
         ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -177,7 +180,6 @@ class _ContentState extends State<Content> {
                 itemGroup: itemsGroup,
               ),
             ),
-            const SizedBox(width: 64),
             Flexible(
               child: ThisSlideCard(
                 title: 'Codecs',
@@ -199,36 +201,63 @@ class _ContentState extends State<Content> {
           ],
         ),
 
-        ThisSlideCard(
-          title: 'Embedder',
-          toptems: [
-            'Android',
-            'iOS/macOS',
-          ],
-          bottomItems: const [
-            'Windows, Linux, Web...',
-          ],
-          currentStep: widget.stepNumber,
-          showOnStep: 8,
-          showItemsOnFollowingSteps: false,
-          headerGroup: headerGroup,
-          itemGroup: itemsGroup,
-        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Flexible(
+              child: ThisSlideCard(
+                title: 'Embedder',
+                toptems: [
+                  'Android',
+                  'iOS/macOS',
+                ],
+                bottomItems: const [
+                  'Windows, Linux, Web...',
+                ],
+                currentStep: widget.stepNumber,
+                showOnStep: 8,
+                showItemsOnFollowingSteps: false,
+                headerGroup: headerGroup,
+                itemGroup: itemsGroup,
+                dim: widget.stepNumber == 12,
+              ),
+            ),
+            Flexible(
+              child: ThisSlideCard(
+                title: 'Threading',
+                toptems: [
+                  'Platform Thread',
+                ],
+                bottomItems: const [
+                  'UI Thread',
+                ],
+                currentStep: widget.stepNumber,
+                showOnStep: 9,
+                showItemsOnFollowingSteps: false,
+                headerGroup: headerGroup,
+                itemGroup: itemsGroup,
+                dim: widget.stepNumber == 12,
+              ),
+            ),
 
-        ThisSlideCard(
-          title: 'Direct Native Interop',
-          toptems: [
-            'jnigen',
-            'ffigen',
+            Flexible(
+              child: ThisSlideCard(
+                title: 'Direct Native Interop',
+                toptems: [
+                  'jnigen',
+                  'ffigen',
+                ],
+                bottomItems: const [
+                  'swiftgen',
+                ],
+                currentStep: widget.stepNumber,
+                showOnStep: 10,
+                showItemsOnFollowingSteps: false,
+                headerGroup: headerGroup,
+                itemGroup: itemsGroup,
+              ),
+            ),
           ],
-          bottomItems: const [
-            'swiftgen',
-          ],
-          currentStep: widget.stepNumber,
-          showOnStep: 9,
-          showItemsOnFollowingSteps: false,
-          headerGroup: headerGroup,
-          itemGroup: itemsGroup,
         ),
       ],
     );

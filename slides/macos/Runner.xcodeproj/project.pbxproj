@@ -30,9 +30,9 @@
 		60C59695940AEA2C88BF3583 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C4C6CC54477F68DF29E787 /* Pods_Runner.framework */; };
 		AE3DCB7EAD1E290C3D172BDF /* Pods_RunnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD188DDFCE6E872780B5A344 /* Pods_RunnerTests.framework */; };
 		B428FA782E7E8D8B00E40017 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B428FA772E7E8D8700E40017 /* Calculator.swift */; };
-		B440072F2E8289F2007E2B28 /* calculator.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B440072E2E8289F2007E2B28 /* calculator.dylib */; };
-		B44007302E828A1E007E2B28 /* calculator.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = B440072E2E8289F2007E2B28 /* calculator.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		B44007352E82AD5A007E2B28 /* calculator.dylib in Resources */ = {isa = PBXBuildFile; fileRef = B440072E2E8289F2007E2B28 /* calculator.dylib */; };
+		B44007362E833C2A007E2B28 /* calculator.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B440072E2E8289F2007E2B28 /* calculator.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B44007372E833C2F007E2B28 /* calculator.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B440072E2E8289F2007E2B28 /* calculator.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B44007392E833C3F007E2B28 /* calculator.dylib in Resources */ = {isa = PBXBuildFile; fileRef = B440072E2E8289F2007E2B28 /* calculator.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,15 +53,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		33CC110E2044A8840003C045 /* Bundle Framework */ = {
+		B44007382E833C2F007E2B28 /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "";
+			dstPath = macos;
 			dstSubfolderSpec = 10;
 			files = (
-				B44007302E828A1E007E2B28 /* calculator.dylib in Bundle Framework */,
+				B44007372E833C2F007E2B28 /* calculator.dylib in Embed Libraries */,
 			);
-			name = "Bundle Framework";
+			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B440072F2E8289F2007E2B28 /* calculator.dylib in Frameworks */,
+				B44007362E833C2A007E2B28 /* calculator.dylib in Frameworks */,
 				60C59695940AEA2C88BF3583 /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,9 +247,9 @@
 				33CC10E92044A3C60003C045 /* Sources */,
 				33CC10EA2044A3C60003C045 /* Frameworks */,
 				33CC10EB2044A3C60003C045 /* Resources */,
-				33CC110E2044A8840003C045 /* Bundle Framework */,
 				3399D490228B24CF009A79C7 /* ShellScript */,
 				27F6A2AF2E040D9E8C455462 /* [CP] Embed Pods Frameworks */,
+				B44007382E833C2F007E2B28 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -324,9 +324,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B44007352E82AD5A007E2B28 /* calculator.dylib in Resources */,
 				33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */,
 				33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */,
+				B44007392E833C3F007E2B28 /* calculator.dylib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

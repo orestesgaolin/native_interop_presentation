@@ -4,7 +4,7 @@ publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: ^3.9.2
+  sdk: ^3.9.0
 
 dependencies:
 
@@ -24,7 +24,7 @@ dependencies:
   collection: ^1.19.1
   objective_c: ^8.1.0
   ffi: ^2.1.4
-  chewie: ^1.13.0
+  video_player: ^2.10.0
   webview_flutter: ^4.13.0
 
 dev_dependencies:
@@ -41,3 +41,4 @@ flutter:
     - shaders/lava_shader.frag
     - shaders/bokeh_shader.frag
     - shaders/shake_shader.frag
+    - shaders/circle_shader.frag

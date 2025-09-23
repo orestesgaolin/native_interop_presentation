@@ -30,6 +30,9 @@ class MainFlutterWindow: NSWindow {
             } else {
                 result(FlutterError(code: "INVALID_ARGUMENT", message: "Expected arguments 'a' and 'b'", details: nil))
             }
+        } else if call.method == "blockMainThread" {
+            Thread.sleep(forTimeInterval: 10)
+            result("Main thread blocked for 10 seconds")
         } else {
             result(FlutterMethodNotImplemented)
         }

@@ -16,9 +16,9 @@ class SwiftInteropSlide extends FlutterDeckSlideWidget {
         configuration: FlutterDeckSlideConfiguration(
           route: '/swift-interop',
 
-          title: 'Swift Interop via ffi via C (not Obj-C)',
+          title: 'Swift Interop via ffi via C',
           header: FlutterDeckHeaderConfiguration(
-            title: 'Swift Interop via ffi via C (not Obj-C)',
+            title: 'Swift Interop via ffi via C (not Obj-C) (<2020)',
             showHeader: true,
           ),
         ),
@@ -233,7 +233,7 @@ class _SwiftBenchmarkContentState extends State<SwiftBenchmarkContent> {
   }
 
   void initializeSwiftBindings() {
-    final nativeLib = ffi.DynamicLibrary.open('calculator.dylib');
+    final nativeLib = ffi.DynamicLibrary.open('macos/calculator.dylib');
     nativeLib.providesSymbol('Calculator');
     calculator = Calculator();
     final result = calculator?.addS(1, unnamed: 1);
