@@ -7,15 +7,18 @@ environment:
   sdk: ^3.9.2
 
 dependencies:
+  ffi: ^2.1.4
   flutter:
     sdk: flutter
-  objective_c: ^8.1.0
+  # objective_c: ^8.1.0
+  objective_c: ^9.0.0-dev.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-  ffigen: ^19.1.0
+  # ffigen: ^19.1.0
+  ffigen: ^20.0.0-dev.0
 
 flutter:
   uses-material-design: true
@@ -35,6 +38,8 @@ ffigen:
       - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIApplication.h"
       - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIWindow.h"
       - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIMenu.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UILabel.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIGeometry.h"
       
   include-transitive-objc-interfaces: false
   include-transitive-objc-protocols: false
@@ -46,3 +51,6 @@ ffigen:
       - "UIWindow"
       - "UIMenu"
       - "UIAlertAction"
+      - "UIColor"
+      - "UILabel"
+      - "CGRect"
