@@ -1,0 +1,48 @@
+name: uikit
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  objective_c: ^8.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  ffigen: ^19.1.0
+
+flutter:
+  uses-material-design: true
+
+ffigen:
+  name: UIKit
+  description: Bindings for UIKit for iOS.
+  language: objc
+  output: "lib/uikit_bindings.g.dart"
+  headers:
+    entry-points:
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIKitDefines.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UICommand.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIAlertController.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIViewController.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UISpringLoadedInteractionSupporting.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIApplication.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIWindow.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIMenu.h"
+      
+  include-transitive-objc-interfaces: false
+  include-transitive-objc-protocols: false
+  exclude-all-by-default: true
+  objc-interfaces:
+    include:
+      - "UIAlertController"
+      - "UIApplication"
+      - "UIWindow"
+      - "UIMenu"
+      - "UIAlertAction"

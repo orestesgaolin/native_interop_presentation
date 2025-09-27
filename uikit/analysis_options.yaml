@@ -1,0 +1,5 @@
+include: package:flutter_lints/flutter.yaml
+# ignore .g.dart files
+analyzer:
+  exclude:
+    - lib/*.g.dart
