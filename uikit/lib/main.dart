@@ -8,6 +8,33 @@ import 'package:objective_c/objective_c.dart' as objc;
 
 import 'uikit_bindings.g.dart';
 
+// Data classes for settings
+enum SettingType { toggle, disclosure }
+
+class SettingItem {
+  final String title;
+  final SettingType type;
+  final dynamic value;
+  final Function(dynamic)? onChanged;
+
+  SettingItem({
+    required this.title,
+    required this.type,
+    required this.value,
+    this.onChanged,
+  });
+}
+
+class SettingSection {
+  final String title;
+  final List<SettingItem> items;
+
+  SettingSection({
+    required this.title,
+    required this.items,
+  });
+}
+
 void main() {
   runApp(const MainApp());
 }
@@ -104,30 +131,12 @@ class _MainAppState extends State<MainApp> {
 
       // Create main view controller
       final settingsViewController = UIViewController();
-      final mainView = UIView();
-      mainView.backgroundColor = UIColorSystemColors.getSystemBackgroundColor();
-      settingsViewController.view = mainView;
-
-      // Create navigation controller with the settings view controller
-      final navController = UINavigationController().initWithRootViewController(settingsViewController);
-
-      // Set up navigation bar
       settingsViewController.title = 'Settings'.toNSString();
 
-      // Create Done button
-      // final doneHandler = ObjCBlock_button.listener((button) {
-      //   print('Settings dismissed');
-      //   navController.dismissViewControllerAnimated(true, completion: null);
-      // });
-
-      final doneButton = UIBarButtonItem.alloc().initWithTitle$1(
-        'Done'.toNSString(),
-        // style: UIBarButtonItemStyle.UIBarButtonItemStyleDone,
-        // target: null,
-        // action: null, // Will need to set up proper target-action later
-      );
-
-      settingsViewController.navigationItem.rightBarButtonItem = doneButton;
+      // Create main container view
+      final mainView = UIView();
+      mainView.backgroundColor = UIColorSystemColors.getSystemGroupedBackgroundColor();
+      settingsViewController.view = mainView;
 
       // Create scroll view for settings content
       final scrollView = UIScrollView();
@@ -142,109 +151,66 @@ class _MainAppState extends State<MainApp> {
       // Content view inside scroll view
       final contentView = UIView();
       scrollView.addSubview(contentView);
-      UIViewGeometry(contentView).frame = createCGRect(0, 0, screenWidth, 600); // Adjust height as needed
 
-      double currentY = 20;
-      final padding = 20.0;
-      final rowHeight = 44.0;
+      // Create Done button
+      final doneButton = UIBarButtonItem.alloc().initWithTitle$1('Done'.toNSString());
+      settingsViewController.navigationItem.rightBarButtonItem = doneButton;
 
-      // Helper function to create setting rows
-      void createSettingRow(String title, String subtitle, bool isToggle, bool initialValue, Function(bool) onChanged) {
-        // Background view for the row
-        final rowView = UIView();
-        contentView.addSubview(rowView);
-        rowView.backgroundColor = UIColorSystemColors.getSecondarySystemBackgroundColor();
-        UIViewGeometry(rowView).frame = createCGRect(padding, currentY, screenWidth - (padding * 2), rowHeight);
+      // Create navigation controller
+      final navController = UINavigationController().initWithRootViewController(settingsViewController);
 
-        // Title label
-        final titleLabel = UILabel();
-        titleLabel.text = title.toNSString();
-        titleLabel.font = UIFont.systemFontOfSize(17);
-        rowView.addSubview(titleLabel);
-        UIViewGeometry(titleLabel).frame = createCGRect(15, 0, 200, rowHeight);
+      // Create settings data structure
+      final settingsData = <SettingSection>[
+        SettingSection(
+          title: 'General',
+          items: [
+            SettingItem(
+              title: 'Notifications',
+              type: SettingType.toggle,
+              value: true,
+              onChanged: (value) => print('Notifications changed: $value'),
+            ),
+            SettingItem(
+              title: 'Dark Mode',
+              type: SettingType.toggle,
+              value: false,
+              onChanged: (value) => print('Dark Mode changed: $value'),
+            ),
+            SettingItem(
+              title: 'Language',
+              type: SettingType.disclosure,
+              value: 'English',
+              onChanged: (value) => print('Language tapped'),
+            ),
+          ],
+        ),
+        SettingSection(
+          title: 'Privacy',
+          items: [
+            SettingItem(
+              title: 'Location Services',
+              type: SettingType.toggle,
+              value: true,
+              onChanged: (value) => print('Location Services changed: $value'),
+            ),
+            SettingItem(
+              title: 'Analytics',
+              type: SettingType.toggle,
+              value: false,
+              onChanged: (value) => print('Analytics changed: $value'),
+            ),
+            SettingItem(
+              title: 'Camera Access',
+              type: SettingType.toggle,
+              value: true,
+              onChanged: (value) => print('Camera Access changed: $value'),
+            ),
+          ],
+        ),
+      ];
 
-        if (isToggle) {
-          // Create UISwitch (toggle)
-          final toggle = UISwitch();
-          toggle.on$ = initialValue;
-
-          // Create callback for toggle changes
-          // final toggleHandler = ObjCBlock_ffiVoid_UISwitch.listener((switchControl) {
-          //   final newValue = switchControl.on;
-          //   print('Toggle "$title" changed to: $newValue');
-          //   onChanged(newValue);
-          // });
-
-          // Note: You'll need to set up proper target-action for the switch
-          // toggle.addTarget(target, action: #selector(toggleChanged:), for: .valueChanged)
-
-          rowView.addSubview(toggle);
-          final toggleWidth = 51.0; // Standard UISwitch width
-          UIViewGeometry(toggle).frame = createCGRect(
-            screenWidth - padding - toggleWidth - 15,
-            (rowHeight - 31) / 2, // Center vertically (31 is standard switch height)
-            toggleWidth,
-            31,
-          );
-        } else {
-          // Create detail label for non-toggle rows
-          final detailLabel = UILabel();
-          detailLabel.text = subtitle.toNSString();
-          detailLabel.textColor = UIColorSystemColors.getSecondaryLabelColor();
-          detailLabel.font = UIFont.systemFontOfSize(15);
-          detailLabel.textAlignment = NSTextAlignment.NSTextAlignmentRight;
-          rowView.addSubview(detailLabel);
-          UIViewGeometry(detailLabel).frame = createCGRect(screenWidth - 200, 0, 180, rowHeight);
-        }
-
-        currentY += rowHeight + 1; // Add 1px separator
-      }
-
-      // Create settings sections
-
-      // Section 1: General Settings
-      createSectionHeader(contentView, 'General', currentY, screenWidth, padding);
-      currentY += 30;
-
-      createSettingRow('Notifications', '', true, true, (value) {
-        print('Notifications setting changed: $value');
-        // Handle notifications setting change
-      });
-
-      createSettingRow('Dark Mode', '', true, false, (value) {
-        print('Dark Mode setting changed: $value');
-        // Handle dark mode setting change
-      });
-
-      createSettingRow('Language', 'English', false, false, (value) {
-        print('Language tapped');
-        // Handle language selection
-      });
-
-      // Add some spacing
-      currentY += 20;
-
-      // Section 2: Privacy Settings
-      createSectionHeader(contentView, 'Privacy', currentY, screenWidth, padding);
-      currentY += 30;
-
-      createSettingRow('Location Services', '', true, true, (value) {
-        print('Location Services setting changed: $value');
-        // Handle location services setting change
-      });
-
-      createSettingRow('Analytics', '', true, false, (value) {
-        print('Analytics setting changed: $value');
-        // Handle analytics setting change
-      });
-
-      createSettingRow('Camera Access', '', true, true, (value) {
-        print('Camera Access setting changed: $value');
-        // Handle camera access setting change
-      });
-
-      // Update scroll view content size
-      scrollView.contentSize$1 = createCGSize(screenWidth, currentY + 50);
+      // Create settings UI manually with table-like appearance
+      _createSettingsUI(contentView, settingsData, screenWidth);
 
       // Present the navigation controller
       UIApplication.getSharedApplication().keyWindow?.rootViewController?.presentViewController(
@@ -258,13 +224,99 @@ class _MainAppState extends State<MainApp> {
     }
   }
 
-  void createSectionHeader(UIView parentView, String title, double y, double screenWidth, double padding) {
-    final headerLabel = UILabel();
-    headerLabel.text = title.toNSString();
-    headerLabel.font = UIFont.systemFontOfSize(13);
-    headerLabel.textColor = UIColorSystemColors.getSecondaryLabelColor();
-    parentView.addSubview(headerLabel);
-    UIViewGeometry(headerLabel).frame = createCGRect(padding, y, screenWidth - (padding * 2), 20);
+  void _createSettingsUI(UIView contentView, List<SettingSection> settingsData, double screenWidth) {
+    double currentY = 20;
+
+    for (final section in settingsData) {
+      // Create section header
+      final headerLabel = UILabel();
+      headerLabel.text = section.title.toNSString();
+      headerLabel.font = UIFont.systemFontOfSize(13);
+      headerLabel.textColor = UIColorSystemColors.getSecondaryLabelColor();
+      contentView.addSubview(headerLabel);
+      UIViewGeometry(headerLabel).frame = createCGRect(16, currentY, screenWidth - 32, 20);
+
+      currentY += 30;
+
+      // Create a background view for the section
+      final sectionBackgroundView = UIView();
+      sectionBackgroundView.backgroundColor = UIColorSystemColors.getSecondarySystemBackgroundColor();
+      contentView.addSubview(sectionBackgroundView);
+
+      final sectionHeight = section.items.length * 44.0;
+      UIViewGeometry(sectionBackgroundView).frame = createCGRect(0, currentY, screenWidth, sectionHeight);
+
+      // Create cells for each item in the section
+      double itemY = 0;
+      for (final item in section.items) {
+        final cellView = _createSettingsCell(item, screenWidth);
+        sectionBackgroundView.addSubview(cellView);
+        UIViewGeometry(cellView).frame = createCGRect(0, itemY, screenWidth, 44);
+        itemY += 44;
+      }
+
+      currentY += sectionHeight + 30; // Add spacing between sections
+    }
+
+    // Update content view size
+    UIViewGeometry(contentView).frame = createCGRect(0, 0, screenWidth, currentY);
+  }
+
+  UIView _createSettingsCell(SettingItem item, double width) {
+    final cellView = UIView();
+
+    // Add separator line at bottom
+    final separatorView = UIView();
+    separatorView.backgroundColor = UIColorSystemColors.getSeparatorColor();
+    cellView.addSubview(separatorView);
+    UIViewGeometry(separatorView).frame = createCGRect(16, 43, width - 16, 1);
+
+    // Title label
+    final titleLabel = UILabel();
+    titleLabel.text = item.title.toNSString();
+    titleLabel.font = UIFont.systemFontOfSize(17);
+    cellView.addSubview(titleLabel);
+    UIViewGeometry(titleLabel).frame = createCGRect(16, 0, width - 100, 44);
+
+    if (item.type == SettingType.toggle) {
+      // Create switch
+      final switchControl = UISwitch();
+      switchControl.on$ = item.value as bool;
+      
+      cellView.addSubview(switchControl);
+
+      final switchWidth = 51.0;
+      UIViewGeometry(switchControl).frame = createCGRect(
+        width - switchWidth - 16,
+        (44 - 31) / 2, // Center vertically (31 is UISwitch height)
+        switchWidth,
+        31,
+      );
+
+      // Note: In a complete implementation, you'd set up target-action pattern:
+      // switchControl.addTarget(target, action: selector, for: .valueChanged)
+      // The callback would call: item.onChanged?.call(switchControl.on)
+    } else {
+      // Create detail label for disclosure indicator rows
+      final detailLabel = UILabel();
+      detailLabel.text = (item.value as String).toNSString();
+      detailLabel.textColor = UIColorSystemColors.getSecondaryLabelColor();
+      detailLabel.font = UIFont.systemFontOfSize(17);
+      detailLabel.textAlignment = NSTextAlignment.NSTextAlignmentRight;
+      cellView.addSubview(detailLabel);
+      UIViewGeometry(detailLabel).frame = createCGRect(width - 200, 0, 165, 44);
+
+      // Add disclosure indicator (>)
+      final disclosureLabel = UILabel();
+      disclosureLabel.text = '>'.toNSString();
+      disclosureLabel.textColor = UIColorSystemColors.getSecondaryLabelColor();
+      disclosureLabel.font = UIFont.systemFontOfSize(17);
+      disclosureLabel.textAlignment = NSTextAlignment.NSTextAlignmentCenter;
+      cellView.addSubview(disclosureLabel);
+      UIViewGeometry(disclosureLabel).frame = createCGRect(width - 30, 0, 20, 44);
+    }
+
+    return cellView;
   }
 
   @override
