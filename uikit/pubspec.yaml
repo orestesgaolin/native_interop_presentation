@@ -30,27 +30,72 @@ ffigen:
   output: "lib/uikit_bindings.g.dart"
   headers:
     entry-points:
-      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIKitDefines.h"
-      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UICommand.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/NSToolbar+UIKitAdditions.h"
       - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIAlertController.h"
-      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIViewController.h"
-      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UISpringLoadedInteractionSupporting.h"
       - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIApplication.h"
-      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIWindow.h"
-      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIMenu.h"
-      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UILabel.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIBarButtonItem.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIBarButtonItemAppearance.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIBarButtonItemGroup.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIColor.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UICommand.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIFont.h"
       - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIGeometry.h"
-      
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIInterface.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIKitDefines.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UILabel.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIMenu.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UINavigationController.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UINavigationItem.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIScrollView.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UISpringLoadedInteractionSupporting.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UISwitch.h"
+      # - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIResponder.h"
+      # - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIView.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIViewController.h"
+      - "/Users/dominik/Projects/_personal/plugins_presentation/uikit/Headers/UIWindow.h"
   include-transitive-objc-interfaces: false
   include-transitive-objc-protocols: false
   exclude-all-by-default: true
+ 
+  objc-protocols:
+    member-filter:
+      UI.*:  # Matches all protocols starting with UI.
+        exclude:
+          - initWithFrame.*  # Remove all initWithFrame methods from these protocols.
+    # exclude:
+    #   - "NSAnimatablePropertyContainer"
+    #   - "_UIKit_NSAnimatablePropertyContainer"
   objc-interfaces:
+    # member-filter:
+    #   MyInterface:
+    #     include:
+    #       - "someMethod:withArg:"
+    #     # Since MyInterface has an include rule, all other methods
+    #     # are excluded by default.
+    exclude:
+      - "UIResponder"
+      # - "UIWindow"
     include:
+      - "UIAlertAction"
       - "UIAlertController"
       - "UIApplication"
-      - "UIWindow"
-      - "UIMenu"
-      - "UIAlertAction"
+      - "UIBarButtonItem"
+      - "UIBarButtonItemAppearance"
+      - "UIBarButtonItemGroup"
+      - "UIBarButtonItemStyle"
+      - "UIBarButtonSystemItem"
       - "UIColor"
+      - "UIFont"
+      - "UIImage"
       - "UILabel"
-      - "CGRect"
+      - "UIMenu"
+      - "UINavigationBarAppearance"
+      - "UINavigationController"
+      - "UINavigationItem"
+      - "UIScrollView"
+      - "UISearchTextField"
+      - "UISwitch"
+      - "UITitlebar"
+      - "UIViewController"
+      - "UIWindow"
+

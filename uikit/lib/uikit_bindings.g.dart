@@ -13,12 +13,6 @@ external instancetype _UIKit_protocolTrampoline_xr62hr(
   ffi.Pointer<objc.ObjCObject> arg1,
 );
 
-@ffi.Native<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>)>()
-external ffi.Pointer<objc.ObjCObject> _UIKit_protocolTrampoline_1mbt9g9(
-  ffi.Pointer<objc.ObjCObject> target,
-  ffi.Pointer<ffi.Void> arg0,
-);
-
 @ffi.Native<ffi.Bool Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>)>()
 external bool _UIKit_protocolTrampoline_e3qsqz(
   ffi.Pointer<objc.ObjCObject> target,
@@ -48,6 +42,84 @@ external void _UIKit_protocolTrampoline_18v1jvf(
   ffi.Pointer<objc.ObjCObject> target,
   ffi.Pointer<ffi.Void> arg0,
   ffi.Pointer<objc.ObjCObject> arg1,
+);
+
+@ffi.Native<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>)>()
+external ffi.Pointer<objc.ObjCObject> _UIKit_protocolTrampoline_1mbt9g9(
+  ffi.Pointer<objc.ObjCObject> target,
+  ffi.Pointer<ffi.Void> arg0,
+);
+
+@ffi.Native<
+  ffi.Pointer<objc.ObjCObject> Function(
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<ffi.Void>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCObject>,
+  )
+>()
+external ffi.Pointer<objc.ObjCObject> _UIKit_protocolTrampoline_zi5eed(
+  ffi.Pointer<objc.ObjCObject> target,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCObject> arg2,
+);
+
+@ffi.Native<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)>()
+external int _UIKit_protocolTrampoline_1ldqghh(
+  ffi.Pointer<objc.ObjCObject> target,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+);
+
+@ffi.Native<ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)>(isLeaf: true)
+external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapListenerBlock_pfv6jd(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+);
+
+@ffi.Native<
+  ffi.Pointer<objc.ObjCBlockImpl> Function(
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.DOBJC_Context>,
+  )
+>(isLeaf: true)
+external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapBlockingBlock_pfv6jd(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
+  ffi.Pointer<objc.DOBJC_Context> context,
+);
+
+@ffi.Native<
+  ffi.Pointer<objc.ObjCObject> Function(
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<ffi.Void>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCBlockImpl>,
+  )
+>()
+external ffi.Pointer<objc.ObjCObject> _UIKit_protocolTrampoline_1q0i84(
+  ffi.Pointer<objc.ObjCObject> target,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCBlockImpl> arg2,
+);
+
+@ffi.Native<
+  instancetype Function(
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<ffi.Void>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+  )
+>()
+external instancetype _UIKit_protocolTrampoline_10z9f5k(
+  ffi.Pointer<objc.ObjCObject> target,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCObject> arg2,
+  ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
 );
 
 @ffi.Native<ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)>(isLeaf: true)
@@ -86,10 +158,48 @@ external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapBlockingBlock_1s56lr9(
   ffi.Pointer<objc.DOBJC_Context> context,
 );
 
+@ffi.Native<objc.CGPoint Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>)>()
+external objc.CGPoint _UIKit_protocolTrampoline_7ohnx8(
+  ffi.Pointer<objc.ObjCObject> target,
+  ffi.Pointer<ffi.Void> arg0,
+);
+
+@ffi.Native<ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)>(isLeaf: true)
+external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapListenerBlock_1bktu2(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+);
+
+@ffi.Native<
+  ffi.Pointer<objc.ObjCBlockImpl> Function(
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.DOBJC_Context>,
+  )
+>(isLeaf: true)
+external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapBlockingBlock_1bktu2(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
+  ffi.Pointer<objc.DOBJC_Context> context,
+);
+
+@ffi.Native<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>, objc.CGPoint)>()
+external void _UIKit_protocolTrampoline_1bktu2(
+  ffi.Pointer<objc.ObjCObject> target,
+  ffi.Pointer<ffi.Void> arg0,
+  objc.CGPoint arg1,
+);
+
 @ffi.Native<objc.CGSize Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>)>()
 external objc.CGSize _UIKit_protocolTrampoline_1j20mp(
   ffi.Pointer<objc.ObjCObject> target,
   ffi.Pointer<ffi.Void> arg0,
+);
+
+@ffi.Native<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>, objc.CGRect)>()
+external ffi.Pointer<objc.ObjCObject> _UIKit_protocolTrampoline_12thpau(
+  ffi.Pointer<objc.ObjCObject> target,
+  ffi.Pointer<ffi.Void> arg0,
+  objc.CGRect arg1,
 );
 
 @ffi.Native<
@@ -194,109 +304,6 @@ external bool _UIKit_protocolTrampoline_3su7tt(
   ffi.Pointer<objc.ObjCObject> arg1,
 );
 
-@ffi.Native<
-  ffi.Pointer<objc.ObjCObject> Function(
-    ffi.Pointer<objc.ObjCObject>,
-    ffi.Pointer<ffi.Void>,
-    ffi.Pointer<objc.ObjCObject>,
-    ffi.Pointer<objc.ObjCObject>,
-  )
->()
-external ffi.Pointer<objc.ObjCObject> _UIKit_protocolTrampoline_zi5eed(
-  ffi.Pointer<objc.ObjCObject> target,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCObject> arg2,
-);
-
-@ffi.Native<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)>()
-external int _UIKit_protocolTrampoline_1ldqghh(
-  ffi.Pointer<objc.ObjCObject> target,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-);
-
-@ffi.Native<ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)>(isLeaf: true)
-external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapListenerBlock_pfv6jd(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-);
-
-@ffi.Native<
-  ffi.Pointer<objc.ObjCBlockImpl> Function(
-    ffi.Pointer<objc.ObjCBlockImpl>,
-    ffi.Pointer<objc.ObjCBlockImpl>,
-    ffi.Pointer<objc.DOBJC_Context>,
-  )
->(isLeaf: true)
-external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapBlockingBlock_pfv6jd(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
-  ffi.Pointer<objc.DOBJC_Context> context,
-);
-
-@ffi.Native<
-  ffi.Pointer<objc.ObjCObject> Function(
-    ffi.Pointer<objc.ObjCObject>,
-    ffi.Pointer<ffi.Void>,
-    ffi.Pointer<objc.ObjCObject>,
-    ffi.Pointer<objc.ObjCBlockImpl>,
-  )
->()
-external ffi.Pointer<objc.ObjCObject> _UIKit_protocolTrampoline_1q0i84(
-  ffi.Pointer<objc.ObjCObject> target,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCBlockImpl> arg2,
-);
-
-@ffi.Native<
-  instancetype Function(
-    ffi.Pointer<objc.ObjCObject>,
-    ffi.Pointer<ffi.Void>,
-    ffi.Pointer<objc.ObjCObject>,
-    ffi.Pointer<objc.ObjCObject>,
-    ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-  )
->()
-external instancetype _UIKit_protocolTrampoline_10z9f5k(
-  ffi.Pointer<objc.ObjCObject> target,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCObject> arg2,
-  ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
-);
-
-@ffi.Native<objc.CGPoint Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>)>()
-external objc.CGPoint _UIKit_protocolTrampoline_7ohnx8(
-  ffi.Pointer<objc.ObjCObject> target,
-  ffi.Pointer<ffi.Void> arg0,
-);
-
-@ffi.Native<ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)>(isLeaf: true)
-external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapListenerBlock_1bktu2(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-);
-
-@ffi.Native<
-  ffi.Pointer<objc.ObjCBlockImpl> Function(
-    ffi.Pointer<objc.ObjCBlockImpl>,
-    ffi.Pointer<objc.ObjCBlockImpl>,
-    ffi.Pointer<objc.DOBJC_Context>,
-  )
->(isLeaf: true)
-external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapBlockingBlock_1bktu2(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
-  ffi.Pointer<objc.DOBJC_Context> context,
-);
-
-@ffi.Native<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>, objc.CGPoint)>()
-external void _UIKit_protocolTrampoline_1bktu2(
-  ffi.Pointer<objc.ObjCObject> target,
-  ffi.Pointer<ffi.Void> arg0,
-  objc.CGPoint arg1,
-);
-
 @ffi.Native<objc.CGRect Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>)>()
 external objc.CGRect _UIKit_protocolTrampoline_1c3uc0w(
   ffi.Pointer<objc.ObjCObject> target,
@@ -360,13 +367,6 @@ external objc.CGRect _UIKit_protocolTrampoline_1sh7l9z(
   ffi.Pointer<objc.ObjCObject> arg2,
 );
 
-@ffi.Native<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>, objc.CGRect)>()
-external ffi.Pointer<objc.ObjCObject> _UIKit_protocolTrampoline_12thpau(
-  ffi.Pointer<objc.ObjCObject> target,
-  ffi.Pointer<ffi.Void> arg0,
-  objc.CGRect arg1,
-);
-
 @ffi.Native<ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)>(isLeaf: true)
 external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapListenerBlock_qvcerx(
   ffi.Pointer<objc.ObjCBlockImpl> block,
@@ -418,8 +418,15 @@ external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapBlockingBlock_1l4hxwm(
   ffi.Pointer<objc.DOBJC_Context> context,
 );
 
+@ffi.Native<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCBlockImpl>)>()
+external void _UIKit_protocolTrampoline_1l4hxwm(
+  ffi.Pointer<objc.ObjCObject> target,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCBlockImpl> arg1,
+);
+
 @ffi.Native<ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)>(isLeaf: true)
-external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapListenerBlock_f167m6(
+external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapListenerBlock_1cxqo1i(
   ffi.Pointer<objc.ObjCBlockImpl> block,
 );
 
@@ -430,17 +437,10 @@ external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapListenerBlock_f167m6(
     ffi.Pointer<objc.DOBJC_Context>,
   )
 >(isLeaf: true)
-external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapBlockingBlock_f167m6(
+external ffi.Pointer<objc.ObjCBlockImpl> _UIKit_wrapBlockingBlock_1cxqo1i(
   ffi.Pointer<objc.ObjCBlockImpl> block,
   ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
   ffi.Pointer<objc.DOBJC_Context> context,
-);
-
-@ffi.Native<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCBlockImpl>)>()
-external void _UIKit_protocolTrampoline_1l4hxwm(
-  ffi.Pointer<objc.ObjCObject> target,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCBlockImpl> arg1,
 );
 
 @ffi.Native<ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)>(isLeaf: true)
@@ -1319,6 +1319,38 @@ class NSUserActivity extends objc.NSObject {
     : this._(other, retain: retain, release: release);
 }
 
+enum UISceneActivationState {
+  UISceneActivationStateUnattached(-1),
+  UISceneActivationStateForegroundActive(0),
+  UISceneActivationStateForegroundInactive(1),
+  UISceneActivationStateBackground(2);
+
+  final int value;
+  const UISceneActivationState(this.value);
+
+  static UISceneActivationState fromValue(int value) => switch (value) {
+    -1 => UISceneActivationStateUnattached,
+    0 => UISceneActivationStateForegroundActive,
+    1 => UISceneActivationStateForegroundInactive,
+    2 => UISceneActivationStateBackground,
+    _ => throw ArgumentError('Unknown value for UISceneActivationState: $value'),
+  };
+}
+
+final class CGContext extends ffi.Opaque {}
+
+final class CGColor extends ffi.Opaque {}
+
+final class CGColorSpace extends ffi.Opaque {}
+
+final class CGImage extends ffi.Opaque {}
+
+final class CGPath extends ffi.Opaque {}
+
+final class CGLayer extends ffi.Opaque {}
+
+final class __CGEvent extends ffi.Opaque {}
+
 enum UIMenuElementState {
   UIMenuElementStateOff(0),
   UIMenuElementStateOn(1),
@@ -1381,10 +1413,8 @@ final _objc_msgSend_xtuoz7 = objc.msgSendPointer
     .asFunction<
       void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>)
     >();
+late final _class_UIImage = objc.getClass("UIImage");
 
-/// WARNING: UIImage is a stub. To generate bindings for this class, include
-/// UIImage in your config's objc-interfaces list.
-///
 /// UIImage
 class UIImage extends objc.ObjCObjectBase {
   UIImage._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
@@ -1396,7 +1426,14 @@ class UIImage extends objc.ObjCObjectBase {
   /// Constructs a [UIImage] that wraps the given raw object pointer.
   UIImage.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
     : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UIImage].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIImage);
+  }
 }
+
+extension UIImage$Methods on UIImage {}
 
 late final _sel_image = objc.registerName("image");
 typedef instancetype = ffi.Pointer<objc.ObjCObject>;
@@ -1564,90 +1601,6 @@ final _objc_msgSend_1cwp428 = objc.msgSendPointer
       )
     >();
 late final _sel_alloc = objc.registerName("alloc");
-late final _sel_self = objc.registerName("self");
-instancetype _ObjCBlock_instancetype_ffiVoid_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => block.ref.target
-    .cast<ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0)>>()
-    .asFunction<instancetype Function(ffi.Pointer<ffi.Void>)>()(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_fnPtrCallable =
-    ffi.Pointer.fromFunction<instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>(
-      _ObjCBlock_instancetype_ffiVoid_fnPtrTrampoline,
-    ).cast();
-instancetype _ObjCBlock_instancetype_ffiVoid_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => (objc.getBlockClosure(block) as instancetype Function(ffi.Pointer<ffi.Void>))(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_closureCallable =
-    ffi.Pointer.fromFunction<instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>(
-      _ObjCBlock_instancetype_ffiVoid_closureTrampoline,
-    ).cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>`.
-abstract final class ObjCBlock_instancetype_ffiVoid {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0)>> ptr,
-  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
-    objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> fromFunction(
-    Dartinstancetype Function(ffi.Pointer<ffi.Void>) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
-    objc.newClosureBlock(
-      _ObjCBlock_instancetype_ffiVoid_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0) => fn(arg0).ref.retainAndAutorelease(),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>`.
-extension ObjCBlock_instancetype_ffiVoid_CallExtension
-    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> {
-  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0) => objc.ObjCObjectBase(
-    ref.pointer.ref.invoke
-        .cast<
-          ffi.NativeFunction<instancetype Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<ffi.Void> arg0)>
-        >()
-        .asFunction<instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>()(ref.pointer, arg0),
-    retain: true,
-    release: true,
-  );
-}
-
-late final _sel_retain = objc.registerName("retain");
-late final _sel_autorelease = objc.registerName("autorelease");
 late final _sel_supportsSecureCoding = objc.registerName("supportsSecureCoding");
 final _objc_msgSend_91o635 = objc.msgSendPointer
     .cast<ffi.NativeFunction<ffi.Bool Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
@@ -2029,24 +1982,6 @@ extension UIMenuElement$Methods on UIMenuElement {
     return UIMenuElement.castFromPointer(_ret, retain: false, release: true);
   }
 
-  /// self
-  UIMenuElement self$1() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_self);
-    return UIMenuElement.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// retain
-  UIMenuElement retain() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_retain);
-    return UIMenuElement.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// autorelease
-  UIMenuElement autorelease() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_autorelease);
-    return UIMenuElement.castFromPointer(_ret, retain: true, release: true);
-  }
-
   /// encodeWithCoder:
   void encodeWithCoder(objc.NSCoder coder) {
     _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
@@ -2290,24 +2225,6 @@ extension UIMenu$Methods on UIMenu {
     final _ret = _objc_msgSend_1sotr3r(this.ref.pointer, _sel_menuByReplacingChildren_, newChildren.ref.pointer);
     return UIMenu.castFromPointer(_ret, retain: true, release: true);
   }
-
-  /// self
-  UIMenu self$1() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_self);
-    return UIMenu.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// retain
-  UIMenu retain() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_retain);
-    return UIMenu.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// autorelease
-  UIMenu autorelease() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_autorelease);
-    return UIMenu.castFromPointer(_ret, retain: true, release: true);
-  }
 }
 
 enum UIKeyModifierFlags {
@@ -2349,20 +2266,6 @@ class UICommand extends UIMenuElement {
   UICommand.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
     : this._(other, retain: retain, release: release);
 }
-
-final class CGContext extends ffi.Opaque {}
-
-final class CGColor extends ffi.Opaque {}
-
-final class CGColorSpace extends ffi.Opaque {}
-
-final class CGImage extends ffi.Opaque {}
-
-final class CGPath extends ffi.Opaque {}
-
-final class CGLayer extends ffi.Opaque {}
-
-final class __CGEvent extends ffi.Opaque {}
 
 enum UIEventType {
   UIEventTypeTouches(0),
@@ -3417,9 +3320,11 @@ late final _class_UIWindow = objc.getClass("UIWindow");
 /// UIWindowScene in your config's objc-interfaces list.
 ///
 /// UIWindowScene
-class UIWindowScene extends objc.ObjCObjectBase {
+class UIWindowScene extends UIScene {
   UIWindowScene._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super(pointer, retain: retain, release: release);
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIWindowScene', iOS: (false, (13, 0, 0)));
+  }
 
   /// Constructs a [UIWindowScene] that points to the same underlying object as [other].
   UIWindowScene.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
@@ -3745,14 +3650,3851 @@ final _objc_msgSend_14iqu8t = objc.msgSendPointer
       >
     >()
     .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, bool, bool)>();
+late final _class_UIBarItem = objc.getClass("UIBarItem");
+late final _sel_isEnabled = objc.registerName("isEnabled");
+late final _sel_setEnabled_ = objc.registerName("setEnabled:");
+late final _sel_setTitle_ = objc.registerName("setTitle:");
+late final _sel_setImage_ = objc.registerName("setImage:");
+late final _sel_landscapeImagePhone = objc.registerName("landscapeImagePhone");
+late final _sel_setLandscapeImagePhone_ = objc.registerName("setLandscapeImagePhone:");
+late final _sel_largeContentSizeImage = objc.registerName("largeContentSizeImage");
+late final _sel_setLargeContentSizeImage_ = objc.registerName("setLargeContentSizeImage:");
 
-/// WARNING: UIBarButtonItem is a stub. To generate bindings for this class, include
-/// UIBarButtonItem in your config's objc-interfaces list.
+final class UIEdgeInsets extends ffi.Struct {
+  @ffi.Double()
+  external double top;
+
+  @ffi.Double()
+  external double left;
+
+  @ffi.Double()
+  external double bottom;
+
+  @ffi.Double()
+  external double right;
+}
+
+late final _sel_imageInsets = objc.registerName("imageInsets");
+final _objc_msgSend_ct4cu5 = objc.msgSendPointer
+    .cast<ffi.NativeFunction<UIEdgeInsets Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<UIEdgeInsets Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+final _objc_msgSend_ct4cu5Stret = objc.msgSendStretPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(ffi.Pointer<UIEdgeInsets>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)
+      >
+    >()
+    .asFunction<
+      void Function(ffi.Pointer<UIEdgeInsets>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)
+    >();
+late final _sel_setImageInsets_ = objc.registerName("setImageInsets:");
+final _objc_msgSend_1g8fos5 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, UIEdgeInsets)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, UIEdgeInsets)>();
+late final _sel_landscapeImagePhoneInsets = objc.registerName("landscapeImagePhoneInsets");
+late final _sel_setLandscapeImagePhoneInsets_ = objc.registerName("setLandscapeImagePhoneInsets:");
+late final _sel_largeContentSizeImageInsets = objc.registerName("largeContentSizeImageInsets");
+late final _sel_setLargeContentSizeImageInsets_ = objc.registerName("setLargeContentSizeImageInsets:");
+late final _sel_tag = objc.registerName("tag");
+final _objc_msgSend_1hz7y9r = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setTag_ = objc.registerName("setTag:");
+final _objc_msgSend_4sp4xj = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+
+enum UIControlState {
+  UIControlStateNormal(0),
+  UIControlStateHighlighted(1),
+  UIControlStateDisabled(2),
+  UIControlStateSelected(4),
+  UIControlStateFocused(8),
+  UIControlStateApplication(16711680),
+  UIControlStateReserved(4278190080);
+
+  final int value;
+  const UIControlState(this.value);
+
+  static UIControlState fromValue(int value) => switch (value) {
+    0 => UIControlStateNormal,
+    1 => UIControlStateHighlighted,
+    2 => UIControlStateDisabled,
+    4 => UIControlStateSelected,
+    8 => UIControlStateFocused,
+    16711680 => UIControlStateApplication,
+    4278190080 => UIControlStateReserved,
+    _ => throw ArgumentError('Unknown value for UIControlState: $value'),
+  };
+}
+
+late final _sel_setTitleTextAttributes_forState_ = objc.registerName("setTitleTextAttributes:forState:");
+final _objc_msgSend_dldayz = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.UnsignedLong,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>, int)
+    >();
+late final _sel_titleTextAttributesForState_ = objc.registerName("titleTextAttributesForState:");
+final _objc_msgSend_1g2zxsx = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)
+    >();
+late final _sel_appearance = objc.registerName("appearance");
+instancetype _ObjCBlock_instancetype_ffiVoid_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+) => block.ref.target
+    .cast<ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0)>>()
+    .asFunction<instancetype Function(ffi.Pointer<ffi.Void>)>()(arg0);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_fnPtrCallable =
+    ffi.Pointer.fromFunction<instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>(
+      _ObjCBlock_instancetype_ffiVoid_fnPtrTrampoline,
+    ).cast();
+instancetype _ObjCBlock_instancetype_ffiVoid_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+) => (objc.getBlockClosure(block) as instancetype Function(ffi.Pointer<ffi.Void>))(arg0);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_closureCallable =
+    ffi.Pointer.fromFunction<instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>(
+      _ObjCBlock_instancetype_ffiVoid_closureTrampoline,
+    ).cast();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>`.
+abstract final class ObjCBlock_instancetype_ffiVoid {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> castFromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
+    pointer,
+    retain: retain,
+    release: release,
+  );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> fromFunctionPointer(
+    ffi.Pointer<ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0)>> ptr,
+  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
+    objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> fromFunction(
+    Dartinstancetype Function(ffi.Pointer<ffi.Void>) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
+    objc.newClosureBlock(
+      _ObjCBlock_instancetype_ffiVoid_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0) => fn(arg0).ref.retainAndAutorelease(),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>`.
+extension ObjCBlock_instancetype_ffiVoid_CallExtension
+    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> {
+  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0) => objc.ObjCObjectBase(
+    ref.pointer.ref.invoke
+        .cast<
+          ffi.NativeFunction<instancetype Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<ffi.Void> arg0)>
+        >()
+        .asFunction<instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>()(ref.pointer, arg0),
+    retain: true,
+    release: true,
+  );
+}
+
+late final _sel_appearanceWhenContainedIn_ = objc.registerName("appearanceWhenContainedIn:");
+instancetype _ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) => block.ref.target
+    .cast<ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>()
+    .asFunction<instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)>()(arg0, arg1);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_fnPtrTrampoline)
+        .cast();
+instancetype _ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) => (objc.getBlockClosure(block) as instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>))(
+  arg0,
+  arg1,
+);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_closureCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>`.
+abstract final class ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>
+  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
+      objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>(
+        pointer,
+        retain: retain,
+        release: release,
+      );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>
+    >
+    ptr,
+  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>(
+    objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>
+  fromFunction(
+    Dartinstancetype Function(ffi.Pointer<ffi.Void>, UIAppearanceContainer?) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>(
+    objc.newClosureBlock(
+      _ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1) => fn(
+        arg0,
+        arg1.address == 0 ? null : UIAppearanceContainer.castFromPointer(arg1, retain: true, release: true),
+      ).ref.retainAndAutorelease(),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>`.
+extension ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_CallExtension
+    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)> {
+  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0, UIAppearanceContainer? arg1) => objc.ObjCObjectBase(
+    ref.pointer.ref.invoke
+        .cast<
+          ffi.NativeFunction<
+            instancetype Function(
+              ffi.Pointer<objc.ObjCBlockImpl> block,
+              ffi.Pointer<ffi.Void> arg0,
+              ffi.Pointer<objc.ObjCObject> arg1,
+            )
+          >
+        >()
+        .asFunction<
+          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >()(ref.pointer, arg0, arg1?.ref.pointer ?? ffi.nullptr),
+    retain: true,
+    release: true,
+  );
+}
+
+late final _sel_appearanceWhenContainedInInstancesOfClasses_ = objc.registerName(
+  "appearanceWhenContainedInInstancesOfClasses:",
+);
+instancetype _ObjCBlock_instancetype_ffiVoid_NSArray_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) => block.ref.target
+    .cast<ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>()
+    .asFunction<instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)>()(arg0, arg1);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_NSArray_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_instancetype_ffiVoid_NSArray_fnPtrTrampoline)
+        .cast();
+instancetype _ObjCBlock_instancetype_ffiVoid_NSArray_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) => (objc.getBlockClosure(block) as instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>))(
+  arg0,
+  arg1,
+);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_NSArray_closureCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_instancetype_ffiVoid_NSArray_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)>`.
+abstract final class ObjCBlock_instancetype_ffiVoid_NSArray {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)> castFromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)>(
+    pointer,
+    retain: retain,
+    release: release,
+  );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)> fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>
+    >
+    ptr,
+  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)>(
+    objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_NSArray_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)> fromFunction(
+    Dartinstancetype Function(ffi.Pointer<ffi.Void>, objc.NSArray) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)>(
+    objc.newClosureBlock(
+      _ObjCBlock_instancetype_ffiVoid_NSArray_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1) =>
+          fn(arg0, objc.NSArray.castFromPointer(arg1, retain: true, release: true)).ref.retainAndAutorelease(),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)>`.
+extension ObjCBlock_instancetype_ffiVoid_NSArray_CallExtension
+    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)> {
+  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0, objc.NSArray arg1) => objc.ObjCObjectBase(
+    ref.pointer.ref.invoke
+        .cast<
+          ffi.NativeFunction<
+            instancetype Function(
+              ffi.Pointer<objc.ObjCBlockImpl> block,
+              ffi.Pointer<ffi.Void> arg0,
+              ffi.Pointer<objc.ObjCObject> arg1,
+            )
+          >
+        >()
+        .asFunction<
+          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >()(ref.pointer, arg0, arg1.ref.pointer),
+    retain: true,
+    release: true,
+  );
+}
+
+/// WARNING: UITraitCollection is a stub. To generate bindings for this class, include
+/// UITraitCollection in your config's objc-interfaces list.
 ///
+/// ! A trait collection encapsulates the system traits of an interface's environment.
+class UITraitCollection extends objc.NSObject implements objc.NSCopying, objc.NSSecureCoding {
+  UITraitCollection._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UITraitCollection', iOS: (false, (8, 0, 0)));
+  }
+
+  /// Constructs a [UITraitCollection] that points to the same underlying object as [other].
+  UITraitCollection.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UITraitCollection] that wraps the given raw object pointer.
+  UITraitCollection.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_appearanceForTraitCollection_ = objc.registerName("appearanceForTraitCollection:");
+instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) => block.ref.target
+    .cast<ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>()
+    .asFunction<instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)>()(arg0, arg1);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_fnPtrTrampoline)
+        .cast();
+instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) => (objc.getBlockClosure(block) as instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>))(
+  arg0,
+  arg1,
+);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_closureCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>`.
+abstract final class ObjCBlock_instancetype_ffiVoid_UITraitCollection {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>
+  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
+      objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>(
+        pointer,
+        retain: retain,
+        release: release,
+      );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>
+    >
+    ptr,
+  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>(
+    objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)> fromFunction(
+    Dartinstancetype Function(ffi.Pointer<ffi.Void>, UITraitCollection) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>(
+    objc.newClosureBlock(
+      _ObjCBlock_instancetype_ffiVoid_UITraitCollection_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1) =>
+          fn(arg0, UITraitCollection.castFromPointer(arg1, retain: true, release: true)).ref.retainAndAutorelease(),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>`.
+extension ObjCBlock_instancetype_ffiVoid_UITraitCollection_CallExtension
+    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)> {
+  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0, UITraitCollection arg1) => objc.ObjCObjectBase(
+    ref.pointer.ref.invoke
+        .cast<
+          ffi.NativeFunction<
+            instancetype Function(
+              ffi.Pointer<objc.ObjCBlockImpl> block,
+              ffi.Pointer<ffi.Void> arg0,
+              ffi.Pointer<objc.ObjCObject> arg1,
+            )
+          >
+        >()
+        .asFunction<
+          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >()(ref.pointer, arg0, arg1.ref.pointer),
+    retain: true,
+    release: true,
+  );
+}
+
+late final _sel_appearanceForTraitCollection_whenContainedIn_ = objc.registerName(
+  "appearanceForTraitCollection:whenContainedIn:",
+);
+instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCObject> arg2,
+) => block.ref.target
+    .cast<
+      ffi.NativeFunction<
+        instancetype Function(
+          ffi.Pointer<ffi.Void> arg0,
+          ffi.Pointer<objc.ObjCObject> arg1,
+          ffi.Pointer<objc.ObjCObject> arg2,
+        )
+      >
+    >()
+    .asFunction<
+      instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
+    >()(arg0, arg1, arg2);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCObject>,
+          )
+        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_fnPtrTrampoline)
+        .cast();
+instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCObject> arg2,
+) =>
+    (objc.getBlockClosure(block)
+        as instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>))(
+      arg0,
+      arg1,
+      arg2,
+    );
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_closureCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCObject>,
+          )
+        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)>`.
+abstract final class ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<
+    ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
+  >
+  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
+      objc.ObjCBlock<
+        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
+      >(pointer, retain: retain, release: release);
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<
+    ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
+  >
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<
+        instancetype Function(
+          ffi.Pointer<ffi.Void> arg0,
+          ffi.Pointer<objc.ObjCObject> arg1,
+          ffi.Pointer<objc.ObjCObject> arg2,
+        )
+      >
+    >
+    ptr,
+  ) =>
+      objc.ObjCBlock<
+        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
+      >(
+        objc.newPointerBlock(
+          _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_fnPtrCallable,
+          ptr.cast(),
+        ),
+        retain: false,
+        release: true,
+      );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<
+    ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
+  >
+  fromFunction(
+    Dartinstancetype Function(ffi.Pointer<ffi.Void>, UITraitCollection, UIAppearanceContainer?) fn, {
+    bool keepIsolateAlive = true,
+  }) =>
+      objc.ObjCBlock<
+        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
+      >(
+        objc.newClosureBlock(
+          _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_closureCallable,
+          (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1, ffi.Pointer<objc.ObjCObject> arg2) => fn(
+            arg0,
+            UITraitCollection.castFromPointer(arg1, retain: true, release: true),
+            arg2.address == 0 ? null : UIAppearanceContainer.castFromPointer(arg2, retain: true, release: true),
+          ).ref.retainAndAutorelease(),
+          keepIsolateAlive,
+        ),
+        retain: false,
+        release: true,
+      );
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)>`.
+extension ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_CallExtension
+    on
+        objc.ObjCBlock<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
+        > {
+  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0, UITraitCollection arg1, UIAppearanceContainer? arg2) =>
+      objc.ObjCObjectBase(
+        ref.pointer.ref.invoke
+            .cast<
+              ffi.NativeFunction<
+                instancetype Function(
+                  ffi.Pointer<objc.ObjCBlockImpl> block,
+                  ffi.Pointer<ffi.Void> arg0,
+                  ffi.Pointer<objc.ObjCObject> arg1,
+                  ffi.Pointer<objc.ObjCObject> arg2,
+                )
+              >
+            >()
+            .asFunction<
+              instancetype Function(
+                ffi.Pointer<objc.ObjCBlockImpl>,
+                ffi.Pointer<ffi.Void>,
+                ffi.Pointer<objc.ObjCObject>,
+                ffi.Pointer<objc.ObjCObject>,
+              )
+            >()(ref.pointer, arg0, arg1.ref.pointer, arg2?.ref.pointer ?? ffi.nullptr),
+        retain: true,
+        release: true,
+      );
+}
+
+late final _sel_appearanceForTraitCollection_whenContainedInInstancesOfClasses_ = objc.registerName(
+  "appearanceForTraitCollection:whenContainedInInstancesOfClasses:",
+);
+instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCObject> arg2,
+) => block.ref.target
+    .cast<
+      ffi.NativeFunction<
+        instancetype Function(
+          ffi.Pointer<ffi.Void> arg0,
+          ffi.Pointer<objc.ObjCObject> arg1,
+          ffi.Pointer<objc.ObjCObject> arg2,
+        )
+      >
+    >()
+    .asFunction<
+      instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
+    >()(arg0, arg1, arg2);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCObject>,
+          )
+        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_fnPtrTrampoline)
+        .cast();
+instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCObject> arg2,
+) =>
+    (objc.getBlockClosure(block)
+        as instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>))(
+      arg0,
+      arg1,
+      arg2,
+    );
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_closureCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCObject>,
+          )
+        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>`.
+abstract final class ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>
+  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
+      objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>(
+        pointer,
+        retain: retain,
+        release: release,
+      );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<
+        instancetype Function(
+          ffi.Pointer<ffi.Void> arg0,
+          ffi.Pointer<objc.ObjCObject> arg1,
+          ffi.Pointer<objc.ObjCObject> arg2,
+        )
+      >
+    >
+    ptr,
+  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>(
+    objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>
+  fromFunction(
+    Dartinstancetype Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>(
+    objc.newClosureBlock(
+      _ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1, ffi.Pointer<objc.ObjCObject> arg2) => fn(
+        arg0,
+        UITraitCollection.castFromPointer(arg1, retain: true, release: true),
+        objc.NSArray.castFromPointer(arg2, retain: true, release: true),
+      ).ref.retainAndAutorelease(),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>`.
+extension ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_CallExtension
+    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)> {
+  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0, UITraitCollection arg1, objc.NSArray arg2) => objc.ObjCObjectBase(
+    ref.pointer.ref.invoke
+        .cast<
+          ffi.NativeFunction<
+            instancetype Function(
+              ffi.Pointer<objc.ObjCBlockImpl> block,
+              ffi.Pointer<ffi.Void> arg0,
+              ffi.Pointer<objc.ObjCObject> arg1,
+              ffi.Pointer<objc.ObjCObject> arg2,
+            )
+          >
+        >()
+        .asFunction<
+          instancetype Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCObject>,
+          )
+        >()(ref.pointer, arg0, arg1.ref.pointer, arg2.ref.pointer),
+    retain: true,
+    release: true,
+  );
+}
+
+/// UIBarItem
+class UIBarItem extends objc.NSObject implements objc.NSCoding, UIAppearance {
+  UIBarItem._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIBarItem', iOS: (false, (2, 0, 0)));
+  }
+
+  /// Constructs a [UIBarItem] that points to the same underlying object as [other].
+  UIBarItem.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIBarItem] that wraps the given raw object pointer.
+  UIBarItem.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UIBarItem].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIBarItem);
+  }
+
+  /// new
+  static UIBarItem new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UIBarItem, _sel_new);
+    return UIBarItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static UIBarItem allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final _ret = _objc_msgSend_1cwp428(_class_UIBarItem, _sel_allocWithZone_, zone);
+    return UIBarItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// alloc
+  static UIBarItem alloc() {
+    final _ret = _objc_msgSend_151sglz(_class_UIBarItem, _sel_alloc);
+    return UIBarItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// appearance
+  static UIBarItem appearance() {
+    final _ret = _objc_msgSend_151sglz(_class_UIBarItem, _sel_appearance);
+    return UIBarItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// appearanceWhenContainedIn:
+  static UIBarItem appearanceWhenContainedIn(UIAppearanceContainer? ContainerClass) {
+    objc.checkOsVersionInternal('UIBarItem.appearanceWhenContainedIn:', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(
+      _class_UIBarItem,
+      _sel_appearanceWhenContainedIn_,
+      ContainerClass?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIBarItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// appearanceWhenContainedInInstancesOfClasses:
+  static UIBarItem appearanceWhenContainedInInstancesOfClasses(objc.NSArray containerTypes) {
+    objc.checkOsVersionInternal('UIBarItem.appearanceWhenContainedInInstancesOfClasses:', iOS: (false, (9, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(
+      _class_UIBarItem,
+      _sel_appearanceWhenContainedInInstancesOfClasses_,
+      containerTypes.ref.pointer,
+    );
+    return UIBarItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// appearanceForTraitCollection:
+  static UIBarItem appearanceForTraitCollection(UITraitCollection trait) {
+    objc.checkOsVersionInternal('UIBarItem.appearanceForTraitCollection:', iOS: (false, (8, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(_class_UIBarItem, _sel_appearanceForTraitCollection_, trait.ref.pointer);
+    return UIBarItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// appearanceForTraitCollection:whenContainedIn:
+  static UIBarItem appearanceForTraitCollection$1(UITraitCollection trait, {UIAppearanceContainer? whenContainedIn}) {
+    objc.checkOsVersionInternal('UIBarItem.appearanceForTraitCollection:whenContainedIn:', iOS: (false, (8, 0, 0)));
+    final _ret = _objc_msgSend_15qeuct(
+      _class_UIBarItem,
+      _sel_appearanceForTraitCollection_whenContainedIn_,
+      trait.ref.pointer,
+      whenContainedIn?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIBarItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// appearanceForTraitCollection:whenContainedInInstancesOfClasses:
+  static UIBarItem appearanceForTraitCollection$2(
+    UITraitCollection trait, {
+    required objc.NSArray whenContainedInInstancesOfClasses,
+  }) {
+    objc.checkOsVersionInternal(
+      'UIBarItem.appearanceForTraitCollection:whenContainedInInstancesOfClasses:',
+      iOS: (false, (9, 0, 0)),
+    );
+    final _ret = _objc_msgSend_15qeuct(
+      _class_UIBarItem,
+      _sel_appearanceForTraitCollection_whenContainedInInstancesOfClasses_,
+      trait.ref.pointer,
+      whenContainedInInstancesOfClasses.ref.pointer,
+    );
+    return UIBarItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Returns a new instance of UIBarItem constructed with the default `new` method.
+  factory UIBarItem() => new$();
+}
+
+extension UIBarItem$Methods on UIBarItem {
+  /// init
+  UIBarItem init() {
+    objc.checkOsVersionInternal('UIBarItem.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
+    return UIBarItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithCoder:
+  UIBarItem? initWithCoder(objc.NSCoder coder) {
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UIBarItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// isEnabled
+  bool get enabled {
+    objc.checkOsVersionInternal('UIBarItem.isEnabled', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isEnabled);
+  }
+
+  /// setEnabled:
+  set enabled(bool value) {
+    objc.checkOsVersionInternal('UIBarItem.setEnabled:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setEnabled_, value);
+  }
+
+  /// title
+  objc.NSString? get title {
+    objc.checkOsVersionInternal('UIBarItem.title', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_title);
+    return _ret.address == 0 ? null : objc.NSString.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setTitle:
+  set title(objc.NSString? value) {
+    objc.checkOsVersionInternal('UIBarItem.setTitle:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setTitle_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// image
+  UIImage? get image {
+    objc.checkOsVersionInternal('UIBarItem.image', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_image);
+    return _ret.address == 0 ? null : UIImage.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setImage:
+  set image(UIImage? value) {
+    objc.checkOsVersionInternal('UIBarItem.setImage:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setImage_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// landscapeImagePhone
+  UIImage? get landscapeImagePhone {
+    objc.checkOsVersionInternal('UIBarItem.landscapeImagePhone', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_landscapeImagePhone);
+    return _ret.address == 0 ? null : UIImage.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setLandscapeImagePhone:
+  set landscapeImagePhone(UIImage? value) {
+    objc.checkOsVersionInternal('UIBarItem.setLandscapeImagePhone:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setLandscapeImagePhone_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// largeContentSizeImage
+  UIImage? get largeContentSizeImage {
+    objc.checkOsVersionInternal('UIBarItem.largeContentSizeImage', iOS: (false, (11, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_largeContentSizeImage);
+    return _ret.address == 0 ? null : UIImage.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setLargeContentSizeImage:
+  set largeContentSizeImage(UIImage? value) {
+    objc.checkOsVersionInternal('UIBarItem.setLargeContentSizeImage:', iOS: (false, (11, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setLargeContentSizeImage_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// imageInsets
+  UIEdgeInsets get imageInsets {
+    objc.checkOsVersionInternal('UIBarItem.imageInsets', iOS: (false, (2, 0, 0)));
+    final _ptr = pkg_ffi.calloc<UIEdgeInsets>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_ct4cu5Stret(_ptr, this.ref.pointer, _sel_imageInsets)
+        : _ptr.ref = _objc_msgSend_ct4cu5(this.ref.pointer, _sel_imageInsets);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<UIEdgeInsets>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<UIEdgeInsets>(_finalizable);
+  }
+
+  /// setImageInsets:
+  set imageInsets(UIEdgeInsets value) {
+    objc.checkOsVersionInternal('UIBarItem.setImageInsets:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1g8fos5(this.ref.pointer, _sel_setImageInsets_, value);
+  }
+
+  /// landscapeImagePhoneInsets
+  UIEdgeInsets get landscapeImagePhoneInsets {
+    objc.checkOsVersionInternal('UIBarItem.landscapeImagePhoneInsets', iOS: (false, (5, 0, 0)));
+    final _ptr = pkg_ffi.calloc<UIEdgeInsets>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_ct4cu5Stret(_ptr, this.ref.pointer, _sel_landscapeImagePhoneInsets)
+        : _ptr.ref = _objc_msgSend_ct4cu5(this.ref.pointer, _sel_landscapeImagePhoneInsets);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<UIEdgeInsets>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<UIEdgeInsets>(_finalizable);
+  }
+
+  /// setLandscapeImagePhoneInsets:
+  set landscapeImagePhoneInsets(UIEdgeInsets value) {
+    objc.checkOsVersionInternal('UIBarItem.setLandscapeImagePhoneInsets:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_1g8fos5(this.ref.pointer, _sel_setLandscapeImagePhoneInsets_, value);
+  }
+
+  /// largeContentSizeImageInsets
+  UIEdgeInsets get largeContentSizeImageInsets {
+    objc.checkOsVersionInternal('UIBarItem.largeContentSizeImageInsets', iOS: (false, (11, 0, 0)));
+    final _ptr = pkg_ffi.calloc<UIEdgeInsets>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_ct4cu5Stret(_ptr, this.ref.pointer, _sel_largeContentSizeImageInsets)
+        : _ptr.ref = _objc_msgSend_ct4cu5(this.ref.pointer, _sel_largeContentSizeImageInsets);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<UIEdgeInsets>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<UIEdgeInsets>(_finalizable);
+  }
+
+  /// setLargeContentSizeImageInsets:
+  set largeContentSizeImageInsets(UIEdgeInsets value) {
+    objc.checkOsVersionInternal('UIBarItem.setLargeContentSizeImageInsets:', iOS: (false, (11, 0, 0)));
+    _objc_msgSend_1g8fos5(this.ref.pointer, _sel_setLargeContentSizeImageInsets_, value);
+  }
+
+  /// tag
+  int get tag {
+    objc.checkOsVersionInternal('UIBarItem.tag', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_1hz7y9r(this.ref.pointer, _sel_tag);
+  }
+
+  /// setTag:
+  set tag(int value) {
+    objc.checkOsVersionInternal('UIBarItem.setTag:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_4sp4xj(this.ref.pointer, _sel_setTag_, value);
+  }
+
+  /// setTitleTextAttributes:forState:
+  void setTitleTextAttributes(objc.NSDictionary? attributes, {required UIControlState forState}) {
+    objc.checkOsVersionInternal('UIBarItem.setTitleTextAttributes:forState:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_dldayz(
+      this.ref.pointer,
+      _sel_setTitleTextAttributes_forState_,
+      attributes?.ref.pointer ?? ffi.nullptr,
+      forState.value,
+    );
+  }
+
+  /// titleTextAttributesForState:
+  objc.NSDictionary? titleTextAttributesForState(UIControlState state) {
+    objc.checkOsVersionInternal('UIBarItem.titleTextAttributesForState:', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_1g2zxsx(this.ref.pointer, _sel_titleTextAttributesForState_, state.value);
+    return _ret.address == 0 ? null : objc.NSDictionary.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// encodeWithCoder:
+  void encodeWithCoder(objc.NSCoder coder) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
+  }
+}
+
+late final _class_UIBarButtonItem = objc.getClass("UIBarButtonItem");
+late final _class_UIBarButtonItemGroup = objc.getClass("UIBarButtonItemGroup");
+late final _sel_initWithBarButtonItems_representativeItem_ = objc.registerName(
+  "initWithBarButtonItems:representativeItem:",
+);
+late final _sel_barButtonItems = objc.registerName("barButtonItems");
+late final _sel_setBarButtonItems_ = objc.registerName("setBarButtonItems:");
+late final _sel_representativeItem = objc.registerName("representativeItem");
+late final _sel_setRepresentativeItem_ = objc.registerName("setRepresentativeItem:");
+late final _sel_isDisplayingRepresentativeItem = objc.registerName("isDisplayingRepresentativeItem");
+
+/// UIBarButtonItemGroup
+class UIBarButtonItemGroup extends objc.NSObject implements objc.NSCoding {
+  UIBarButtonItemGroup._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIBarButtonItemGroup', iOS: (false, (9, 0, 0)));
+  }
+
+  /// Constructs a [UIBarButtonItemGroup] that points to the same underlying object as [other].
+  UIBarButtonItemGroup.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIBarButtonItemGroup] that wraps the given raw object pointer.
+  UIBarButtonItemGroup.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UIBarButtonItemGroup].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIBarButtonItemGroup);
+  }
+
+  /// new
+  static UIBarButtonItemGroup new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UIBarButtonItemGroup, _sel_new);
+    return UIBarButtonItemGroup.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static UIBarButtonItemGroup allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final _ret = _objc_msgSend_1cwp428(_class_UIBarButtonItemGroup, _sel_allocWithZone_, zone);
+    return UIBarButtonItemGroup.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// alloc
+  static UIBarButtonItemGroup alloc() {
+    final _ret = _objc_msgSend_151sglz(_class_UIBarButtonItemGroup, _sel_alloc);
+    return UIBarButtonItemGroup.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Returns a new instance of UIBarButtonItemGroup constructed with the default `new` method.
+  factory UIBarButtonItemGroup() => new$();
+}
+
+extension UIBarButtonItemGroup$Methods on UIBarButtonItemGroup {
+  /// Create a new bar button item group with the given items. When bar button item layout is done, either the group's barButtonItems or its representativeItem is displayed (if it exists).
+  UIBarButtonItemGroup initWithBarButtonItems(objc.NSArray barButtonItems, {UIBarButtonItem? representativeItem}) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItemGroup.initWithBarButtonItems:representativeItem:',
+      iOS: (false, (9, 0, 0)),
+    );
+    final _ret = _objc_msgSend_15qeuct(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithBarButtonItems_representativeItem_,
+      barButtonItems.ref.pointer,
+      representativeItem?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIBarButtonItemGroup.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithCoder:
+  UIBarButtonItemGroup? initWithCoder(objc.NSCoder coder) {
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UIBarButtonItemGroup.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// The bar button items associated with this group. Changing these items will affect the bar displaying these items without needing to re-set the groups that are in that bar. Any UIBarButtonItems that are already in group will be removed from that group.
+  objc.NSArray get barButtonItems {
+    objc.checkOsVersionInternal('UIBarButtonItemGroup.barButtonItems', iOS: (false, (9, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_barButtonItems);
+    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// The bar button items associated with this group. Changing these items will affect the bar displaying these items without needing to re-set the groups that are in that bar. Any UIBarButtonItems that are already in group will be removed from that group.
+  set barButtonItems(objc.NSArray value) {
+    objc.checkOsVersionInternal('UIBarButtonItemGroup.setBarButtonItems:', iOS: (false, (9, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setBarButtonItems_, value.ref.pointer);
+  }
+
+  /// In order to display as many items as possible, bars that support UIBarButtonItemGroup may choose to collapse items associated with groups to the representativeItem specified by the group.
+  /// A bar will only collapse groups that have a representativeItem set, but may still choose to use an alternate presentation of these items.
+  /// A UIBarButtonItem may only be either the representativeItem or a member of the barButtonItems of a single UIBarButtonItemGroup and may only represent a single group.
+  /// If the representativeItem has an action, then that action will be invoked, otherwise the bar will present a standard UI to allow selection of the barButtonItems in the representedItem's group.
+  UIBarButtonItem? get representativeItem {
+    objc.checkOsVersionInternal('UIBarButtonItemGroup.representativeItem', iOS: (false, (9, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_representativeItem);
+    return _ret.address == 0 ? null : UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// In order to display as many items as possible, bars that support UIBarButtonItemGroup may choose to collapse items associated with groups to the representativeItem specified by the group.
+  /// A bar will only collapse groups that have a representativeItem set, but may still choose to use an alternate presentation of these items.
+  /// A UIBarButtonItem may only be either the representativeItem or a member of the barButtonItems of a single UIBarButtonItemGroup and may only represent a single group.
+  /// If the representativeItem has an action, then that action will be invoked, otherwise the bar will present a standard UI to allow selection of the barButtonItems in the representedItem's group.
+  set representativeItem(UIBarButtonItem? value) {
+    objc.checkOsVersionInternal('UIBarButtonItemGroup.setRepresentativeItem:', iOS: (false, (9, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setRepresentativeItem_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// Returns YES if the representativeItem of this group is currently being displayed, rather than its barButtonItems.
+  bool get displayingRepresentativeItem {
+    objc.checkOsVersionInternal('UIBarButtonItemGroup.isDisplayingRepresentativeItem', iOS: (false, (9, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isDisplayingRepresentativeItem);
+  }
+
+  /// init
+  UIBarButtonItemGroup init() {
+    objc.checkOsVersionInternal('UIBarButtonItemGroup.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
+    return UIBarButtonItemGroup.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// encodeWithCoder:
+  void encodeWithCoder(objc.NSCoder coder) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
+  }
+}
+
+late final _sel_buttonGroup = objc.registerName("buttonGroup");
+
+/// UIBarButtonItemGroup
+extension UIBarButtonItemGroup$1 on UIBarButtonItem {
+  /// The group that the UIBarButtonItem is currently associated with, either as a member of the barButtonItems array or as that group's representativeItem.
+  UIBarButtonItemGroup? get buttonGroup {
+    objc.checkOsVersionInternal('UIBarButtonItem.buttonGroup', iOS: (false, (9, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_buttonGroup);
+    return _ret.address == 0 ? null : UIBarButtonItemGroup.castFromPointer(_ret, retain: true, release: true);
+  }
+}
+
+enum UIBarButtonItemStyle {
+  UIBarButtonItemStylePlain(0),
+  UIBarButtonItemStyleBordered(1),
+  UIBarButtonItemStyleDone(2);
+
+  final int value;
+  const UIBarButtonItemStyle(this.value);
+
+  static UIBarButtonItemStyle fromValue(int value) => switch (value) {
+    0 => UIBarButtonItemStylePlain,
+    1 => UIBarButtonItemStyleBordered,
+    2 => UIBarButtonItemStyleDone,
+    _ => throw ArgumentError('Unknown value for UIBarButtonItemStyle: $value'),
+  };
+}
+
+late final _sel_initWithImage_style_target_action_ = objc.registerName("initWithImage:style:target:action:");
+final _objc_msgSend_13sbrg9 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Long,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        int,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_initWithImage_landscapeImagePhone_style_target_action_ = objc.registerName(
+  "initWithImage:landscapeImagePhone:style:target:action:",
+);
+final _objc_msgSend_1d97k9n = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Long,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCObject>,
+        int,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_initWithTitle_style_target_action_ = objc.registerName("initWithTitle:style:target:action:");
+
+enum UIBarButtonSystemItem {
+  UIBarButtonSystemItemDone(0),
+  UIBarButtonSystemItemCancel(1),
+  UIBarButtonSystemItemEdit(2),
+  UIBarButtonSystemItemSave(3),
+  UIBarButtonSystemItemAdd(4),
+  UIBarButtonSystemItemFlexibleSpace(5),
+  UIBarButtonSystemItemFixedSpace(6),
+  UIBarButtonSystemItemCompose(7),
+  UIBarButtonSystemItemReply(8),
+  UIBarButtonSystemItemAction(9),
+  UIBarButtonSystemItemOrganize(10),
+  UIBarButtonSystemItemBookmarks(11),
+  UIBarButtonSystemItemSearch(12),
+  UIBarButtonSystemItemRefresh(13),
+  UIBarButtonSystemItemStop(14),
+  UIBarButtonSystemItemCamera(15),
+  UIBarButtonSystemItemTrash(16),
+  UIBarButtonSystemItemPlay(17),
+  UIBarButtonSystemItemPause(18),
+  UIBarButtonSystemItemRewind(19),
+  UIBarButtonSystemItemFastForward(20),
+  UIBarButtonSystemItemUndo(21),
+  UIBarButtonSystemItemRedo(22),
+  UIBarButtonSystemItemPageCurl(23),
+  UIBarButtonSystemItemClose(24);
+
+  final int value;
+  const UIBarButtonSystemItem(this.value);
+
+  static UIBarButtonSystemItem fromValue(int value) => switch (value) {
+    0 => UIBarButtonSystemItemDone,
+    1 => UIBarButtonSystemItemCancel,
+    2 => UIBarButtonSystemItemEdit,
+    3 => UIBarButtonSystemItemSave,
+    4 => UIBarButtonSystemItemAdd,
+    5 => UIBarButtonSystemItemFlexibleSpace,
+    6 => UIBarButtonSystemItemFixedSpace,
+    7 => UIBarButtonSystemItemCompose,
+    8 => UIBarButtonSystemItemReply,
+    9 => UIBarButtonSystemItemAction,
+    10 => UIBarButtonSystemItemOrganize,
+    11 => UIBarButtonSystemItemBookmarks,
+    12 => UIBarButtonSystemItemSearch,
+    13 => UIBarButtonSystemItemRefresh,
+    14 => UIBarButtonSystemItemStop,
+    15 => UIBarButtonSystemItemCamera,
+    16 => UIBarButtonSystemItemTrash,
+    17 => UIBarButtonSystemItemPlay,
+    18 => UIBarButtonSystemItemPause,
+    19 => UIBarButtonSystemItemRewind,
+    20 => UIBarButtonSystemItemFastForward,
+    21 => UIBarButtonSystemItemUndo,
+    22 => UIBarButtonSystemItemRedo,
+    23 => UIBarButtonSystemItemPageCurl,
+    24 => UIBarButtonSystemItemClose,
+    _ => throw ArgumentError('Unknown value for UIBarButtonSystemItem: $value'),
+  };
+}
+
+late final _sel_initWithBarButtonSystemItem_target_action_ = objc.registerName(
+  "initWithBarButtonSystemItem:target:action:",
+);
+final _objc_msgSend_18lulgh = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Long,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        int,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_initWithCustomView_ = objc.registerName("initWithCustomView:");
+
+/// WARNING: UIAction is a stub. To generate bindings for this class, include
+/// UIAction in your config's objc-interfaces list.
+///
+/// UIAction
+class UIAction extends UIMenuElement {
+  UIAction._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIAction', iOS: (false, (13, 0, 0)));
+  }
+
+  /// Constructs a [UIAction] that points to the same underlying object as [other].
+  UIAction.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIAction] that wraps the given raw object pointer.
+  UIAction.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_initWithBarButtonSystemItem_primaryAction_ = objc.registerName(
+  "initWithBarButtonSystemItem:primaryAction:",
+);
+final _objc_msgSend_ka2bhe = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Long,
+          ffi.Pointer<objc.ObjCObject>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        int,
+        ffi.Pointer<objc.ObjCObject>,
+      )
+    >();
+late final _sel_initWithPrimaryAction_ = objc.registerName("initWithPrimaryAction:");
+late final _sel_initWithBarButtonSystemItem_menu_ = objc.registerName("initWithBarButtonSystemItem:menu:");
+late final _sel_initWithTitle_menu_ = objc.registerName("initWithTitle:menu:");
+late final _sel_initWithImage_menu_ = objc.registerName("initWithImage:menu:");
+late final _sel_fixedSpaceItemOfWidth_ = objc.registerName("fixedSpaceItemOfWidth:");
+final _objc_msgSend_oa8mke = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Double)
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, double)
+    >();
+late final _sel_flexibleSpaceItem = objc.registerName("flexibleSpaceItem");
+late final _sel_style = objc.registerName("style");
+final _objc_msgSend_121lhl0 = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setStyle_ = objc.registerName("setStyle:");
+final _objc_msgSend_11ist7u = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_width = objc.registerName("width");
+late final _sel_setWidth_ = objc.registerName("setWidth:");
+late final _sel_possibleTitles = objc.registerName("possibleTitles");
+late final _sel_setPossibleTitles_ = objc.registerName("setPossibleTitles:");
+late final _sel_customView = objc.registerName("customView");
+late final _sel_setCustomView_ = objc.registerName("setCustomView:");
+late final _sel_action = objc.registerName("action");
+final _objc_msgSend_1ovaulg = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCSelector> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCSelector> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)
+    >();
+late final _sel_setAction_ = objc.registerName("setAction:");
+final _objc_msgSend_1d9e4oe = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCSelector>)
+      >
+    >()
+    .asFunction<
+      void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCSelector>)
+    >();
+late final _sel_target = objc.registerName("target");
+late final _sel_setTarget_ = objc.registerName("setTarget:");
+late final _sel_primaryAction = objc.registerName("primaryAction");
+late final _sel_setPrimaryAction_ = objc.registerName("setPrimaryAction:");
+late final _sel_menu = objc.registerName("menu");
+late final _sel_setMenu_ = objc.registerName("setMenu:");
+late final _sel_changesSelectionAsPrimaryAction = objc.registerName("changesSelectionAsPrimaryAction");
+late final _sel_setChangesSelectionAsPrimaryAction_ = objc.registerName("setChangesSelectionAsPrimaryAction:");
+late final _sel_isSelected = objc.registerName("isSelected");
+late final _sel_setSelected_ = objc.registerName("setSelected:");
+
+enum UIBarMetrics {
+  UIBarMetricsDefault(0),
+  UIBarMetricsCompact(1),
+  UIBarMetricsDefaultPrompt(101),
+  UIBarMetricsCompactPrompt(102);
+
+  static const UIBarMetricsLandscapePhone = UIBarMetricsCompact;
+  static const UIBarMetricsLandscapePhonePrompt = UIBarMetricsCompactPrompt;
+
+  final int value;
+  const UIBarMetrics(this.value);
+
+  static UIBarMetrics fromValue(int value) => switch (value) {
+    0 => UIBarMetricsDefault,
+    1 => UIBarMetricsCompact,
+    101 => UIBarMetricsDefaultPrompt,
+    102 => UIBarMetricsCompactPrompt,
+    _ => throw ArgumentError('Unknown value for UIBarMetrics: $value'),
+  };
+
+  @override
+  String toString() {
+    if (this == UIBarMetricsCompact) return "UIBarMetrics.UIBarMetricsCompact, UIBarMetrics.UIBarMetricsLandscapePhone";
+    if (this == UIBarMetricsCompactPrompt)
+      return "UIBarMetrics.UIBarMetricsCompactPrompt, UIBarMetrics.UIBarMetricsLandscapePhonePrompt";
+    return super.toString();
+  }
+}
+
+late final _sel_setBackgroundImage_forState_barMetrics_ = objc.registerName("setBackgroundImage:forState:barMetrics:");
+final _objc_msgSend_1oar0aj = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.UnsignedLong,
+          ffi.Long,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        int,
+        int,
+      )
+    >();
+late final _sel_backgroundImageForState_barMetrics_ = objc.registerName("backgroundImageForState:barMetrics:");
+final _objc_msgSend_1mmfvr1 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+          ffi.Long,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int, int)
+    >();
+late final _sel_setBackgroundImage_forState_style_barMetrics_ = objc.registerName(
+  "setBackgroundImage:forState:style:barMetrics:",
+);
+final _objc_msgSend_1lg97nc = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.UnsignedLong,
+          ffi.Long,
+          ffi.Long,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        int,
+        int,
+        int,
+      )
+    >();
+late final _sel_backgroundImageForState_style_barMetrics_ = objc.registerName(
+  "backgroundImageForState:style:barMetrics:",
+);
+final _objc_msgSend_15kz3t6 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+          ffi.Long,
+          ffi.Long,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int, int, int)
+    >();
+late final _class_UIColor = objc.getClass("UIColor");
+late final _sel_readableTypeIdentifiersForItemProvider = objc.registerName("readableTypeIdentifiersForItemProvider");
+ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSArray_ffiVoid_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+) => block.ref.target
+    .cast<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>>()
+    .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>()(arg0);
+ffi.Pointer<ffi.Void> _ObjCBlock_NSArray_ffiVoid_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
+        >(_ObjCBlock_NSArray_ffiVoid_fnPtrTrampoline)
+        .cast();
+ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSArray_ffiVoid_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+) => (objc.getBlockClosure(block) as ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>))(arg0);
+ffi.Pointer<ffi.Void> _ObjCBlock_NSArray_ffiVoid_closureCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
+        >(_ObjCBlock_NSArray_ffiVoid_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)>`.
+abstract final class ObjCBlock_NSArray_ffiVoid {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)> castFromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)>(pointer, retain: retain, release: release);
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)> fromFunctionPointer(
+    ffi.Pointer<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>> ptr,
+  ) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)>(
+    objc.newPointerBlock(_ObjCBlock_NSArray_ffiVoid_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)> fromFunction(
+    objc.NSArray Function(ffi.Pointer<ffi.Void>) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)>(
+    objc.newClosureBlock(
+      _ObjCBlock_NSArray_ffiVoid_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0) => fn(arg0).ref.retainAndAutorelease(),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+}
+
+/// Call operator for `objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)>`.
+extension ObjCBlock_NSArray_ffiVoid_CallExtension on objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)> {
+  objc.NSArray call(ffi.Pointer<ffi.Void> arg0) => objc.NSArray.castFromPointer(
+    ref.pointer.ref.invoke
+        .cast<
+          ffi.NativeFunction<
+            ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<ffi.Void> arg0)
+          >
+        >()
+        .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>()(
+      ref.pointer,
+      arg0,
+    ),
+    retain: true,
+    release: true,
+  );
+}
+
+late final _sel_writableTypeIdentifiersForItemProvider = objc.registerName("writableTypeIdentifiersForItemProvider");
+late final _sel_itemProviderVisibilityForRepresentationWithTypeIdentifier_ = objc.registerName(
+  "itemProviderVisibilityForRepresentationWithTypeIdentifier:",
+);
+final _objc_msgSend_16fy0up = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>)
+      >
+    >()
+    .asFunction<
+      int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>)
+    >();
+int _ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) => block.ref.target
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>()
+    .asFunction<int Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)>()(arg0, arg1);
+ffi.Pointer<ffi.Void> _ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Long Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_fnPtrTrampoline, 0)
+        .cast();
+int _ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) => (objc.getBlockClosure(block) as int Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>))(arg0, arg1);
+ffi.Pointer<ffi.Void> _ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_closureCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Long Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_closureTrampoline, 0)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)>`.
+abstract final class ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)> castFromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)>(
+    pointer,
+    retain: retain,
+    release: release,
+  );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)> fromFunctionPointer(
+    ffi.Pointer<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>
+    ptr,
+  ) => objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)>(
+    objc.newPointerBlock(_ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)> fromFunction(
+    objc.NSItemProviderRepresentationVisibility Function(ffi.Pointer<ffi.Void>, objc.NSString) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)>(
+    objc.newClosureBlock(
+      _ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1) =>
+          fn(arg0, objc.NSString.castFromPointer(arg1, retain: true, release: true)).value,
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)>`.
+extension ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_CallExtension
+    on objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)> {
+  objc.NSItemProviderRepresentationVisibility call(ffi.Pointer<ffi.Void> arg0, objc.NSString arg1) =>
+      objc.NSItemProviderRepresentationVisibility.fromValue(
+        ref.pointer.ref.invoke
+            .cast<
+              ffi.NativeFunction<
+                ffi.Long Function(
+                  ffi.Pointer<objc.ObjCBlockImpl> block,
+                  ffi.Pointer<ffi.Void> arg0,
+                  ffi.Pointer<objc.ObjCObject> arg1,
+                )
+              >
+            >()
+            .asFunction<
+              int Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
+            >()(ref.pointer, arg0, arg1.ref.pointer),
+      );
+}
+
+void _ObjCBlock_ffiVoid_NSData_NSError_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCObject> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) => block.ref.target
+    .cast<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)>()(arg0, arg1);
+ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_NSData_NSError_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_ffiVoid_NSData_NSError_fnPtrTrampoline)
+        .cast();
+void _ObjCBlock_ffiVoid_NSData_NSError_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCObject> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) => (objc.getBlockClosure(block) as void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>))(
+  arg0,
+  arg1,
+);
+ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_NSData_NSError_closureCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_ffiVoid_NSData_NSError_closureTrampoline)
+        .cast();
+void _ObjCBlock_ffiVoid_NSData_NSError_listenerTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCObject> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) {
+  (objc.getBlockClosure(block) as void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>))(
+    arg0,
+    arg1,
+  );
+  objc.objectRelease(block.cast());
+}
+
+ffi.NativeCallable<
+  ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
+>
+_ObjCBlock_ffiVoid_NSData_NSError_listenerCallable =
+    ffi.NativeCallable<
+        ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
+      >.listener(_ObjCBlock_ffiVoid_NSData_NSError_listenerTrampoline)
+      ..keepIsolateAlive = false;
+void _ObjCBlock_ffiVoid_NSData_NSError_blockingTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> waiter,
+  ffi.Pointer<objc.ObjCObject> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+) {
+  try {
+    (objc.getBlockClosure(block) as void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>))(
+      arg0,
+      arg1,
+    );
+  } catch (e) {
+  } finally {
+    objc.signalWaiter(waiter);
+    objc.objectRelease(block.cast());
+  }
+}
+
+ffi.NativeCallable<
+  ffi.Void Function(
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<ffi.Void>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCObject>,
+  )
+>
+_ObjCBlock_ffiVoid_NSData_NSError_blockingCallable =
+    ffi.NativeCallable<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCBlockImpl>,
+          ffi.Pointer<ffi.Void>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+        )
+      >.isolateLocal(_ObjCBlock_ffiVoid_NSData_NSError_blockingTrampoline)
+      ..keepIsolateAlive = false;
+ffi.NativeCallable<
+  ffi.Void Function(
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<ffi.Void>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCObject>,
+  )
+>
+_ObjCBlock_ffiVoid_NSData_NSError_blockingListenerCallable =
+    ffi.NativeCallable<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCBlockImpl>,
+          ffi.Pointer<ffi.Void>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+        )
+      >.listener(_ObjCBlock_ffiVoid_NSData_NSError_blockingTrampoline)
+      ..keepIsolateAlive = false;
+
+/// Construction methods for `objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>`.
+abstract final class ObjCBlock_ffiVoid_NSData_NSError {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> castFromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>(pointer, retain: retain, release: release);
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1)>
+    >
+    ptr,
+  ) => objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>(
+    objc.newPointerBlock(_ObjCBlock_ffiVoid_NSData_NSError_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> fromFunction(
+    void Function(objc.NSData?, objc.NSError?) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>(
+    objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_NSData_NSError_closureCallable,
+      (ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1) => fn(
+        arg0.address == 0 ? null : objc.NSData.castFromPointer(arg0, retain: true, release: true),
+        arg1.address == 0 ? null : objc.NSError.castFromPointer(arg1, retain: true, release: true),
+      ),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a listener block from a Dart function.
+  ///
+  /// This is based on FFI's NativeCallable.listener, and has the same
+  /// capabilities and limitations. This block can be invoked from any thread,
+  /// but only supports void functions, and is not run synchronously. See
+  /// NativeCallable.listener for more details.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> listener(
+    void Function(objc.NSData?, objc.NSError?) fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_NSData_NSError_listenerCallable.nativeFunction.cast(),
+      (ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1) => fn(
+        arg0.address == 0 ? null : objc.NSData.castFromPointer(arg0, retain: false, release: true),
+        arg1.address == 0 ? null : objc.NSError.castFromPointer(arg1, retain: false, release: true),
+      ),
+      keepIsolateAlive,
+    );
+    final wrapper = _UIKit_wrapListenerBlock_pfv6jd(raw);
+    objc.objectRelease(raw.cast());
+    return objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>(wrapper, retain: false, release: true);
+  }
+
+  /// Creates a blocking block from a Dart function.
+  ///
+  /// This callback can be invoked from any native thread, and will block the
+  /// caller until the callback is handled by the Dart isolate that created
+  /// the block. Async functions are not supported.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
+  /// has shut down, and the block is invoked by native code, it may block
+  /// indefinitely, or have other undefined behavior.
+  static objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> blocking(
+    void Function(objc.NSData?, objc.NSError?) fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_NSData_NSError_blockingCallable.nativeFunction.cast(),
+      (ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1) => fn(
+        arg0.address == 0 ? null : objc.NSData.castFromPointer(arg0, retain: false, release: true),
+        arg1.address == 0 ? null : objc.NSError.castFromPointer(arg1, retain: false, release: true),
+      ),
+      keepIsolateAlive,
+    );
+    final rawListener = objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_NSData_NSError_blockingListenerCallable.nativeFunction.cast(),
+      (ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1) => fn(
+        arg0.address == 0 ? null : objc.NSData.castFromPointer(arg0, retain: false, release: true),
+        arg1.address == 0 ? null : objc.NSError.castFromPointer(arg1, retain: false, release: true),
+      ),
+      keepIsolateAlive,
+    );
+    final wrapper = _UIKit_wrapBlockingBlock_pfv6jd(raw, rawListener, objc.objCContext);
+    objc.objectRelease(raw.cast());
+    objc.objectRelease(rawListener.cast());
+    return objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>(wrapper, retain: false, release: true);
+  }
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>`.
+extension ObjCBlock_ffiVoid_NSData_NSError_CallExtension
+    on objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> {
+  void call(objc.NSData? arg0, objc.NSError? arg1) => ref.pointer.ref.invoke
+      .cast<
+        ffi.NativeFunction<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl> block,
+            ffi.Pointer<objc.ObjCObject> arg0,
+            ffi.Pointer<objc.ObjCObject> arg1,
+          )
+        >
+      >()
+      .asFunction<
+        void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
+      >()(ref.pointer, arg0?.ref.pointer ?? ffi.nullptr, arg1?.ref.pointer ?? ffi.nullptr);
+}
+
+late final _sel_loadDataWithTypeIdentifier_forItemProviderCompletionHandler_ = objc.registerName(
+  "loadDataWithTypeIdentifier:forItemProviderCompletionHandler:",
+);
+final _objc_msgSend_r0bo0s = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCBlockImpl>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCBlockImpl>,
+      )
+    >();
+ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCBlockImpl> arg2,
+) => block.ref.target
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<ffi.Void> arg0,
+          ffi.Pointer<objc.ObjCObject> arg1,
+          ffi.Pointer<objc.ObjCBlockImpl> arg2,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<ffi.Void>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCBlockImpl>,
+      )
+    >()(arg0, arg1, arg2);
+ffi.Pointer<ffi.Void> _ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Pointer<objc.ObjCObject> Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCBlockImpl>,
+          )
+        >(_ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_fnPtrTrampoline)
+        .cast();
+ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCBlockImpl> arg2,
+) =>
+    (objc.getBlockClosure(block)
+        as ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<ffi.Void>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCBlockImpl>,
+        ))(arg0, arg1, arg2);
+ffi.Pointer<ffi.Void> _ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_closureCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Pointer<objc.ObjCObject> Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCBlockImpl>,
+          )
+        >(_ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<objc.NSProgress? Function(ffi.Pointer<ffi.Void>, objc.NSString, objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>)>`.
+abstract final class ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<
+    objc.NSProgress? Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSString,
+      objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
+    )
+  >
+  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
+      objc.ObjCBlock<
+        objc.NSProgress? Function(
+          ffi.Pointer<ffi.Void>,
+          objc.NSString,
+          objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
+        )
+      >(pointer, retain: retain, release: release);
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<
+    objc.NSProgress? Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSString,
+      objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
+    )
+  >
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<ffi.Void> arg0,
+          ffi.Pointer<objc.ObjCObject> arg1,
+          ffi.Pointer<objc.ObjCBlockImpl> arg2,
+        )
+      >
+    >
+    ptr,
+  ) =>
+      objc.ObjCBlock<
+        objc.NSProgress? Function(
+          ffi.Pointer<ffi.Void>,
+          objc.NSString,
+          objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
+        )
+      >(
+        objc.newPointerBlock(_ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_fnPtrCallable, ptr.cast()),
+        retain: false,
+        release: true,
+      );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<
+    objc.NSProgress? Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSString,
+      objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
+    )
+  >
+  fromFunction(
+    objc.NSProgress? Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSString,
+      objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
+    )
+    fn, {
+    bool keepIsolateAlive = true,
+  }) =>
+      objc.ObjCBlock<
+        objc.NSProgress? Function(
+          ffi.Pointer<ffi.Void>,
+          objc.NSString,
+          objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
+        )
+      >(
+        objc.newClosureBlock(
+          _ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_closureCallable,
+          (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1, ffi.Pointer<objc.ObjCBlockImpl> arg2) =>
+              fn(
+                arg0,
+                objc.NSString.castFromPointer(arg1, retain: true, release: true),
+                ObjCBlock_ffiVoid_NSData_NSError.castFromPointer(arg2, retain: true, release: true),
+              )?.ref.retainAndAutorelease() ??
+              ffi.nullptr,
+          keepIsolateAlive,
+        ),
+        retain: false,
+        release: true,
+      );
+}
+
+/// Call operator for `objc.ObjCBlock<objc.NSProgress? Function(ffi.Pointer<ffi.Void>, objc.NSString, objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>)>`.
+extension ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_CallExtension
+    on
+        objc.ObjCBlock<
+          objc.NSProgress? Function(
+            ffi.Pointer<ffi.Void>,
+            objc.NSString,
+            objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
+          )
+        > {
+  objc.NSProgress? call(
+    ffi.Pointer<ffi.Void> arg0,
+    objc.NSString arg1,
+    objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> arg2,
+  ) =>
+      ref.pointer.ref.invoke
+              .cast<
+                ffi.NativeFunction<
+                  ffi.Pointer<objc.ObjCObject> Function(
+                    ffi.Pointer<objc.ObjCBlockImpl> block,
+                    ffi.Pointer<ffi.Void> arg0,
+                    ffi.Pointer<objc.ObjCObject> arg1,
+                    ffi.Pointer<objc.ObjCBlockImpl> arg2,
+                  )
+                >
+              >()
+              .asFunction<
+                ffi.Pointer<objc.ObjCObject> Function(
+                  ffi.Pointer<objc.ObjCBlockImpl>,
+                  ffi.Pointer<ffi.Void>,
+                  ffi.Pointer<objc.ObjCObject>,
+                  ffi.Pointer<objc.ObjCBlockImpl>,
+                )
+              >()(ref.pointer, arg0, arg1.ref.pointer, arg2.ref.pointer)
+              .address ==
+          0
+      ? null
+      : objc.NSProgress.castFromPointer(
+          ref.pointer.ref.invoke
+              .cast<
+                ffi.NativeFunction<
+                  ffi.Pointer<objc.ObjCObject> Function(
+                    ffi.Pointer<objc.ObjCBlockImpl> block,
+                    ffi.Pointer<ffi.Void> arg0,
+                    ffi.Pointer<objc.ObjCObject> arg1,
+                    ffi.Pointer<objc.ObjCBlockImpl> arg2,
+                  )
+                >
+              >()
+              .asFunction<
+                ffi.Pointer<objc.ObjCObject> Function(
+                  ffi.Pointer<objc.ObjCBlockImpl>,
+                  ffi.Pointer<ffi.Void>,
+                  ffi.Pointer<objc.ObjCObject>,
+                  ffi.Pointer<objc.ObjCBlockImpl>,
+                )
+              >()(ref.pointer, arg0, arg1.ref.pointer, arg2.ref.pointer),
+          retain: true,
+          release: true,
+        );
+}
+
+/// UINSItemProvider
+extension UINSItemProvider on UIColor {
+  /// readableTypeIdentifiersForItemProvider
+  static objc.NSArray getReadableTypeIdentifiersForItemProvider() {
+    objc.checkOsVersionInternal(
+      'UIColor.readableTypeIdentifiersForItemProvider',
+      iOS: (false, (11, 0, 0)),
+      macOS: (false, (10, 13, 0)),
+    );
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_readableTypeIdentifiersForItemProvider);
+    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// writableTypeIdentifiersForItemProvider
+  static objc.NSArray getWritableTypeIdentifiersForItemProvider() {
+    objc.checkOsVersionInternal(
+      'UIColor.writableTypeIdentifiersForItemProvider',
+      iOS: (false, (11, 0, 0)),
+      macOS: (false, (10, 13, 0)),
+    );
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_writableTypeIdentifiersForItemProvider);
+    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// writableTypeIdentifiersForItemProvider
+  objc.NSArray get writableTypeIdentifiersForItemProvider$1 {
+    objc.checkOsVersionInternal(
+      'UIColor.writableTypeIdentifiersForItemProvider',
+      iOS: (false, (11, 0, 0)),
+      macOS: (false, (10, 13, 0)),
+    );
+    if (!objc.respondsToSelector(this.ref.pointer, _sel_writableTypeIdentifiersForItemProvider)) {
+      throw objc.UnimplementedOptionalMethodException('UIColor', 'writableTypeIdentifiersForItemProvider');
+    }
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_writableTypeIdentifiersForItemProvider);
+    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// itemProviderVisibilityForRepresentationWithTypeIdentifier:
+  static objc.NSItemProviderRepresentationVisibility itemProviderVisibilityForRepresentationWithTypeIdentifier(
+    objc.NSString typeIdentifier,
+  ) {
+    objc.checkOsVersionInternal(
+      'UIColor.itemProviderVisibilityForRepresentationWithTypeIdentifier:',
+      iOS: (false, (11, 0, 0)),
+      macOS: (false, (10, 13, 0)),
+    );
+    if (!objc.respondsToSelector(_class_UIColor, _sel_itemProviderVisibilityForRepresentationWithTypeIdentifier_)) {
+      throw objc.UnimplementedOptionalMethodException(
+        'UIColor',
+        'itemProviderVisibilityForRepresentationWithTypeIdentifier:',
+      );
+    }
+    final _ret = _objc_msgSend_16fy0up(
+      _class_UIColor,
+      _sel_itemProviderVisibilityForRepresentationWithTypeIdentifier_,
+      typeIdentifier.ref.pointer,
+    );
+    return objc.NSItemProviderRepresentationVisibility.fromValue(_ret);
+  }
+
+  /// itemProviderVisibilityForRepresentationWithTypeIdentifier:
+  objc.NSItemProviderRepresentationVisibility itemProviderVisibilityForRepresentationWithTypeIdentifier$1(
+    objc.NSString typeIdentifier,
+  ) {
+    objc.checkOsVersionInternal(
+      'UIColor.itemProviderVisibilityForRepresentationWithTypeIdentifier:',
+      iOS: (false, (11, 0, 0)),
+      macOS: (false, (10, 13, 0)),
+    );
+    if (!objc.respondsToSelector(this.ref.pointer, _sel_itemProviderVisibilityForRepresentationWithTypeIdentifier_)) {
+      throw objc.UnimplementedOptionalMethodException(
+        'UIColor',
+        'itemProviderVisibilityForRepresentationWithTypeIdentifier:',
+      );
+    }
+    final _ret = _objc_msgSend_16fy0up(
+      this.ref.pointer,
+      _sel_itemProviderVisibilityForRepresentationWithTypeIdentifier_,
+      typeIdentifier.ref.pointer,
+    );
+    return objc.NSItemProviderRepresentationVisibility.fromValue(_ret);
+  }
+
+  /// loadDataWithTypeIdentifier:forItemProviderCompletionHandler:
+  objc.NSProgress? loadDataWithTypeIdentifier(
+    objc.NSString typeIdentifier, {
+    required objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> forItemProviderCompletionHandler,
+  }) {
+    objc.checkOsVersionInternal(
+      'UIColor.loadDataWithTypeIdentifier:forItemProviderCompletionHandler:',
+      iOS: (false, (11, 0, 0)),
+      macOS: (false, (10, 13, 0)),
+    );
+    final _ret = _objc_msgSend_r0bo0s(
+      this.ref.pointer,
+      _sel_loadDataWithTypeIdentifier_forItemProviderCompletionHandler_,
+      typeIdentifier.ref.pointer,
+      forItemProviderCompletionHandler.ref.pointer,
+    );
+    return _ret.address == 0 ? null : objc.NSProgress.castFromPointer(_ret, retain: true, release: true);
+  }
+}
+
+late final _sel_colorNamed_ = objc.registerName("colorNamed:");
+late final _sel_colorNamed_inBundle_compatibleWithTraitCollection_ = objc.registerName(
+  "colorNamed:inBundle:compatibleWithTraitCollection:",
+);
+final _objc_msgSend_11spmsz = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCObject>,
+      )
+    >();
+
+/// UIColorNamedColors
+extension UIColorNamedColors on UIColor {
+  /// colorNamed:
+  static UIColor? colorNamed(objc.NSString name) {
+    objc.checkOsVersionInternal('UIColor.colorNamed:', iOS: (false, (11, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(_class_UIColor, _sel_colorNamed_, name.ref.pointer);
+    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// colorNamed:inBundle:compatibleWithTraitCollection:
+  static UIColor? colorNamed$1(
+    objc.NSString name, {
+    NSBundle? inBundle,
+    UITraitCollection? compatibleWithTraitCollection,
+  }) {
+    objc.checkOsVersionInternal('UIColor.colorNamed:inBundle:compatibleWithTraitCollection:', iOS: (false, (11, 0, 0)));
+    final _ret = _objc_msgSend_11spmsz(
+      _class_UIColor,
+      _sel_colorNamed_inBundle_compatibleWithTraitCollection_,
+      name.ref.pointer,
+      inBundle?.ref.pointer ?? ffi.nullptr,
+      compatibleWithTraitCollection?.ref.pointer ?? ffi.nullptr,
+    );
+    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+}
+
+ffi.Pointer<objc.ObjCObject> _ObjCBlock_UIColor_UITraitCollection_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCObject> arg0,
+) => block.ref.target
+    .cast<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject> arg0)>>()
+    .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>)>()(arg0);
+ffi.Pointer<ffi.Void> _ObjCBlock_UIColor_UITraitCollection_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_UIColor_UITraitCollection_fnPtrTrampoline)
+        .cast();
+ffi.Pointer<objc.ObjCObject> _ObjCBlock_UIColor_UITraitCollection_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCObject> arg0,
+) => (objc.getBlockClosure(block) as ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>))(arg0);
+ffi.Pointer<ffi.Void> _ObjCBlock_UIColor_UITraitCollection_closureCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>)
+        >(_ObjCBlock_UIColor_UITraitCollection_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<UIColor Function(UITraitCollection)>`.
+abstract final class ObjCBlock_UIColor_UITraitCollection {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<UIColor Function(UITraitCollection)> castFromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<UIColor Function(UITraitCollection)>(pointer, retain: retain, release: release);
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<UIColor Function(UITraitCollection)> fromFunctionPointer(
+    ffi.Pointer<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject> arg0)>> ptr,
+  ) => objc.ObjCBlock<UIColor Function(UITraitCollection)>(
+    objc.newPointerBlock(_ObjCBlock_UIColor_UITraitCollection_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<UIColor Function(UITraitCollection)> fromFunction(
+    UIColor Function(UITraitCollection) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<UIColor Function(UITraitCollection)>(
+    objc.newClosureBlock(
+      _ObjCBlock_UIColor_UITraitCollection_closureCallable,
+      (ffi.Pointer<objc.ObjCObject> arg0) =>
+          fn(UITraitCollection.castFromPointer(arg0, retain: true, release: true)).ref.retainAndAutorelease(),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+}
+
+/// Call operator for `objc.ObjCBlock<UIColor Function(UITraitCollection)>`.
+extension ObjCBlock_UIColor_UITraitCollection_CallExtension on objc.ObjCBlock<UIColor Function(UITraitCollection)> {
+  UIColor call(UITraitCollection arg0) => UIColor.castFromPointer(
+    ref.pointer.ref.invoke
+        .cast<
+          ffi.NativeFunction<
+            ffi.Pointer<objc.ObjCObject> Function(
+              ffi.Pointer<objc.ObjCBlockImpl> block,
+              ffi.Pointer<objc.ObjCObject> arg0,
+            )
+          >
+        >()
+        .asFunction<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>)
+        >()(ref.pointer, arg0.ref.pointer),
+    retain: true,
+    release: true,
+  );
+}
+
+late final _sel_colorWithDynamicProvider_ = objc.registerName("colorWithDynamicProvider:");
+final _objc_msgSend_nnxkei = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCBlockImpl>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCBlockImpl>,
+      )
+    >();
+late final _sel_initWithDynamicProvider_ = objc.registerName("initWithDynamicProvider:");
+late final _sel_resolvedColorWithTraitCollection_ = objc.registerName("resolvedColorWithTraitCollection:");
+
+/// DynamicColors
+extension DynamicColors on UIColor {
+  /// colorWithDynamicProvider:
+  static UIColor colorWithDynamicProvider(objc.ObjCBlock<UIColor Function(UITraitCollection)> dynamicProvider) {
+    objc.checkOsVersionInternal('UIColor.colorWithDynamicProvider:', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_nnxkei(_class_UIColor, _sel_colorWithDynamicProvider_, dynamicProvider.ref.pointer);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// initWithDynamicProvider:
+  UIColor initWithDynamicProvider(objc.ObjCBlock<UIColor Function(UITraitCollection)> dynamicProvider) {
+    objc.checkOsVersionInternal('UIColor.initWithDynamicProvider:', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_nnxkei(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithDynamicProvider_,
+      dynamicProvider.ref.pointer,
+    );
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// resolvedColorWithTraitCollection:
+  UIColor resolvedColorWithTraitCollection(UITraitCollection traitCollection) {
+    objc.checkOsVersionInternal('UIColor.resolvedColorWithTraitCollection:', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(
+      this.ref.pointer,
+      _sel_resolvedColorWithTraitCollection_,
+      traitCollection.ref.pointer,
+    );
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+}
+
+late final _sel_systemRedColor = objc.registerName("systemRedColor");
+late final _sel_systemGreenColor = objc.registerName("systemGreenColor");
+late final _sel_systemBlueColor = objc.registerName("systemBlueColor");
+late final _sel_systemOrangeColor = objc.registerName("systemOrangeColor");
+late final _sel_systemYellowColor = objc.registerName("systemYellowColor");
+late final _sel_systemPinkColor = objc.registerName("systemPinkColor");
+late final _sel_systemPurpleColor = objc.registerName("systemPurpleColor");
+late final _sel_systemTealColor = objc.registerName("systemTealColor");
+late final _sel_systemIndigoColor = objc.registerName("systemIndigoColor");
+late final _sel_systemBrownColor = objc.registerName("systemBrownColor");
+late final _sel_systemMintColor = objc.registerName("systemMintColor");
+late final _sel_systemCyanColor = objc.registerName("systemCyanColor");
+late final _sel_systemGrayColor = objc.registerName("systemGrayColor");
+late final _sel_systemGray2Color = objc.registerName("systemGray2Color");
+late final _sel_systemGray3Color = objc.registerName("systemGray3Color");
+late final _sel_systemGray4Color = objc.registerName("systemGray4Color");
+late final _sel_systemGray5Color = objc.registerName("systemGray5Color");
+late final _sel_systemGray6Color = objc.registerName("systemGray6Color");
+late final _sel_tintColor = objc.registerName("tintColor");
+late final _sel_labelColor = objc.registerName("labelColor");
+late final _sel_secondaryLabelColor = objc.registerName("secondaryLabelColor");
+late final _sel_tertiaryLabelColor = objc.registerName("tertiaryLabelColor");
+late final _sel_quaternaryLabelColor = objc.registerName("quaternaryLabelColor");
+late final _sel_linkColor = objc.registerName("linkColor");
+late final _sel_placeholderTextColor = objc.registerName("placeholderTextColor");
+late final _sel_separatorColor = objc.registerName("separatorColor");
+late final _sel_opaqueSeparatorColor = objc.registerName("opaqueSeparatorColor");
+late final _sel_systemBackgroundColor = objc.registerName("systemBackgroundColor");
+late final _sel_secondarySystemBackgroundColor = objc.registerName("secondarySystemBackgroundColor");
+late final _sel_tertiarySystemBackgroundColor = objc.registerName("tertiarySystemBackgroundColor");
+late final _sel_systemGroupedBackgroundColor = objc.registerName("systemGroupedBackgroundColor");
+late final _sel_secondarySystemGroupedBackgroundColor = objc.registerName("secondarySystemGroupedBackgroundColor");
+late final _sel_tertiarySystemGroupedBackgroundColor = objc.registerName("tertiarySystemGroupedBackgroundColor");
+late final _sel_systemFillColor = objc.registerName("systemFillColor");
+late final _sel_secondarySystemFillColor = objc.registerName("secondarySystemFillColor");
+late final _sel_tertiarySystemFillColor = objc.registerName("tertiarySystemFillColor");
+late final _sel_quaternarySystemFillColor = objc.registerName("quaternarySystemFillColor");
+late final _sel_lightTextColor = objc.registerName("lightTextColor");
+late final _sel_darkTextColor = objc.registerName("darkTextColor");
+late final _sel_groupTableViewBackgroundColor = objc.registerName("groupTableViewBackgroundColor");
+late final _sel_viewFlipsideBackgroundColor = objc.registerName("viewFlipsideBackgroundColor");
+late final _sel_scrollViewTexturedBackgroundColor = objc.registerName("scrollViewTexturedBackgroundColor");
+late final _sel_underPageBackgroundColor = objc.registerName("underPageBackgroundColor");
+
+/// UIColorSystemColors
+extension UIColorSystemColors on UIColor {
+  /// systemRedColor
+  static UIColor getSystemRedColor() {
+    objc.checkOsVersionInternal('UIColor.systemRedColor', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemRedColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemGreenColor
+  static UIColor getSystemGreenColor() {
+    objc.checkOsVersionInternal('UIColor.systemGreenColor', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGreenColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemBlueColor
+  static UIColor getSystemBlueColor() {
+    objc.checkOsVersionInternal('UIColor.systemBlueColor', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemBlueColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemOrangeColor
+  static UIColor getSystemOrangeColor() {
+    objc.checkOsVersionInternal('UIColor.systemOrangeColor', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemOrangeColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemYellowColor
+  static UIColor getSystemYellowColor() {
+    objc.checkOsVersionInternal('UIColor.systemYellowColor', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemYellowColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemPinkColor
+  static UIColor getSystemPinkColor() {
+    objc.checkOsVersionInternal('UIColor.systemPinkColor', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemPinkColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemPurpleColor
+  static UIColor getSystemPurpleColor() {
+    objc.checkOsVersionInternal('UIColor.systemPurpleColor', iOS: (false, (9, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemPurpleColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemTealColor
+  static UIColor getSystemTealColor() {
+    objc.checkOsVersionInternal('UIColor.systemTealColor', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemTealColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemIndigoColor
+  static UIColor getSystemIndigoColor() {
+    objc.checkOsVersionInternal('UIColor.systemIndigoColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemIndigoColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemBrownColor
+  static UIColor getSystemBrownColor() {
+    objc.checkOsVersionInternal('UIColor.systemBrownColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemBrownColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemMintColor
+  static UIColor getSystemMintColor() {
+    objc.checkOsVersionInternal('UIColor.systemMintColor', iOS: (false, (15, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemMintColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemCyanColor
+  static UIColor getSystemCyanColor() {
+    objc.checkOsVersionInternal('UIColor.systemCyanColor', iOS: (false, (15, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemCyanColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemGrayColor
+  static UIColor getSystemGrayColor() {
+    objc.checkOsVersionInternal('UIColor.systemGrayColor', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGrayColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemGray2Color
+  static UIColor getSystemGray2Color() {
+    objc.checkOsVersionInternal('UIColor.systemGray2Color', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGray2Color);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemGray3Color
+  static UIColor getSystemGray3Color() {
+    objc.checkOsVersionInternal('UIColor.systemGray3Color', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGray3Color);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemGray4Color
+  static UIColor getSystemGray4Color() {
+    objc.checkOsVersionInternal('UIColor.systemGray4Color', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGray4Color);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemGray5Color
+  static UIColor getSystemGray5Color() {
+    objc.checkOsVersionInternal('UIColor.systemGray5Color', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGray5Color);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemGray6Color
+  static UIColor getSystemGray6Color() {
+    objc.checkOsVersionInternal('UIColor.systemGray6Color', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGray6Color);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// tintColor
+  static UIColor getTintColor() {
+    objc.checkOsVersionInternal('UIColor.tintColor', iOS: (false, (15, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_tintColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// labelColor
+  static UIColor getLabelColor() {
+    objc.checkOsVersionInternal('UIColor.labelColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_labelColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// secondaryLabelColor
+  static UIColor getSecondaryLabelColor() {
+    objc.checkOsVersionInternal('UIColor.secondaryLabelColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_secondaryLabelColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// tertiaryLabelColor
+  static UIColor getTertiaryLabelColor() {
+    objc.checkOsVersionInternal('UIColor.tertiaryLabelColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_tertiaryLabelColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// quaternaryLabelColor
+  static UIColor getQuaternaryLabelColor() {
+    objc.checkOsVersionInternal('UIColor.quaternaryLabelColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_quaternaryLabelColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// linkColor
+  static UIColor getLinkColor() {
+    objc.checkOsVersionInternal('UIColor.linkColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_linkColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// placeholderTextColor
+  static UIColor getPlaceholderTextColor() {
+    objc.checkOsVersionInternal('UIColor.placeholderTextColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_placeholderTextColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// separatorColor
+  static UIColor getSeparatorColor() {
+    objc.checkOsVersionInternal('UIColor.separatorColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_separatorColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// opaqueSeparatorColor
+  static UIColor getOpaqueSeparatorColor() {
+    objc.checkOsVersionInternal('UIColor.opaqueSeparatorColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_opaqueSeparatorColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemBackgroundColor
+  static UIColor getSystemBackgroundColor() {
+    objc.checkOsVersionInternal('UIColor.systemBackgroundColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemBackgroundColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// secondarySystemBackgroundColor
+  static UIColor getSecondarySystemBackgroundColor() {
+    objc.checkOsVersionInternal('UIColor.secondarySystemBackgroundColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_secondarySystemBackgroundColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// tertiarySystemBackgroundColor
+  static UIColor getTertiarySystemBackgroundColor() {
+    objc.checkOsVersionInternal('UIColor.tertiarySystemBackgroundColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_tertiarySystemBackgroundColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemGroupedBackgroundColor
+  static UIColor getSystemGroupedBackgroundColor() {
+    objc.checkOsVersionInternal('UIColor.systemGroupedBackgroundColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGroupedBackgroundColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// secondarySystemGroupedBackgroundColor
+  static UIColor getSecondarySystemGroupedBackgroundColor() {
+    objc.checkOsVersionInternal('UIColor.secondarySystemGroupedBackgroundColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_secondarySystemGroupedBackgroundColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// tertiarySystemGroupedBackgroundColor
+  static UIColor getTertiarySystemGroupedBackgroundColor() {
+    objc.checkOsVersionInternal('UIColor.tertiarySystemGroupedBackgroundColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_tertiarySystemGroupedBackgroundColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemFillColor
+  static UIColor getSystemFillColor() {
+    objc.checkOsVersionInternal('UIColor.systemFillColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemFillColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// secondarySystemFillColor
+  static UIColor getSecondarySystemFillColor() {
+    objc.checkOsVersionInternal('UIColor.secondarySystemFillColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_secondarySystemFillColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// tertiarySystemFillColor
+  static UIColor getTertiarySystemFillColor() {
+    objc.checkOsVersionInternal('UIColor.tertiarySystemFillColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_tertiarySystemFillColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// quaternarySystemFillColor
+  static UIColor getQuaternarySystemFillColor() {
+    objc.checkOsVersionInternal('UIColor.quaternarySystemFillColor', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_quaternarySystemFillColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// lightTextColor
+  static UIColor getLightTextColor() {
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_lightTextColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// darkTextColor
+  static UIColor getDarkTextColor() {
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_darkTextColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// groupTableViewBackgroundColor
+  static UIColor getGroupTableViewBackgroundColor() {
+    objc.checkOsVersionInternal('UIColor.groupTableViewBackgroundColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_groupTableViewBackgroundColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// viewFlipsideBackgroundColor
+  static UIColor getViewFlipsideBackgroundColor() {
+    objc.checkOsVersionInternal('UIColor.viewFlipsideBackgroundColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_viewFlipsideBackgroundColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// scrollViewTexturedBackgroundColor
+  static UIColor getScrollViewTexturedBackgroundColor() {
+    objc.checkOsVersionInternal('UIColor.scrollViewTexturedBackgroundColor', iOS: (false, (3, 2, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_scrollViewTexturedBackgroundColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// underPageBackgroundColor
+  static UIColor getUnderPageBackgroundColor() {
+    objc.checkOsVersionInternal('UIColor.underPageBackgroundColor', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_underPageBackgroundColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+}
+
+late final _sel_colorWithWhite_alpha_ = objc.registerName("colorWithWhite:alpha:");
+final _objc_msgSend_1n2vn5t = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Double,
+          ffi.Double,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        double,
+        double,
+      )
+    >();
+late final _sel_colorWithHue_saturation_brightness_alpha_ = objc.registerName(
+  "colorWithHue:saturation:brightness:alpha:",
+);
+final _objc_msgSend_q2wq4h = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Double,
+          ffi.Double,
+          ffi.Double,
+          ffi.Double,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        double,
+        double,
+        double,
+        double,
+      )
+    >();
+late final _sel_colorWithRed_green_blue_alpha_ = objc.registerName("colorWithRed:green:blue:alpha:");
+late final _sel_colorWithDisplayP3Red_green_blue_alpha_ = objc.registerName("colorWithDisplayP3Red:green:blue:alpha:");
+late final _sel_colorWithCGColor_ = objc.registerName("colorWithCGColor:");
+final _objc_msgSend_1rsocyz = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<CGColor>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<CGColor>,
+      )
+    >();
+late final _sel_colorWithPatternImage_ = objc.registerName("colorWithPatternImage:");
+
+/// WARNING: CIColor is a stub. To generate bindings for this class, include
+/// CIColor in your config's objc-interfaces list.
+///
+/// CIColor
+class CIColor extends objc.NSObject implements objc.NSSecureCoding, objc.NSCopying {
+  CIColor._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('CIColor', macOS: (false, (10, 4, 0)));
+  }
+
+  /// Constructs a [CIColor] that points to the same underlying object as [other].
+  CIColor.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [CIColor] that wraps the given raw object pointer.
+  CIColor.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_colorWithCIColor_ = objc.registerName("colorWithCIColor:");
+late final _sel_initWithWhite_alpha_ = objc.registerName("initWithWhite:alpha:");
+late final _sel_initWithHue_saturation_brightness_alpha_ = objc.registerName(
+  "initWithHue:saturation:brightness:alpha:",
+);
+late final _sel_initWithRed_green_blue_alpha_ = objc.registerName("initWithRed:green:blue:alpha:");
+late final _sel_initWithDisplayP3Red_green_blue_alpha_ = objc.registerName("initWithDisplayP3Red:green:blue:alpha:");
+late final _sel_initWithCGColor_ = objc.registerName("initWithCGColor:");
+late final _sel_initWithPatternImage_ = objc.registerName("initWithPatternImage:");
+late final _sel_initWithCIColor_ = objc.registerName("initWithCIColor:");
+late final _sel_blackColor = objc.registerName("blackColor");
+late final _sel_darkGrayColor = objc.registerName("darkGrayColor");
+late final _sel_lightGrayColor = objc.registerName("lightGrayColor");
+late final _sel_whiteColor = objc.registerName("whiteColor");
+late final _sel_grayColor = objc.registerName("grayColor");
+late final _sel_redColor = objc.registerName("redColor");
+late final _sel_greenColor = objc.registerName("greenColor");
+late final _sel_blueColor = objc.registerName("blueColor");
+late final _sel_cyanColor = objc.registerName("cyanColor");
+late final _sel_yellowColor = objc.registerName("yellowColor");
+late final _sel_magentaColor = objc.registerName("magentaColor");
+late final _sel_orangeColor = objc.registerName("orangeColor");
+late final _sel_purpleColor = objc.registerName("purpleColor");
+late final _sel_brownColor = objc.registerName("brownColor");
+late final _sel_clearColor = objc.registerName("clearColor");
+late final _sel_set = objc.registerName("set");
+late final _sel_setFill = objc.registerName("setFill");
+late final _sel_setStroke = objc.registerName("setStroke");
+late final _sel_getWhite_alpha_ = objc.registerName("getWhite:alpha:");
+final _objc_msgSend_kcpn4z = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Bool Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<ffi.Double>,
+          ffi.Pointer<ffi.Double>,
+        )
+      >
+    >()
+    .asFunction<
+      bool Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<ffi.Double>,
+        ffi.Pointer<ffi.Double>,
+      )
+    >();
+late final _sel_getHue_saturation_brightness_alpha_ = objc.registerName("getHue:saturation:brightness:alpha:");
+final _objc_msgSend_xmvde7 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Bool Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<ffi.Double>,
+          ffi.Pointer<ffi.Double>,
+          ffi.Pointer<ffi.Double>,
+          ffi.Pointer<ffi.Double>,
+        )
+      >
+    >()
+    .asFunction<
+      bool Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<ffi.Double>,
+        ffi.Pointer<ffi.Double>,
+        ffi.Pointer<ffi.Double>,
+        ffi.Pointer<ffi.Double>,
+      )
+    >();
+late final _sel_getRed_green_blue_alpha_ = objc.registerName("getRed:green:blue:alpha:");
+late final _sel_colorWithAlphaComponent_ = objc.registerName("colorWithAlphaComponent:");
+late final _sel_CGColor = objc.registerName("CGColor");
+final _objc_msgSend_2u9jmz = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Pointer<CGColor> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>
+    >()
+    .asFunction<ffi.Pointer<CGColor> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_CIColor = objc.registerName("CIColor");
+late final _sel_objectWithItemProviderData_typeIdentifier_error_ = objc.registerName(
+  "objectWithItemProviderData:typeIdentifier:error:",
+);
+final _objc_msgSend_1pnyuds = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+      )
+    >();
+instancetype _ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCObject> arg2,
+  ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
+) => block.ref.target
+    .cast<
+      ffi.NativeFunction<
+        instancetype Function(
+          ffi.Pointer<ffi.Void> arg0,
+          ffi.Pointer<objc.ObjCObject> arg1,
+          ffi.Pointer<objc.ObjCObject> arg2,
+          ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
+        )
+      >
+    >()
+    .asFunction<
+      instancetype Function(
+        ffi.Pointer<ffi.Void>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+      )
+    >()(arg0, arg1, arg2, arg3);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+          )
+        >(_ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_fnPtrTrampoline)
+        .cast();
+instancetype _ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCObject> arg2,
+  ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
+) =>
+    (objc.getBlockClosure(block)
+        as instancetype Function(
+          ffi.Pointer<ffi.Void>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+        ))(arg0, arg1, arg2, arg3);
+ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_closureCallable =
+    ffi.Pointer.fromFunction<
+          instancetype Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+          )
+        >(_ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>, objc.NSData, objc.NSString, ffi.Pointer<ffi.Pointer<objc.ObjCObject>>)>`.
+abstract final class ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<
+    ffi.Pointer<objc.ObjCObject>? Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSData,
+      objc.NSString,
+      ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+    )
+  >
+  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
+      objc.ObjCBlock<
+        ffi.Pointer<objc.ObjCObject>? Function(
+          ffi.Pointer<ffi.Void>,
+          objc.NSData,
+          objc.NSString,
+          ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+        )
+      >(pointer, retain: retain, release: release);
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<
+    ffi.Pointer<objc.ObjCObject>? Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSData,
+      objc.NSString,
+      ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+    )
+  >
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<
+        instancetype Function(
+          ffi.Pointer<ffi.Void> arg0,
+          ffi.Pointer<objc.ObjCObject> arg1,
+          ffi.Pointer<objc.ObjCObject> arg2,
+          ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
+        )
+      >
+    >
+    ptr,
+  ) =>
+      objc.ObjCBlock<
+        ffi.Pointer<objc.ObjCObject>? Function(
+          ffi.Pointer<ffi.Void>,
+          objc.NSData,
+          objc.NSString,
+          ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+        )
+      >(
+        objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_fnPtrCallable, ptr.cast()),
+        retain: false,
+        release: true,
+      );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<
+    ffi.Pointer<objc.ObjCObject>? Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSData,
+      objc.NSString,
+      ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+    )
+  >
+  fromFunction(
+    Dartinstancetype? Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSData,
+      objc.NSString,
+      ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+    )
+    fn, {
+    bool keepIsolateAlive = true,
+  }) =>
+      objc.ObjCBlock<
+        ffi.Pointer<objc.ObjCObject>? Function(
+          ffi.Pointer<ffi.Void>,
+          objc.NSData,
+          objc.NSString,
+          ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+        )
+      >(
+        objc.newClosureBlock(
+          _ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_closureCallable,
+          (
+            ffi.Pointer<ffi.Void> arg0,
+            ffi.Pointer<objc.ObjCObject> arg1,
+            ffi.Pointer<objc.ObjCObject> arg2,
+            ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
+          ) =>
+              fn(
+                arg0,
+                objc.NSData.castFromPointer(arg1, retain: true, release: true),
+                objc.NSString.castFromPointer(arg2, retain: true, release: true),
+                arg3,
+              )?.ref.retainAndAutorelease() ??
+              ffi.nullptr,
+          keepIsolateAlive,
+        ),
+        retain: false,
+        release: true,
+      );
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>, objc.NSData, objc.NSString, ffi.Pointer<ffi.Pointer<objc.ObjCObject>>)>`.
+extension ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_CallExtension
+    on
+        objc.ObjCBlock<
+          ffi.Pointer<objc.ObjCObject>? Function(
+            ffi.Pointer<ffi.Void>,
+            objc.NSData,
+            objc.NSString,
+            ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+          )
+        > {
+  Dartinstancetype? call(
+    ffi.Pointer<ffi.Void> arg0,
+    objc.NSData arg1,
+    objc.NSString arg2,
+    ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
+  ) =>
+      ref.pointer.ref.invoke
+              .cast<
+                ffi.NativeFunction<
+                  instancetype Function(
+                    ffi.Pointer<objc.ObjCBlockImpl> block,
+                    ffi.Pointer<ffi.Void> arg0,
+                    ffi.Pointer<objc.ObjCObject> arg1,
+                    ffi.Pointer<objc.ObjCObject> arg2,
+                    ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
+                  )
+                >
+              >()
+              .asFunction<
+                instancetype Function(
+                  ffi.Pointer<objc.ObjCBlockImpl>,
+                  ffi.Pointer<ffi.Void>,
+                  ffi.Pointer<objc.ObjCObject>,
+                  ffi.Pointer<objc.ObjCObject>,
+                  ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+                )
+              >()(ref.pointer, arg0, arg1.ref.pointer, arg2.ref.pointer, arg3)
+              .address ==
+          0
+      ? null
+      : objc.ObjCObjectBase(
+          ref.pointer.ref.invoke
+              .cast<
+                ffi.NativeFunction<
+                  instancetype Function(
+                    ffi.Pointer<objc.ObjCBlockImpl> block,
+                    ffi.Pointer<ffi.Void> arg0,
+                    ffi.Pointer<objc.ObjCObject> arg1,
+                    ffi.Pointer<objc.ObjCObject> arg2,
+                    ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
+                  )
+                >
+              >()
+              .asFunction<
+                instancetype Function(
+                  ffi.Pointer<objc.ObjCBlockImpl>,
+                  ffi.Pointer<ffi.Void>,
+                  ffi.Pointer<objc.ObjCObject>,
+                  ffi.Pointer<objc.ObjCObject>,
+                  ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
+                )
+              >()(ref.pointer, arg0, arg1.ref.pointer, arg2.ref.pointer, arg3),
+          retain: true,
+          release: true,
+        );
+}
+
+/// UIColor
+class UIColor extends objc.NSObject implements objc.NSSecureCoding, objc.NSCopying {
+  UIColor._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIColor', iOS: (false, (2, 0, 0)));
+  }
+
+  /// Constructs a [UIColor] that points to the same underlying object as [other].
+  UIColor.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIColor] that wraps the given raw object pointer.
+  UIColor.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UIColor].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIColor);
+  }
+
+  /// colorWithWhite:alpha:
+  static UIColor colorWithWhite(double white, {required double alpha}) {
+    objc.checkOsVersionInternal('UIColor.colorWithWhite:alpha:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1n2vn5t(_class_UIColor, _sel_colorWithWhite_alpha_, white, alpha);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// colorWithHue:saturation:brightness:alpha:
+  static UIColor colorWithHue(
+    double hue, {
+    required double saturation,
+    required double brightness,
+    required double alpha,
+  }) {
+    objc.checkOsVersionInternal('UIColor.colorWithHue:saturation:brightness:alpha:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_q2wq4h(
+      _class_UIColor,
+      _sel_colorWithHue_saturation_brightness_alpha_,
+      hue,
+      saturation,
+      brightness,
+      alpha,
+    );
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// colorWithRed:green:blue:alpha:
+  static UIColor colorWithRed(double red, {required double green, required double blue, required double alpha}) {
+    objc.checkOsVersionInternal('UIColor.colorWithRed:green:blue:alpha:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_q2wq4h(_class_UIColor, _sel_colorWithRed_green_blue_alpha_, red, green, blue, alpha);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// colorWithDisplayP3Red:green:blue:alpha:
+  static UIColor colorWithDisplayP3Red(
+    double displayP3Red, {
+    required double green,
+    required double blue,
+    required double alpha,
+  }) {
+    objc.checkOsVersionInternal('UIColor.colorWithDisplayP3Red:green:blue:alpha:', iOS: (false, (10, 0, 0)));
+    final _ret = _objc_msgSend_q2wq4h(
+      _class_UIColor,
+      _sel_colorWithDisplayP3Red_green_blue_alpha_,
+      displayP3Red,
+      green,
+      blue,
+      alpha,
+    );
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// colorWithCGColor:
+  static UIColor colorWithCGColor(ffi.Pointer<CGColor> cgColor) {
+    objc.checkOsVersionInternal('UIColor.colorWithCGColor:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1rsocyz(_class_UIColor, _sel_colorWithCGColor_, cgColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// colorWithPatternImage:
+  static UIColor colorWithPatternImage(UIImage image) {
+    objc.checkOsVersionInternal('UIColor.colorWithPatternImage:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(_class_UIColor, _sel_colorWithPatternImage_, image.ref.pointer);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// colorWithCIColor:
+  static UIColor colorWithCIColor(CIColor ciColor) {
+    objc.checkOsVersionInternal('UIColor.colorWithCIColor:', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(_class_UIColor, _sel_colorWithCIColor_, ciColor.ref.pointer);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// blackColor
+  static UIColor getBlackColor() {
+    objc.checkOsVersionInternal('UIColor.blackColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_blackColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// darkGrayColor
+  static UIColor getDarkGrayColor() {
+    objc.checkOsVersionInternal('UIColor.darkGrayColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_darkGrayColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// lightGrayColor
+  static UIColor getLightGrayColor() {
+    objc.checkOsVersionInternal('UIColor.lightGrayColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_lightGrayColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// whiteColor
+  static UIColor getWhiteColor() {
+    objc.checkOsVersionInternal('UIColor.whiteColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_whiteColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// grayColor
+  static UIColor getGrayColor() {
+    objc.checkOsVersionInternal('UIColor.grayColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_grayColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// redColor
+  static UIColor getRedColor() {
+    objc.checkOsVersionInternal('UIColor.redColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_redColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// greenColor
+  static UIColor getGreenColor() {
+    objc.checkOsVersionInternal('UIColor.greenColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_greenColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// blueColor
+  static UIColor getBlueColor() {
+    objc.checkOsVersionInternal('UIColor.blueColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_blueColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// cyanColor
+  static UIColor getCyanColor() {
+    objc.checkOsVersionInternal('UIColor.cyanColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_cyanColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// yellowColor
+  static UIColor getYellowColor() {
+    objc.checkOsVersionInternal('UIColor.yellowColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_yellowColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// magentaColor
+  static UIColor getMagentaColor() {
+    objc.checkOsVersionInternal('UIColor.magentaColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_magentaColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// orangeColor
+  static UIColor getOrangeColor() {
+    objc.checkOsVersionInternal('UIColor.orangeColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_orangeColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// purpleColor
+  static UIColor getPurpleColor() {
+    objc.checkOsVersionInternal('UIColor.purpleColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_purpleColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// brownColor
+  static UIColor getBrownColor() {
+    objc.checkOsVersionInternal('UIColor.brownColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_brownColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// clearColor
+  static UIColor getClearColor() {
+    objc.checkOsVersionInternal('UIColor.clearColor', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_clearColor);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// new
+  static UIColor new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_new);
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static UIColor allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final _ret = _objc_msgSend_1cwp428(_class_UIColor, _sel_allocWithZone_, zone);
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// alloc
+  static UIColor alloc() {
+    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_alloc);
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// supportsSecureCoding
+  static bool getSupportsSecureCoding() {
+    return _objc_msgSend_91o635(_class_UIColor, _sel_supportsSecureCoding);
+  }
+
+  /// objectWithItemProviderData:typeIdentifier:error:
+  static UIColor? objectWithItemProviderData(
+    objc.NSData data, {
+    required objc.NSString typeIdentifier,
+    required ffi.Pointer<ffi.Pointer<objc.ObjCObject>> error,
+  }) {
+    objc.checkOsVersionInternal(
+      'UIColor.objectWithItemProviderData:typeIdentifier:error:',
+      iOS: (false, (11, 0, 0)),
+      macOS: (false, (10, 13, 0)),
+    );
+    final _ret = _objc_msgSend_1pnyuds(
+      _class_UIColor,
+      _sel_objectWithItemProviderData_typeIdentifier_error_,
+      data.ref.pointer,
+      typeIdentifier.ref.pointer,
+      error,
+    );
+    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Returns a new instance of UIColor constructed with the default `new` method.
+  factory UIColor() => new$();
+}
+
+extension UIColor$Methods on UIColor {
+  /// initWithWhite:alpha:
+  UIColor initWithWhite(double white, {required double alpha}) {
+    objc.checkOsVersionInternal('UIColor.initWithWhite:alpha:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1n2vn5t(this.ref.retainAndReturnPointer(), _sel_initWithWhite_alpha_, white, alpha);
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithHue:saturation:brightness:alpha:
+  UIColor initWithHue(double hue, {required double saturation, required double brightness, required double alpha}) {
+    objc.checkOsVersionInternal('UIColor.initWithHue:saturation:brightness:alpha:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_q2wq4h(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithHue_saturation_brightness_alpha_,
+      hue,
+      saturation,
+      brightness,
+      alpha,
+    );
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithRed:green:blue:alpha:
+  UIColor initWithRed(double red, {required double green, required double blue, required double alpha}) {
+    objc.checkOsVersionInternal('UIColor.initWithRed:green:blue:alpha:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_q2wq4h(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithRed_green_blue_alpha_,
+      red,
+      green,
+      blue,
+      alpha,
+    );
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithDisplayP3Red:green:blue:alpha:
+  UIColor initWithDisplayP3Red(
+    double displayP3Red, {
+    required double green,
+    required double blue,
+    required double alpha,
+  }) {
+    objc.checkOsVersionInternal('UIColor.initWithDisplayP3Red:green:blue:alpha:', iOS: (false, (10, 0, 0)));
+    final _ret = _objc_msgSend_q2wq4h(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithDisplayP3Red_green_blue_alpha_,
+      displayP3Red,
+      green,
+      blue,
+      alpha,
+    );
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithCGColor:
+  UIColor initWithCGColor(ffi.Pointer<CGColor> cgColor) {
+    objc.checkOsVersionInternal('UIColor.initWithCGColor:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1rsocyz(this.ref.retainAndReturnPointer(), _sel_initWithCGColor_, cgColor);
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithPatternImage:
+  UIColor initWithPatternImage(UIImage image) {
+    objc.checkOsVersionInternal('UIColor.initWithPatternImage:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithPatternImage_,
+      image.ref.pointer,
+    );
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithCIColor:
+  UIColor initWithCIColor(CIColor ciColor) {
+    objc.checkOsVersionInternal('UIColor.initWithCIColor:', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCIColor_, ciColor.ref.pointer);
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// set
+  void set$() {
+    objc.checkOsVersionInternal('UIColor.set', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1pl9qdv(this.ref.pointer, _sel_set);
+  }
+
+  /// setFill
+  void setFill() {
+    objc.checkOsVersionInternal('UIColor.setFill', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1pl9qdv(this.ref.pointer, _sel_setFill);
+  }
+
+  /// setStroke
+  void setStroke() {
+    objc.checkOsVersionInternal('UIColor.setStroke', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1pl9qdv(this.ref.pointer, _sel_setStroke);
+  }
+
+  /// getWhite:alpha:
+  bool getWhite(ffi.Pointer<ffi.Double> white, {required ffi.Pointer<ffi.Double> alpha}) {
+    objc.checkOsVersionInternal('UIColor.getWhite:alpha:', iOS: (false, (5, 0, 0)));
+    return _objc_msgSend_kcpn4z(this.ref.pointer, _sel_getWhite_alpha_, white, alpha);
+  }
+
+  /// getHue:saturation:brightness:alpha:
+  bool getHue(
+    ffi.Pointer<ffi.Double> hue, {
+    required ffi.Pointer<ffi.Double> saturation,
+    required ffi.Pointer<ffi.Double> brightness,
+    required ffi.Pointer<ffi.Double> alpha,
+  }) {
+    objc.checkOsVersionInternal('UIColor.getHue:saturation:brightness:alpha:', iOS: (false, (5, 0, 0)));
+    return _objc_msgSend_xmvde7(
+      this.ref.pointer,
+      _sel_getHue_saturation_brightness_alpha_,
+      hue,
+      saturation,
+      brightness,
+      alpha,
+    );
+  }
+
+  /// getRed:green:blue:alpha:
+  bool getRed(
+    ffi.Pointer<ffi.Double> red, {
+    required ffi.Pointer<ffi.Double> green,
+    required ffi.Pointer<ffi.Double> blue,
+    required ffi.Pointer<ffi.Double> alpha,
+  }) {
+    objc.checkOsVersionInternal('UIColor.getRed:green:blue:alpha:', iOS: (false, (5, 0, 0)));
+    return _objc_msgSend_xmvde7(this.ref.pointer, _sel_getRed_green_blue_alpha_, red, green, blue, alpha);
+  }
+
+  /// colorWithAlphaComponent:
+  UIColor colorWithAlphaComponent(double alpha) {
+    objc.checkOsVersionInternal('UIColor.colorWithAlphaComponent:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_oa8mke(this.ref.pointer, _sel_colorWithAlphaComponent_, alpha);
+    return UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// CGColor
+  ffi.Pointer<CGColor> get CGColor$1 {
+    objc.checkOsVersionInternal('UIColor.CGColor', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_2u9jmz(this.ref.pointer, _sel_CGColor);
+  }
+
+  /// CIColor
+  CIColor get CIColor$1 {
+    objc.checkOsVersionInternal('UIColor.CIColor', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_CIColor);
+    return CIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// init
+  UIColor init() {
+    objc.checkOsVersionInternal('UIColor.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
+    return UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// encodeWithCoder:
+  void encodeWithCoder(objc.NSCoder coder) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
+  }
+
+  /// initWithCoder:
+  UIColor? initWithCoder(objc.NSCoder coder) {
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: false, release: true);
+  }
+}
+
+late final _sel_setTintColor_ = objc.registerName("setTintColor:");
+late final _sel_setBackgroundVerticalPositionAdjustment_forBarMetrics_ = objc.registerName(
+  "setBackgroundVerticalPositionAdjustment:forBarMetrics:",
+);
+final _objc_msgSend_159fszq = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Double, ffi.Long)
+      >
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, double, int)>();
+late final _sel_backgroundVerticalPositionAdjustmentForBarMetrics_ = objc.registerName(
+  "backgroundVerticalPositionAdjustmentForBarMetrics:",
+);
+final _objc_msgSend_1ih4ekw = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Double Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<double Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+final _objc_msgSend_1ih4ekwFpret = objc.msgSendFpretPointer
+    .cast<
+      ffi.NativeFunction<ffi.Double Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<double Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+
+final class UIOffset extends ffi.Struct {
+  @ffi.Double()
+  external double horizontal;
+
+  @ffi.Double()
+  external double vertical;
+}
+
+late final _sel_setTitlePositionAdjustment_forBarMetrics_ = objc.registerName(
+  "setTitlePositionAdjustment:forBarMetrics:",
+);
+final _objc_msgSend_dhwtpp = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, UIOffset, ffi.Long)
+      >
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, UIOffset, int)>();
+late final _sel_titlePositionAdjustmentForBarMetrics_ = objc.registerName("titlePositionAdjustmentForBarMetrics:");
+final _objc_msgSend_qx0nmf = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<UIOffset Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<UIOffset Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+final _objc_msgSend_qx0nmfStret = objc.msgSendStretPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(ffi.Pointer<UIOffset>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)
+      >
+    >()
+    .asFunction<
+      void Function(ffi.Pointer<UIOffset>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)
+    >();
+late final _sel_setBackButtonBackgroundImage_forState_barMetrics_ = objc.registerName(
+  "setBackButtonBackgroundImage:forState:barMetrics:",
+);
+late final _sel_backButtonBackgroundImageForState_barMetrics_ = objc.registerName(
+  "backButtonBackgroundImageForState:barMetrics:",
+);
+late final _sel_setBackButtonTitlePositionAdjustment_forBarMetrics_ = objc.registerName(
+  "setBackButtonTitlePositionAdjustment:forBarMetrics:",
+);
+late final _sel_backButtonTitlePositionAdjustmentForBarMetrics_ = objc.registerName(
+  "backButtonTitlePositionAdjustmentForBarMetrics:",
+);
+late final _sel_setBackButtonBackgroundVerticalPositionAdjustment_forBarMetrics_ = objc.registerName(
+  "setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:",
+);
+late final _sel_backButtonBackgroundVerticalPositionAdjustmentForBarMetrics_ = objc.registerName(
+  "backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:",
+);
+
 /// UIBarButtonItem
-class UIBarButtonItem extends objc.ObjCObjectBase {
+class UIBarButtonItem extends UIBarItem implements objc.NSCoding {
   UIBarButtonItem._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super(pointer, retain: retain, release: release);
+    : super.castFromPointer(pointer, retain: retain, release: release);
 
   /// Constructs a [UIBarButtonItem] that points to the same underlying object as [other].
   UIBarButtonItem.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
@@ -3760,6 +7502,674 @@ class UIBarButtonItem extends objc.ObjCObjectBase {
   /// Constructs a [UIBarButtonItem] that wraps the given raw object pointer.
   UIBarButtonItem.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
     : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UIBarButtonItem].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIBarButtonItem);
+  }
+
+  /// Construct a new fixed space item with the given width.
+  static UIBarButtonItem fixedSpaceItemOfWidth(double width) {
+    objc.checkOsVersionInternal('UIBarButtonItem.fixedSpaceItemOfWidth:', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_oa8mke(_class_UIBarButtonItem, _sel_fixedSpaceItemOfWidth_, width);
+    return UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Construct a new flexible space item.
+  static UIBarButtonItem flexibleSpaceItem() {
+    objc.checkOsVersionInternal('UIBarButtonItem.flexibleSpaceItem', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIBarButtonItem, _sel_flexibleSpaceItem);
+    return UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// new
+  static UIBarButtonItem new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UIBarButtonItem, _sel_new);
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static UIBarButtonItem allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final _ret = _objc_msgSend_1cwp428(_class_UIBarButtonItem, _sel_allocWithZone_, zone);
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// alloc
+  static UIBarButtonItem alloc() {
+    final _ret = _objc_msgSend_151sglz(_class_UIBarButtonItem, _sel_alloc);
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// appearance
+  static UIBarButtonItem appearance() {
+    final _ret = _objc_msgSend_151sglz(_class_UIBarButtonItem, _sel_appearance);
+    return UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// appearanceWhenContainedIn:
+  static UIBarButtonItem appearanceWhenContainedIn(UIAppearanceContainer? ContainerClass) {
+    objc.checkOsVersionInternal('UIBarButtonItem.appearanceWhenContainedIn:', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(
+      _class_UIBarButtonItem,
+      _sel_appearanceWhenContainedIn_,
+      ContainerClass?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// appearanceWhenContainedInInstancesOfClasses:
+  static UIBarButtonItem appearanceWhenContainedInInstancesOfClasses(objc.NSArray containerTypes) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses:',
+      iOS: (false, (9, 0, 0)),
+    );
+    final _ret = _objc_msgSend_1sotr3r(
+      _class_UIBarButtonItem,
+      _sel_appearanceWhenContainedInInstancesOfClasses_,
+      containerTypes.ref.pointer,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// appearanceForTraitCollection:
+  static UIBarButtonItem appearanceForTraitCollection(UITraitCollection trait) {
+    objc.checkOsVersionInternal('UIBarButtonItem.appearanceForTraitCollection:', iOS: (false, (8, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(_class_UIBarButtonItem, _sel_appearanceForTraitCollection_, trait.ref.pointer);
+    return UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// appearanceForTraitCollection:whenContainedIn:
+  static UIBarButtonItem appearanceForTraitCollection$1(
+    UITraitCollection trait, {
+    UIAppearanceContainer? whenContainedIn,
+  }) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.appearanceForTraitCollection:whenContainedIn:',
+      iOS: (false, (8, 0, 0)),
+    );
+    final _ret = _objc_msgSend_15qeuct(
+      _class_UIBarButtonItem,
+      _sel_appearanceForTraitCollection_whenContainedIn_,
+      trait.ref.pointer,
+      whenContainedIn?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// appearanceForTraitCollection:whenContainedInInstancesOfClasses:
+  static UIBarButtonItem appearanceForTraitCollection$2(
+    UITraitCollection trait, {
+    required objc.NSArray whenContainedInInstancesOfClasses,
+  }) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.appearanceForTraitCollection:whenContainedInInstancesOfClasses:',
+      iOS: (false, (9, 0, 0)),
+    );
+    final _ret = _objc_msgSend_15qeuct(
+      _class_UIBarButtonItem,
+      _sel_appearanceForTraitCollection_whenContainedInInstancesOfClasses_,
+      trait.ref.pointer,
+      whenContainedInInstancesOfClasses.ref.pointer,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Returns a new instance of UIBarButtonItem constructed with the default `new` method.
+  factory UIBarButtonItem() => new$();
+}
+
+extension UIBarButtonItem$Methods on UIBarButtonItem {
+  /// init
+  UIBarButtonItem init() {
+    objc.checkOsVersionInternal('UIBarButtonItem.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithCoder:
+  UIBarButtonItem? initWithCoder(objc.NSCoder coder) {
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithImage:style:target:action:
+  UIBarButtonItem initWithImage(
+    UIImage? image, {
+    required UIBarButtonItemStyle style,
+    objc.ObjCObjectBase? target,
+    required ffi.Pointer<objc.ObjCSelector> action,
+  }) {
+    objc.checkOsVersionInternal('UIBarButtonItem.initWithImage:style:target:action:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_13sbrg9(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithImage_style_target_action_,
+      image?.ref.pointer ?? ffi.nullptr,
+      style.value,
+      target?.ref.pointer ?? ffi.nullptr,
+      action,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithImage:landscapeImagePhone:style:target:action:
+  UIBarButtonItem initWithImage$1(
+    UIImage? image, {
+    UIImage? landscapeImagePhone,
+    required UIBarButtonItemStyle style,
+    objc.ObjCObjectBase? target,
+    required ffi.Pointer<objc.ObjCSelector> action,
+  }) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.initWithImage:landscapeImagePhone:style:target:action:',
+      iOS: (false, (5, 0, 0)),
+    );
+    final _ret = _objc_msgSend_1d97k9n(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithImage_landscapeImagePhone_style_target_action_,
+      image?.ref.pointer ?? ffi.nullptr,
+      landscapeImagePhone?.ref.pointer ?? ffi.nullptr,
+      style.value,
+      target?.ref.pointer ?? ffi.nullptr,
+      action,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithTitle:style:target:action:
+  UIBarButtonItem initWithTitle(
+    objc.NSString? title, {
+    required UIBarButtonItemStyle style,
+    objc.ObjCObjectBase? target,
+    required ffi.Pointer<objc.ObjCSelector> action,
+  }) {
+    objc.checkOsVersionInternal('UIBarButtonItem.initWithTitle:style:target:action:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_13sbrg9(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithTitle_style_target_action_,
+      title?.ref.pointer ?? ffi.nullptr,
+      style.value,
+      target?.ref.pointer ?? ffi.nullptr,
+      action,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithBarButtonSystemItem:target:action:
+  UIBarButtonItem initWithBarButtonSystemItem(
+    UIBarButtonSystemItem systemItem, {
+    objc.ObjCObjectBase? target,
+    required ffi.Pointer<objc.ObjCSelector> action,
+  }) {
+    objc.checkOsVersionInternal('UIBarButtonItem.initWithBarButtonSystemItem:target:action:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_18lulgh(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithBarButtonSystemItem_target_action_,
+      systemItem.value,
+      target?.ref.pointer ?? ffi.nullptr,
+      action,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithCustomView:
+  UIBarButtonItem initWithCustomView(UIView customView) {
+    objc.checkOsVersionInternal('UIBarButtonItem.initWithCustomView:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithCustomView_,
+      customView.ref.pointer,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Creates a bar button item for the given systemItem. The primaryAction is copied, and its title & image are ignored.
+  UIBarButtonItem initWithBarButtonSystemItem$1(UIBarButtonSystemItem systemItem, {UIAction? primaryAction}) {
+    objc.checkOsVersionInternal('UIBarButtonItem.initWithBarButtonSystemItem:primaryAction:', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_ka2bhe(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithBarButtonSystemItem_primaryAction_,
+      systemItem.value,
+      primaryAction?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Creates a plain-style bar button item from the properties of primaryAction. primaryAction is copied.
+  UIBarButtonItem initWithPrimaryAction(UIAction? primaryAction) {
+    objc.checkOsVersionInternal('UIBarButtonItem.initWithPrimaryAction:', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithPrimaryAction_,
+      primaryAction?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Creates a bar button item for the given systemItem. The constructed item will present the menu immediately when touched.
+  UIBarButtonItem initWithBarButtonSystemItem$2(UIBarButtonSystemItem systemItem, {UIMenu? menu}) {
+    objc.checkOsVersionInternal('UIBarButtonItem.initWithBarButtonSystemItem:menu:', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_ka2bhe(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithBarButtonSystemItem_menu_,
+      systemItem.value,
+      menu?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Creates a plain-style bar button item with the given title. The constructed item will present the menu immediately when touched.
+  UIBarButtonItem initWithTitle$1(objc.NSString? title, {UIMenu? menu}) {
+    objc.checkOsVersionInternal('UIBarButtonItem.initWithTitle:menu:', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_15qeuct(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithTitle_menu_,
+      title?.ref.pointer ?? ffi.nullptr,
+      menu?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Creates a plain-style bar button item with the given item. The constructed item will present the menu immediately when touched.
+  UIBarButtonItem initWithImage$2(UIImage? image, {UIMenu? menu}) {
+    objc.checkOsVersionInternal('UIBarButtonItem.initWithImage:menu:', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_15qeuct(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithImage_menu_,
+      image?.ref.pointer ?? ffi.nullptr,
+      menu?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIBarButtonItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// style
+  UIBarButtonItemStyle get style {
+    objc.checkOsVersionInternal('UIBarButtonItem.style', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_121lhl0(this.ref.pointer, _sel_style);
+    return UIBarButtonItemStyle.fromValue(_ret);
+  }
+
+  /// setStyle:
+  set style(UIBarButtonItemStyle value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setStyle:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_11ist7u(this.ref.pointer, _sel_setStyle_, value.value);
+  }
+
+  /// width
+  double get width {
+    objc.checkOsVersionInternal('UIBarButtonItem.width', iOS: (false, (2, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_width)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_width);
+  }
+
+  /// setWidth:
+  set width(double value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setWidth:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_hwm8nu(this.ref.pointer, _sel_setWidth_, value);
+  }
+
+  /// possibleTitles
+  objc.NSSet? get possibleTitles {
+    objc.checkOsVersionInternal('UIBarButtonItem.possibleTitles', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_possibleTitles);
+    return _ret.address == 0 ? null : objc.NSSet.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setPossibleTitles:
+  set possibleTitles(objc.NSSet? value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setPossibleTitles:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setPossibleTitles_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// customView
+  UIView? get customView {
+    objc.checkOsVersionInternal('UIBarButtonItem.customView', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_customView);
+    return _ret.address == 0 ? null : UIView.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setCustomView:
+  set customView(UIView? value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setCustomView:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setCustomView_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// action
+  ffi.Pointer<objc.ObjCSelector> get action {
+    objc.checkOsVersionInternal('UIBarButtonItem.action', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_1ovaulg(this.ref.pointer, _sel_action);
+  }
+
+  /// setAction:
+  set action(ffi.Pointer<objc.ObjCSelector> value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setAction:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1d9e4oe(this.ref.pointer, _sel_setAction_, value);
+  }
+
+  /// target
+  objc.ObjCObjectBase? get target {
+    objc.checkOsVersionInternal('UIBarButtonItem.target', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_target);
+    return _ret.address == 0 ? null : objc.ObjCObjectBase(_ret, retain: true, release: true);
+  }
+
+  /// setTarget:
+  set target(objc.ObjCObjectBase? value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setTarget:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setTarget_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// Set the primaryAction on this item, updating the title & image of the item if appropriate (primaryAction is non-nil, and this is not a system item). When primaryAction is non-nil, the target & action properties are ignored. If primaryAction is set to nil, the title & image properties are left unchanged.
+  UIAction? get primaryAction {
+    objc.checkOsVersionInternal('UIBarButtonItem.primaryAction', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_primaryAction);
+    return _ret.address == 0 ? null : UIAction.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Set the primaryAction on this item, updating the title & image of the item if appropriate (primaryAction is non-nil, and this is not a system item). When primaryAction is non-nil, the target & action properties are ignored. If primaryAction is set to nil, the title & image properties are left unchanged.
+  set primaryAction(UIAction? value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setPrimaryAction:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setPrimaryAction_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// When non-nil the menu is presented, the gesture used to trigger the menu is based on if the bar button item would normally trigger an action when tapped.
+  UIMenu? get menu {
+    objc.checkOsVersionInternal('UIBarButtonItem.menu', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_menu);
+    return _ret.address == 0 ? null : UIMenu.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// When non-nil the menu is presented, the gesture used to trigger the menu is based on if the bar button item would normally trigger an action when tapped.
+  set menu(UIMenu? value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setMenu:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setMenu_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// Indicates if the button changes selection as its primary action.
+  /// This shows the menu as options for selection if a menu is populated and no action when tapped is enabled.
+  /// If no menu is provided and no action is enabled when tapped, the item is toggled on and off for the primary action.
+  bool get changesSelectionAsPrimaryAction {
+    objc.checkOsVersionInternal('UIBarButtonItem.changesSelectionAsPrimaryAction', iOS: (false, (15, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_changesSelectionAsPrimaryAction);
+  }
+
+  /// Indicates if the button changes selection as its primary action.
+  /// This shows the menu as options for selection if a menu is populated and no action when tapped is enabled.
+  /// If no menu is provided and no action is enabled when tapped, the item is toggled on and off for the primary action.
+  set changesSelectionAsPrimaryAction(bool value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setChangesSelectionAsPrimaryAction:', iOS: (false, (15, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setChangesSelectionAsPrimaryAction_, value);
+  }
+
+  /// isSelected
+  bool get selected {
+    objc.checkOsVersionInternal('UIBarButtonItem.isSelected', iOS: (false, (15, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isSelected);
+  }
+
+  /// setSelected:
+  set selected(bool value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setSelected:', iOS: (false, (15, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setSelected_, value);
+  }
+
+  /// setBackgroundImage:forState:barMetrics:
+  void setBackgroundImage(
+    UIImage? backgroundImage, {
+    required UIControlState forState,
+    required UIBarMetrics barMetrics,
+  }) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setBackgroundImage:forState:barMetrics:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_1oar0aj(
+      this.ref.pointer,
+      _sel_setBackgroundImage_forState_barMetrics_,
+      backgroundImage?.ref.pointer ?? ffi.nullptr,
+      forState.value,
+      barMetrics.value,
+    );
+  }
+
+  /// backgroundImageForState:barMetrics:
+  UIImage? backgroundImageForState(UIControlState state, {required UIBarMetrics barMetrics}) {
+    objc.checkOsVersionInternal('UIBarButtonItem.backgroundImageForState:barMetrics:', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_1mmfvr1(
+      this.ref.pointer,
+      _sel_backgroundImageForState_barMetrics_,
+      state.value,
+      barMetrics.value,
+    );
+    return _ret.address == 0 ? null : UIImage.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setBackgroundImage:forState:style:barMetrics:
+  void setBackgroundImage$1(
+    UIImage? backgroundImage, {
+    required UIControlState forState,
+    required UIBarButtonItemStyle style$1,
+    required UIBarMetrics barMetrics,
+  }) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.setBackgroundImage:forState:style:barMetrics:',
+      iOS: (false, (6, 0, 0)),
+    );
+    _objc_msgSend_1lg97nc(
+      this.ref.pointer,
+      _sel_setBackgroundImage_forState_style_barMetrics_,
+      backgroundImage?.ref.pointer ?? ffi.nullptr,
+      forState.value,
+      style$1.value,
+      barMetrics.value,
+    );
+  }
+
+  /// backgroundImageForState:style:barMetrics:
+  UIImage? backgroundImageForState$1(
+    UIControlState state, {
+    required UIBarButtonItemStyle style$1,
+    required UIBarMetrics barMetrics,
+  }) {
+    objc.checkOsVersionInternal('UIBarButtonItem.backgroundImageForState:style:barMetrics:', iOS: (false, (6, 0, 0)));
+    final _ret = _objc_msgSend_15kz3t6(
+      this.ref.pointer,
+      _sel_backgroundImageForState_style_barMetrics_,
+      state.value,
+      style$1.value,
+      barMetrics.value,
+    );
+    return _ret.address == 0 ? null : UIImage.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// tintColor
+  UIColor? get tintColor {
+    objc.checkOsVersionInternal('UIBarButtonItem.tintColor', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_tintColor);
+    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setTintColor:
+  set tintColor(UIColor? value) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setTintColor:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setTintColor_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// setBackgroundVerticalPositionAdjustment:forBarMetrics:
+  void setBackgroundVerticalPositionAdjustment(double adjustment, {required UIBarMetrics forBarMetrics}) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.setBackgroundVerticalPositionAdjustment:forBarMetrics:',
+      iOS: (false, (5, 0, 0)),
+    );
+    _objc_msgSend_159fszq(
+      this.ref.pointer,
+      _sel_setBackgroundVerticalPositionAdjustment_forBarMetrics_,
+      adjustment,
+      forBarMetrics.value,
+    );
+  }
+
+  /// backgroundVerticalPositionAdjustmentForBarMetrics:
+  double backgroundVerticalPositionAdjustmentForBarMetrics(UIBarMetrics barMetrics) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.backgroundVerticalPositionAdjustmentForBarMetrics:',
+      iOS: (false, (5, 0, 0)),
+    );
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ih4ekwFpret(
+            this.ref.pointer,
+            _sel_backgroundVerticalPositionAdjustmentForBarMetrics_,
+            barMetrics.value,
+          )
+        : _objc_msgSend_1ih4ekw(
+            this.ref.pointer,
+            _sel_backgroundVerticalPositionAdjustmentForBarMetrics_,
+            barMetrics.value,
+          );
+  }
+
+  /// setTitlePositionAdjustment:forBarMetrics:
+  void setTitlePositionAdjustment(UIOffset adjustment, {required UIBarMetrics forBarMetrics}) {
+    objc.checkOsVersionInternal('UIBarButtonItem.setTitlePositionAdjustment:forBarMetrics:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_dhwtpp(
+      this.ref.pointer,
+      _sel_setTitlePositionAdjustment_forBarMetrics_,
+      adjustment,
+      forBarMetrics.value,
+    );
+  }
+
+  /// titlePositionAdjustmentForBarMetrics:
+  UIOffset titlePositionAdjustmentForBarMetrics(UIBarMetrics barMetrics) {
+    objc.checkOsVersionInternal('UIBarButtonItem.titlePositionAdjustmentForBarMetrics:', iOS: (false, (5, 0, 0)));
+    final _ptr = pkg_ffi.calloc<UIOffset>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_qx0nmfStret(
+            _ptr,
+            this.ref.pointer,
+            _sel_titlePositionAdjustmentForBarMetrics_,
+            barMetrics.value,
+          )
+        : _ptr.ref = _objc_msgSend_qx0nmf(
+            this.ref.pointer,
+            _sel_titlePositionAdjustmentForBarMetrics_,
+            barMetrics.value,
+          );
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<UIOffset>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<UIOffset>(_finalizable);
+  }
+
+  /// setBackButtonBackgroundImage:forState:barMetrics:
+  void setBackButtonBackgroundImage(
+    UIImage? backgroundImage, {
+    required UIControlState forState,
+    required UIBarMetrics barMetrics,
+  }) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.setBackButtonBackgroundImage:forState:barMetrics:',
+      iOS: (false, (5, 0, 0)),
+    );
+    _objc_msgSend_1oar0aj(
+      this.ref.pointer,
+      _sel_setBackButtonBackgroundImage_forState_barMetrics_,
+      backgroundImage?.ref.pointer ?? ffi.nullptr,
+      forState.value,
+      barMetrics.value,
+    );
+  }
+
+  /// backButtonBackgroundImageForState:barMetrics:
+  UIImage? backButtonBackgroundImageForState(UIControlState state, {required UIBarMetrics barMetrics}) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.backButtonBackgroundImageForState:barMetrics:',
+      iOS: (false, (5, 0, 0)),
+    );
+    final _ret = _objc_msgSend_1mmfvr1(
+      this.ref.pointer,
+      _sel_backButtonBackgroundImageForState_barMetrics_,
+      state.value,
+      barMetrics.value,
+    );
+    return _ret.address == 0 ? null : UIImage.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setBackButtonTitlePositionAdjustment:forBarMetrics:
+  void setBackButtonTitlePositionAdjustment(UIOffset adjustment, {required UIBarMetrics forBarMetrics}) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.setBackButtonTitlePositionAdjustment:forBarMetrics:',
+      iOS: (false, (5, 0, 0)),
+    );
+    _objc_msgSend_dhwtpp(
+      this.ref.pointer,
+      _sel_setBackButtonTitlePositionAdjustment_forBarMetrics_,
+      adjustment,
+      forBarMetrics.value,
+    );
+  }
+
+  /// backButtonTitlePositionAdjustmentForBarMetrics:
+  UIOffset backButtonTitlePositionAdjustmentForBarMetrics(UIBarMetrics barMetrics) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.backButtonTitlePositionAdjustmentForBarMetrics:',
+      iOS: (false, (5, 0, 0)),
+    );
+    final _ptr = pkg_ffi.calloc<UIOffset>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_qx0nmfStret(
+            _ptr,
+            this.ref.pointer,
+            _sel_backButtonTitlePositionAdjustmentForBarMetrics_,
+            barMetrics.value,
+          )
+        : _ptr.ref = _objc_msgSend_qx0nmf(
+            this.ref.pointer,
+            _sel_backButtonTitlePositionAdjustmentForBarMetrics_,
+            barMetrics.value,
+          );
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<UIOffset>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<UIOffset>(_finalizable);
+  }
+
+  /// setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
+  void setBackButtonBackgroundVerticalPositionAdjustment(double adjustment, {required UIBarMetrics forBarMetrics}) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:',
+      iOS: (false, (5, 0, 0)),
+    );
+    _objc_msgSend_159fszq(
+      this.ref.pointer,
+      _sel_setBackButtonBackgroundVerticalPositionAdjustment_forBarMetrics_,
+      adjustment,
+      forBarMetrics.value,
+    );
+  }
+
+  /// backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:
+  double backButtonBackgroundVerticalPositionAdjustmentForBarMetrics(UIBarMetrics barMetrics) {
+    objc.checkOsVersionInternal(
+      'UIBarButtonItem.backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:',
+      iOS: (false, (5, 0, 0)),
+    );
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ih4ekwFpret(
+            this.ref.pointer,
+            _sel_backButtonBackgroundVerticalPositionAdjustmentForBarMetrics_,
+            barMetrics.value,
+          )
+        : _objc_msgSend_1ih4ekw(
+            this.ref.pointer,
+            _sel_backButtonBackgroundVerticalPositionAdjustmentForBarMetrics_,
+            barMetrics.value,
+          );
+  }
+
+  /// encodeWithCoder:
+  void encodeWithCoder(objc.NSCoder coder) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
+  }
 }
 
 late final _sel_editButtonItem = objc.registerName("editButtonItem");
@@ -4211,25 +8621,6 @@ late final _sel_beginAppearanceTransition_animated_ = objc.registerName("beginAp
 late final _sel_endAppearanceTransition = objc.registerName("endAppearanceTransition");
 late final _sel_childViewControllerForStatusBarStyle = objc.registerName("childViewControllerForStatusBarStyle");
 late final _sel_childViewControllerForStatusBarHidden = objc.registerName("childViewControllerForStatusBarHidden");
-
-/// WARNING: UITraitCollection is a stub. To generate bindings for this class, include
-/// UITraitCollection in your config's objc-interfaces list.
-///
-/// ! A trait collection encapsulates the system traits of an interface's environment.
-class UITraitCollection extends objc.NSObject implements objc.NSCopying, objc.NSSecureCoding {
-  UITraitCollection._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super.castFromPointer(pointer, retain: retain, release: release) {
-    objc.checkOsVersionInternal('UITraitCollection', iOS: (false, (8, 0, 0)));
-  }
-
-  /// Constructs a [UITraitCollection] that points to the same underlying object as [other].
-  UITraitCollection.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
-
-  /// Constructs a [UITraitCollection] that wraps the given raw object pointer.
-  UITraitCollection.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
-    : this._(other, retain: retain, release: release);
-}
-
 late final _sel_setOverrideTraitCollection_forChildViewController_ = objc.registerName(
   "setOverrideTraitCollection:forChildViewController:",
 );
@@ -4425,7 +8816,7 @@ extension UIContainerViewControllerCallbacks on UIViewController {
 /// UIStateRestoring in your config's objc-protocols list.
 ///
 /// UIStateRestoring
-interface class UIStateRestoring extends objc.ObjCProtocolBase implements objc.NSObjectProtocol {
+interface class UIStateRestoring extends objc.ObjCProtocolBase {
   UIStateRestoring._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
     : super(pointer, retain: retain, release: release);
 
@@ -4465,235 +8856,6 @@ late final _sel_setRestorationClass_ = objc.registerName("setRestorationClass:")
 late final _sel_encodeRestorableStateWithCoder_ = objc.registerName("encodeRestorableStateWithCoder:");
 late final _sel_decodeRestorableStateWithCoder_ = objc.registerName("decodeRestorableStateWithCoder:");
 late final _sel_applicationFinishedRestoringState = objc.registerName("applicationFinishedRestoringState");
-late final _sel_restorationParent = objc.registerName("restorationParent");
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_idUIStateRestoring_ffiVoid_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => block.ref.target
-    .cast<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>>()
-    .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>()(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_idUIStateRestoring_ffiVoid_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-        >(_ObjCBlock_idUIStateRestoring_ffiVoid_fnPtrTrampoline)
-        .cast();
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_idUIStateRestoring_ffiVoid_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => (objc.getBlockClosure(block) as ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>))(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_idUIStateRestoring_ffiVoid_closureCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-        >(_ObjCBlock_idUIStateRestoring_ffiVoid_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)>`.
-abstract final class ObjCBlock_idUIStateRestoring_ffiVoid {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>> ptr,
-  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)>(
-    objc.newPointerBlock(_ObjCBlock_idUIStateRestoring_ffiVoid_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)> fromFunction(
-    UIStateRestoring? Function(ffi.Pointer<ffi.Void>) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)>(
-    objc.newClosureBlock(
-      _ObjCBlock_idUIStateRestoring_ffiVoid_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0) => fn(arg0)?.ref.retainAndAutorelease() ?? ffi.nullptr,
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)>`.
-extension ObjCBlock_idUIStateRestoring_ffiVoid_CallExtension
-    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)> {
-  UIStateRestoring? call(ffi.Pointer<ffi.Void> arg0) =>
-      ref.pointer.ref.invoke
-              .cast<
-                ffi.NativeFunction<
-                  ffi.Pointer<objc.ObjCObject> Function(
-                    ffi.Pointer<objc.ObjCBlockImpl> block,
-                    ffi.Pointer<ffi.Void> arg0,
-                  )
-                >
-              >()
-              .asFunction<
-                ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-              >()(ref.pointer, arg0)
-              .address ==
-          0
-      ? null
-      : UIStateRestoring.castFromPointer(
-          ref.pointer.ref.invoke
-              .cast<
-                ffi.NativeFunction<
-                  ffi.Pointer<objc.ObjCObject> Function(
-                    ffi.Pointer<objc.ObjCBlockImpl> block,
-                    ffi.Pointer<ffi.Void> arg0,
-                  )
-                >
-              >()
-              .asFunction<
-                ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-              >()(ref.pointer, arg0),
-          retain: true,
-          release: true,
-        );
-}
-
-/// WARNING: UIObjectRestoration is a stub. To generate bindings for this class, include
-/// UIObjectRestoration in your config's objc-protocols list.
-///
-/// UIObjectRestoration
-interface class UIObjectRestoration extends objc.ObjCProtocolBase {
-  UIObjectRestoration._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super(pointer, retain: retain, release: release);
-
-  /// Constructs a [UIObjectRestoration] that points to the same underlying object as [other].
-  UIObjectRestoration.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
-
-  /// Constructs a [UIObjectRestoration] that wraps the given raw object pointer.
-  UIObjectRestoration.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
-    : this._(other, retain: retain, release: release);
-}
-
-late final _sel_objectRestorationClass = objc.registerName("objectRestorationClass");
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_idUIObjectRestoration_ffiVoid_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => block.ref.target
-    .cast<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>>()
-    .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>()(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_idUIObjectRestoration_ffiVoid_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-        >(_ObjCBlock_idUIObjectRestoration_ffiVoid_fnPtrTrampoline)
-        .cast();
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_idUIObjectRestoration_ffiVoid_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => (objc.getBlockClosure(block) as ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>))(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_idUIObjectRestoration_ffiVoid_closureCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-        >(_ObjCBlock_idUIObjectRestoration_ffiVoid_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)>`.
-abstract final class ObjCBlock_idUIObjectRestoration_ffiVoid {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>> ptr,
-  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)>(
-    objc.newPointerBlock(_ObjCBlock_idUIObjectRestoration_ffiVoid_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)> fromFunction(
-    UIObjectRestoration? Function(ffi.Pointer<ffi.Void>) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)>(
-    objc.newClosureBlock(
-      _ObjCBlock_idUIObjectRestoration_ffiVoid_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0) => fn(arg0)?.ref.retainAndAutorelease() ?? ffi.nullptr,
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)>`.
-extension ObjCBlock_idUIObjectRestoration_ffiVoid_CallExtension
-    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>)> {
-  UIObjectRestoration? call(ffi.Pointer<ffi.Void> arg0) =>
-      ref.pointer.ref.invoke
-              .cast<
-                ffi.NativeFunction<
-                  ffi.Pointer<objc.ObjCObject> Function(
-                    ffi.Pointer<objc.ObjCBlockImpl> block,
-                    ffi.Pointer<ffi.Void> arg0,
-                  )
-                >
-              >()
-              .asFunction<
-                ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-              >()(ref.pointer, arg0)
-              .address ==
-          0
-      ? null
-      : UIObjectRestoration.castFromPointer(
-          ref.pointer.ref.invoke
-              .cast<
-                ffi.NativeFunction<
-                  ffi.Pointer<objc.ObjCObject> Function(
-                    ffi.Pointer<objc.ObjCBlockImpl> block,
-                    ffi.Pointer<ffi.Void> arg0,
-                  )
-                >
-              >()
-              .asFunction<
-                ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-              >()(ref.pointer, arg0),
-          retain: true,
-          release: true,
-        );
-}
 
 /// UIStateRestoration
 extension UIStateRestoration on UIViewController {
@@ -4739,24 +8901,6 @@ extension UIStateRestoration on UIViewController {
   void applicationFinishedRestoringState() {
     objc.checkOsVersionInternal('UIViewController.applicationFinishedRestoringState', iOS: (false, (7, 0, 0)));
     _objc_msgSend_1pl9qdv(this.ref.pointer, _sel_applicationFinishedRestoringState);
-  }
-
-  /// restorationParent
-  UIStateRestoring? get restorationParent {
-    if (!objc.respondsToSelector(this.ref.pointer, _sel_restorationParent)) {
-      throw objc.UnimplementedOptionalMethodException('UIViewController', 'restorationParent');
-    }
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_restorationParent);
-    return _ret.address == 0 ? null : UIStateRestoring.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// objectRestorationClass
-  UIObjectRestoration? get objectRestorationClass {
-    if (!objc.respondsToSelector(this.ref.pointer, _sel_objectRestorationClass)) {
-      throw objc.UnimplementedOptionalMethodException('UIViewController', 'objectRestorationClass');
-    }
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_objectRestorationClass);
-    return _ret.address == 0 ? null : UIObjectRestoration.castFromPointer(_ret, retain: true, release: true);
   }
 }
 
@@ -4833,40 +8977,8 @@ interface class UILayoutSupport extends objc.ObjCProtocolBase implements objc.NS
 
 late final _sel_topLayoutGuide = objc.registerName("topLayoutGuide");
 late final _sel_bottomLayoutGuide = objc.registerName("bottomLayoutGuide");
-
-final class UIEdgeInsets extends ffi.Struct {
-  @ffi.Double()
-  external double top;
-
-  @ffi.Double()
-  external double left;
-
-  @ffi.Double()
-  external double bottom;
-
-  @ffi.Double()
-  external double right;
-}
-
 late final _sel_additionalSafeAreaInsets = objc.registerName("additionalSafeAreaInsets");
-final _objc_msgSend_ct4cu5 = objc.msgSendPointer
-    .cast<ffi.NativeFunction<UIEdgeInsets Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
-    .asFunction<UIEdgeInsets Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
-final _objc_msgSend_ct4cu5Stret = objc.msgSendStretPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Void Function(ffi.Pointer<UIEdgeInsets>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)
-      >
-    >()
-    .asFunction<
-      void Function(ffi.Pointer<UIEdgeInsets>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)
-    >();
 late final _sel_setAdditionalSafeAreaInsets_ = objc.registerName("setAdditionalSafeAreaInsets:");
-final _objc_msgSend_1g8fos5 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, UIEdgeInsets)>
-    >()
-    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, UIEdgeInsets)>();
 
 final class NSDirectionalEdgeInsets extends ffi.Struct {
   @ffi.Double()
@@ -5565,7 +9677,1054 @@ extension UIPointerLockSupport on UIViewController {
 ///
 extension unnamed on UIViewController {}
 
+late final _class_UINavigationItem = objc.getClass("UINavigationItem");
+late final _sel_initWithTitle_ = objc.registerName("initWithTitle:");
+late final _sel_titleView = objc.registerName("titleView");
+late final _sel_setTitleView_ = objc.registerName("setTitleView:");
+late final _sel_prompt = objc.registerName("prompt");
+late final _sel_setPrompt_ = objc.registerName("setPrompt:");
+late final _sel_backBarButtonItem = objc.registerName("backBarButtonItem");
+late final _sel_setBackBarButtonItem_ = objc.registerName("setBackBarButtonItem:");
+late final _sel_backButtonTitle = objc.registerName("backButtonTitle");
+late final _sel_setBackButtonTitle_ = objc.registerName("setBackButtonTitle:");
+late final _sel_hidesBackButton = objc.registerName("hidesBackButton");
+late final _sel_setHidesBackButton_ = objc.registerName("setHidesBackButton:");
+late final _sel_setHidesBackButton_animated_ = objc.registerName("setHidesBackButton:animated:");
+
+enum UINavigationItemBackButtonDisplayMode {
+  /// Default mode, uses an appropriate title, followed by a generic title (typically 'Back'), then no title.
+  UINavigationItemBackButtonDisplayModeDefault(0),
+
+  /// Generic titles only. Ignores .title and .backButtonTitle (but *not* .backBarButtonItem.title).
+  UINavigationItemBackButtonDisplayModeGeneric(1),
+
+  /// Don't use a title, just the back button indicator image.
+  UINavigationItemBackButtonDisplayModeMinimal(2);
+
+  final int value;
+  const UINavigationItemBackButtonDisplayMode(this.value);
+
+  static UINavigationItemBackButtonDisplayMode fromValue(int value) => switch (value) {
+    0 => UINavigationItemBackButtonDisplayModeDefault,
+    1 => UINavigationItemBackButtonDisplayModeGeneric,
+    2 => UINavigationItemBackButtonDisplayModeMinimal,
+    _ => throw ArgumentError('Unknown value for UINavigationItemBackButtonDisplayMode: $value'),
+  };
+}
+
+late final _sel_backButtonDisplayMode = objc.registerName("backButtonDisplayMode");
+final _objc_msgSend_10bx5wy = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setBackButtonDisplayMode_ = objc.registerName("setBackButtonDisplayMode:");
+final _objc_msgSend_1dph54c = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_leftBarButtonItems = objc.registerName("leftBarButtonItems");
+late final _sel_setLeftBarButtonItems_ = objc.registerName("setLeftBarButtonItems:");
+late final _sel_rightBarButtonItems = objc.registerName("rightBarButtonItems");
+late final _sel_setRightBarButtonItems_ = objc.registerName("setRightBarButtonItems:");
+late final _sel_setLeftBarButtonItems_animated_ = objc.registerName("setLeftBarButtonItems:animated:");
+final _objc_msgSend_6p7ndb = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Bool,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>, bool)
+    >();
+late final _sel_setRightBarButtonItems_animated_ = objc.registerName("setRightBarButtonItems:animated:");
+late final _sel_leftItemsSupplementBackButton = objc.registerName("leftItemsSupplementBackButton");
+late final _sel_setLeftItemsSupplementBackButton_ = objc.registerName("setLeftItemsSupplementBackButton:");
+late final _sel_leftBarButtonItem = objc.registerName("leftBarButtonItem");
+late final _sel_setLeftBarButtonItem_ = objc.registerName("setLeftBarButtonItem:");
+late final _sel_rightBarButtonItem = objc.registerName("rightBarButtonItem");
+late final _sel_setRightBarButtonItem_ = objc.registerName("setRightBarButtonItem:");
+late final _sel_setLeftBarButtonItem_animated_ = objc.registerName("setLeftBarButtonItem:animated:");
+late final _sel_setRightBarButtonItem_animated_ = objc.registerName("setRightBarButtonItem:animated:");
+
+enum UINavigationItemLargeTitleDisplayMode {
+  /// Automatically use the large out-of-line title based on the state of the previous item in the navigation bar. An item with largeTitleDisplayMode=Automatic will show or hide the large title based on the request of the previous navigation item. If the first item pushed is set to Automatic, then it will show the large title if the navigation bar has prefersLargeTitles=YES.
+  UINavigationItemLargeTitleDisplayModeAutomatic(0),
+
+  /// Always use a larger title when this item is topmost.
+  UINavigationItemLargeTitleDisplayModeAlways(1),
+
+  /// Never use a larger title when this item is topmost.
+  UINavigationItemLargeTitleDisplayModeNever(2);
+
+  final int value;
+  const UINavigationItemLargeTitleDisplayMode(this.value);
+
+  static UINavigationItemLargeTitleDisplayMode fromValue(int value) => switch (value) {
+    0 => UINavigationItemLargeTitleDisplayModeAutomatic,
+    1 => UINavigationItemLargeTitleDisplayModeAlways,
+    2 => UINavigationItemLargeTitleDisplayModeNever,
+    _ => throw ArgumentError('Unknown value for UINavigationItemLargeTitleDisplayMode: $value'),
+  };
+}
+
+late final _sel_largeTitleDisplayMode = objc.registerName("largeTitleDisplayMode");
+final _objc_msgSend_1j6d9um = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setLargeTitleDisplayMode_ = objc.registerName("setLargeTitleDisplayMode:");
+final _objc_msgSend_1ddnfsg = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+
+/// WARNING: UISearchController is a stub. To generate bindings for this class, include
+/// UISearchController in your config's objc-interfaces list.
+///
+/// UISearchController
+class UISearchController extends objc.ObjCObjectBase {
+  UISearchController._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super(pointer, retain: retain, release: release);
+
+  /// Constructs a [UISearchController] that points to the same underlying object as [other].
+  UISearchController.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UISearchController] that wraps the given raw object pointer.
+  UISearchController.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_searchController = objc.registerName("searchController");
+late final _sel_setSearchController_ = objc.registerName("setSearchController:");
+late final _sel_hidesSearchBarWhenScrolling = objc.registerName("hidesSearchBarWhenScrolling");
+late final _sel_setHidesSearchBarWhenScrolling_ = objc.registerName("setHidesSearchBarWhenScrolling:");
+late final _class_UINavigationBarAppearance = objc.getClass("UINavigationBarAppearance");
+
+/// UINavigationBarAppearance
+class UINavigationBarAppearance extends objc.ObjCObjectBase {
+  UINavigationBarAppearance._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super(pointer, retain: retain, release: release);
+
+  /// Constructs a [UINavigationBarAppearance] that points to the same underlying object as [other].
+  UINavigationBarAppearance.castFrom(objc.ObjCObjectBase other)
+    : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UINavigationBarAppearance] that wraps the given raw object pointer.
+  UINavigationBarAppearance.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UINavigationBarAppearance].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UINavigationBarAppearance);
+  }
+}
+
+extension UINavigationBarAppearance$Methods on UINavigationBarAppearance {}
+
+late final _sel_standardAppearance = objc.registerName("standardAppearance");
+late final _sel_setStandardAppearance_ = objc.registerName("setStandardAppearance:");
+late final _sel_compactAppearance = objc.registerName("compactAppearance");
+late final _sel_setCompactAppearance_ = objc.registerName("setCompactAppearance:");
+late final _sel_scrollEdgeAppearance = objc.registerName("scrollEdgeAppearance");
+late final _sel_setScrollEdgeAppearance_ = objc.registerName("setScrollEdgeAppearance:");
+late final _sel_compactScrollEdgeAppearance = objc.registerName("compactScrollEdgeAppearance");
+late final _sel_setCompactScrollEdgeAppearance_ = objc.registerName("setCompactScrollEdgeAppearance:");
+
+/// UINavigationItem
+class UINavigationItem extends objc.NSObject implements objc.NSCoding {
+  UINavigationItem._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release);
+
+  /// Constructs a [UINavigationItem] that points to the same underlying object as [other].
+  UINavigationItem.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UINavigationItem] that wraps the given raw object pointer.
+  UINavigationItem.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UINavigationItem].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UINavigationItem);
+  }
+
+  /// new
+  static UINavigationItem new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UINavigationItem, _sel_new);
+    return UINavigationItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static UINavigationItem allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final _ret = _objc_msgSend_1cwp428(_class_UINavigationItem, _sel_allocWithZone_, zone);
+    return UINavigationItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// alloc
+  static UINavigationItem alloc() {
+    final _ret = _objc_msgSend_151sglz(_class_UINavigationItem, _sel_alloc);
+    return UINavigationItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Returns a new instance of UINavigationItem constructed with the default `new` method.
+  factory UINavigationItem() => new$();
+}
+
+extension UINavigationItem$Methods on UINavigationItem {
+  /// initWithTitle:
+  UINavigationItem initWithTitle(objc.NSString title) {
+    objc.checkOsVersionInternal('UINavigationItem.initWithTitle:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithTitle_, title.ref.pointer);
+    return UINavigationItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithCoder:
+  UINavigationItem? initWithCoder(objc.NSCoder coder) {
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UINavigationItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Title when topmost on the stack. default is nil
+  objc.NSString? get title {
+    objc.checkOsVersionInternal('UINavigationItem.title', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_title);
+    return _ret.address == 0 ? null : objc.NSString.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Title when topmost on the stack. default is nil
+  set title(objc.NSString? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setTitle:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setTitle_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// Custom view to use in lieu of a title. May be sized horizontally. Only used when item is topmost on the stack.
+  UIView? get titleView {
+    objc.checkOsVersionInternal('UINavigationItem.titleView', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_titleView);
+    return _ret.address == 0 ? null : UIView.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Custom view to use in lieu of a title. May be sized horizontally. Only used when item is topmost on the stack.
+  set titleView(UIView? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setTitleView:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setTitleView_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// Explanatory text to display above the navigation bar buttons.
+  objc.NSString? get prompt {
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_prompt);
+    return _ret.address == 0 ? null : objc.NSString.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Explanatory text to display above the navigation bar buttons.
+  set prompt(objc.NSString? value) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setPrompt_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// Bar button item to use for the back button when this item is the navigation bar's backItem.
+  UIBarButtonItem? get backBarButtonItem {
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_backBarButtonItem);
+    return _ret.address == 0 ? null : UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Bar button item to use for the back button when this item is the navigation bar's backItem.
+  set backBarButtonItem(UIBarButtonItem? value) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setBackBarButtonItem_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// Title to use when this item is the navigation bar's backItem. Default is nil. backBarButtonItem takes precedence if both are specified.
+  objc.NSString? get backButtonTitle {
+    objc.checkOsVersionInternal('UINavigationItem.backButtonTitle', iOS: (false, (11, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_backButtonTitle);
+    return _ret.address == 0 ? null : objc.NSString.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Title to use when this item is the navigation bar's backItem. Default is nil. backBarButtonItem takes precedence if both are specified.
+  set backButtonTitle(objc.NSString? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setBackButtonTitle:', iOS: (false, (11, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setBackButtonTitle_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// If YES, this navigation item will hide the back button when it's on top of the stack.
+  bool get hidesBackButton {
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_hidesBackButton);
+  }
+
+  /// If YES, this navigation item will hide the back button when it's on top of the stack.
+  set hidesBackButton(bool value) {
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setHidesBackButton_, value);
+  }
+
+  /// setHidesBackButton:animated:
+  void setHidesBackButton(bool hidesBackButton$1, {required bool animated}) {
+    _objc_msgSend_14iqu8t(this.ref.pointer, _sel_setHidesBackButton_animated_, hidesBackButton$1, animated);
+  }
+
+  /// Controls how the back button sources its title.
+  UINavigationItemBackButtonDisplayMode get backButtonDisplayMode {
+    objc.checkOsVersionInternal('UINavigationItem.backButtonDisplayMode', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_10bx5wy(this.ref.pointer, _sel_backButtonDisplayMode);
+    return UINavigationItemBackButtonDisplayMode.fromValue(_ret);
+  }
+
+  /// Controls how the back button sources its title.
+  set backButtonDisplayMode(UINavigationItemBackButtonDisplayMode value) {
+    objc.checkOsVersionInternal('UINavigationItem.setBackButtonDisplayMode:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_1dph54c(this.ref.pointer, _sel_setBackButtonDisplayMode_, value.value);
+  }
+
+  /// leftBarButtonItems
+  objc.NSArray? get leftBarButtonItems {
+    objc.checkOsVersionInternal('UINavigationItem.leftBarButtonItems', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_leftBarButtonItems);
+    return _ret.address == 0 ? null : objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setLeftBarButtonItems:
+  set leftBarButtonItems(objc.NSArray? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setLeftBarButtonItems:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setLeftBarButtonItems_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// rightBarButtonItems
+  objc.NSArray? get rightBarButtonItems {
+    objc.checkOsVersionInternal('UINavigationItem.rightBarButtonItems', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_rightBarButtonItems);
+    return _ret.address == 0 ? null : objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setRightBarButtonItems:
+  set rightBarButtonItems(objc.NSArray? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setRightBarButtonItems:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setRightBarButtonItems_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// setLeftBarButtonItems:animated:
+  void setLeftBarButtonItems(objc.NSArray? items, {required bool animated}) {
+    objc.checkOsVersionInternal('UINavigationItem.setLeftBarButtonItems:animated:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_6p7ndb(
+      this.ref.pointer,
+      _sel_setLeftBarButtonItems_animated_,
+      items?.ref.pointer ?? ffi.nullptr,
+      animated,
+    );
+  }
+
+  /// setRightBarButtonItems:animated:
+  void setRightBarButtonItems(objc.NSArray? items, {required bool animated}) {
+    objc.checkOsVersionInternal('UINavigationItem.setRightBarButtonItems:animated:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_6p7ndb(
+      this.ref.pointer,
+      _sel_setRightBarButtonItems_animated_,
+      items?.ref.pointer ?? ffi.nullptr,
+      animated,
+    );
+  }
+
+  /// leftItemsSupplementBackButton
+  bool get leftItemsSupplementBackButton {
+    objc.checkOsVersionInternal('UINavigationItem.leftItemsSupplementBackButton', iOS: (false, (5, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_leftItemsSupplementBackButton);
+  }
+
+  /// setLeftItemsSupplementBackButton:
+  set leftItemsSupplementBackButton(bool value) {
+    objc.checkOsVersionInternal('UINavigationItem.setLeftItemsSupplementBackButton:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setLeftItemsSupplementBackButton_, value);
+  }
+
+  /// Some navigation items want to display a custom left or right item when they're on top of the stack. A custom left item replaces the regular back button unless you set leftItemsSupplementBackButton to YES
+  UIBarButtonItem? get leftBarButtonItem {
+    objc.checkOsVersionInternal('UINavigationItem.leftBarButtonItem', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_leftBarButtonItem);
+    return _ret.address == 0 ? null : UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Some navigation items want to display a custom left or right item when they're on top of the stack. A custom left item replaces the regular back button unless you set leftItemsSupplementBackButton to YES
+  set leftBarButtonItem(UIBarButtonItem? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setLeftBarButtonItem:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setLeftBarButtonItem_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// rightBarButtonItem
+  UIBarButtonItem? get rightBarButtonItem {
+    objc.checkOsVersionInternal('UINavigationItem.rightBarButtonItem', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_rightBarButtonItem);
+    return _ret.address == 0 ? null : UIBarButtonItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setRightBarButtonItem:
+  set rightBarButtonItem(UIBarButtonItem? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setRightBarButtonItem:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setRightBarButtonItem_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// setLeftBarButtonItem:animated:
+  void setLeftBarButtonItem(UIBarButtonItem? item, {required bool animated}) {
+    objc.checkOsVersionInternal('UINavigationItem.setLeftBarButtonItem:animated:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_6p7ndb(
+      this.ref.pointer,
+      _sel_setLeftBarButtonItem_animated_,
+      item?.ref.pointer ?? ffi.nullptr,
+      animated,
+    );
+  }
+
+  /// setRightBarButtonItem:animated:
+  void setRightBarButtonItem(UIBarButtonItem? item, {required bool animated}) {
+    objc.checkOsVersionInternal('UINavigationItem.setRightBarButtonItem:animated:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_6p7ndb(
+      this.ref.pointer,
+      _sel_setRightBarButtonItem_animated_,
+      item?.ref.pointer ?? ffi.nullptr,
+      animated,
+    );
+  }
+
+  /// When UINavigationBar.prefersLargeTitles=YES, this property controls when the larger out-of-line title is displayed. If prefersLargeTitles=NO, this property has no effect. The default value is Automatic.
+  UINavigationItemLargeTitleDisplayMode get largeTitleDisplayMode {
+    objc.checkOsVersionInternal('UINavigationItem.largeTitleDisplayMode', iOS: (false, (11, 0, 0)));
+    final _ret = _objc_msgSend_1j6d9um(this.ref.pointer, _sel_largeTitleDisplayMode);
+    return UINavigationItemLargeTitleDisplayMode.fromValue(_ret);
+  }
+
+  /// When UINavigationBar.prefersLargeTitles=YES, this property controls when the larger out-of-line title is displayed. If prefersLargeTitles=NO, this property has no effect. The default value is Automatic.
+  set largeTitleDisplayMode(UINavigationItemLargeTitleDisplayMode value) {
+    objc.checkOsVersionInternal('UINavigationItem.setLargeTitleDisplayMode:', iOS: (false, (11, 0, 0)));
+    _objc_msgSend_1ddnfsg(this.ref.pointer, _sel_setLargeTitleDisplayMode_, value.value);
+  }
+
+  /// A view controller that will be shown inside of a navigation controller can assign a UISearchController to this property to display the search controller’s search bar in its containing navigation controller’s navigation bar.
+  UISearchController? get searchController {
+    objc.checkOsVersionInternal('UINavigationItem.searchController', iOS: (false, (11, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_searchController);
+    return _ret.address == 0 ? null : UISearchController.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// A view controller that will be shown inside of a navigation controller can assign a UISearchController to this property to display the search controller’s search bar in its containing navigation controller’s navigation bar.
+  set searchController(UISearchController? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setSearchController:', iOS: (false, (11, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setSearchController_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// If this property is true (the default), the searchController’s search bar will hide as the user scrolls in the top view controller’s scroll view. If false, the search bar will remain visible and pinned underneath the navigation bar.
+  bool get hidesSearchBarWhenScrolling {
+    objc.checkOsVersionInternal('UINavigationItem.hidesSearchBarWhenScrolling', iOS: (false, (11, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_hidesSearchBarWhenScrolling);
+  }
+
+  /// If this property is true (the default), the searchController’s search bar will hide as the user scrolls in the top view controller’s scroll view. If false, the search bar will remain visible and pinned underneath the navigation bar.
+  set hidesSearchBarWhenScrolling(bool value) {
+    objc.checkOsVersionInternal('UINavigationItem.setHidesSearchBarWhenScrolling:', iOS: (false, (11, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setHidesSearchBarWhenScrolling_, value);
+  }
+
+  /// When set and this item is topmost, overrides the hosting navigation bar's standardAppearance. See UINavigationBar.standardAppearance for further details.
+  UINavigationBarAppearance? get standardAppearance {
+    objc.checkOsVersionInternal('UINavigationItem.standardAppearance', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_standardAppearance);
+    return _ret.address == 0 ? null : UINavigationBarAppearance.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// When set and this item is topmost, overrides the hosting navigation bar's standardAppearance. See UINavigationBar.standardAppearance for further details.
+  set standardAppearance(UINavigationBarAppearance? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setStandardAppearance:', iOS: (false, (13, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setStandardAppearance_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// When set and this item is topmost, overrides the hosting navigation bar's compactAppearance. See UINavigationBar.compactAppearance for further details.
+  UINavigationBarAppearance? get compactAppearance {
+    objc.checkOsVersionInternal('UINavigationItem.compactAppearance', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_compactAppearance);
+    return _ret.address == 0 ? null : UINavigationBarAppearance.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// When set and this item is topmost, overrides the hosting navigation bar's compactAppearance. See UINavigationBar.compactAppearance for further details.
+  set compactAppearance(UINavigationBarAppearance? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setCompactAppearance:', iOS: (false, (13, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setCompactAppearance_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// When set and this item is topmost, overrides the hosting navigation bar's scrollEdgeAppearance. See UINavigationBar.scrollEdgeAppearance for further details.
+  UINavigationBarAppearance? get scrollEdgeAppearance {
+    objc.checkOsVersionInternal('UINavigationItem.scrollEdgeAppearance', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_scrollEdgeAppearance);
+    return _ret.address == 0 ? null : UINavigationBarAppearance.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// When set and this item is topmost, overrides the hosting navigation bar's scrollEdgeAppearance. See UINavigationBar.scrollEdgeAppearance for further details.
+  set scrollEdgeAppearance(UINavigationBarAppearance? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setScrollEdgeAppearance:', iOS: (false, (13, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setScrollEdgeAppearance_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// When set and this item is topmost, overrides the hosting navigation bar's compactScrollEdgeAppearance. See UINavigationBar.h for further details.
+  UINavigationBarAppearance? get compactScrollEdgeAppearance {
+    objc.checkOsVersionInternal('UINavigationItem.compactScrollEdgeAppearance', iOS: (false, (15, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_compactScrollEdgeAppearance);
+    return _ret.address == 0 ? null : UINavigationBarAppearance.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// When set and this item is topmost, overrides the hosting navigation bar's compactScrollEdgeAppearance. See UINavigationBar.h for further details.
+  set compactScrollEdgeAppearance(UINavigationBarAppearance? value) {
+    objc.checkOsVersionInternal('UINavigationItem.setCompactScrollEdgeAppearance:', iOS: (false, (15, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setCompactScrollEdgeAppearance_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// init
+  UINavigationItem init() {
+    objc.checkOsVersionInternal('UINavigationItem.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
+    return UINavigationItem.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// encodeWithCoder:
+  void encodeWithCoder(objc.NSCoder coder) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
+  }
+}
+
+late final _sel_navigationItem = objc.registerName("navigationItem");
+late final _sel_hidesBottomBarWhenPushed = objc.registerName("hidesBottomBarWhenPushed");
+late final _sel_setHidesBottomBarWhenPushed_ = objc.registerName("setHidesBottomBarWhenPushed:");
+late final _class_UINavigationController = objc.getClass("UINavigationController");
+late final _sel_initWithNavigationBarClass_toolbarClass_ = objc.registerName(
+  "initWithNavigationBarClass:toolbarClass:",
+);
+late final _sel_initWithRootViewController_ = objc.registerName("initWithRootViewController:");
 late final _sel_initWithNibName_bundle_ = objc.registerName("initWithNibName:bundle:");
+late final _sel_pushViewController_animated_ = objc.registerName("pushViewController:animated:");
+late final _sel_popViewControllerAnimated_ = objc.registerName("popViewControllerAnimated:");
+final _objc_msgSend_1t6aok9 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Bool)
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, bool)
+    >();
+late final _sel_popToViewController_animated_ = objc.registerName("popToViewController:animated:");
+final _objc_msgSend_17amj0z = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Bool,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        bool,
+      )
+    >();
+late final _sel_popToRootViewControllerAnimated_ = objc.registerName("popToRootViewControllerAnimated:");
+late final _sel_topViewController = objc.registerName("topViewController");
+late final _sel_visibleViewController = objc.registerName("visibleViewController");
+late final _sel_viewControllers = objc.registerName("viewControllers");
+late final _sel_setViewControllers_ = objc.registerName("setViewControllers:");
+late final _sel_setViewControllers_animated_ = objc.registerName("setViewControllers:animated:");
+late final _sel_isNavigationBarHidden = objc.registerName("isNavigationBarHidden");
+late final _sel_setNavigationBarHidden_ = objc.registerName("setNavigationBarHidden:");
+late final _sel_setNavigationBarHidden_animated_ = objc.registerName("setNavigationBarHidden:animated:");
+
+/// WARNING: UINavigationBar is a stub. To generate bindings for this class, include
+/// UINavigationBar in your config's objc-interfaces list.
+///
+/// UINavigationBar
+class UINavigationBar extends objc.ObjCObjectBase {
+  UINavigationBar._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super(pointer, retain: retain, release: release);
+
+  /// Constructs a [UINavigationBar] that points to the same underlying object as [other].
+  UINavigationBar.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UINavigationBar] that wraps the given raw object pointer.
+  UINavigationBar.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_navigationBar = objc.registerName("navigationBar");
+late final _sel_isToolbarHidden = objc.registerName("isToolbarHidden");
+late final _sel_setToolbarHidden_ = objc.registerName("setToolbarHidden:");
+late final _sel_setToolbarHidden_animated_ = objc.registerName("setToolbarHidden:animated:");
+
+/// WARNING: UIToolbar is a stub. To generate bindings for this class, include
+/// UIToolbar in your config's objc-interfaces list.
+///
+/// UIToolbar
+class UIToolbar extends objc.ObjCObjectBase {
+  UIToolbar._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super(pointer, retain: retain, release: release);
+
+  /// Constructs a [UIToolbar] that points to the same underlying object as [other].
+  UIToolbar.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIToolbar] that wraps the given raw object pointer.
+  UIToolbar.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_toolbar = objc.registerName("toolbar");
+
+/// WARNING: UINavigationControllerDelegate is a stub. To generate bindings for this class, include
+/// UINavigationControllerDelegate in your config's objc-protocols list.
+///
+/// UINavigationControllerDelegate
+interface class UINavigationControllerDelegate extends objc.ObjCProtocolBase implements objc.NSObjectProtocol {
+  UINavigationControllerDelegate._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super(pointer, retain: retain, release: release);
+
+  /// Constructs a [UINavigationControllerDelegate] that points to the same underlying object as [other].
+  UINavigationControllerDelegate.castFrom(objc.ObjCObjectBase other)
+    : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UINavigationControllerDelegate] that wraps the given raw object pointer.
+  UINavigationControllerDelegate.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
+}
+
+late final _sel_delegate = objc.registerName("delegate");
+late final _sel_setDelegate_ = objc.registerName("setDelegate:");
+
+/// WARNING: UIGestureRecognizer is a stub. To generate bindings for this class, include
+/// UIGestureRecognizer in your config's objc-interfaces list.
+///
+/// UIGestureRecognizer
+class UIGestureRecognizer extends objc.NSObject {
+  UIGestureRecognizer._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release);
+
+  /// Constructs a [UIGestureRecognizer] that points to the same underlying object as [other].
+  UIGestureRecognizer.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIGestureRecognizer] that wraps the given raw object pointer.
+  UIGestureRecognizer.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_interactivePopGestureRecognizer = objc.registerName("interactivePopGestureRecognizer");
+late final _sel_showViewController_sender_ = objc.registerName("showViewController:sender:");
+late final _sel_hidesBarsWhenKeyboardAppears = objc.registerName("hidesBarsWhenKeyboardAppears");
+late final _sel_setHidesBarsWhenKeyboardAppears_ = objc.registerName("setHidesBarsWhenKeyboardAppears:");
+late final _sel_hidesBarsOnSwipe = objc.registerName("hidesBarsOnSwipe");
+late final _sel_setHidesBarsOnSwipe_ = objc.registerName("setHidesBarsOnSwipe:");
+
+/// WARNING: UIPanGestureRecognizer is a stub. To generate bindings for this class, include
+/// UIPanGestureRecognizer in your config's objc-interfaces list.
+///
+/// UIPanGestureRecognizer
+class UIPanGestureRecognizer extends UIGestureRecognizer {
+  UIPanGestureRecognizer._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIPanGestureRecognizer', iOS: (false, (3, 2, 0)));
+  }
+
+  /// Constructs a [UIPanGestureRecognizer] that points to the same underlying object as [other].
+  UIPanGestureRecognizer.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIPanGestureRecognizer] that wraps the given raw object pointer.
+  UIPanGestureRecognizer.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
+}
+
+late final _sel_barHideOnSwipeGestureRecognizer = objc.registerName("barHideOnSwipeGestureRecognizer");
+late final _sel_hidesBarsWhenVerticallyCompact = objc.registerName("hidesBarsWhenVerticallyCompact");
+late final _sel_setHidesBarsWhenVerticallyCompact_ = objc.registerName("setHidesBarsWhenVerticallyCompact:");
+late final _sel_hidesBarsOnTap = objc.registerName("hidesBarsOnTap");
+late final _sel_setHidesBarsOnTap_ = objc.registerName("setHidesBarsOnTap:");
+
+/// WARNING: UITapGestureRecognizer is a stub. To generate bindings for this class, include
+/// UITapGestureRecognizer in your config's objc-interfaces list.
+///
+/// UITapGestureRecognizer
+class UITapGestureRecognizer extends UIGestureRecognizer {
+  UITapGestureRecognizer._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UITapGestureRecognizer', iOS: (false, (3, 2, 0)));
+  }
+
+  /// Constructs a [UITapGestureRecognizer] that points to the same underlying object as [other].
+  UITapGestureRecognizer.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UITapGestureRecognizer] that wraps the given raw object pointer.
+  UITapGestureRecognizer.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
+}
+
+late final _sel_barHideOnTapGestureRecognizer = objc.registerName("barHideOnTapGestureRecognizer");
+
+/// UINavigationController
+class UINavigationController extends UIViewController {
+  UINavigationController._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UINavigationController', iOS: (false, (2, 0, 0)));
+  }
+
+  /// Constructs a [UINavigationController] that points to the same underlying object as [other].
+  UINavigationController.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UINavigationController] that wraps the given raw object pointer.
+  UINavigationController.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UINavigationController].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UINavigationController);
+  }
+
+  static UINavigationController new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UINavigationController, _sel_new);
+    return UINavigationController.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Returns a new instance of UINavigationController constructed with the default `new` method.
+  factory UINavigationController() => new$();
+}
+
+extension UINavigationController$Methods on UINavigationController {
+  /// initWithNavigationBarClass:toolbarClass:
+  UINavigationController initWithNavigationBarClass(
+    objc.ObjCObjectBase? navigationBarClass, {
+    objc.ObjCObjectBase? toolbarClass,
+  }) {
+    objc.checkOsVersionInternal(
+      'UINavigationController.initWithNavigationBarClass:toolbarClass:',
+      iOS: (false, (5, 0, 0)),
+    );
+    final _ret = _objc_msgSend_15qeuct(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithNavigationBarClass_toolbarClass_,
+      navigationBarClass?.ref.pointer ?? ffi.nullptr,
+      toolbarClass?.ref.pointer ?? ffi.nullptr,
+    );
+    return UINavigationController.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithRootViewController:
+  UINavigationController initWithRootViewController(UIViewController rootViewController) {
+    objc.checkOsVersionInternal('UINavigationController.initWithRootViewController:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithRootViewController_,
+      rootViewController.ref.pointer,
+    );
+    return UINavigationController.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithNibName:bundle:
+  UINavigationController initWithNibName(objc.NSString? nibNameOrNil, {NSBundle? bundle}) {
+    objc.checkOsVersionInternal('UINavigationController.initWithNibName:bundle:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_15qeuct(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithNibName_bundle_,
+      nibNameOrNil?.ref.pointer ?? ffi.nullptr,
+      bundle?.ref.pointer ?? ffi.nullptr,
+    );
+    return UINavigationController.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithCoder:
+  UINavigationController? initWithCoder(objc.NSCoder coder) {
+    objc.checkOsVersionInternal('UINavigationController.initWithCoder:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UINavigationController.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// pushViewController:animated:
+  void pushViewController(UIViewController viewController, {required bool animated}) {
+    objc.checkOsVersionInternal('UINavigationController.pushViewController:animated:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_6p7ndb(this.ref.pointer, _sel_pushViewController_animated_, viewController.ref.pointer, animated);
+  }
+
+  /// popViewControllerAnimated:
+  UIViewController? popViewControllerAnimated(bool animated) {
+    objc.checkOsVersionInternal('UINavigationController.popViewControllerAnimated:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1t6aok9(this.ref.pointer, _sel_popViewControllerAnimated_, animated);
+    return _ret.address == 0 ? null : UIViewController.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// popToViewController:animated:
+  objc.NSArray? popToViewController(UIViewController viewController, {required bool animated}) {
+    objc.checkOsVersionInternal('UINavigationController.popToViewController:animated:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_17amj0z(
+      this.ref.pointer,
+      _sel_popToViewController_animated_,
+      viewController.ref.pointer,
+      animated,
+    );
+    return _ret.address == 0 ? null : objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// popToRootViewControllerAnimated:
+  objc.NSArray? popToRootViewControllerAnimated(bool animated) {
+    objc.checkOsVersionInternal('UINavigationController.popToRootViewControllerAnimated:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1t6aok9(this.ref.pointer, _sel_popToRootViewControllerAnimated_, animated);
+    return _ret.address == 0 ? null : objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// topViewController
+  UIViewController? get topViewController {
+    objc.checkOsVersionInternal('UINavigationController.topViewController', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_topViewController);
+    return _ret.address == 0 ? null : UIViewController.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// visibleViewController
+  UIViewController? get visibleViewController {
+    objc.checkOsVersionInternal('UINavigationController.visibleViewController', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_visibleViewController);
+    return _ret.address == 0 ? null : UIViewController.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// viewControllers
+  objc.NSArray get viewControllers {
+    objc.checkOsVersionInternal('UINavigationController.viewControllers', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_viewControllers);
+    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setViewControllers:
+  set viewControllers(objc.NSArray value) {
+    objc.checkOsVersionInternal('UINavigationController.setViewControllers:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setViewControllers_, value.ref.pointer);
+  }
+
+  /// setViewControllers:animated:
+  void setViewControllers(objc.NSArray viewControllers$1, {required bool animated}) {
+    objc.checkOsVersionInternal('UINavigationController.setViewControllers:animated:', iOS: (false, (3, 0, 0)));
+    _objc_msgSend_6p7ndb(this.ref.pointer, _sel_setViewControllers_animated_, viewControllers$1.ref.pointer, animated);
+  }
+
+  /// isNavigationBarHidden
+  bool get navigationBarHidden {
+    objc.checkOsVersionInternal('UINavigationController.isNavigationBarHidden', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isNavigationBarHidden);
+  }
+
+  /// setNavigationBarHidden:
+  set navigationBarHidden(bool value) {
+    objc.checkOsVersionInternal('UINavigationController.setNavigationBarHidden:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setNavigationBarHidden_, value);
+  }
+
+  /// setNavigationBarHidden:animated:
+  void setNavigationBarHidden(bool hidden, {required bool animated}) {
+    objc.checkOsVersionInternal('UINavigationController.setNavigationBarHidden:animated:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_14iqu8t(this.ref.pointer, _sel_setNavigationBarHidden_animated_, hidden, animated);
+  }
+
+  /// navigationBar
+  UINavigationBar get navigationBar {
+    objc.checkOsVersionInternal('UINavigationController.navigationBar', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_navigationBar);
+    return UINavigationBar.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// isToolbarHidden
+  bool get toolbarHidden {
+    objc.checkOsVersionInternal('UINavigationController.isToolbarHidden', iOS: (false, (3, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isToolbarHidden);
+  }
+
+  /// setToolbarHidden:
+  set toolbarHidden(bool value) {
+    objc.checkOsVersionInternal('UINavigationController.setToolbarHidden:', iOS: (false, (3, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setToolbarHidden_, value);
+  }
+
+  /// setToolbarHidden:animated:
+  void setToolbarHidden(bool hidden, {required bool animated}) {
+    objc.checkOsVersionInternal('UINavigationController.setToolbarHidden:animated:', iOS: (false, (3, 0, 0)));
+    _objc_msgSend_14iqu8t(this.ref.pointer, _sel_setToolbarHidden_animated_, hidden, animated);
+  }
+
+  /// toolbar
+  UIToolbar get toolbar {
+    objc.checkOsVersionInternal('UINavigationController.toolbar', iOS: (false, (3, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_toolbar);
+    return UIToolbar.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// delegate
+  UINavigationControllerDelegate? get delegate {
+    objc.checkOsVersionInternal('UINavigationController.delegate', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_delegate);
+    return _ret.address == 0 ? null : UINavigationControllerDelegate.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setDelegate:
+  set delegate(UINavigationControllerDelegate? value) {
+    objc.checkOsVersionInternal('UINavigationController.setDelegate:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setDelegate_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// interactivePopGestureRecognizer
+  UIGestureRecognizer? get interactivePopGestureRecognizer {
+    objc.checkOsVersionInternal('UINavigationController.interactivePopGestureRecognizer', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_interactivePopGestureRecognizer);
+    return _ret.address == 0 ? null : UIGestureRecognizer.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// showViewController:sender:
+  void showViewController(UIViewController vc, {objc.ObjCObjectBase? sender}) {
+    objc.checkOsVersionInternal('UINavigationController.showViewController:sender:', iOS: (false, (8, 0, 0)));
+    _objc_msgSend_pfv6jd(
+      this.ref.pointer,
+      _sel_showViewController_sender_,
+      vc.ref.pointer,
+      sender?.ref.pointer ?? ffi.nullptr,
+    );
+  }
+
+  /// When the keyboard appears, the navigation controller's navigationBar toolbar will be hidden. The bars will remain hidden when the keyboard dismisses, but a tap in the content area will show them.
+  bool get hidesBarsWhenKeyboardAppears {
+    objc.checkOsVersionInternal('UINavigationController.hidesBarsWhenKeyboardAppears', iOS: (false, (8, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_hidesBarsWhenKeyboardAppears);
+  }
+
+  /// When the keyboard appears, the navigation controller's navigationBar toolbar will be hidden. The bars will remain hidden when the keyboard dismisses, but a tap in the content area will show them.
+  set hidesBarsWhenKeyboardAppears(bool value) {
+    objc.checkOsVersionInternal('UINavigationController.setHidesBarsWhenKeyboardAppears:', iOS: (false, (8, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setHidesBarsWhenKeyboardAppears_, value);
+  }
+
+  /// When the user swipes, the navigation controller's navigationBar & toolbar will be hidden (on a swipe up) or shown (on a swipe down). The toolbar only participates if it has items.
+  bool get hidesBarsOnSwipe {
+    objc.checkOsVersionInternal('UINavigationController.hidesBarsOnSwipe', iOS: (false, (8, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_hidesBarsOnSwipe);
+  }
+
+  /// When the user swipes, the navigation controller's navigationBar & toolbar will be hidden (on a swipe up) or shown (on a swipe down). The toolbar only participates if it has items.
+  set hidesBarsOnSwipe(bool value) {
+    objc.checkOsVersionInternal('UINavigationController.setHidesBarsOnSwipe:', iOS: (false, (8, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setHidesBarsOnSwipe_, value);
+  }
+
+  /// The gesture recognizer that triggers if the bars will hide or show due to a swipe. Do not change the delegate or attempt to replace this gesture by overriding this method.
+  UIPanGestureRecognizer get barHideOnSwipeGestureRecognizer {
+    objc.checkOsVersionInternal('UINavigationController.barHideOnSwipeGestureRecognizer', iOS: (false, (8, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_barHideOnSwipeGestureRecognizer);
+    return UIPanGestureRecognizer.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// When the UINavigationController's vertical size class is compact, hide the UINavigationBar and UIToolbar. Unhandled taps in the regions that would normally be occupied by these bars will reveal the bars.
+  bool get hidesBarsWhenVerticallyCompact {
+    objc.checkOsVersionInternal('UINavigationController.hidesBarsWhenVerticallyCompact', iOS: (false, (8, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_hidesBarsWhenVerticallyCompact);
+  }
+
+  /// When the UINavigationController's vertical size class is compact, hide the UINavigationBar and UIToolbar. Unhandled taps in the regions that would normally be occupied by these bars will reveal the bars.
+  set hidesBarsWhenVerticallyCompact(bool value) {
+    objc.checkOsVersionInternal('UINavigationController.setHidesBarsWhenVerticallyCompact:', iOS: (false, (8, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setHidesBarsWhenVerticallyCompact_, value);
+  }
+
+  /// When the user taps, the navigation controller's navigationBar & toolbar will be hidden or shown, depending on the hidden state of the navigationBar. The toolbar will only be shown if it has items to display.
+  bool get hidesBarsOnTap {
+    objc.checkOsVersionInternal('UINavigationController.hidesBarsOnTap', iOS: (false, (8, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_hidesBarsOnTap);
+  }
+
+  /// When the user taps, the navigation controller's navigationBar & toolbar will be hidden or shown, depending on the hidden state of the navigationBar. The toolbar will only be shown if it has items to display.
+  set hidesBarsOnTap(bool value) {
+    objc.checkOsVersionInternal('UINavigationController.setHidesBarsOnTap:', iOS: (false, (8, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setHidesBarsOnTap_, value);
+  }
+
+  /// The gesture recognizer used to recognize if the bars will hide or show due to a tap in content. Do not change the delegate or attempt to replace this gesture by overriding this method.
+  UITapGestureRecognizer get barHideOnTapGestureRecognizer {
+    objc.checkOsVersionInternal('UINavigationController.barHideOnTapGestureRecognizer', iOS: (false, (8, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_barHideOnTapGestureRecognizer);
+    return UITapGestureRecognizer.castFromPointer(_ret, retain: true, release: true);
+  }
+}
+
+late final _sel_navigationController = objc.registerName("navigationController");
+
+/// UINavigationControllerItem
+extension UINavigationControllerItem on UIViewController {
+  /// navigationItem
+  UINavigationItem get navigationItem {
+    objc.checkOsVersionInternal('UIViewController.navigationItem', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_navigationItem);
+    return UINavigationItem.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// hidesBottomBarWhenPushed
+  bool get hidesBottomBarWhenPushed {
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_hidesBottomBarWhenPushed);
+  }
+
+  /// setHidesBottomBarWhenPushed:
+  set hidesBottomBarWhenPushed(bool value) {
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setHidesBottomBarWhenPushed_, value);
+  }
+
+  /// navigationController
+  UINavigationController? get navigationController {
+    objc.checkOsVersionInternal('UIViewController.navigationController', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_navigationController);
+    return _ret.address == 0 ? null : UINavigationController.castFromPointer(_ret, retain: true, release: true);
+  }
+}
+
+late final _sel_toolbarItems = objc.registerName("toolbarItems");
+late final _sel_setToolbarItems_ = objc.registerName("setToolbarItems:");
+late final _sel_setToolbarItems_animated_ = objc.registerName("setToolbarItems:animated:");
+
+/// UINavigationControllerContextualToolbarItems
+extension UINavigationControllerContextualToolbarItems on UIViewController {
+  /// toolbarItems
+  objc.NSArray? get toolbarItems {
+    objc.checkOsVersionInternal('UIViewController.toolbarItems', iOS: (false, (3, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_toolbarItems);
+    return _ret.address == 0 ? null : objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setToolbarItems:
+  set toolbarItems(objc.NSArray? value) {
+    objc.checkOsVersionInternal('UIViewController.setToolbarItems:', iOS: (false, (3, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setToolbarItems_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// setToolbarItems:animated:
+  void setToolbarItems(objc.NSArray? toolbarItems$1, {required bool animated}) {
+    objc.checkOsVersionInternal('UIViewController.setToolbarItems:animated:', iOS: (false, (3, 0, 0)));
+    _objc_msgSend_6p7ndb(
+      this.ref.pointer,
+      _sel_setToolbarItems_animated_,
+      toolbarItems$1?.ref.pointer ?? ffi.nullptr,
+      animated,
+    );
+  }
+}
+
 late final _sel_view = objc.registerName("view");
 late final _sel_setView_ = objc.registerName("setView:");
 late final _sel_loadView = objc.registerName("loadView");
@@ -5718,34 +10877,12 @@ late final _sel_unwindForSegue_towardsViewController_ = objc.registerName("unwin
 late final _sel_segueForUnwindingToViewController_fromViewController_identifier_ = objc.registerName(
   "segueForUnwindingToViewController:fromViewController:identifier:",
 );
-final _objc_msgSend_11spmsz = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCObject>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCObject>,
-      )
-    >();
 late final _sel_viewWillAppear_ = objc.registerName("viewWillAppear:");
 late final _sel_viewDidAppear_ = objc.registerName("viewDidAppear:");
 late final _sel_viewWillDisappear_ = objc.registerName("viewWillDisappear:");
 late final _sel_viewDidDisappear_ = objc.registerName("viewDidDisappear:");
 late final _sel_viewWillLayoutSubviews = objc.registerName("viewWillLayoutSubviews");
 late final _sel_viewDidLayoutSubviews = objc.registerName("viewDidLayoutSubviews");
-late final _sel_setTitle_ = objc.registerName("setTitle:");
 late final _sel_didReceiveMemoryWarning = objc.registerName("didReceiveMemoryWarning");
 late final _sel_parentViewController = objc.registerName("parentViewController");
 late final _sel_modalViewController = objc.registerName("modalViewController");
@@ -5809,20 +10946,6 @@ final _objc_msgSend_1ocak7a = objc.msgSendPointer
       void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, bool, ffi.Pointer<objc.ObjCBlockImpl>)
     >();
 late final _sel_presentModalViewController_animated_ = objc.registerName("presentModalViewController:animated:");
-final _objc_msgSend_6p7ndb = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Void Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Bool,
-        )
-      >
-    >()
-    .asFunction<
-      void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>, bool)
-    >();
 late final _sel_dismissModalViewControllerAnimated_ = objc.registerName("dismissModalViewControllerAnimated:");
 
 enum UIModalTransitionStyle {
@@ -5920,75 +11043,294 @@ late final _sel_automaticallyAdjustsScrollViewInsets = objc.registerName("automa
 late final _sel_setAutomaticallyAdjustsScrollViewInsets_ = objc.registerName(
   "setAutomaticallyAdjustsScrollViewInsets:",
 );
+late final _class_UIScrollView = objc.getClass("UIScrollView");
 
-/// WARNING: UIScrollView is a stub. To generate bindings for this class, include
-/// UIScrollView in your config's objc-interfaces list.
+/// WARNING: UIFocusItemScrollableContainer is a stub. To generate bindings for this class, include
+/// UIFocusItemScrollableContainer in your config's objc-protocols list.
 ///
-/// UIScrollView
-class UIScrollView extends objc.ObjCObjectBase {
-  UIScrollView._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+/// Objects conforming to UIFocusItemScrollableContainer are updated accordingly to ensure the
+/// focused item remains visible on the screen.
+interface class UIFocusItemScrollableContainer extends objc.ObjCProtocolBase implements UIFocusItemContainer {
+  UIFocusItemScrollableContainer._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
     : super(pointer, retain: retain, release: release);
 
-  /// Constructs a [UIScrollView] that points to the same underlying object as [other].
-  UIScrollView.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+  /// Constructs a [UIFocusItemScrollableContainer] that points to the same underlying object as [other].
+  UIFocusItemScrollableContainer.castFrom(objc.ObjCObjectBase other)
+    : this._(other.ref.pointer, retain: true, release: true);
 
-  /// Constructs a [UIScrollView] that wraps the given raw object pointer.
-  UIScrollView.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
-    : this._(other, retain: retain, release: release);
+  /// Constructs a [UIFocusItemScrollableContainer] that wraps the given raw object pointer.
+  UIFocusItemScrollableContainer.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
 }
 
-enum NSDirectionalRectEdge {
-  NSDirectionalRectEdgeNone(0),
-  NSDirectionalRectEdgeTop(1),
-  NSDirectionalRectEdgeLeading(2),
-  NSDirectionalRectEdgeBottom(4),
-  NSDirectionalRectEdgeTrailing(8),
-  NSDirectionalRectEdgeAll(15);
+late final _sel_contentOffset = objc.registerName("contentOffset");
+objc.CGPoint _ObjCBlock_NSPoint_ffiVoid_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+) => block.ref.target
+    .cast<ffi.NativeFunction<objc.CGPoint Function(ffi.Pointer<ffi.Void> arg0)>>()
+    .asFunction<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>()(arg0);
+ffi.Pointer<ffi.Void> _ObjCBlock_NSPoint_ffiVoid_fnPtrCallable =
+    ffi.Pointer.fromFunction<objc.CGPoint Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>(
+      _ObjCBlock_NSPoint_ffiVoid_fnPtrTrampoline,
+    ).cast();
+objc.CGPoint _ObjCBlock_NSPoint_ffiVoid_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+) => (objc.getBlockClosure(block) as objc.CGPoint Function(ffi.Pointer<ffi.Void>))(arg0);
+ffi.Pointer<ffi.Void> _ObjCBlock_NSPoint_ffiVoid_closureCallable =
+    ffi.Pointer.fromFunction<objc.CGPoint Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>(
+      _ObjCBlock_NSPoint_ffiVoid_closureTrampoline,
+    ).cast();
 
-  final int value;
-  const NSDirectionalRectEdge(this.value);
+/// Construction methods for `objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>`.
+abstract final class ObjCBlock_NSPoint_ffiVoid {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)> castFromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>(pointer, retain: retain, release: release);
 
-  static NSDirectionalRectEdge fromValue(int value) => switch (value) {
-    0 => NSDirectionalRectEdgeNone,
-    1 => NSDirectionalRectEdgeTop,
-    2 => NSDirectionalRectEdgeLeading,
-    4 => NSDirectionalRectEdgeBottom,
-    8 => NSDirectionalRectEdgeTrailing,
-    15 => NSDirectionalRectEdgeAll,
-    _ => throw ArgumentError('Unknown value for NSDirectionalRectEdge: $value'),
-  };
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)> fromFunctionPointer(
+    ffi.Pointer<ffi.NativeFunction<objc.CGPoint Function(ffi.Pointer<ffi.Void> arg0)>> ptr,
+  ) => objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>(
+    objc.newPointerBlock(_ObjCBlock_NSPoint_ffiVoid_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)> fromFunction(
+    objc.CGPoint Function(ffi.Pointer<ffi.Void>) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>(
+    objc.newClosureBlock(
+      _ObjCBlock_NSPoint_ffiVoid_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0) => fn(arg0),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
 }
 
-late final _sel_setContentScrollView_forEdge_ = objc.registerName("setContentScrollView:forEdge:");
-final _objc_msgSend_13y7vr7 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Void Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.UnsignedLong,
-        )
-      >
-    >()
-    .asFunction<
-      void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>, int)
-    >();
-late final _sel_contentScrollViewForEdge_ = objc.registerName("contentScrollViewForEdge:");
-final _objc_msgSend_kh1gvt = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.UnsignedLong,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)
-    >();
-late final _sel_preferredContentSize = objc.registerName("preferredContentSize");
+/// Call operator for `objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>`.
+extension ObjCBlock_NSPoint_ffiVoid_CallExtension on objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)> {
+  objc.CGPoint call(ffi.Pointer<ffi.Void> arg0) => ref.pointer.ref.invoke
+      .cast<
+        ffi.NativeFunction<objc.CGPoint Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<ffi.Void> arg0)>
+      >()
+      .asFunction<objc.CGPoint Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>()(ref.pointer, arg0);
+}
+
+late final _sel_setContentOffset_ = objc.registerName("setContentOffset:");
+void _ObjCBlock_ffiVoid_ffiVoid_NSPoint_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  objc.CGPoint arg1,
+) => block.ref.target
+    .cast<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1)>>()
+    .asFunction<void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>()(arg0, arg1);
+ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_ffiVoid_NSPoint_fnPtrCallable =
+    ffi.Pointer.fromFunction<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGPoint)>(
+      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_fnPtrTrampoline,
+    ).cast();
+void _ObjCBlock_ffiVoid_ffiVoid_NSPoint_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  objc.CGPoint arg1,
+) => (objc.getBlockClosure(block) as void Function(ffi.Pointer<ffi.Void>, objc.CGPoint))(arg0, arg1);
+ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_ffiVoid_NSPoint_closureCallable =
+    ffi.Pointer.fromFunction<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGPoint)>(
+      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_closureTrampoline,
+    ).cast();
+void _ObjCBlock_ffiVoid_ffiVoid_NSPoint_listenerTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  objc.CGPoint arg1,
+) {
+  (objc.getBlockClosure(block) as void Function(ffi.Pointer<ffi.Void>, objc.CGPoint))(arg0, arg1);
+  objc.objectRelease(block.cast());
+}
+
+ffi.NativeCallable<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGPoint)>
+_ObjCBlock_ffiVoid_ffiVoid_NSPoint_listenerCallable =
+    ffi.NativeCallable<
+        ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGPoint)
+      >.listener(_ObjCBlock_ffiVoid_ffiVoid_NSPoint_listenerTrampoline)
+      ..keepIsolateAlive = false;
+void _ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> waiter,
+  ffi.Pointer<ffi.Void> arg0,
+  objc.CGPoint arg1,
+) {
+  try {
+    (objc.getBlockClosure(block) as void Function(ffi.Pointer<ffi.Void>, objc.CGPoint))(arg0, arg1);
+  } catch (e) {
+  } finally {
+    objc.signalWaiter(waiter);
+    objc.objectRelease(block.cast());
+  }
+}
+
+ffi.NativeCallable<
+  ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<ffi.Void>, objc.CGPoint)
+>
+_ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingCallable =
+    ffi.NativeCallable<
+        ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<ffi.Void>, objc.CGPoint)
+      >.isolateLocal(_ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingTrampoline)
+      ..keepIsolateAlive = false;
+ffi.NativeCallable<
+  ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<ffi.Void>, objc.CGPoint)
+>
+_ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingListenerCallable =
+    ffi.NativeCallable<
+        ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<ffi.Void>, objc.CGPoint)
+      >.listener(_ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingTrampoline)
+      ..keepIsolateAlive = false;
+
+/// Construction methods for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>`.
+abstract final class ObjCBlock_ffiVoid_ffiVoid_NSPoint {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> castFromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) =>
+      objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>(pointer, retain: retain, release: release);
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> fromFunctionPointer(
+    ffi.Pointer<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1)>> ptr,
+  ) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>(
+    objc.newPointerBlock(_ObjCBlock_ffiVoid_ffiVoid_NSPoint_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> fromFunction(
+    void Function(ffi.Pointer<ffi.Void>, objc.CGPoint) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>(
+    objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1) => fn(arg0, arg1),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a listener block from a Dart function.
+  ///
+  /// This is based on FFI's NativeCallable.listener, and has the same
+  /// capabilities and limitations. This block can be invoked from any thread,
+  /// but only supports void functions, and is not run synchronously. See
+  /// NativeCallable.listener for more details.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> listener(
+    void Function(ffi.Pointer<ffi.Void>, objc.CGPoint) fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_listenerCallable.nativeFunction.cast(),
+      (ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1) => fn(arg0, arg1),
+      keepIsolateAlive,
+    );
+    final wrapper = _UIKit_wrapListenerBlock_1bktu2(raw);
+    objc.objectRelease(raw.cast());
+    return objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>(
+      wrapper,
+      retain: false,
+      release: true,
+    );
+  }
+
+  /// Creates a blocking block from a Dart function.
+  ///
+  /// This callback can be invoked from any native thread, and will block the
+  /// caller until the callback is handled by the Dart isolate that created
+  /// the block. Async functions are not supported.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
+  /// has shut down, and the block is invoked by native code, it may block
+  /// indefinitely, or have other undefined behavior.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> blocking(
+    void Function(ffi.Pointer<ffi.Void>, objc.CGPoint) fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingCallable.nativeFunction.cast(),
+      (ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1) => fn(arg0, arg1),
+      keepIsolateAlive,
+    );
+    final rawListener = objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingListenerCallable.nativeFunction.cast(),
+      (ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1) => fn(arg0, arg1),
+      keepIsolateAlive,
+    );
+    final wrapper = _UIKit_wrapBlockingBlock_1bktu2(raw, rawListener, objc.objCContext);
+    objc.objectRelease(raw.cast());
+    objc.objectRelease(rawListener.cast());
+    return objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>(
+      wrapper,
+      retain: false,
+      release: true,
+    );
+  }
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>`.
+extension ObjCBlock_ffiVoid_ffiVoid_NSPoint_CallExtension
+    on objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> {
+  void call(ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1) =>
+      ref.pointer.ref.invoke
+          .cast<
+            ffi.NativeFunction<
+              ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1)
+            >
+          >()
+          .asFunction<void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGPoint)>()(
+        ref.pointer,
+        arg0,
+        arg1,
+      );
+}
+
+late final _sel_contentSize = objc.registerName("contentSize");
 final _objc_msgSend_1vdfken = objc.msgSendPointer
     .cast<ffi.NativeFunction<objc.CGSize Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
     .asFunction<objc.CGSize Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
@@ -6073,12 +11415,1266 @@ extension ObjCBlock_CGSize_ffiVoid_CallExtension on objc.ObjCBlock<objc.CGSize F
       .asFunction<objc.CGSize Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>()(ref.pointer, arg0);
 }
 
-late final _sel_setPreferredContentSize_ = objc.registerName("setPreferredContentSize:");
+late final _sel_setContentSize_ = objc.registerName("setContentSize:");
 final _objc_msgSend_13lgpwz = objc.msgSendPointer
     .cast<
       ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, objc.CGSize)>
     >()
     .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, objc.CGSize)>();
+late final _sel_contentInset = objc.registerName("contentInset");
+late final _sel_setContentInset_ = objc.registerName("setContentInset:");
+late final _sel_adjustedContentInset = objc.registerName("adjustedContentInset");
+late final _sel_adjustedContentInsetDidChange = objc.registerName("adjustedContentInsetDidChange");
+
+enum UIScrollViewContentInsetAdjustmentBehavior {
+  UIScrollViewContentInsetAdjustmentAutomatic(0),
+  UIScrollViewContentInsetAdjustmentScrollableAxes(1),
+  UIScrollViewContentInsetAdjustmentNever(2),
+  UIScrollViewContentInsetAdjustmentAlways(3);
+
+  final int value;
+  const UIScrollViewContentInsetAdjustmentBehavior(this.value);
+
+  static UIScrollViewContentInsetAdjustmentBehavior fromValue(int value) => switch (value) {
+    0 => UIScrollViewContentInsetAdjustmentAutomatic,
+    1 => UIScrollViewContentInsetAdjustmentScrollableAxes,
+    2 => UIScrollViewContentInsetAdjustmentNever,
+    3 => UIScrollViewContentInsetAdjustmentAlways,
+    _ => throw ArgumentError('Unknown value for UIScrollViewContentInsetAdjustmentBehavior: $value'),
+  };
+}
+
+late final _sel_contentInsetAdjustmentBehavior = objc.registerName("contentInsetAdjustmentBehavior");
+final _objc_msgSend_1ubvjfk = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setContentInsetAdjustmentBehavior_ = objc.registerName("setContentInsetAdjustmentBehavior:");
+final _objc_msgSend_1l2otbm = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_automaticallyAdjustsScrollIndicatorInsets = objc.registerName(
+  "automaticallyAdjustsScrollIndicatorInsets",
+);
+late final _sel_setAutomaticallyAdjustsScrollIndicatorInsets_ = objc.registerName(
+  "setAutomaticallyAdjustsScrollIndicatorInsets:",
+);
+
+/// WARNING: UILayoutGuide is a stub. To generate bindings for this class, include
+/// UILayoutGuide in your config's objc-interfaces list.
+///
+/// UILayoutGuide
+class UILayoutGuide extends objc.NSObject implements objc.NSCoding {
+  UILayoutGuide._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UILayoutGuide', iOS: (false, (9, 0, 0)));
+  }
+
+  /// Constructs a [UILayoutGuide] that points to the same underlying object as [other].
+  UILayoutGuide.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UILayoutGuide] that wraps the given raw object pointer.
+  UILayoutGuide.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_contentLayoutGuide = objc.registerName("contentLayoutGuide");
+late final _sel_frameLayoutGuide = objc.registerName("frameLayoutGuide");
+
+/// WARNING: UIScrollViewDelegate is a stub. To generate bindings for this class, include
+/// UIScrollViewDelegate in your config's objc-protocols list.
+///
+/// UIScrollViewDelegate
+interface class UIScrollViewDelegate extends objc.ObjCProtocolBase implements objc.NSObjectProtocol {
+  UIScrollViewDelegate._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super(pointer, retain: retain, release: release);
+
+  /// Constructs a [UIScrollViewDelegate] that points to the same underlying object as [other].
+  UIScrollViewDelegate.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIScrollViewDelegate] that wraps the given raw object pointer.
+  UIScrollViewDelegate.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_isDirectionalLockEnabled = objc.registerName("isDirectionalLockEnabled");
+late final _sel_setDirectionalLockEnabled_ = objc.registerName("setDirectionalLockEnabled:");
+late final _sel_bounces = objc.registerName("bounces");
+late final _sel_setBounces_ = objc.registerName("setBounces:");
+late final _sel_alwaysBounceVertical = objc.registerName("alwaysBounceVertical");
+late final _sel_setAlwaysBounceVertical_ = objc.registerName("setAlwaysBounceVertical:");
+late final _sel_alwaysBounceHorizontal = objc.registerName("alwaysBounceHorizontal");
+late final _sel_setAlwaysBounceHorizontal_ = objc.registerName("setAlwaysBounceHorizontal:");
+late final _sel_isPagingEnabled = objc.registerName("isPagingEnabled");
+late final _sel_setPagingEnabled_ = objc.registerName("setPagingEnabled:");
+late final _sel_isScrollEnabled = objc.registerName("isScrollEnabled");
+late final _sel_setScrollEnabled_ = objc.registerName("setScrollEnabled:");
+late final _sel_showsVerticalScrollIndicator = objc.registerName("showsVerticalScrollIndicator");
+late final _sel_setShowsVerticalScrollIndicator_ = objc.registerName("setShowsVerticalScrollIndicator:");
+late final _sel_showsHorizontalScrollIndicator = objc.registerName("showsHorizontalScrollIndicator");
+late final _sel_setShowsHorizontalScrollIndicator_ = objc.registerName("setShowsHorizontalScrollIndicator:");
+
+enum UIScrollViewIndicatorStyle {
+  UIScrollViewIndicatorStyleDefault(0),
+  UIScrollViewIndicatorStyleBlack(1),
+  UIScrollViewIndicatorStyleWhite(2);
+
+  final int value;
+  const UIScrollViewIndicatorStyle(this.value);
+
+  static UIScrollViewIndicatorStyle fromValue(int value) => switch (value) {
+    0 => UIScrollViewIndicatorStyleDefault,
+    1 => UIScrollViewIndicatorStyleBlack,
+    2 => UIScrollViewIndicatorStyleWhite,
+    _ => throw ArgumentError('Unknown value for UIScrollViewIndicatorStyle: $value'),
+  };
+}
+
+late final _sel_indicatorStyle = objc.registerName("indicatorStyle");
+final _objc_msgSend_10fw709 = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setIndicatorStyle_ = objc.registerName("setIndicatorStyle:");
+final _objc_msgSend_10eov2d = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_verticalScrollIndicatorInsets = objc.registerName("verticalScrollIndicatorInsets");
+late final _sel_setVerticalScrollIndicatorInsets_ = objc.registerName("setVerticalScrollIndicatorInsets:");
+late final _sel_horizontalScrollIndicatorInsets = objc.registerName("horizontalScrollIndicatorInsets");
+late final _sel_setHorizontalScrollIndicatorInsets_ = objc.registerName("setHorizontalScrollIndicatorInsets:");
+late final _sel_scrollIndicatorInsets = objc.registerName("scrollIndicatorInsets");
+late final _sel_setScrollIndicatorInsets_ = objc.registerName("setScrollIndicatorInsets:");
+late final _sel_decelerationRate = objc.registerName("decelerationRate");
+late final _sel_setDecelerationRate_ = objc.registerName("setDecelerationRate:");
+
+enum UIScrollViewIndexDisplayMode {
+  UIScrollViewIndexDisplayModeAutomatic(0),
+  UIScrollViewIndexDisplayModeAlwaysHidden(1);
+
+  final int value;
+  const UIScrollViewIndexDisplayMode(this.value);
+
+  static UIScrollViewIndexDisplayMode fromValue(int value) => switch (value) {
+    0 => UIScrollViewIndexDisplayModeAutomatic,
+    1 => UIScrollViewIndexDisplayModeAlwaysHidden,
+    _ => throw ArgumentError('Unknown value for UIScrollViewIndexDisplayMode: $value'),
+  };
+}
+
+late final _sel_indexDisplayMode = objc.registerName("indexDisplayMode");
+final _objc_msgSend_1vmqitm = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setIndexDisplayMode_ = objc.registerName("setIndexDisplayMode:");
+final _objc_msgSend_r5kwx4 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_setContentOffset_animated_ = objc.registerName("setContentOffset:animated:");
+final _objc_msgSend_uyhzs2 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, objc.CGPoint, ffi.Bool)
+      >
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, objc.CGPoint, bool)>();
+late final _sel_scrollRectToVisible_animated_ = objc.registerName("scrollRectToVisible:animated:");
+final _objc_msgSend_1sfhlx6 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, objc.CGRect, ffi.Bool)
+      >
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, objc.CGRect, bool)>();
+late final _sel_flashScrollIndicators = objc.registerName("flashScrollIndicators");
+late final _sel_isTracking = objc.registerName("isTracking");
+late final _sel_isDragging = objc.registerName("isDragging");
+late final _sel_isDecelerating = objc.registerName("isDecelerating");
+late final _sel_delaysContentTouches = objc.registerName("delaysContentTouches");
+late final _sel_setDelaysContentTouches_ = objc.registerName("setDelaysContentTouches:");
+late final _sel_canCancelContentTouches = objc.registerName("canCancelContentTouches");
+late final _sel_setCanCancelContentTouches_ = objc.registerName("setCanCancelContentTouches:");
+late final _sel_touchesShouldBegin_withEvent_inContentView_ = objc.registerName(
+  "touchesShouldBegin:withEvent:inContentView:",
+);
+final _objc_msgSend_gtxojt = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Bool Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+        )
+      >
+    >()
+    .asFunction<
+      bool Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCObject>,
+      )
+    >();
+late final _sel_touchesShouldCancelInContentView_ = objc.registerName("touchesShouldCancelInContentView:");
+late final _sel_minimumZoomScale = objc.registerName("minimumZoomScale");
+late final _sel_setMinimumZoomScale_ = objc.registerName("setMinimumZoomScale:");
+late final _sel_maximumZoomScale = objc.registerName("maximumZoomScale");
+late final _sel_setMaximumZoomScale_ = objc.registerName("setMaximumZoomScale:");
+late final _sel_zoomScale = objc.registerName("zoomScale");
+late final _sel_setZoomScale_ = objc.registerName("setZoomScale:");
+late final _sel_setZoomScale_animated_ = objc.registerName("setZoomScale:animated:");
+final _objc_msgSend_ghxo7e = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Double, ffi.Bool)
+      >
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, double, bool)>();
+late final _sel_zoomToRect_animated_ = objc.registerName("zoomToRect:animated:");
+late final _sel_bouncesZoom = objc.registerName("bouncesZoom");
+late final _sel_setBouncesZoom_ = objc.registerName("setBouncesZoom:");
+late final _sel_isZooming = objc.registerName("isZooming");
+late final _sel_isZoomBouncing = objc.registerName("isZoomBouncing");
+late final _sel_scrollsToTop = objc.registerName("scrollsToTop");
+late final _sel_setScrollsToTop_ = objc.registerName("setScrollsToTop:");
+late final _sel_panGestureRecognizer = objc.registerName("panGestureRecognizer");
+
+/// WARNING: UIPinchGestureRecognizer is a stub. To generate bindings for this class, include
+/// UIPinchGestureRecognizer in your config's objc-interfaces list.
+///
+/// UIPinchGestureRecognizer
+class UIPinchGestureRecognizer extends objc.ObjCObjectBase {
+  UIPinchGestureRecognizer._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super(pointer, retain: retain, release: release);
+
+  /// Constructs a [UIPinchGestureRecognizer] that points to the same underlying object as [other].
+  UIPinchGestureRecognizer.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIPinchGestureRecognizer] that wraps the given raw object pointer.
+  UIPinchGestureRecognizer.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
+}
+
+late final _sel_pinchGestureRecognizer = objc.registerName("pinchGestureRecognizer");
+late final _sel_directionalPressGestureRecognizer = objc.registerName("directionalPressGestureRecognizer");
+
+enum UIScrollViewKeyboardDismissMode {
+  UIScrollViewKeyboardDismissModeNone(0),
+  UIScrollViewKeyboardDismissModeOnDrag(1),
+  UIScrollViewKeyboardDismissModeInteractive(2);
+
+  final int value;
+  const UIScrollViewKeyboardDismissMode(this.value);
+
+  static UIScrollViewKeyboardDismissMode fromValue(int value) => switch (value) {
+    0 => UIScrollViewKeyboardDismissModeNone,
+    1 => UIScrollViewKeyboardDismissModeOnDrag,
+    2 => UIScrollViewKeyboardDismissModeInteractive,
+    _ => throw ArgumentError('Unknown value for UIScrollViewKeyboardDismissMode: $value'),
+  };
+}
+
+late final _sel_keyboardDismissMode = objc.registerName("keyboardDismissMode");
+final _objc_msgSend_1v83s9d = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setKeyboardDismissMode_ = objc.registerName("setKeyboardDismissMode:");
+final _objc_msgSend_1c75p8t = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+
+/// WARNING: UIRefreshControl is a stub. To generate bindings for this class, include
+/// UIRefreshControl in your config's objc-interfaces list.
+///
+/// UIRefreshControl
+class UIRefreshControl extends UIControl {
+  UIRefreshControl._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIRefreshControl', iOS: (false, (6, 0, 0)));
+  }
+
+  /// Constructs a [UIRefreshControl] that points to the same underlying object as [other].
+  UIRefreshControl.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIRefreshControl] that wraps the given raw object pointer.
+  UIRefreshControl.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_refreshControl = objc.registerName("refreshControl");
+late final _sel_setRefreshControl_ = objc.registerName("setRefreshControl:");
+late final _sel_layerClass = objc.registerName("layerClass");
+late final _sel_initWithFrame_ = objc.registerName("initWithFrame:");
+final _objc_msgSend_15yz4e6 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, objc.CGRect)
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, objc.CGRect)
+    >();
+
+enum UIUserInterfaceLayoutDirection {
+  UIUserInterfaceLayoutDirectionLeftToRight(0),
+  UIUserInterfaceLayoutDirectionRightToLeft(1);
+
+  final int value;
+  const UIUserInterfaceLayoutDirection(this.value);
+
+  static UIUserInterfaceLayoutDirection fromValue(int value) => switch (value) {
+    0 => UIUserInterfaceLayoutDirectionLeftToRight,
+    1 => UIUserInterfaceLayoutDirectionRightToLeft,
+    _ => throw ArgumentError('Unknown value for UIUserInterfaceLayoutDirection: $value'),
+  };
+}
+
+enum UISemanticContentAttribute {
+  UISemanticContentAttributeUnspecified(0),
+  UISemanticContentAttributePlayback(1),
+  UISemanticContentAttributeSpatial(2),
+  UISemanticContentAttributeForceLeftToRight(3),
+  UISemanticContentAttributeForceRightToLeft(4);
+
+  final int value;
+  const UISemanticContentAttribute(this.value);
+
+  static UISemanticContentAttribute fromValue(int value) => switch (value) {
+    0 => UISemanticContentAttributeUnspecified,
+    1 => UISemanticContentAttributePlayback,
+    2 => UISemanticContentAttributeSpatial,
+    3 => UISemanticContentAttributeForceLeftToRight,
+    4 => UISemanticContentAttributeForceRightToLeft,
+    _ => throw ArgumentError('Unknown value for UISemanticContentAttribute: $value'),
+  };
+}
+
+late final _sel_userInterfaceLayoutDirectionForSemanticContentAttribute_ = objc.registerName(
+  "userInterfaceLayoutDirectionForSemanticContentAttribute:",
+);
+final _objc_msgSend_racczx = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_userInterfaceLayoutDirectionForSemanticContentAttribute_relativeToLayoutDirection_ = objc.registerName(
+  "userInterfaceLayoutDirectionForSemanticContentAttribute:relativeToLayoutDirection:",
+);
+final _objc_msgSend_tz4p54 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long, ffi.Long)
+      >
+    >()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int, int)>();
+late final _sel_visibleSize = objc.registerName("visibleSize");
+late final _sel_coordinateSpace = objc.registerName("coordinateSpace");
+ffi.Pointer<objc.ObjCObject> _ObjCBlock_idUICoordinateSpace_ffiVoid_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+) => block.ref.target
+    .cast<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>>()
+    .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>()(arg0);
+ffi.Pointer<ffi.Void> _ObjCBlock_idUICoordinateSpace_ffiVoid_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
+        >(_ObjCBlock_idUICoordinateSpace_ffiVoid_fnPtrTrampoline)
+        .cast();
+ffi.Pointer<objc.ObjCObject> _ObjCBlock_idUICoordinateSpace_ffiVoid_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+) => (objc.getBlockClosure(block) as ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>))(arg0);
+ffi.Pointer<ffi.Void> _ObjCBlock_idUICoordinateSpace_ffiVoid_closureCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
+        >(_ObjCBlock_idUICoordinateSpace_ffiVoid_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>`.
+abstract final class ObjCBlock_idUICoordinateSpace_ffiVoid {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> castFromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
+    pointer,
+    retain: retain,
+    release: release,
+  );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> fromFunctionPointer(
+    ffi.Pointer<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>> ptr,
+  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
+    objc.newPointerBlock(_ObjCBlock_idUICoordinateSpace_ffiVoid_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> fromFunction(
+    UICoordinateSpace Function(ffi.Pointer<ffi.Void>) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
+    objc.newClosureBlock(
+      _ObjCBlock_idUICoordinateSpace_ffiVoid_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0) => fn(arg0).ref.retainAndAutorelease(),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>`.
+extension ObjCBlock_idUICoordinateSpace_ffiVoid_CallExtension
+    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> {
+  UICoordinateSpace call(ffi.Pointer<ffi.Void> arg0) => UICoordinateSpace.castFromPointer(
+    ref.pointer.ref.invoke
+        .cast<
+          ffi.NativeFunction<
+            ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<ffi.Void> arg0)
+          >
+        >()
+        .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>()(
+      ref.pointer,
+      arg0,
+    ),
+    retain: true,
+    release: true,
+  );
+}
+
+late final _sel_focusItemsInRect_ = objc.registerName("focusItemsInRect:");
+ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSArray_ffiVoid_CGRect_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  objc.CGRect arg1,
+) => block.ref.target
+    .cast<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0, objc.CGRect arg1)>>()
+    .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.CGRect)>()(arg0, arg1);
+ffi.Pointer<ffi.Void> _ObjCBlock_NSArray_ffiVoid_CGRect_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGRect)
+        >(_ObjCBlock_NSArray_ffiVoid_CGRect_fnPtrTrampoline)
+        .cast();
+ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSArray_ffiVoid_CGRect_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> arg0,
+  objc.CGRect arg1,
+) => (objc.getBlockClosure(block) as ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.CGRect))(
+  arg0,
+  arg1,
+);
+ffi.Pointer<ffi.Void> _ObjCBlock_NSArray_ffiVoid_CGRect_closureCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGRect)
+        >(_ObjCBlock_NSArray_ffiVoid_CGRect_closureTrampoline)
+        .cast();
+
+/// Construction methods for `objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)>`.
+abstract final class ObjCBlock_NSArray_ffiVoid_CGRect {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)> castFromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)>(
+    pointer,
+    retain: retain,
+    release: release,
+  );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)> fromFunctionPointer(
+    ffi.Pointer<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0, objc.CGRect arg1)>>
+    ptr,
+  ) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)>(
+    objc.newPointerBlock(_ObjCBlock_NSArray_ffiVoid_CGRect_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)> fromFunction(
+    objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)>(
+    objc.newClosureBlock(
+      _ObjCBlock_NSArray_ffiVoid_CGRect_closureCallable,
+      (ffi.Pointer<ffi.Void> arg0, objc.CGRect arg1) => fn(arg0, arg1).ref.retainAndAutorelease(),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+}
+
+/// Call operator for `objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)>`.
+extension ObjCBlock_NSArray_ffiVoid_CGRect_CallExtension
+    on objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)> {
+  objc.NSArray call(ffi.Pointer<ffi.Void> arg0, objc.CGRect arg1) => objc.NSArray.castFromPointer(
+    ref.pointer.ref.invoke
+        .cast<
+          ffi.NativeFunction<
+            ffi.Pointer<objc.ObjCObject> Function(
+              ffi.Pointer<objc.ObjCBlockImpl> block,
+              ffi.Pointer<ffi.Void> arg0,
+              objc.CGRect arg1,
+            )
+          >
+        >()
+        .asFunction<
+          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGRect)
+        >()(ref.pointer, arg0, arg1),
+    retain: true,
+    release: true,
+  );
+}
+
+/// UIScrollView
+class UIScrollView extends UIView implements objc.NSCoding, UIFocusItemScrollableContainer {
+  UIScrollView._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release);
+
+  /// Constructs a [UIScrollView] that points to the same underlying object as [other].
+  UIScrollView.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIScrollView] that wraps the given raw object pointer.
+  UIScrollView.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UIScrollView].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIScrollView);
+  }
+
+      static UIScrollView new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UIScrollView, _sel_new);
+    return UIScrollView.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Returns a new instance of UIScrollView constructed with the default `new` method.
+  factory UIScrollView() => new$();
+
+  /// layerClass
+  static objc.ObjCObjectBase getLayerClass() {
+    objc.checkOsVersionInternal('UIScrollView.layerClass', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIScrollView, _sel_layerClass);
+    return objc.ObjCObjectBase(_ret, retain: true, release: true);
+  }
+
+  /// userInterfaceLayoutDirectionForSemanticContentAttribute:
+  static UIUserInterfaceLayoutDirection userInterfaceLayoutDirectionForSemanticContentAttribute(
+    UISemanticContentAttribute attribute,
+  ) {
+    objc.checkOsVersionInternal(
+      'UIScrollView.userInterfaceLayoutDirectionForSemanticContentAttribute:',
+      iOS: (false, (9, 0, 0)),
+    );
+    final _ret = _objc_msgSend_racczx(
+      _class_UIScrollView,
+      _sel_userInterfaceLayoutDirectionForSemanticContentAttribute_,
+      attribute.value,
+    );
+    return UIUserInterfaceLayoutDirection.fromValue(_ret);
+  }
+
+  /// userInterfaceLayoutDirectionForSemanticContentAttribute:relativeToLayoutDirection:
+  static UIUserInterfaceLayoutDirection userInterfaceLayoutDirectionForSemanticContentAttribute$1(
+    UISemanticContentAttribute semanticContentAttribute, {
+    required UIUserInterfaceLayoutDirection relativeToLayoutDirection,
+  }) {
+    objc.checkOsVersionInternal(
+      'UIScrollView.userInterfaceLayoutDirectionForSemanticContentAttribute:relativeToLayoutDirection:',
+      iOS: (false, (10, 0, 0)),
+    );
+    final _ret = _objc_msgSend_tz4p54(
+      _class_UIScrollView,
+      _sel_userInterfaceLayoutDirectionForSemanticContentAttribute_relativeToLayoutDirection_,
+      semanticContentAttribute.value,
+      relativeToLayoutDirection.value,
+    );
+    return UIUserInterfaceLayoutDirection.fromValue(_ret);
+  }
+}
+
+extension UIScrollView$Methods on UIScrollView {
+  /// The current content offset of this scrollable container. If the scrollable container has a `bounds` property, `bounds.origin` must be equal to `contentOffset`.
+  objc.CGPoint get contentOffset {
+    objc.checkOsVersionInternal('UIScrollView.contentOffset', iOS: (false, (12, 0, 0)));
+    final _ptr = pkg_ffi.calloc<objc.CGPoint>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_1uwdhlkStret(_ptr, this.ref.pointer, _sel_contentOffset)
+        : _ptr.ref = _objc_msgSend_1uwdhlk(this.ref.pointer, _sel_contentOffset);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<objc.CGPoint>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<objc.CGPoint>(_finalizable);
+  }
+
+  /// The current content offset of this scrollable container. If the scrollable container has a `bounds` property, `bounds.origin` must be equal to `contentOffset`.
+  set contentOffset(objc.CGPoint value) {
+    objc.checkOsVersionInternal('UIScrollView.setContentOffset:', iOS: (false, (12, 0, 0)));
+    _objc_msgSend_iy8iz6(this.ref.pointer, _sel_setContentOffset_, value);
+  }
+
+  /// The total size of the content contained by this container. If this size exceeds the size of
+  /// this container's visible size, then scrolling is possible.
+  objc.CGSize get contentSize {
+    objc.checkOsVersionInternal('UIScrollView.contentSize', iOS: (false, (12, 0, 0)));
+    final _ptr = pkg_ffi.calloc<objc.CGSize>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_1vdfkenStret(_ptr, this.ref.pointer, _sel_contentSize)
+        : _ptr.ref = _objc_msgSend_1vdfken(this.ref.pointer, _sel_contentSize);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<objc.CGSize>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<objc.CGSize>(_finalizable);
+  }
+
+  /// setContentSize:
+  set contentSize$1(objc.CGSize value) {
+    objc.checkOsVersionInternal('UIScrollView.setContentSize:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_13lgpwz(this.ref.pointer, _sel_setContentSize_, value);
+  }
+
+  /// contentInset
+  UIEdgeInsets get contentInset {
+    objc.checkOsVersionInternal('UIScrollView.contentInset', iOS: (false, (2, 0, 0)));
+    final _ptr = pkg_ffi.calloc<UIEdgeInsets>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_ct4cu5Stret(_ptr, this.ref.pointer, _sel_contentInset)
+        : _ptr.ref = _objc_msgSend_ct4cu5(this.ref.pointer, _sel_contentInset);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<UIEdgeInsets>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<UIEdgeInsets>(_finalizable);
+  }
+
+  /// setContentInset:
+  set contentInset(UIEdgeInsets value) {
+    objc.checkOsVersionInternal('UIScrollView.setContentInset:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1g8fos5(this.ref.pointer, _sel_setContentInset_, value);
+  }
+
+  /// adjustedContentInset
+  UIEdgeInsets get adjustedContentInset {
+    objc.checkOsVersionInternal('UIScrollView.adjustedContentInset', iOS: (false, (11, 0, 0)));
+    final _ptr = pkg_ffi.calloc<UIEdgeInsets>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_ct4cu5Stret(_ptr, this.ref.pointer, _sel_adjustedContentInset)
+        : _ptr.ref = _objc_msgSend_ct4cu5(this.ref.pointer, _sel_adjustedContentInset);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<UIEdgeInsets>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<UIEdgeInsets>(_finalizable);
+  }
+
+  /// adjustedContentInsetDidChange
+  void adjustedContentInsetDidChange() {
+    objc.checkOsVersionInternal('UIScrollView.adjustedContentInsetDidChange', iOS: (false, (11, 0, 0)));
+    _objc_msgSend_1pl9qdv(this.ref.pointer, _sel_adjustedContentInsetDidChange);
+  }
+
+  /// contentInsetAdjustmentBehavior
+  UIScrollViewContentInsetAdjustmentBehavior get contentInsetAdjustmentBehavior {
+    objc.checkOsVersionInternal('UIScrollView.contentInsetAdjustmentBehavior', iOS: (false, (11, 0, 0)));
+    final _ret = _objc_msgSend_1ubvjfk(this.ref.pointer, _sel_contentInsetAdjustmentBehavior);
+    return UIScrollViewContentInsetAdjustmentBehavior.fromValue(_ret);
+  }
+
+  /// setContentInsetAdjustmentBehavior:
+  set contentInsetAdjustmentBehavior(UIScrollViewContentInsetAdjustmentBehavior value) {
+    objc.checkOsVersionInternal('UIScrollView.setContentInsetAdjustmentBehavior:', iOS: (false, (11, 0, 0)));
+    _objc_msgSend_1l2otbm(this.ref.pointer, _sel_setContentInsetAdjustmentBehavior_, value.value);
+  }
+
+  /// automaticallyAdjustsScrollIndicatorInsets
+  bool get automaticallyAdjustsScrollIndicatorInsets {
+    objc.checkOsVersionInternal('UIScrollView.automaticallyAdjustsScrollIndicatorInsets', iOS: (false, (13, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_automaticallyAdjustsScrollIndicatorInsets);
+  }
+
+  /// setAutomaticallyAdjustsScrollIndicatorInsets:
+  set automaticallyAdjustsScrollIndicatorInsets(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setAutomaticallyAdjustsScrollIndicatorInsets:', iOS: (false, (13, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setAutomaticallyAdjustsScrollIndicatorInsets_, value);
+  }
+
+  /// contentLayoutGuide
+  UILayoutGuide get contentLayoutGuide {
+    objc.checkOsVersionInternal('UIScrollView.contentLayoutGuide', iOS: (false, (11, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_contentLayoutGuide);
+    return UILayoutGuide.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// frameLayoutGuide
+  UILayoutGuide get frameLayoutGuide {
+    objc.checkOsVersionInternal('UIScrollView.frameLayoutGuide', iOS: (false, (11, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_frameLayoutGuide);
+    return UILayoutGuide.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// delegate
+  UIScrollViewDelegate? get delegate {
+    objc.checkOsVersionInternal('UIScrollView.delegate', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_delegate);
+    return _ret.address == 0 ? null : UIScrollViewDelegate.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setDelegate:
+  set delegate(UIScrollViewDelegate? value) {
+    objc.checkOsVersionInternal('UIScrollView.setDelegate:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setDelegate_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// isDirectionalLockEnabled
+  bool get directionalLockEnabled {
+    objc.checkOsVersionInternal('UIScrollView.isDirectionalLockEnabled', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isDirectionalLockEnabled);
+  }
+
+  /// setDirectionalLockEnabled:
+  set directionalLockEnabled(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setDirectionalLockEnabled:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setDirectionalLockEnabled_, value);
+  }
+
+  /// bounces
+  bool get bounces {
+    objc.checkOsVersionInternal('UIScrollView.bounces', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_bounces);
+  }
+
+  /// setBounces:
+  set bounces(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setBounces:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setBounces_, value);
+  }
+
+  /// alwaysBounceVertical
+  bool get alwaysBounceVertical {
+    objc.checkOsVersionInternal('UIScrollView.alwaysBounceVertical', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_alwaysBounceVertical);
+  }
+
+  /// setAlwaysBounceVertical:
+  set alwaysBounceVertical(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setAlwaysBounceVertical:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setAlwaysBounceVertical_, value);
+  }
+
+  /// alwaysBounceHorizontal
+  bool get alwaysBounceHorizontal {
+    objc.checkOsVersionInternal('UIScrollView.alwaysBounceHorizontal', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_alwaysBounceHorizontal);
+  }
+
+  /// setAlwaysBounceHorizontal:
+  set alwaysBounceHorizontal(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setAlwaysBounceHorizontal:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setAlwaysBounceHorizontal_, value);
+  }
+
+  /// isPagingEnabled
+  bool get pagingEnabled {
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isPagingEnabled);
+  }
+
+  /// setPagingEnabled:
+  set pagingEnabled(bool value) {
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setPagingEnabled_, value);
+  }
+
+  /// isScrollEnabled
+  bool get scrollEnabled {
+    objc.checkOsVersionInternal('UIScrollView.isScrollEnabled', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isScrollEnabled);
+  }
+
+  /// setScrollEnabled:
+  set scrollEnabled(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setScrollEnabled:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setScrollEnabled_, value);
+  }
+
+  /// showsVerticalScrollIndicator
+  bool get showsVerticalScrollIndicator {
+    objc.checkOsVersionInternal('UIScrollView.showsVerticalScrollIndicator', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_showsVerticalScrollIndicator);
+  }
+
+  /// setShowsVerticalScrollIndicator:
+  set showsVerticalScrollIndicator(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setShowsVerticalScrollIndicator:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setShowsVerticalScrollIndicator_, value);
+  }
+
+  /// showsHorizontalScrollIndicator
+  bool get showsHorizontalScrollIndicator {
+    objc.checkOsVersionInternal('UIScrollView.showsHorizontalScrollIndicator', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_showsHorizontalScrollIndicator);
+  }
+
+  /// setShowsHorizontalScrollIndicator:
+  set showsHorizontalScrollIndicator(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setShowsHorizontalScrollIndicator:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setShowsHorizontalScrollIndicator_, value);
+  }
+
+  /// indicatorStyle
+  UIScrollViewIndicatorStyle get indicatorStyle {
+    objc.checkOsVersionInternal('UIScrollView.indicatorStyle', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_10fw709(this.ref.pointer, _sel_indicatorStyle);
+    return UIScrollViewIndicatorStyle.fromValue(_ret);
+  }
+
+  /// setIndicatorStyle:
+  set indicatorStyle(UIScrollViewIndicatorStyle value) {
+    objc.checkOsVersionInternal('UIScrollView.setIndicatorStyle:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_10eov2d(this.ref.pointer, _sel_setIndicatorStyle_, value.value);
+  }
+
+  /// verticalScrollIndicatorInsets
+  UIEdgeInsets get verticalScrollIndicatorInsets {
+    objc.checkOsVersionInternal('UIScrollView.verticalScrollIndicatorInsets', iOS: (false, (11, 1, 0)));
+    final _ptr = pkg_ffi.calloc<UIEdgeInsets>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_ct4cu5Stret(_ptr, this.ref.pointer, _sel_verticalScrollIndicatorInsets)
+        : _ptr.ref = _objc_msgSend_ct4cu5(this.ref.pointer, _sel_verticalScrollIndicatorInsets);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<UIEdgeInsets>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<UIEdgeInsets>(_finalizable);
+  }
+
+  /// setVerticalScrollIndicatorInsets:
+  set verticalScrollIndicatorInsets(UIEdgeInsets value) {
+    objc.checkOsVersionInternal('UIScrollView.setVerticalScrollIndicatorInsets:', iOS: (false, (11, 1, 0)));
+    _objc_msgSend_1g8fos5(this.ref.pointer, _sel_setVerticalScrollIndicatorInsets_, value);
+  }
+
+  /// horizontalScrollIndicatorInsets
+  UIEdgeInsets get horizontalScrollIndicatorInsets {
+    objc.checkOsVersionInternal('UIScrollView.horizontalScrollIndicatorInsets', iOS: (false, (11, 1, 0)));
+    final _ptr = pkg_ffi.calloc<UIEdgeInsets>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_ct4cu5Stret(_ptr, this.ref.pointer, _sel_horizontalScrollIndicatorInsets)
+        : _ptr.ref = _objc_msgSend_ct4cu5(this.ref.pointer, _sel_horizontalScrollIndicatorInsets);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<UIEdgeInsets>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<UIEdgeInsets>(_finalizable);
+  }
+
+  /// setHorizontalScrollIndicatorInsets:
+  set horizontalScrollIndicatorInsets(UIEdgeInsets value) {
+    objc.checkOsVersionInternal('UIScrollView.setHorizontalScrollIndicatorInsets:', iOS: (false, (11, 1, 0)));
+    _objc_msgSend_1g8fos5(this.ref.pointer, _sel_setHorizontalScrollIndicatorInsets_, value);
+  }
+
+  /// scrollIndicatorInsets
+  UIEdgeInsets get scrollIndicatorInsets {
+    objc.checkOsVersionInternal('UIScrollView.scrollIndicatorInsets', iOS: (false, (2, 0, 0)));
+    final _ptr = pkg_ffi.calloc<UIEdgeInsets>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_ct4cu5Stret(_ptr, this.ref.pointer, _sel_scrollIndicatorInsets)
+        : _ptr.ref = _objc_msgSend_ct4cu5(this.ref.pointer, _sel_scrollIndicatorInsets);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<UIEdgeInsets>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<UIEdgeInsets>(_finalizable);
+  }
+
+  /// setScrollIndicatorInsets:
+  set scrollIndicatorInsets(UIEdgeInsets value) {
+    objc.checkOsVersionInternal('UIScrollView.setScrollIndicatorInsets:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1g8fos5(this.ref.pointer, _sel_setScrollIndicatorInsets_, value);
+  }
+
+  /// decelerationRate
+  double get decelerationRate {
+    objc.checkOsVersionInternal('UIScrollView.decelerationRate', iOS: (false, (3, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_decelerationRate)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_decelerationRate);
+  }
+
+  /// setDecelerationRate:
+  set decelerationRate(double value) {
+    objc.checkOsVersionInternal('UIScrollView.setDecelerationRate:', iOS: (false, (3, 0, 0)));
+    _objc_msgSend_hwm8nu(this.ref.pointer, _sel_setDecelerationRate_, value);
+  }
+
+  /// indexDisplayMode
+  UIScrollViewIndexDisplayMode get indexDisplayMode {
+    final _ret = _objc_msgSend_1vmqitm(this.ref.pointer, _sel_indexDisplayMode);
+    return UIScrollViewIndexDisplayMode.fromValue(_ret);
+  }
+
+  /// setIndexDisplayMode:
+  set indexDisplayMode(UIScrollViewIndexDisplayMode value) {
+    _objc_msgSend_r5kwx4(this.ref.pointer, _sel_setIndexDisplayMode_, value.value);
+  }
+
+  /// setContentOffset:animated:
+  void setContentOffset(objc.CGPoint contentOffset$1, {required bool animated}) {
+    objc.checkOsVersionInternal('UIScrollView.setContentOffset:animated:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_uyhzs2(this.ref.pointer, _sel_setContentOffset_animated_, contentOffset$1, animated);
+  }
+
+  /// scrollRectToVisible:animated:
+  void scrollRectToVisible(objc.CGRect rect, {required bool animated}) {
+    objc.checkOsVersionInternal('UIScrollView.scrollRectToVisible:animated:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1sfhlx6(this.ref.pointer, _sel_scrollRectToVisible_animated_, rect, animated);
+  }
+
+  /// flashScrollIndicators
+  void flashScrollIndicators() {
+    objc.checkOsVersionInternal('UIScrollView.flashScrollIndicators', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1pl9qdv(this.ref.pointer, _sel_flashScrollIndicators);
+  }
+
+  /// isTracking
+  bool get tracking {
+    objc.checkOsVersionInternal('UIScrollView.isTracking', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isTracking);
+  }
+
+  /// isDragging
+  bool get dragging {
+    objc.checkOsVersionInternal('UIScrollView.isDragging', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isDragging);
+  }
+
+  /// isDecelerating
+  bool get decelerating {
+    objc.checkOsVersionInternal('UIScrollView.isDecelerating', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isDecelerating);
+  }
+
+  /// delaysContentTouches
+  bool get delaysContentTouches {
+    objc.checkOsVersionInternal('UIScrollView.delaysContentTouches', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_delaysContentTouches);
+  }
+
+  /// setDelaysContentTouches:
+  set delaysContentTouches(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setDelaysContentTouches:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setDelaysContentTouches_, value);
+  }
+
+  /// canCancelContentTouches
+  bool get canCancelContentTouches {
+    objc.checkOsVersionInternal('UIScrollView.canCancelContentTouches', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_canCancelContentTouches);
+  }
+
+  /// setCanCancelContentTouches:
+  set canCancelContentTouches(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setCanCancelContentTouches:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setCanCancelContentTouches_, value);
+  }
+
+  /// touchesShouldBegin:withEvent:inContentView:
+  bool touchesShouldBegin(objc.NSSet touches, {UIEvent? withEvent, required UIView inContentView}) {
+    objc.checkOsVersionInternal('UIScrollView.touchesShouldBegin:withEvent:inContentView:', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_gtxojt(
+      this.ref.pointer,
+      _sel_touchesShouldBegin_withEvent_inContentView_,
+      touches.ref.pointer,
+      withEvent?.ref.pointer ?? ffi.nullptr,
+      inContentView.ref.pointer,
+    );
+  }
+
+  /// touchesShouldCancelInContentView:
+  bool touchesShouldCancelInContentView(UIView view) {
+    objc.checkOsVersionInternal('UIScrollView.touchesShouldCancelInContentView:', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_19nvye5(this.ref.pointer, _sel_touchesShouldCancelInContentView_, view.ref.pointer);
+  }
+
+  /// minimumZoomScale
+  double get minimumZoomScale {
+    objc.checkOsVersionInternal('UIScrollView.minimumZoomScale', iOS: (false, (2, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_minimumZoomScale)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_minimumZoomScale);
+  }
+
+  /// setMinimumZoomScale:
+  set minimumZoomScale(double value) {
+    objc.checkOsVersionInternal('UIScrollView.setMinimumZoomScale:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_hwm8nu(this.ref.pointer, _sel_setMinimumZoomScale_, value);
+  }
+
+  /// maximumZoomScale
+  double get maximumZoomScale {
+    objc.checkOsVersionInternal('UIScrollView.maximumZoomScale', iOS: (false, (2, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_maximumZoomScale)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_maximumZoomScale);
+  }
+
+  /// setMaximumZoomScale:
+  set maximumZoomScale(double value) {
+    objc.checkOsVersionInternal('UIScrollView.setMaximumZoomScale:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_hwm8nu(this.ref.pointer, _sel_setMaximumZoomScale_, value);
+  }
+
+  /// zoomScale
+  double get zoomScale {
+    objc.checkOsVersionInternal('UIScrollView.zoomScale', iOS: (false, (3, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_zoomScale)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_zoomScale);
+  }
+
+  /// setZoomScale:
+  set zoomScale(double value) {
+    objc.checkOsVersionInternal('UIScrollView.setZoomScale:', iOS: (false, (3, 0, 0)));
+    _objc_msgSend_hwm8nu(this.ref.pointer, _sel_setZoomScale_, value);
+  }
+
+  /// setZoomScale:animated:
+  void setZoomScale(double scale, {required bool animated}) {
+    objc.checkOsVersionInternal('UIScrollView.setZoomScale:animated:', iOS: (false, (3, 0, 0)));
+    _objc_msgSend_ghxo7e(this.ref.pointer, _sel_setZoomScale_animated_, scale, animated);
+  }
+
+  /// zoomToRect:animated:
+  void zoomToRect(objc.CGRect rect, {required bool animated}) {
+    objc.checkOsVersionInternal('UIScrollView.zoomToRect:animated:', iOS: (false, (3, 0, 0)));
+    _objc_msgSend_1sfhlx6(this.ref.pointer, _sel_zoomToRect_animated_, rect, animated);
+  }
+
+  /// bouncesZoom
+  bool get bouncesZoom {
+    objc.checkOsVersionInternal('UIScrollView.bouncesZoom', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_bouncesZoom);
+  }
+
+  /// setBouncesZoom:
+  set bouncesZoom(bool value) {
+    objc.checkOsVersionInternal('UIScrollView.setBouncesZoom:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setBouncesZoom_, value);
+  }
+
+  /// isZooming
+  bool get zooming {
+    objc.checkOsVersionInternal('UIScrollView.isZooming', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isZooming);
+  }
+
+  /// isZoomBouncing
+  bool get zoomBouncing {
+    objc.checkOsVersionInternal('UIScrollView.isZoomBouncing', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isZoomBouncing);
+  }
+
+  /// scrollsToTop
+  bool get scrollsToTop {
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_scrollsToTop);
+  }
+
+  /// setScrollsToTop:
+  set scrollsToTop(bool value) {
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setScrollsToTop_, value);
+  }
+
+  /// panGestureRecognizer
+  UIPanGestureRecognizer get panGestureRecognizer {
+    objc.checkOsVersionInternal('UIScrollView.panGestureRecognizer', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_panGestureRecognizer);
+    return UIPanGestureRecognizer.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// pinchGestureRecognizer
+  UIPinchGestureRecognizer? get pinchGestureRecognizer {
+    objc.checkOsVersionInternal('UIScrollView.pinchGestureRecognizer', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_pinchGestureRecognizer);
+    return _ret.address == 0 ? null : UIPinchGestureRecognizer.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// directionalPressGestureRecognizer
+  UIGestureRecognizer get directionalPressGestureRecognizer {
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_directionalPressGestureRecognizer);
+    return UIGestureRecognizer.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// keyboardDismissMode
+  UIScrollViewKeyboardDismissMode get keyboardDismissMode {
+    objc.checkOsVersionInternal('UIScrollView.keyboardDismissMode', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_1v83s9d(this.ref.pointer, _sel_keyboardDismissMode);
+    return UIScrollViewKeyboardDismissMode.fromValue(_ret);
+  }
+
+  /// setKeyboardDismissMode:
+  set keyboardDismissMode(UIScrollViewKeyboardDismissMode value) {
+    objc.checkOsVersionInternal('UIScrollView.setKeyboardDismissMode:', iOS: (false, (7, 0, 0)));
+    _objc_msgSend_1c75p8t(this.ref.pointer, _sel_setKeyboardDismissMode_, value.value);
+  }
+
+  /// refreshControl
+  UIRefreshControl? get refreshControl {
+    objc.checkOsVersionInternal('UIScrollView.refreshControl', iOS: (false, (10, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_refreshControl);
+    return _ret.address == 0 ? null : UIRefreshControl.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setRefreshControl:
+  set refreshControl(UIRefreshControl? value) {
+    objc.checkOsVersionInternal('UIScrollView.setRefreshControl:', iOS: (false, (10, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setRefreshControl_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// initWithFrame:
+  UIScrollView initWithFrame(objc.CGRect frame) {
+    objc.checkOsVersionInternal('UIScrollView.initWithFrame:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_15yz4e6(this.ref.retainAndReturnPointer(), _sel_initWithFrame_, frame);
+    return UIScrollView.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithCoder:
+  UIScrollView? initWithCoder(objc.NSCoder coder) {
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UIScrollView.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// encodeWithCoder:
+  void encodeWithCoder(objc.NSCoder coder) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
+  }
+
+  /// The visible size of this scrollable container.
+  objc.CGSize get visibleSize {
+    objc.checkOsVersionInternal('UIScrollView.visibleSize', iOS: (false, (12, 0, 0)));
+    final _ptr = pkg_ffi.calloc<objc.CGSize>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_1vdfkenStret(_ptr, this.ref.pointer, _sel_visibleSize)
+        : _ptr.ref = _objc_msgSend_1vdfken(this.ref.pointer, _sel_visibleSize);
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<objc.CGSize>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<objc.CGSize>(_finalizable);
+  }
+
+  /// The coordinate space of the focus items contained in this container. The focus items returned by focusItemsInRect: should report their frames in this coordinate space.
+  /// If you are implementing this protocol, you may find it convenient to return the UIScreen as your coordinate space, and ensure that your contained items report their frames in screen space.
+  /// Similarly, you might find that your focus items' containing UIView or UIWindow is the most convenient coordinate space to use.
+  /// You may also choose to implement your own object that conforms to UICoordinateSpace, if that is the most natural solution for your architecture.
+  UICoordinateSpace get coordinateSpace {
+    objc.checkOsVersionInternal('UIScrollView.coordinateSpace', iOS: (false, (12, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_coordinateSpace);
+    return UICoordinateSpace.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Returns an array of all focus items within this container that intersect with the provided rect. `rect` is expressed in `coordinateSpace`.
+  objc.NSArray focusItemsInRect(objc.CGRect rect) {
+    objc.checkOsVersionInternal('UIScrollView.focusItemsInRect:', iOS: (false, (12, 0, 0)));
+    final _ret = _objc_msgSend_15yz4e6(this.ref.pointer, _sel_focusItemsInRect_, rect);
+    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+}
+
+enum NSDirectionalRectEdge {
+  NSDirectionalRectEdgeNone(0),
+  NSDirectionalRectEdgeTop(1),
+  NSDirectionalRectEdgeLeading(2),
+  NSDirectionalRectEdgeBottom(4),
+  NSDirectionalRectEdgeTrailing(8),
+  NSDirectionalRectEdgeAll(15);
+
+  final int value;
+  const NSDirectionalRectEdge(this.value);
+
+  static NSDirectionalRectEdge fromValue(int value) => switch (value) {
+    0 => NSDirectionalRectEdgeNone,
+    1 => NSDirectionalRectEdgeTop,
+    2 => NSDirectionalRectEdgeLeading,
+    4 => NSDirectionalRectEdgeBottom,
+    8 => NSDirectionalRectEdgeTrailing,
+    15 => NSDirectionalRectEdgeAll,
+    _ => throw ArgumentError('Unknown value for NSDirectionalRectEdge: $value'),
+  };
+}
+
+late final _sel_setContentScrollView_forEdge_ = objc.registerName("setContentScrollView:forEdge:");
+final _objc_msgSend_13y7vr7 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.UnsignedLong,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>, int)
+    >();
+late final _sel_contentScrollViewForEdge_ = objc.registerName("contentScrollViewForEdge:");
+final _objc_msgSend_kh1gvt = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)
+    >();
+late final _sel_preferredContentSize = objc.registerName("preferredContentSize");
+late final _sel_setPreferredContentSize_ = objc.registerName("setPreferredContentSize:");
 
 enum UIStatusBarStyle {
   UIStatusBarStyleDefault(0),
@@ -6154,7 +12750,6 @@ final _objc_msgSend_gx50so = objc.msgSendPointer
         ffi.Pointer<objc.ObjCObject>,
       )
     >();
-late final _sel_showViewController_sender_ = objc.registerName("showViewController:sender:");
 late final _sel_showDetailViewController_sender_ = objc.registerName("showDetailViewController:sender:");
 
 enum UIUserInterfaceStyle {
@@ -7541,89 +14136,6 @@ extension ObjCBlock_ffiVoid_ffiVoid_UITraitCollection_idUIViewControllerTransiti
 }
 
 late final _sel_preferredFocusEnvironments = objc.registerName("preferredFocusEnvironments");
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSArray_ffiVoid_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => block.ref.target
-    .cast<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>>()
-    .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>()(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_NSArray_ffiVoid_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-        >(_ObjCBlock_NSArray_ffiVoid_fnPtrTrampoline)
-        .cast();
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSArray_ffiVoid_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => (objc.getBlockClosure(block) as ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>))(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_NSArray_ffiVoid_closureCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-        >(_ObjCBlock_NSArray_ffiVoid_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)>`.
-abstract final class ObjCBlock_NSArray_ffiVoid {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)>(pointer, retain: retain, release: release);
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>> ptr,
-  ) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)>(
-    objc.newPointerBlock(_ObjCBlock_NSArray_ffiVoid_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)> fromFunction(
-    objc.NSArray Function(ffi.Pointer<ffi.Void>) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)>(
-    objc.newClosureBlock(
-      _ObjCBlock_NSArray_ffiVoid_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0) => fn(arg0).ref.retainAndAutorelease(),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)>`.
-extension ObjCBlock_NSArray_ffiVoid_CallExtension on objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>)> {
-  objc.NSArray call(ffi.Pointer<ffi.Void> arg0) => objc.NSArray.castFromPointer(
-    ref.pointer.ref.invoke
-        .cast<
-          ffi.NativeFunction<
-            ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<ffi.Void> arg0)
-          >
-        >()
-        .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>()(
-      ref.pointer,
-      arg0,
-    ),
-    retain: true,
-    release: true,
-  );
-}
-
 late final _sel_parentFocusEnvironment = objc.registerName("parentFocusEnvironment");
 ffi.Pointer<objc.ObjCObject> _ObjCBlock_idUIFocusEnvironment_ffiVoid_fnPtrTrampoline(
   ffi.Pointer<objc.ObjCBlockImpl> block,
@@ -8704,9 +15216,7 @@ late final _sel_previewActionItems = objc.registerName("previewActionItems");
 class UIViewController extends UIResponder
     implements objc.NSCoding, UIAppearanceContainer, UITraitEnvironment, UIContentContainer, UIFocusEnvironment {
   UIViewController._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super.castFromPointer(pointer, retain: retain, release: release) {
-    objc.checkOsVersionInternal('UIViewController', iOS: (false, (2, 0, 0)));
-  }
+    : super.castFromPointer(pointer, retain: retain, release: release);
 
   /// Constructs a [UIViewController] that points to the same underlying object as [other].
   UIViewController.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
@@ -8720,21 +15230,8 @@ class UIViewController extends UIResponder
     return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIViewController);
   }
 
-  /// new
   static UIViewController new$() {
     final _ret = _objc_msgSend_151sglz(_class_UIViewController, _sel_new);
-    return UIViewController.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// allocWithZone:
-  static UIViewController allocWithZone(ffi.Pointer<objc.NSZone> zone) {
-    final _ret = _objc_msgSend_1cwp428(_class_UIViewController, _sel_allocWithZone_, zone);
-    return UIViewController.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// alloc
-  static UIViewController alloc() {
-    final _ret = _objc_msgSend_151sglz(_class_UIViewController, _sel_alloc);
     return UIViewController.castFromPointer(_ret, retain: false, release: true);
   }
 
@@ -9414,31 +15911,6 @@ extension UIViewController$Methods on UIViewController {
     _objc_msgSend_15dz1ky(this.ref.pointer, _sel_setOverrideUserInterfaceStyle_, value.value);
   }
 
-  /// init
-  UIViewController init() {
-    objc.checkOsVersionInternal('UIViewController.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
-    return UIViewController.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// self
-  UIViewController self$1() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_self);
-    return UIViewController.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// retain
-  UIViewController retain() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_retain);
-    return UIViewController.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// autorelease
-  UIViewController autorelease() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_autorelease);
-    return UIViewController.castFromPointer(_ret, retain: true, release: true);
-  }
-
   /// encodeWithCoder:
   void encodeWithCoder(objc.NSCoder coder) {
     _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
@@ -9655,679 +16127,6 @@ late final _sel_convertPoint_toWindow_ = objc.registerName("convertPoint:toWindo
 late final _sel_convertPoint_fromWindow_ = objc.registerName("convertPoint:fromWindow:");
 late final _sel_convertRect_toWindow_ = objc.registerName("convertRect:toWindow:");
 late final _sel_convertRect_fromWindow_ = objc.registerName("convertRect:fromWindow:");
-late final _sel_layerClass = objc.registerName("layerClass");
-late final _sel_initWithFrame_ = objc.registerName("initWithFrame:");
-final _objc_msgSend_15yz4e6 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, objc.CGRect)
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, objc.CGRect)
-    >();
-
-enum UIUserInterfaceLayoutDirection {
-  UIUserInterfaceLayoutDirectionLeftToRight(0),
-  UIUserInterfaceLayoutDirectionRightToLeft(1);
-
-  final int value;
-  const UIUserInterfaceLayoutDirection(this.value);
-
-  static UIUserInterfaceLayoutDirection fromValue(int value) => switch (value) {
-    0 => UIUserInterfaceLayoutDirectionLeftToRight,
-    1 => UIUserInterfaceLayoutDirectionRightToLeft,
-    _ => throw ArgumentError('Unknown value for UIUserInterfaceLayoutDirection: $value'),
-  };
-}
-
-enum UISemanticContentAttribute {
-  UISemanticContentAttributeUnspecified(0),
-  UISemanticContentAttributePlayback(1),
-  UISemanticContentAttributeSpatial(2),
-  UISemanticContentAttributeForceLeftToRight(3),
-  UISemanticContentAttributeForceRightToLeft(4);
-
-  final int value;
-  const UISemanticContentAttribute(this.value);
-
-  static UISemanticContentAttribute fromValue(int value) => switch (value) {
-    0 => UISemanticContentAttributeUnspecified,
-    1 => UISemanticContentAttributePlayback,
-    2 => UISemanticContentAttributeSpatial,
-    3 => UISemanticContentAttributeForceLeftToRight,
-    4 => UISemanticContentAttributeForceRightToLeft,
-    _ => throw ArgumentError('Unknown value for UISemanticContentAttribute: $value'),
-  };
-}
-
-late final _sel_userInterfaceLayoutDirectionForSemanticContentAttribute_ = objc.registerName(
-  "userInterfaceLayoutDirectionForSemanticContentAttribute:",
-);
-final _objc_msgSend_racczx = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
-    >()
-    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
-late final _sel_userInterfaceLayoutDirectionForSemanticContentAttribute_relativeToLayoutDirection_ = objc.registerName(
-  "userInterfaceLayoutDirectionForSemanticContentAttribute:relativeToLayoutDirection:",
-);
-final _objc_msgSend_tz4p54 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long, ffi.Long)
-      >
-    >()
-    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int, int)>();
-late final _sel_appearance = objc.registerName("appearance");
-late final _sel_appearanceWhenContainedIn_ = objc.registerName("appearanceWhenContainedIn:");
-instancetype _ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) => block.ref.target
-    .cast<ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>()
-    .asFunction<instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)>()(arg0, arg1);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_fnPtrTrampoline)
-        .cast();
-instancetype _ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) => (objc.getBlockClosure(block) as instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>))(
-  arg0,
-  arg1,
-);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_closureCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>`.
-abstract final class ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>
-  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
-      objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>(
-        pointer,
-        retain: retain,
-        release: release,
-      );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>
-  fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>
-    >
-    ptr,
-  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>(
-    objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>
-  fromFunction(
-    Dartinstancetype Function(ffi.Pointer<ffi.Void>, UIAppearanceContainer?) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>(
-    objc.newClosureBlock(
-      _ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1) => fn(
-        arg0,
-        arg1.address == 0 ? null : UIAppearanceContainer.castFromPointer(arg1, retain: true, release: true),
-      ).ref.retainAndAutorelease(),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)>`.
-extension ObjCBlock_instancetype_ffiVoid_idUIAppearanceContainer_CallExtension
-    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>?)> {
-  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0, UIAppearanceContainer? arg1) => objc.ObjCObjectBase(
-    ref.pointer.ref.invoke
-        .cast<
-          ffi.NativeFunction<
-            instancetype Function(
-              ffi.Pointer<objc.ObjCBlockImpl> block,
-              ffi.Pointer<ffi.Void> arg0,
-              ffi.Pointer<objc.ObjCObject> arg1,
-            )
-          >
-        >()
-        .asFunction<
-          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >()(ref.pointer, arg0, arg1?.ref.pointer ?? ffi.nullptr),
-    retain: true,
-    release: true,
-  );
-}
-
-late final _sel_appearanceWhenContainedInInstancesOfClasses_ = objc.registerName(
-  "appearanceWhenContainedInInstancesOfClasses:",
-);
-instancetype _ObjCBlock_instancetype_ffiVoid_NSArray_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) => block.ref.target
-    .cast<ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>()
-    .asFunction<instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)>()(arg0, arg1);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_NSArray_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_instancetype_ffiVoid_NSArray_fnPtrTrampoline)
-        .cast();
-instancetype _ObjCBlock_instancetype_ffiVoid_NSArray_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) => (objc.getBlockClosure(block) as instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>))(
-  arg0,
-  arg1,
-);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_NSArray_closureCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_instancetype_ffiVoid_NSArray_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)>`.
-abstract final class ObjCBlock_instancetype_ffiVoid_NSArray {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)> fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>
-    >
-    ptr,
-  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)>(
-    objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_NSArray_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)> fromFunction(
-    Dartinstancetype Function(ffi.Pointer<ffi.Void>, objc.NSArray) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)>(
-    objc.newClosureBlock(
-      _ObjCBlock_instancetype_ffiVoid_NSArray_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1) =>
-          fn(arg0, objc.NSArray.castFromPointer(arg1, retain: true, release: true)).ref.retainAndAutorelease(),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)>`.
-extension ObjCBlock_instancetype_ffiVoid_NSArray_CallExtension
-    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.NSArray)> {
-  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0, objc.NSArray arg1) => objc.ObjCObjectBase(
-    ref.pointer.ref.invoke
-        .cast<
-          ffi.NativeFunction<
-            instancetype Function(
-              ffi.Pointer<objc.ObjCBlockImpl> block,
-              ffi.Pointer<ffi.Void> arg0,
-              ffi.Pointer<objc.ObjCObject> arg1,
-            )
-          >
-        >()
-        .asFunction<
-          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >()(ref.pointer, arg0, arg1.ref.pointer),
-    retain: true,
-    release: true,
-  );
-}
-
-late final _sel_appearanceForTraitCollection_ = objc.registerName("appearanceForTraitCollection:");
-instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) => block.ref.target
-    .cast<ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>()
-    .asFunction<instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)>()(arg0, arg1);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_fnPtrTrampoline)
-        .cast();
-instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) => (objc.getBlockClosure(block) as instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>))(
-  arg0,
-  arg1,
-);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_closureCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>`.
-abstract final class ObjCBlock_instancetype_ffiVoid_UITraitCollection {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>
-  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
-      objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>(
-        pointer,
-        retain: retain,
-        release: release,
-      );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>
-  fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<instancetype Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>
-    >
-    ptr,
-  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>(
-    objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)> fromFunction(
-    Dartinstancetype Function(ffi.Pointer<ffi.Void>, UITraitCollection) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>(
-    objc.newClosureBlock(
-      _ObjCBlock_instancetype_ffiVoid_UITraitCollection_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1) =>
-          fn(arg0, UITraitCollection.castFromPointer(arg1, retain: true, release: true)).ref.retainAndAutorelease(),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)>`.
-extension ObjCBlock_instancetype_ffiVoid_UITraitCollection_CallExtension
-    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection)> {
-  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0, UITraitCollection arg1) => objc.ObjCObjectBase(
-    ref.pointer.ref.invoke
-        .cast<
-          ffi.NativeFunction<
-            instancetype Function(
-              ffi.Pointer<objc.ObjCBlockImpl> block,
-              ffi.Pointer<ffi.Void> arg0,
-              ffi.Pointer<objc.ObjCObject> arg1,
-            )
-          >
-        >()
-        .asFunction<
-          instancetype Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >()(ref.pointer, arg0, arg1.ref.pointer),
-    retain: true,
-    release: true,
-  );
-}
-
-late final _sel_appearanceForTraitCollection_whenContainedIn_ = objc.registerName(
-  "appearanceForTraitCollection:whenContainedIn:",
-);
-instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCObject> arg2,
-) => block.ref.target
-    .cast<
-      ffi.NativeFunction<
-        instancetype Function(
-          ffi.Pointer<ffi.Void> arg0,
-          ffi.Pointer<objc.ObjCObject> arg1,
-          ffi.Pointer<objc.ObjCObject> arg2,
-        )
-      >
-    >()
-    .asFunction<
-      instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
-    >()(arg0, arg1, arg2);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<objc.ObjCObject>,
-          )
-        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_fnPtrTrampoline)
-        .cast();
-instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCObject> arg2,
-) =>
-    (objc.getBlockClosure(block)
-        as instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>))(
-      arg0,
-      arg1,
-      arg2,
-    );
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_closureCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<objc.ObjCObject>,
-          )
-        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)>`.
-abstract final class ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<
-    ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
-  >
-  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
-      objc.ObjCBlock<
-        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
-      >(pointer, retain: retain, release: release);
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<
-    ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
-  >
-  fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<
-        instancetype Function(
-          ffi.Pointer<ffi.Void> arg0,
-          ffi.Pointer<objc.ObjCObject> arg1,
-          ffi.Pointer<objc.ObjCObject> arg2,
-        )
-      >
-    >
-    ptr,
-  ) =>
-      objc.ObjCBlock<
-        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
-      >(
-        objc.newPointerBlock(
-          _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_fnPtrCallable,
-          ptr.cast(),
-        ),
-        retain: false,
-        release: true,
-      );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<
-    ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
-  >
-  fromFunction(
-    Dartinstancetype Function(ffi.Pointer<ffi.Void>, UITraitCollection, UIAppearanceContainer?) fn, {
-    bool keepIsolateAlive = true,
-  }) =>
-      objc.ObjCBlock<
-        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
-      >(
-        objc.newClosureBlock(
-          _ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_closureCallable,
-          (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1, ffi.Pointer<objc.ObjCObject> arg2) => fn(
-            arg0,
-            UITraitCollection.castFromPointer(arg1, retain: true, release: true),
-            arg2.address == 0 ? null : UIAppearanceContainer.castFromPointer(arg2, retain: true, release: true),
-          ).ref.retainAndAutorelease(),
-          keepIsolateAlive,
-        ),
-        retain: false,
-        release: true,
-      );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)>`.
-extension ObjCBlock_instancetype_ffiVoid_UITraitCollection_idUIAppearanceContainer_CallExtension
-    on
-        objc.ObjCBlock<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, ffi.Pointer<objc.ObjCObject>?)
-        > {
-  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0, UITraitCollection arg1, UIAppearanceContainer? arg2) =>
-      objc.ObjCObjectBase(
-        ref.pointer.ref.invoke
-            .cast<
-              ffi.NativeFunction<
-                instancetype Function(
-                  ffi.Pointer<objc.ObjCBlockImpl> block,
-                  ffi.Pointer<ffi.Void> arg0,
-                  ffi.Pointer<objc.ObjCObject> arg1,
-                  ffi.Pointer<objc.ObjCObject> arg2,
-                )
-              >
-            >()
-            .asFunction<
-              instancetype Function(
-                ffi.Pointer<objc.ObjCBlockImpl>,
-                ffi.Pointer<ffi.Void>,
-                ffi.Pointer<objc.ObjCObject>,
-                ffi.Pointer<objc.ObjCObject>,
-              )
-            >()(ref.pointer, arg0, arg1.ref.pointer, arg2?.ref.pointer ?? ffi.nullptr),
-        retain: true,
-        release: true,
-      );
-}
-
-late final _sel_appearanceForTraitCollection_whenContainedInInstancesOfClasses_ = objc.registerName(
-  "appearanceForTraitCollection:whenContainedInInstancesOfClasses:",
-);
-instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCObject> arg2,
-) => block.ref.target
-    .cast<
-      ffi.NativeFunction<
-        instancetype Function(
-          ffi.Pointer<ffi.Void> arg0,
-          ffi.Pointer<objc.ObjCObject> arg1,
-          ffi.Pointer<objc.ObjCObject> arg2,
-        )
-      >
-    >()
-    .asFunction<
-      instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
-    >()(arg0, arg1, arg2);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<objc.ObjCObject>,
-          )
-        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_fnPtrTrampoline)
-        .cast();
-instancetype _ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCObject> arg2,
-) =>
-    (objc.getBlockClosure(block)
-        as instancetype Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>))(
-      arg0,
-      arg1,
-      arg2,
-    );
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_closureCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<objc.ObjCObject>,
-          )
-        >(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>`.
-abstract final class ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>
-  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
-      objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>(
-        pointer,
-        retain: retain,
-        release: release,
-      );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>
-  fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<
-        instancetype Function(
-          ffi.Pointer<ffi.Void> arg0,
-          ffi.Pointer<objc.ObjCObject> arg1,
-          ffi.Pointer<objc.ObjCObject> arg2,
-        )
-      >
-    >
-    ptr,
-  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>(
-    objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>
-  fromFunction(
-    Dartinstancetype Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>(
-    objc.newClosureBlock(
-      _ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1, ffi.Pointer<objc.ObjCObject> arg2) => fn(
-        arg0,
-        UITraitCollection.castFromPointer(arg1, retain: true, release: true),
-        objc.NSArray.castFromPointer(arg2, retain: true, release: true),
-      ).ref.retainAndAutorelease(),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)>`.
-extension ObjCBlock_instancetype_ffiVoid_UITraitCollection_NSArray_CallExtension
-    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, UITraitCollection, objc.NSArray)> {
-  Dartinstancetype call(ffi.Pointer<ffi.Void> arg0, UITraitCollection arg1, objc.NSArray arg2) => objc.ObjCObjectBase(
-    ref.pointer.ref.invoke
-        .cast<
-          ffi.NativeFunction<
-            instancetype Function(
-              ffi.Pointer<objc.ObjCBlockImpl> block,
-              ffi.Pointer<ffi.Void> arg0,
-              ffi.Pointer<objc.ObjCObject> arg1,
-              ffi.Pointer<objc.ObjCObject> arg2,
-            )
-          >
-        >()
-        .asFunction<
-          instancetype Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<objc.ObjCObject>,
-          )
-        >()(ref.pointer, arg0, arg1.ref.pointer, arg2.ref.pointer),
-    retain: true,
-    release: true,
-  );
-}
 
 /// UIWindow
 class UIWindow extends UIView {
@@ -10386,92 +16185,6 @@ class UIWindow extends UIView {
     );
     return UIUserInterfaceLayoutDirection.fromValue(_ret);
   }
-
-  /// new
-  static UIWindow new$() {
-    final _ret = _objc_msgSend_151sglz(_class_UIWindow, _sel_new);
-    return UIWindow.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// allocWithZone:
-  static UIWindow allocWithZone(ffi.Pointer<objc.NSZone> zone) {
-    final _ret = _objc_msgSend_1cwp428(_class_UIWindow, _sel_allocWithZone_, zone);
-    return UIWindow.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// alloc
-  static UIWindow alloc() {
-    final _ret = _objc_msgSend_151sglz(_class_UIWindow, _sel_alloc);
-    return UIWindow.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// appearance
-  static UIWindow appearance() {
-    final _ret = _objc_msgSend_151sglz(_class_UIWindow, _sel_appearance);
-    return UIWindow.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// appearanceWhenContainedIn:
-  static UIWindow appearanceWhenContainedIn(UIAppearanceContainer? ContainerClass) {
-    objc.checkOsVersionInternal('UIWindow.appearanceWhenContainedIn:', iOS: (false, (5, 0, 0)));
-    final _ret = _objc_msgSend_1sotr3r(
-      _class_UIWindow,
-      _sel_appearanceWhenContainedIn_,
-      ContainerClass?.ref.pointer ?? ffi.nullptr,
-    );
-    return UIWindow.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// appearanceWhenContainedInInstancesOfClasses:
-  static UIWindow appearanceWhenContainedInInstancesOfClasses(objc.NSArray containerTypes) {
-    objc.checkOsVersionInternal('UIWindow.appearanceWhenContainedInInstancesOfClasses:', iOS: (false, (9, 0, 0)));
-    final _ret = _objc_msgSend_1sotr3r(
-      _class_UIWindow,
-      _sel_appearanceWhenContainedInInstancesOfClasses_,
-      containerTypes.ref.pointer,
-    );
-    return UIWindow.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// appearanceForTraitCollection:
-  static UIWindow appearanceForTraitCollection(UITraitCollection trait) {
-    objc.checkOsVersionInternal('UIWindow.appearanceForTraitCollection:', iOS: (false, (8, 0, 0)));
-    final _ret = _objc_msgSend_1sotr3r(_class_UIWindow, _sel_appearanceForTraitCollection_, trait.ref.pointer);
-    return UIWindow.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// appearanceForTraitCollection:whenContainedIn:
-  static UIWindow appearanceForTraitCollection$1(UITraitCollection trait, {UIAppearanceContainer? whenContainedIn}) {
-    objc.checkOsVersionInternal('UIWindow.appearanceForTraitCollection:whenContainedIn:', iOS: (false, (8, 0, 0)));
-    final _ret = _objc_msgSend_15qeuct(
-      _class_UIWindow,
-      _sel_appearanceForTraitCollection_whenContainedIn_,
-      trait.ref.pointer,
-      whenContainedIn?.ref.pointer ?? ffi.nullptr,
-    );
-    return UIWindow.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// appearanceForTraitCollection:whenContainedInInstancesOfClasses:
-  static UIWindow appearanceForTraitCollection$2(
-    UITraitCollection trait, {
-    required objc.NSArray whenContainedInInstancesOfClasses,
-  }) {
-    objc.checkOsVersionInternal(
-      'UIWindow.appearanceForTraitCollection:whenContainedInInstancesOfClasses:',
-      iOS: (false, (9, 0, 0)),
-    );
-    final _ret = _objc_msgSend_15qeuct(
-      _class_UIWindow,
-      _sel_appearanceForTraitCollection_whenContainedInInstancesOfClasses_,
-      trait.ref.pointer,
-      whenContainedInInstancesOfClasses.ref.pointer,
-    );
-    return UIWindow.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// Returns a new instance of UIWindow constructed with the default `new` method.
-  factory UIWindow() => new$();
 }
 
 extension UIWindow$Methods on UIWindow {
@@ -10700,33 +16413,9 @@ extension UIWindow$Methods on UIWindow {
 
   /// initWithCoder:
   UIWindow? initWithCoder(objc.NSCoder coder) {
+    objc.checkOsVersionInternal('UIWindow.initWithCoder:', iOS: (false, (2, 0, 0)));
     final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
     return _ret.address == 0 ? null : UIWindow.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// init
-  UIWindow init() {
-    objc.checkOsVersionInternal('UIWindow.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
-    return UIWindow.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// self
-  UIWindow self$1() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_self);
-    return UIWindow.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// retain
-  UIWindow retain() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_retain);
-    return UIWindow.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// autorelease
-  UIWindow autorelease() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_autorelease);
-    return UIWindow.castFromPointer(_ret, retain: true, release: true);
   }
 }
 
@@ -10800,25 +16489,6 @@ late final _sel_setInsetsLayoutMarginsFromSafeArea_ = objc.registerName("setInse
 late final _sel_layoutMarginsDidChange = objc.registerName("layoutMarginsDidChange");
 late final _sel_safeAreaInsets = objc.registerName("safeAreaInsets");
 late final _sel_safeAreaInsetsDidChange = objc.registerName("safeAreaInsetsDidChange");
-
-/// WARNING: UILayoutGuide is a stub. To generate bindings for this class, include
-/// UILayoutGuide in your config's objc-interfaces list.
-///
-/// UILayoutGuide
-class UILayoutGuide extends objc.NSObject implements objc.NSCoding {
-  UILayoutGuide._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super.castFromPointer(pointer, retain: retain, release: release) {
-    objc.checkOsVersionInternal('UILayoutGuide', iOS: (false, (9, 0, 0)));
-  }
-
-  /// Constructs a [UILayoutGuide] that points to the same underlying object as [other].
-  UILayoutGuide.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
-
-  /// Constructs a [UILayoutGuide] that wraps the given raw object pointer.
-  UILayoutGuide.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
-    : this._(other, retain: retain, release: release);
-}
-
 late final _sel_layoutMarginsGuide = objc.registerName("layoutMarginsGuide");
 late final _sel_readableContentGuide = objc.registerName("readableContentGuide");
 late final _sel_safeAreaLayoutGuide = objc.registerName("safeAreaLayoutGuide");
@@ -11118,2070 +16788,6 @@ late final _sel_setNeedsDisplay = objc.registerName("setNeedsDisplay");
 late final _sel_setNeedsDisplayInRect_ = objc.registerName("setNeedsDisplayInRect:");
 late final _sel_clipsToBounds = objc.registerName("clipsToBounds");
 late final _sel_setClipsToBounds_ = objc.registerName("setClipsToBounds:");
-late final _class_UIColor = objc.getClass("UIColor");
-late final _sel_readableTypeIdentifiersForItemProvider = objc.registerName("readableTypeIdentifiersForItemProvider");
-late final _sel_writableTypeIdentifiersForItemProvider = objc.registerName("writableTypeIdentifiersForItemProvider");
-late final _sel_itemProviderVisibilityForRepresentationWithTypeIdentifier_ = objc.registerName(
-  "itemProviderVisibilityForRepresentationWithTypeIdentifier:",
-);
-final _objc_msgSend_16fy0up = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>)
-      >
-    >()
-    .asFunction<
-      int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>)
-    >();
-int _ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) => block.ref.target
-    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>()
-    .asFunction<int Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)>()(arg0, arg1);
-ffi.Pointer<ffi.Void> _ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Long Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_fnPtrTrampoline, 0)
-        .cast();
-int _ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) => (objc.getBlockClosure(block) as int Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>))(arg0, arg1);
-ffi.Pointer<ffi.Void> _ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_closureCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Long Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_closureTrampoline, 0)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)>`.
-abstract final class ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>
-    ptr,
-  ) => objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)>(
-    objc.newPointerBlock(_ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)> fromFunction(
-    objc.NSItemProviderRepresentationVisibility Function(ffi.Pointer<ffi.Void>, objc.NSString) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)>(
-    objc.newClosureBlock(
-      _ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1) =>
-          fn(arg0, objc.NSString.castFromPointer(arg1, retain: true, release: true)).value,
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)>`.
-extension ObjCBlock_NSItemProviderRepresentationVisibility_ffiVoid_NSString_CallExtension
-    on objc.ObjCBlock<ffi.Long Function(ffi.Pointer<ffi.Void>, objc.NSString)> {
-  objc.NSItemProviderRepresentationVisibility call(ffi.Pointer<ffi.Void> arg0, objc.NSString arg1) =>
-      objc.NSItemProviderRepresentationVisibility.fromValue(
-        ref.pointer.ref.invoke
-            .cast<
-              ffi.NativeFunction<
-                ffi.Long Function(
-                  ffi.Pointer<objc.ObjCBlockImpl> block,
-                  ffi.Pointer<ffi.Void> arg0,
-                  ffi.Pointer<objc.ObjCObject> arg1,
-                )
-              >
-            >()
-            .asFunction<
-              int Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObject>)
-            >()(ref.pointer, arg0, arg1.ref.pointer),
-      );
-}
-
-void _ObjCBlock_ffiVoid_NSData_NSError_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCObject> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) => block.ref.target
-    .cast<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1)>>()
-    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)>()(arg0, arg1);
-ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_NSData_NSError_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_ffiVoid_NSData_NSError_fnPtrTrampoline)
-        .cast();
-void _ObjCBlock_ffiVoid_NSData_NSError_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCObject> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) => (objc.getBlockClosure(block) as void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>))(
-  arg0,
-  arg1,
-);
-ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_NSData_NSError_closureCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_ffiVoid_NSData_NSError_closureTrampoline)
-        .cast();
-void _ObjCBlock_ffiVoid_NSData_NSError_listenerTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCObject> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) {
-  (objc.getBlockClosure(block) as void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>))(
-    arg0,
-    arg1,
-  );
-  objc.objectRelease(block.cast());
-}
-
-ffi.NativeCallable<
-  ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
->
-_ObjCBlock_ffiVoid_NSData_NSError_listenerCallable =
-    ffi.NativeCallable<
-        ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
-      >.listener(_ObjCBlock_ffiVoid_NSData_NSError_listenerTrampoline)
-      ..keepIsolateAlive = false;
-void _ObjCBlock_ffiVoid_NSData_NSError_blockingTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> waiter,
-  ffi.Pointer<objc.ObjCObject> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-) {
-  try {
-    (objc.getBlockClosure(block) as void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>))(
-      arg0,
-      arg1,
-    );
-  } catch (e) {
-  } finally {
-    objc.signalWaiter(waiter);
-    objc.objectRelease(block.cast());
-  }
-}
-
-ffi.NativeCallable<
-  ffi.Void Function(
-    ffi.Pointer<objc.ObjCBlockImpl>,
-    ffi.Pointer<ffi.Void>,
-    ffi.Pointer<objc.ObjCObject>,
-    ffi.Pointer<objc.ObjCObject>,
-  )
->
-_ObjCBlock_ffiVoid_NSData_NSError_blockingCallable =
-    ffi.NativeCallable<
-        ffi.Void Function(
-          ffi.Pointer<objc.ObjCBlockImpl>,
-          ffi.Pointer<ffi.Void>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCObject>,
-        )
-      >.isolateLocal(_ObjCBlock_ffiVoid_NSData_NSError_blockingTrampoline)
-      ..keepIsolateAlive = false;
-ffi.NativeCallable<
-  ffi.Void Function(
-    ffi.Pointer<objc.ObjCBlockImpl>,
-    ffi.Pointer<ffi.Void>,
-    ffi.Pointer<objc.ObjCObject>,
-    ffi.Pointer<objc.ObjCObject>,
-  )
->
-_ObjCBlock_ffiVoid_NSData_NSError_blockingListenerCallable =
-    ffi.NativeCallable<
-        ffi.Void Function(
-          ffi.Pointer<objc.ObjCBlockImpl>,
-          ffi.Pointer<ffi.Void>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCObject>,
-        )
-      >.listener(_ObjCBlock_ffiVoid_NSData_NSError_blockingTrampoline)
-      ..keepIsolateAlive = false;
-
-/// Construction methods for `objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>`.
-abstract final class ObjCBlock_ffiVoid_NSData_NSError {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>(pointer, retain: retain, release: release);
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1)>
-    >
-    ptr,
-  ) => objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>(
-    objc.newPointerBlock(_ObjCBlock_ffiVoid_NSData_NSError_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> fromFunction(
-    void Function(objc.NSData?, objc.NSError?) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>(
-    objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_NSData_NSError_closureCallable,
-      (ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1) => fn(
-        arg0.address == 0 ? null : objc.NSData.castFromPointer(arg0, retain: true, release: true),
-        arg1.address == 0 ? null : objc.NSError.castFromPointer(arg1, retain: true, release: true),
-      ),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a listener block from a Dart function.
-  ///
-  /// This is based on FFI's NativeCallable.listener, and has the same
-  /// capabilities and limitations. This block can be invoked from any thread,
-  /// but only supports void functions, and is not run synchronously. See
-  /// NativeCallable.listener for more details.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> listener(
-    void Function(objc.NSData?, objc.NSError?) fn, {
-    bool keepIsolateAlive = true,
-  }) {
-    final raw = objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_NSData_NSError_listenerCallable.nativeFunction.cast(),
-      (ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1) => fn(
-        arg0.address == 0 ? null : objc.NSData.castFromPointer(arg0, retain: false, release: true),
-        arg1.address == 0 ? null : objc.NSError.castFromPointer(arg1, retain: false, release: true),
-      ),
-      keepIsolateAlive,
-    );
-    final wrapper = _UIKit_wrapListenerBlock_pfv6jd(raw);
-    objc.objectRelease(raw.cast());
-    return objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>(wrapper, retain: false, release: true);
-  }
-
-  /// Creates a blocking block from a Dart function.
-  ///
-  /// This callback can be invoked from any native thread, and will block the
-  /// caller until the callback is handled by the Dart isolate that created
-  /// the block. Async functions are not supported.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
-  /// has shut down, and the block is invoked by native code, it may block
-  /// indefinitely, or have other undefined behavior.
-  static objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> blocking(
-    void Function(objc.NSData?, objc.NSError?) fn, {
-    bool keepIsolateAlive = true,
-  }) {
-    final raw = objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_NSData_NSError_blockingCallable.nativeFunction.cast(),
-      (ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1) => fn(
-        arg0.address == 0 ? null : objc.NSData.castFromPointer(arg0, retain: false, release: true),
-        arg1.address == 0 ? null : objc.NSError.castFromPointer(arg1, retain: false, release: true),
-      ),
-      keepIsolateAlive,
-    );
-    final rawListener = objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_NSData_NSError_blockingListenerCallable.nativeFunction.cast(),
-      (ffi.Pointer<objc.ObjCObject> arg0, ffi.Pointer<objc.ObjCObject> arg1) => fn(
-        arg0.address == 0 ? null : objc.NSData.castFromPointer(arg0, retain: false, release: true),
-        arg1.address == 0 ? null : objc.NSError.castFromPointer(arg1, retain: false, release: true),
-      ),
-      keepIsolateAlive,
-    );
-    final wrapper = _UIKit_wrapBlockingBlock_pfv6jd(raw, rawListener, objc.objCContext);
-    objc.objectRelease(raw.cast());
-    objc.objectRelease(rawListener.cast());
-    return objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>(wrapper, retain: false, release: true);
-  }
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>`.
-extension ObjCBlock_ffiVoid_NSData_NSError_CallExtension
-    on objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> {
-  void call(objc.NSData? arg0, objc.NSError? arg1) => ref.pointer.ref.invoke
-      .cast<
-        ffi.NativeFunction<
-          ffi.Void Function(
-            ffi.Pointer<objc.ObjCBlockImpl> block,
-            ffi.Pointer<objc.ObjCObject> arg0,
-            ffi.Pointer<objc.ObjCObject> arg1,
-          )
-        >
-      >()
-      .asFunction<
-        void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCObject>)
-      >()(ref.pointer, arg0?.ref.pointer ?? ffi.nullptr, arg1?.ref.pointer ?? ffi.nullptr);
-}
-
-late final _sel_loadDataWithTypeIdentifier_forItemProviderCompletionHandler_ = objc.registerName(
-  "loadDataWithTypeIdentifier:forItemProviderCompletionHandler:",
-);
-final _objc_msgSend_r0bo0s = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCBlockImpl>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCBlockImpl>,
-      )
-    >();
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCBlockImpl> arg2,
-) => block.ref.target
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<ffi.Void> arg0,
-          ffi.Pointer<objc.ObjCObject> arg1,
-          ffi.Pointer<objc.ObjCBlockImpl> arg2,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(
-        ffi.Pointer<ffi.Void>,
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCBlockImpl>,
-      )
-    >()(arg0, arg1, arg2);
-ffi.Pointer<ffi.Void> _ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<objc.ObjCBlockImpl>,
-          )
-        >(_ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_fnPtrTrampoline)
-        .cast();
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCBlockImpl> arg2,
-) =>
-    (objc.getBlockClosure(block)
-        as ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<ffi.Void>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCBlockImpl>,
-        ))(arg0, arg1, arg2);
-ffi.Pointer<ffi.Void> _ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_closureCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<objc.ObjCBlockImpl>,
-          )
-        >(_ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<objc.NSProgress? Function(ffi.Pointer<ffi.Void>, objc.NSString, objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>)>`.
-abstract final class ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<
-    objc.NSProgress? Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSString,
-      objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
-    )
-  >
-  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
-      objc.ObjCBlock<
-        objc.NSProgress? Function(
-          ffi.Pointer<ffi.Void>,
-          objc.NSString,
-          objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
-        )
-      >(pointer, retain: retain, release: release);
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<
-    objc.NSProgress? Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSString,
-      objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
-    )
-  >
-  fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<ffi.Void> arg0,
-          ffi.Pointer<objc.ObjCObject> arg1,
-          ffi.Pointer<objc.ObjCBlockImpl> arg2,
-        )
-      >
-    >
-    ptr,
-  ) =>
-      objc.ObjCBlock<
-        objc.NSProgress? Function(
-          ffi.Pointer<ffi.Void>,
-          objc.NSString,
-          objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
-        )
-      >(
-        objc.newPointerBlock(_ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_fnPtrCallable, ptr.cast()),
-        retain: false,
-        release: true,
-      );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<
-    objc.NSProgress? Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSString,
-      objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
-    )
-  >
-  fromFunction(
-    objc.NSProgress? Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSString,
-      objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
-    )
-    fn, {
-    bool keepIsolateAlive = true,
-  }) =>
-      objc.ObjCBlock<
-        objc.NSProgress? Function(
-          ffi.Pointer<ffi.Void>,
-          objc.NSString,
-          objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
-        )
-      >(
-        objc.newClosureBlock(
-          _ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_closureCallable,
-          (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObject> arg1, ffi.Pointer<objc.ObjCBlockImpl> arg2) =>
-              fn(
-                arg0,
-                objc.NSString.castFromPointer(arg1, retain: true, release: true),
-                ObjCBlock_ffiVoid_NSData_NSError.castFromPointer(arg2, retain: true, release: true),
-              )?.ref.retainAndAutorelease() ??
-              ffi.nullptr,
-          keepIsolateAlive,
-        ),
-        retain: false,
-        release: true,
-      );
-}
-
-/// Call operator for `objc.ObjCBlock<objc.NSProgress? Function(ffi.Pointer<ffi.Void>, objc.NSString, objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>)>`.
-extension ObjCBlock_NSProgress_ffiVoid_NSString_ffiVoidNSDataNSError_CallExtension
-    on
-        objc.ObjCBlock<
-          objc.NSProgress? Function(
-            ffi.Pointer<ffi.Void>,
-            objc.NSString,
-            objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)>,
-          )
-        > {
-  objc.NSProgress? call(
-    ffi.Pointer<ffi.Void> arg0,
-    objc.NSString arg1,
-    objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> arg2,
-  ) =>
-      ref.pointer.ref.invoke
-              .cast<
-                ffi.NativeFunction<
-                  ffi.Pointer<objc.ObjCObject> Function(
-                    ffi.Pointer<objc.ObjCBlockImpl> block,
-                    ffi.Pointer<ffi.Void> arg0,
-                    ffi.Pointer<objc.ObjCObject> arg1,
-                    ffi.Pointer<objc.ObjCBlockImpl> arg2,
-                  )
-                >
-              >()
-              .asFunction<
-                ffi.Pointer<objc.ObjCObject> Function(
-                  ffi.Pointer<objc.ObjCBlockImpl>,
-                  ffi.Pointer<ffi.Void>,
-                  ffi.Pointer<objc.ObjCObject>,
-                  ffi.Pointer<objc.ObjCBlockImpl>,
-                )
-              >()(ref.pointer, arg0, arg1.ref.pointer, arg2.ref.pointer)
-              .address ==
-          0
-      ? null
-      : objc.NSProgress.castFromPointer(
-          ref.pointer.ref.invoke
-              .cast<
-                ffi.NativeFunction<
-                  ffi.Pointer<objc.ObjCObject> Function(
-                    ffi.Pointer<objc.ObjCBlockImpl> block,
-                    ffi.Pointer<ffi.Void> arg0,
-                    ffi.Pointer<objc.ObjCObject> arg1,
-                    ffi.Pointer<objc.ObjCBlockImpl> arg2,
-                  )
-                >
-              >()
-              .asFunction<
-                ffi.Pointer<objc.ObjCObject> Function(
-                  ffi.Pointer<objc.ObjCBlockImpl>,
-                  ffi.Pointer<ffi.Void>,
-                  ffi.Pointer<objc.ObjCObject>,
-                  ffi.Pointer<objc.ObjCBlockImpl>,
-                )
-              >()(ref.pointer, arg0, arg1.ref.pointer, arg2.ref.pointer),
-          retain: true,
-          release: true,
-        );
-}
-
-/// UINSItemProvider
-extension UINSItemProvider on UIColor {
-  /// readableTypeIdentifiersForItemProvider
-  static objc.NSArray getReadableTypeIdentifiersForItemProvider() {
-    objc.checkOsVersionInternal(
-      'UIColor.readableTypeIdentifiersForItemProvider',
-      iOS: (false, (11, 0, 0)),
-      macOS: (false, (10, 13, 0)),
-    );
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_readableTypeIdentifiersForItemProvider);
-    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// writableTypeIdentifiersForItemProvider
-  static objc.NSArray getWritableTypeIdentifiersForItemProvider() {
-    objc.checkOsVersionInternal(
-      'UIColor.writableTypeIdentifiersForItemProvider',
-      iOS: (false, (11, 0, 0)),
-      macOS: (false, (10, 13, 0)),
-    );
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_writableTypeIdentifiersForItemProvider);
-    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// writableTypeIdentifiersForItemProvider
-  objc.NSArray get writableTypeIdentifiersForItemProvider$1 {
-    objc.checkOsVersionInternal(
-      'UIColor.writableTypeIdentifiersForItemProvider',
-      iOS: (false, (11, 0, 0)),
-      macOS: (false, (10, 13, 0)),
-    );
-    if (!objc.respondsToSelector(this.ref.pointer, _sel_writableTypeIdentifiersForItemProvider)) {
-      throw objc.UnimplementedOptionalMethodException('UIColor', 'writableTypeIdentifiersForItemProvider');
-    }
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_writableTypeIdentifiersForItemProvider);
-    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// itemProviderVisibilityForRepresentationWithTypeIdentifier:
-  static objc.NSItemProviderRepresentationVisibility itemProviderVisibilityForRepresentationWithTypeIdentifier(
-    objc.NSString typeIdentifier,
-  ) {
-    objc.checkOsVersionInternal(
-      'UIColor.itemProviderVisibilityForRepresentationWithTypeIdentifier:',
-      iOS: (false, (11, 0, 0)),
-      macOS: (false, (10, 13, 0)),
-    );
-    if (!objc.respondsToSelector(_class_UIColor, _sel_itemProviderVisibilityForRepresentationWithTypeIdentifier_)) {
-      throw objc.UnimplementedOptionalMethodException(
-        'UIColor',
-        'itemProviderVisibilityForRepresentationWithTypeIdentifier:',
-      );
-    }
-    final _ret = _objc_msgSend_16fy0up(
-      _class_UIColor,
-      _sel_itemProviderVisibilityForRepresentationWithTypeIdentifier_,
-      typeIdentifier.ref.pointer,
-    );
-    return objc.NSItemProviderRepresentationVisibility.fromValue(_ret);
-  }
-
-  /// itemProviderVisibilityForRepresentationWithTypeIdentifier:
-  objc.NSItemProviderRepresentationVisibility itemProviderVisibilityForRepresentationWithTypeIdentifier$1(
-    objc.NSString typeIdentifier,
-  ) {
-    objc.checkOsVersionInternal(
-      'UIColor.itemProviderVisibilityForRepresentationWithTypeIdentifier:',
-      iOS: (false, (11, 0, 0)),
-      macOS: (false, (10, 13, 0)),
-    );
-    if (!objc.respondsToSelector(this.ref.pointer, _sel_itemProviderVisibilityForRepresentationWithTypeIdentifier_)) {
-      throw objc.UnimplementedOptionalMethodException(
-        'UIColor',
-        'itemProviderVisibilityForRepresentationWithTypeIdentifier:',
-      );
-    }
-    final _ret = _objc_msgSend_16fy0up(
-      this.ref.pointer,
-      _sel_itemProviderVisibilityForRepresentationWithTypeIdentifier_,
-      typeIdentifier.ref.pointer,
-    );
-    return objc.NSItemProviderRepresentationVisibility.fromValue(_ret);
-  }
-
-  /// loadDataWithTypeIdentifier:forItemProviderCompletionHandler:
-  objc.NSProgress? loadDataWithTypeIdentifier(
-    objc.NSString typeIdentifier, {
-    required objc.ObjCBlock<ffi.Void Function(objc.NSData?, objc.NSError?)> forItemProviderCompletionHandler,
-  }) {
-    objc.checkOsVersionInternal(
-      'UIColor.loadDataWithTypeIdentifier:forItemProviderCompletionHandler:',
-      iOS: (false, (11, 0, 0)),
-      macOS: (false, (10, 13, 0)),
-    );
-    final _ret = _objc_msgSend_r0bo0s(
-      this.ref.pointer,
-      _sel_loadDataWithTypeIdentifier_forItemProviderCompletionHandler_,
-      typeIdentifier.ref.pointer,
-      forItemProviderCompletionHandler.ref.pointer,
-    );
-    return _ret.address == 0 ? null : objc.NSProgress.castFromPointer(_ret, retain: true, release: true);
-  }
-}
-
-late final _sel_colorNamed_ = objc.registerName("colorNamed:");
-late final _sel_colorNamed_inBundle_compatibleWithTraitCollection_ = objc.registerName(
-  "colorNamed:inBundle:compatibleWithTraitCollection:",
-);
-
-/// UIColorNamedColors
-extension UIColorNamedColors on UIColor {
-  /// colorNamed:
-  static UIColor? colorNamed(objc.NSString name) {
-    objc.checkOsVersionInternal('UIColor.colorNamed:', iOS: (false, (11, 0, 0)));
-    final _ret = _objc_msgSend_1sotr3r(_class_UIColor, _sel_colorNamed_, name.ref.pointer);
-    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// colorNamed:inBundle:compatibleWithTraitCollection:
-  static UIColor? colorNamed$1(
-    objc.NSString name, {
-    NSBundle? inBundle,
-    UITraitCollection? compatibleWithTraitCollection,
-  }) {
-    objc.checkOsVersionInternal('UIColor.colorNamed:inBundle:compatibleWithTraitCollection:', iOS: (false, (11, 0, 0)));
-    final _ret = _objc_msgSend_11spmsz(
-      _class_UIColor,
-      _sel_colorNamed_inBundle_compatibleWithTraitCollection_,
-      name.ref.pointer,
-      inBundle?.ref.pointer ?? ffi.nullptr,
-      compatibleWithTraitCollection?.ref.pointer ?? ffi.nullptr,
-    );
-    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-}
-
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_UIColor_UITraitCollection_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCObject> arg0,
-) => block.ref.target
-    .cast<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject> arg0)>>()
-    .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>)>()(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_UIColor_UITraitCollection_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_UIColor_UITraitCollection_fnPtrTrampoline)
-        .cast();
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_UIColor_UITraitCollection_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCObject> arg0,
-) => (objc.getBlockClosure(block) as ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>))(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_UIColor_UITraitCollection_closureCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>)
-        >(_ObjCBlock_UIColor_UITraitCollection_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<UIColor Function(UITraitCollection)>`.
-abstract final class ObjCBlock_UIColor_UITraitCollection {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<UIColor Function(UITraitCollection)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<UIColor Function(UITraitCollection)>(pointer, retain: retain, release: release);
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<UIColor Function(UITraitCollection)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject> arg0)>> ptr,
-  ) => objc.ObjCBlock<UIColor Function(UITraitCollection)>(
-    objc.newPointerBlock(_ObjCBlock_UIColor_UITraitCollection_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<UIColor Function(UITraitCollection)> fromFunction(
-    UIColor Function(UITraitCollection) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<UIColor Function(UITraitCollection)>(
-    objc.newClosureBlock(
-      _ObjCBlock_UIColor_UITraitCollection_closureCallable,
-      (ffi.Pointer<objc.ObjCObject> arg0) =>
-          fn(UITraitCollection.castFromPointer(arg0, retain: true, release: true)).ref.retainAndAutorelease(),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<UIColor Function(UITraitCollection)>`.
-extension ObjCBlock_UIColor_UITraitCollection_CallExtension on objc.ObjCBlock<UIColor Function(UITraitCollection)> {
-  UIColor call(UITraitCollection arg0) => UIColor.castFromPointer(
-    ref.pointer.ref.invoke
-        .cast<
-          ffi.NativeFunction<
-            ffi.Pointer<objc.ObjCObject> Function(
-              ffi.Pointer<objc.ObjCBlockImpl> block,
-              ffi.Pointer<objc.ObjCObject> arg0,
-            )
-          >
-        >()
-        .asFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCObject>)
-        >()(ref.pointer, arg0.ref.pointer),
-    retain: true,
-    release: true,
-  );
-}
-
-late final _sel_colorWithDynamicProvider_ = objc.registerName("colorWithDynamicProvider:");
-final _objc_msgSend_nnxkei = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCBlockImpl>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<objc.ObjCBlockImpl>,
-      )
-    >();
-late final _sel_initWithDynamicProvider_ = objc.registerName("initWithDynamicProvider:");
-late final _sel_resolvedColorWithTraitCollection_ = objc.registerName("resolvedColorWithTraitCollection:");
-
-/// DynamicColors
-extension DynamicColors on UIColor {
-  /// colorWithDynamicProvider:
-  static UIColor colorWithDynamicProvider(objc.ObjCBlock<UIColor Function(UITraitCollection)> dynamicProvider) {
-    objc.checkOsVersionInternal('UIColor.colorWithDynamicProvider:', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_nnxkei(_class_UIColor, _sel_colorWithDynamicProvider_, dynamicProvider.ref.pointer);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// initWithDynamicProvider:
-  UIColor initWithDynamicProvider(objc.ObjCBlock<UIColor Function(UITraitCollection)> dynamicProvider) {
-    objc.checkOsVersionInternal('UIColor.initWithDynamicProvider:', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_nnxkei(
-      this.ref.retainAndReturnPointer(),
-      _sel_initWithDynamicProvider_,
-      dynamicProvider.ref.pointer,
-    );
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// resolvedColorWithTraitCollection:
-  UIColor resolvedColorWithTraitCollection(UITraitCollection traitCollection) {
-    objc.checkOsVersionInternal('UIColor.resolvedColorWithTraitCollection:', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_1sotr3r(
-      this.ref.pointer,
-      _sel_resolvedColorWithTraitCollection_,
-      traitCollection.ref.pointer,
-    );
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-}
-
-late final _sel_systemRedColor = objc.registerName("systemRedColor");
-late final _sel_systemGreenColor = objc.registerName("systemGreenColor");
-late final _sel_systemBlueColor = objc.registerName("systemBlueColor");
-late final _sel_systemOrangeColor = objc.registerName("systemOrangeColor");
-late final _sel_systemYellowColor = objc.registerName("systemYellowColor");
-late final _sel_systemPinkColor = objc.registerName("systemPinkColor");
-late final _sel_systemPurpleColor = objc.registerName("systemPurpleColor");
-late final _sel_systemTealColor = objc.registerName("systemTealColor");
-late final _sel_systemIndigoColor = objc.registerName("systemIndigoColor");
-late final _sel_systemBrownColor = objc.registerName("systemBrownColor");
-late final _sel_systemMintColor = objc.registerName("systemMintColor");
-late final _sel_systemCyanColor = objc.registerName("systemCyanColor");
-late final _sel_systemGrayColor = objc.registerName("systemGrayColor");
-late final _sel_systemGray2Color = objc.registerName("systemGray2Color");
-late final _sel_systemGray3Color = objc.registerName("systemGray3Color");
-late final _sel_systemGray4Color = objc.registerName("systemGray4Color");
-late final _sel_systemGray5Color = objc.registerName("systemGray5Color");
-late final _sel_systemGray6Color = objc.registerName("systemGray6Color");
-late final _sel_tintColor = objc.registerName("tintColor");
-late final _sel_labelColor = objc.registerName("labelColor");
-late final _sel_secondaryLabelColor = objc.registerName("secondaryLabelColor");
-late final _sel_tertiaryLabelColor = objc.registerName("tertiaryLabelColor");
-late final _sel_quaternaryLabelColor = objc.registerName("quaternaryLabelColor");
-late final _sel_linkColor = objc.registerName("linkColor");
-late final _sel_placeholderTextColor = objc.registerName("placeholderTextColor");
-late final _sel_separatorColor = objc.registerName("separatorColor");
-late final _sel_opaqueSeparatorColor = objc.registerName("opaqueSeparatorColor");
-late final _sel_systemBackgroundColor = objc.registerName("systemBackgroundColor");
-late final _sel_secondarySystemBackgroundColor = objc.registerName("secondarySystemBackgroundColor");
-late final _sel_tertiarySystemBackgroundColor = objc.registerName("tertiarySystemBackgroundColor");
-late final _sel_systemGroupedBackgroundColor = objc.registerName("systemGroupedBackgroundColor");
-late final _sel_secondarySystemGroupedBackgroundColor = objc.registerName("secondarySystemGroupedBackgroundColor");
-late final _sel_tertiarySystemGroupedBackgroundColor = objc.registerName("tertiarySystemGroupedBackgroundColor");
-late final _sel_systemFillColor = objc.registerName("systemFillColor");
-late final _sel_secondarySystemFillColor = objc.registerName("secondarySystemFillColor");
-late final _sel_tertiarySystemFillColor = objc.registerName("tertiarySystemFillColor");
-late final _sel_quaternarySystemFillColor = objc.registerName("quaternarySystemFillColor");
-late final _sel_lightTextColor = objc.registerName("lightTextColor");
-late final _sel_darkTextColor = objc.registerName("darkTextColor");
-late final _sel_groupTableViewBackgroundColor = objc.registerName("groupTableViewBackgroundColor");
-late final _sel_viewFlipsideBackgroundColor = objc.registerName("viewFlipsideBackgroundColor");
-late final _sel_scrollViewTexturedBackgroundColor = objc.registerName("scrollViewTexturedBackgroundColor");
-late final _sel_underPageBackgroundColor = objc.registerName("underPageBackgroundColor");
-
-/// UIColorSystemColors
-extension UIColorSystemColors on UIColor {
-  /// systemRedColor
-  static UIColor getSystemRedColor() {
-    objc.checkOsVersionInternal('UIColor.systemRedColor', iOS: (false, (7, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemRedColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemGreenColor
-  static UIColor getSystemGreenColor() {
-    objc.checkOsVersionInternal('UIColor.systemGreenColor', iOS: (false, (7, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGreenColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemBlueColor
-  static UIColor getSystemBlueColor() {
-    objc.checkOsVersionInternal('UIColor.systemBlueColor', iOS: (false, (7, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemBlueColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemOrangeColor
-  static UIColor getSystemOrangeColor() {
-    objc.checkOsVersionInternal('UIColor.systemOrangeColor', iOS: (false, (7, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemOrangeColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemYellowColor
-  static UIColor getSystemYellowColor() {
-    objc.checkOsVersionInternal('UIColor.systemYellowColor', iOS: (false, (7, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemYellowColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemPinkColor
-  static UIColor getSystemPinkColor() {
-    objc.checkOsVersionInternal('UIColor.systemPinkColor', iOS: (false, (7, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemPinkColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemPurpleColor
-  static UIColor getSystemPurpleColor() {
-    objc.checkOsVersionInternal('UIColor.systemPurpleColor', iOS: (false, (9, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemPurpleColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemTealColor
-  static UIColor getSystemTealColor() {
-    objc.checkOsVersionInternal('UIColor.systemTealColor', iOS: (false, (7, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemTealColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemIndigoColor
-  static UIColor getSystemIndigoColor() {
-    objc.checkOsVersionInternal('UIColor.systemIndigoColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemIndigoColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemBrownColor
-  static UIColor getSystemBrownColor() {
-    objc.checkOsVersionInternal('UIColor.systemBrownColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemBrownColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemMintColor
-  static UIColor getSystemMintColor() {
-    objc.checkOsVersionInternal('UIColor.systemMintColor', iOS: (false, (15, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemMintColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemCyanColor
-  static UIColor getSystemCyanColor() {
-    objc.checkOsVersionInternal('UIColor.systemCyanColor', iOS: (false, (15, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemCyanColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemGrayColor
-  static UIColor getSystemGrayColor() {
-    objc.checkOsVersionInternal('UIColor.systemGrayColor', iOS: (false, (7, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGrayColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemGray2Color
-  static UIColor getSystemGray2Color() {
-    objc.checkOsVersionInternal('UIColor.systemGray2Color', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGray2Color);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemGray3Color
-  static UIColor getSystemGray3Color() {
-    objc.checkOsVersionInternal('UIColor.systemGray3Color', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGray3Color);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemGray4Color
-  static UIColor getSystemGray4Color() {
-    objc.checkOsVersionInternal('UIColor.systemGray4Color', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGray4Color);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemGray5Color
-  static UIColor getSystemGray5Color() {
-    objc.checkOsVersionInternal('UIColor.systemGray5Color', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGray5Color);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemGray6Color
-  static UIColor getSystemGray6Color() {
-    objc.checkOsVersionInternal('UIColor.systemGray6Color', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGray6Color);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// tintColor
-  static UIColor getTintColor() {
-    objc.checkOsVersionInternal('UIColor.tintColor', iOS: (false, (15, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_tintColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// labelColor
-  static UIColor getLabelColor() {
-    objc.checkOsVersionInternal('UIColor.labelColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_labelColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// secondaryLabelColor
-  static UIColor getSecondaryLabelColor() {
-    objc.checkOsVersionInternal('UIColor.secondaryLabelColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_secondaryLabelColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// tertiaryLabelColor
-  static UIColor getTertiaryLabelColor() {
-    objc.checkOsVersionInternal('UIColor.tertiaryLabelColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_tertiaryLabelColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// quaternaryLabelColor
-  static UIColor getQuaternaryLabelColor() {
-    objc.checkOsVersionInternal('UIColor.quaternaryLabelColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_quaternaryLabelColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// linkColor
-  static UIColor getLinkColor() {
-    objc.checkOsVersionInternal('UIColor.linkColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_linkColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// placeholderTextColor
-  static UIColor getPlaceholderTextColor() {
-    objc.checkOsVersionInternal('UIColor.placeholderTextColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_placeholderTextColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// separatorColor
-  static UIColor getSeparatorColor() {
-    objc.checkOsVersionInternal('UIColor.separatorColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_separatorColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// opaqueSeparatorColor
-  static UIColor getOpaqueSeparatorColor() {
-    objc.checkOsVersionInternal('UIColor.opaqueSeparatorColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_opaqueSeparatorColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemBackgroundColor
-  static UIColor getSystemBackgroundColor() {
-    objc.checkOsVersionInternal('UIColor.systemBackgroundColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemBackgroundColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// secondarySystemBackgroundColor
-  static UIColor getSecondarySystemBackgroundColor() {
-    objc.checkOsVersionInternal('UIColor.secondarySystemBackgroundColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_secondarySystemBackgroundColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// tertiarySystemBackgroundColor
-  static UIColor getTertiarySystemBackgroundColor() {
-    objc.checkOsVersionInternal('UIColor.tertiarySystemBackgroundColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_tertiarySystemBackgroundColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemGroupedBackgroundColor
-  static UIColor getSystemGroupedBackgroundColor() {
-    objc.checkOsVersionInternal('UIColor.systemGroupedBackgroundColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemGroupedBackgroundColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// secondarySystemGroupedBackgroundColor
-  static UIColor getSecondarySystemGroupedBackgroundColor() {
-    objc.checkOsVersionInternal('UIColor.secondarySystemGroupedBackgroundColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_secondarySystemGroupedBackgroundColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// tertiarySystemGroupedBackgroundColor
-  static UIColor getTertiarySystemGroupedBackgroundColor() {
-    objc.checkOsVersionInternal('UIColor.tertiarySystemGroupedBackgroundColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_tertiarySystemGroupedBackgroundColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// systemFillColor
-  static UIColor getSystemFillColor() {
-    objc.checkOsVersionInternal('UIColor.systemFillColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_systemFillColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// secondarySystemFillColor
-  static UIColor getSecondarySystemFillColor() {
-    objc.checkOsVersionInternal('UIColor.secondarySystemFillColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_secondarySystemFillColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// tertiarySystemFillColor
-  static UIColor getTertiarySystemFillColor() {
-    objc.checkOsVersionInternal('UIColor.tertiarySystemFillColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_tertiarySystemFillColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// quaternarySystemFillColor
-  static UIColor getQuaternarySystemFillColor() {
-    objc.checkOsVersionInternal('UIColor.quaternarySystemFillColor', iOS: (false, (13, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_quaternarySystemFillColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// lightTextColor
-  static UIColor getLightTextColor() {
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_lightTextColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// darkTextColor
-  static UIColor getDarkTextColor() {
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_darkTextColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// groupTableViewBackgroundColor
-  static UIColor getGroupTableViewBackgroundColor() {
-    objc.checkOsVersionInternal('UIColor.groupTableViewBackgroundColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_groupTableViewBackgroundColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// viewFlipsideBackgroundColor
-  static UIColor getViewFlipsideBackgroundColor() {
-    objc.checkOsVersionInternal('UIColor.viewFlipsideBackgroundColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_viewFlipsideBackgroundColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// scrollViewTexturedBackgroundColor
-  static UIColor getScrollViewTexturedBackgroundColor() {
-    objc.checkOsVersionInternal('UIColor.scrollViewTexturedBackgroundColor', iOS: (false, (3, 2, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_scrollViewTexturedBackgroundColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// underPageBackgroundColor
-  static UIColor getUnderPageBackgroundColor() {
-    objc.checkOsVersionInternal('UIColor.underPageBackgroundColor', iOS: (false, (5, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_underPageBackgroundColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-}
-
-late final _sel_colorWithWhite_alpha_ = objc.registerName("colorWithWhite:alpha:");
-final _objc_msgSend_1n2vn5t = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Double,
-          ffi.Double,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCSelector>,
-        double,
-        double,
-      )
-    >();
-late final _sel_colorWithHue_saturation_brightness_alpha_ = objc.registerName(
-  "colorWithHue:saturation:brightness:alpha:",
-);
-final _objc_msgSend_q2wq4h = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Double,
-          ffi.Double,
-          ffi.Double,
-          ffi.Double,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCSelector>,
-        double,
-        double,
-        double,
-        double,
-      )
-    >();
-late final _sel_colorWithRed_green_blue_alpha_ = objc.registerName("colorWithRed:green:blue:alpha:");
-late final _sel_colorWithDisplayP3Red_green_blue_alpha_ = objc.registerName("colorWithDisplayP3Red:green:blue:alpha:");
-late final _sel_colorWithCGColor_ = objc.registerName("colorWithCGColor:");
-final _objc_msgSend_1rsocyz = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<CGColor>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<CGColor>,
-      )
-    >();
-late final _sel_colorWithPatternImage_ = objc.registerName("colorWithPatternImage:");
-
-/// WARNING: CIColor is a stub. To generate bindings for this class, include
-/// CIColor in your config's objc-interfaces list.
-///
-/// CIColor
-class CIColor extends objc.NSObject implements objc.NSSecureCoding, objc.NSCopying {
-  CIColor._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super.castFromPointer(pointer, retain: retain, release: release) {
-    objc.checkOsVersionInternal('CIColor', macOS: (false, (10, 4, 0)));
-  }
-
-  /// Constructs a [CIColor] that points to the same underlying object as [other].
-  CIColor.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
-
-  /// Constructs a [CIColor] that wraps the given raw object pointer.
-  CIColor.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
-    : this._(other, retain: retain, release: release);
-}
-
-late final _sel_colorWithCIColor_ = objc.registerName("colorWithCIColor:");
-late final _sel_initWithWhite_alpha_ = objc.registerName("initWithWhite:alpha:");
-late final _sel_initWithHue_saturation_brightness_alpha_ = objc.registerName(
-  "initWithHue:saturation:brightness:alpha:",
-);
-late final _sel_initWithRed_green_blue_alpha_ = objc.registerName("initWithRed:green:blue:alpha:");
-late final _sel_initWithDisplayP3Red_green_blue_alpha_ = objc.registerName("initWithDisplayP3Red:green:blue:alpha:");
-late final _sel_initWithCGColor_ = objc.registerName("initWithCGColor:");
-late final _sel_initWithPatternImage_ = objc.registerName("initWithPatternImage:");
-late final _sel_initWithCIColor_ = objc.registerName("initWithCIColor:");
-late final _sel_blackColor = objc.registerName("blackColor");
-late final _sel_darkGrayColor = objc.registerName("darkGrayColor");
-late final _sel_lightGrayColor = objc.registerName("lightGrayColor");
-late final _sel_whiteColor = objc.registerName("whiteColor");
-late final _sel_grayColor = objc.registerName("grayColor");
-late final _sel_redColor = objc.registerName("redColor");
-late final _sel_greenColor = objc.registerName("greenColor");
-late final _sel_blueColor = objc.registerName("blueColor");
-late final _sel_cyanColor = objc.registerName("cyanColor");
-late final _sel_yellowColor = objc.registerName("yellowColor");
-late final _sel_magentaColor = objc.registerName("magentaColor");
-late final _sel_orangeColor = objc.registerName("orangeColor");
-late final _sel_purpleColor = objc.registerName("purpleColor");
-late final _sel_brownColor = objc.registerName("brownColor");
-late final _sel_clearColor = objc.registerName("clearColor");
-late final _sel_set = objc.registerName("set");
-late final _sel_setFill = objc.registerName("setFill");
-late final _sel_setStroke = objc.registerName("setStroke");
-late final _sel_getWhite_alpha_ = objc.registerName("getWhite:alpha:");
-final _objc_msgSend_kcpn4z = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Bool Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<ffi.Double>,
-          ffi.Pointer<ffi.Double>,
-        )
-      >
-    >()
-    .asFunction<
-      bool Function(
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<ffi.Double>,
-        ffi.Pointer<ffi.Double>,
-      )
-    >();
-late final _sel_getHue_saturation_brightness_alpha_ = objc.registerName("getHue:saturation:brightness:alpha:");
-final _objc_msgSend_xmvde7 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Bool Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<ffi.Double>,
-          ffi.Pointer<ffi.Double>,
-          ffi.Pointer<ffi.Double>,
-          ffi.Pointer<ffi.Double>,
-        )
-      >
-    >()
-    .asFunction<
-      bool Function(
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<ffi.Double>,
-        ffi.Pointer<ffi.Double>,
-        ffi.Pointer<ffi.Double>,
-        ffi.Pointer<ffi.Double>,
-      )
-    >();
-late final _sel_getRed_green_blue_alpha_ = objc.registerName("getRed:green:blue:alpha:");
-late final _sel_colorWithAlphaComponent_ = objc.registerName("colorWithAlphaComponent:");
-final _objc_msgSend_oa8mke = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Double)
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, double)
-    >();
-late final _sel_CGColor = objc.registerName("CGColor");
-final _objc_msgSend_2u9jmz = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<ffi.Pointer<CGColor> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>
-    >()
-    .asFunction<ffi.Pointer<CGColor> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
-late final _sel_CIColor = objc.registerName("CIColor");
-late final _sel_objectWithItemProviderData_typeIdentifier_error_ = objc.registerName(
-  "objectWithItemProviderData:typeIdentifier:error:",
-);
-final _objc_msgSend_1pnyuds = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-      )
-    >();
-instancetype _ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCObject> arg2,
-  ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
-) => block.ref.target
-    .cast<
-      ffi.NativeFunction<
-        instancetype Function(
-          ffi.Pointer<ffi.Void> arg0,
-          ffi.Pointer<objc.ObjCObject> arg1,
-          ffi.Pointer<objc.ObjCObject> arg2,
-          ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
-        )
-      >
-    >()
-    .asFunction<
-      instancetype Function(
-        ffi.Pointer<ffi.Void>,
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<objc.ObjCObject>,
-        ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-      )
-    >()(arg0, arg1, arg2, arg3);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-          )
-        >(_ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_fnPtrTrampoline)
-        .cast();
-instancetype _ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObject> arg1,
-  ffi.Pointer<objc.ObjCObject> arg2,
-  ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
-) =>
-    (objc.getBlockClosure(block)
-        as instancetype Function(
-          ffi.Pointer<ffi.Void>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<objc.ObjCObject>,
-          ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-        ))(arg0, arg1, arg2, arg3);
-ffi.Pointer<ffi.Void> _ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_closureCallable =
-    ffi.Pointer.fromFunction<
-          instancetype Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<objc.ObjCObject>,
-            ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-          )
-        >(_ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>, objc.NSData, objc.NSString, ffi.Pointer<ffi.Pointer<objc.ObjCObject>>)>`.
-abstract final class ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<
-    ffi.Pointer<objc.ObjCObject>? Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSData,
-      objc.NSString,
-      ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-    )
-  >
-  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
-      objc.ObjCBlock<
-        ffi.Pointer<objc.ObjCObject>? Function(
-          ffi.Pointer<ffi.Void>,
-          objc.NSData,
-          objc.NSString,
-          ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-        )
-      >(pointer, retain: retain, release: release);
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<
-    ffi.Pointer<objc.ObjCObject>? Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSData,
-      objc.NSString,
-      ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-    )
-  >
-  fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<
-        instancetype Function(
-          ffi.Pointer<ffi.Void> arg0,
-          ffi.Pointer<objc.ObjCObject> arg1,
-          ffi.Pointer<objc.ObjCObject> arg2,
-          ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
-        )
-      >
-    >
-    ptr,
-  ) =>
-      objc.ObjCBlock<
-        ffi.Pointer<objc.ObjCObject>? Function(
-          ffi.Pointer<ffi.Void>,
-          objc.NSData,
-          objc.NSString,
-          ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-        )
-      >(
-        objc.newPointerBlock(_ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_fnPtrCallable, ptr.cast()),
-        retain: false,
-        release: true,
-      );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<
-    ffi.Pointer<objc.ObjCObject>? Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSData,
-      objc.NSString,
-      ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-    )
-  >
-  fromFunction(
-    Dartinstancetype? Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSData,
-      objc.NSString,
-      ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-    )
-    fn, {
-    bool keepIsolateAlive = true,
-  }) =>
-      objc.ObjCBlock<
-        ffi.Pointer<objc.ObjCObject>? Function(
-          ffi.Pointer<ffi.Void>,
-          objc.NSData,
-          objc.NSString,
-          ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-        )
-      >(
-        objc.newClosureBlock(
-          _ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_closureCallable,
-          (
-            ffi.Pointer<ffi.Void> arg0,
-            ffi.Pointer<objc.ObjCObject> arg1,
-            ffi.Pointer<objc.ObjCObject> arg2,
-            ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
-          ) =>
-              fn(
-                arg0,
-                objc.NSData.castFromPointer(arg1, retain: true, release: true),
-                objc.NSString.castFromPointer(arg2, retain: true, release: true),
-                arg3,
-              )?.ref.retainAndAutorelease() ??
-              ffi.nullptr,
-          keepIsolateAlive,
-        ),
-        retain: false,
-        release: true,
-      );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject>? Function(ffi.Pointer<ffi.Void>, objc.NSData, objc.NSString, ffi.Pointer<ffi.Pointer<objc.ObjCObject>>)>`.
-extension ObjCBlock_instancetype_ffiVoid_NSData_NSString_NSError_CallExtension
-    on
-        objc.ObjCBlock<
-          ffi.Pointer<objc.ObjCObject>? Function(
-            ffi.Pointer<ffi.Void>,
-            objc.NSData,
-            objc.NSString,
-            ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-          )
-        > {
-  Dartinstancetype? call(
-    ffi.Pointer<ffi.Void> arg0,
-    objc.NSData arg1,
-    objc.NSString arg2,
-    ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
-  ) =>
-      ref.pointer.ref.invoke
-              .cast<
-                ffi.NativeFunction<
-                  instancetype Function(
-                    ffi.Pointer<objc.ObjCBlockImpl> block,
-                    ffi.Pointer<ffi.Void> arg0,
-                    ffi.Pointer<objc.ObjCObject> arg1,
-                    ffi.Pointer<objc.ObjCObject> arg2,
-                    ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
-                  )
-                >
-              >()
-              .asFunction<
-                instancetype Function(
-                  ffi.Pointer<objc.ObjCBlockImpl>,
-                  ffi.Pointer<ffi.Void>,
-                  ffi.Pointer<objc.ObjCObject>,
-                  ffi.Pointer<objc.ObjCObject>,
-                  ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-                )
-              >()(ref.pointer, arg0, arg1.ref.pointer, arg2.ref.pointer, arg3)
-              .address ==
-          0
-      ? null
-      : objc.ObjCObjectBase(
-          ref.pointer.ref.invoke
-              .cast<
-                ffi.NativeFunction<
-                  instancetype Function(
-                    ffi.Pointer<objc.ObjCBlockImpl> block,
-                    ffi.Pointer<ffi.Void> arg0,
-                    ffi.Pointer<objc.ObjCObject> arg1,
-                    ffi.Pointer<objc.ObjCObject> arg2,
-                    ffi.Pointer<ffi.Pointer<objc.ObjCObject>> arg3,
-                  )
-                >
-              >()
-              .asFunction<
-                instancetype Function(
-                  ffi.Pointer<objc.ObjCBlockImpl>,
-                  ffi.Pointer<ffi.Void>,
-                  ffi.Pointer<objc.ObjCObject>,
-                  ffi.Pointer<objc.ObjCObject>,
-                  ffi.Pointer<ffi.Pointer<objc.ObjCObject>>,
-                )
-              >()(ref.pointer, arg0, arg1.ref.pointer, arg2.ref.pointer, arg3),
-          retain: true,
-          release: true,
-        );
-}
-
-/// UIColor
-class UIColor extends objc.NSObject implements objc.NSSecureCoding, objc.NSCopying {
-  UIColor._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super.castFromPointer(pointer, retain: retain, release: release) {
-    objc.checkOsVersionInternal('UIColor', iOS: (false, (2, 0, 0)));
-  }
-
-  /// Constructs a [UIColor] that points to the same underlying object as [other].
-  UIColor.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
-
-  /// Constructs a [UIColor] that wraps the given raw object pointer.
-  UIColor.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
-    : this._(other, retain: retain, release: release);
-
-  /// Returns whether [obj] is an instance of [UIColor].
-  static bool isInstance(objc.ObjCObjectBase obj) {
-    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIColor);
-  }
-
-  /// colorWithWhite:alpha:
-  static UIColor colorWithWhite(double white, {required double alpha}) {
-    objc.checkOsVersionInternal('UIColor.colorWithWhite:alpha:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_1n2vn5t(_class_UIColor, _sel_colorWithWhite_alpha_, white, alpha);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// colorWithHue:saturation:brightness:alpha:
-  static UIColor colorWithHue(
-    double hue, {
-    required double saturation,
-    required double brightness,
-    required double alpha,
-  }) {
-    objc.checkOsVersionInternal('UIColor.colorWithHue:saturation:brightness:alpha:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_q2wq4h(
-      _class_UIColor,
-      _sel_colorWithHue_saturation_brightness_alpha_,
-      hue,
-      saturation,
-      brightness,
-      alpha,
-    );
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// colorWithRed:green:blue:alpha:
-  static UIColor colorWithRed(double red, {required double green, required double blue, required double alpha}) {
-    objc.checkOsVersionInternal('UIColor.colorWithRed:green:blue:alpha:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_q2wq4h(_class_UIColor, _sel_colorWithRed_green_blue_alpha_, red, green, blue, alpha);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// colorWithDisplayP3Red:green:blue:alpha:
-  static UIColor colorWithDisplayP3Red(
-    double displayP3Red, {
-    required double green,
-    required double blue,
-    required double alpha,
-  }) {
-    objc.checkOsVersionInternal('UIColor.colorWithDisplayP3Red:green:blue:alpha:', iOS: (false, (10, 0, 0)));
-    final _ret = _objc_msgSend_q2wq4h(
-      _class_UIColor,
-      _sel_colorWithDisplayP3Red_green_blue_alpha_,
-      displayP3Red,
-      green,
-      blue,
-      alpha,
-    );
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// colorWithCGColor:
-  static UIColor colorWithCGColor(ffi.Pointer<CGColor> cgColor) {
-    objc.checkOsVersionInternal('UIColor.colorWithCGColor:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_1rsocyz(_class_UIColor, _sel_colorWithCGColor_, cgColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// colorWithPatternImage:
-  static UIColor colorWithPatternImage(UIImage image) {
-    objc.checkOsVersionInternal('UIColor.colorWithPatternImage:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_1sotr3r(_class_UIColor, _sel_colorWithPatternImage_, image.ref.pointer);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// colorWithCIColor:
-  static UIColor colorWithCIColor(CIColor ciColor) {
-    objc.checkOsVersionInternal('UIColor.colorWithCIColor:', iOS: (false, (5, 0, 0)));
-    final _ret = _objc_msgSend_1sotr3r(_class_UIColor, _sel_colorWithCIColor_, ciColor.ref.pointer);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// blackColor
-  static UIColor getBlackColor() {
-    objc.checkOsVersionInternal('UIColor.blackColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_blackColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// darkGrayColor
-  static UIColor getDarkGrayColor() {
-    objc.checkOsVersionInternal('UIColor.darkGrayColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_darkGrayColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// lightGrayColor
-  static UIColor getLightGrayColor() {
-    objc.checkOsVersionInternal('UIColor.lightGrayColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_lightGrayColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// whiteColor
-  static UIColor getWhiteColor() {
-    objc.checkOsVersionInternal('UIColor.whiteColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_whiteColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// grayColor
-  static UIColor getGrayColor() {
-    objc.checkOsVersionInternal('UIColor.grayColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_grayColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// redColor
-  static UIColor getRedColor() {
-    objc.checkOsVersionInternal('UIColor.redColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_redColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// greenColor
-  static UIColor getGreenColor() {
-    objc.checkOsVersionInternal('UIColor.greenColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_greenColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// blueColor
-  static UIColor getBlueColor() {
-    objc.checkOsVersionInternal('UIColor.blueColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_blueColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// cyanColor
-  static UIColor getCyanColor() {
-    objc.checkOsVersionInternal('UIColor.cyanColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_cyanColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// yellowColor
-  static UIColor getYellowColor() {
-    objc.checkOsVersionInternal('UIColor.yellowColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_yellowColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// magentaColor
-  static UIColor getMagentaColor() {
-    objc.checkOsVersionInternal('UIColor.magentaColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_magentaColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// orangeColor
-  static UIColor getOrangeColor() {
-    objc.checkOsVersionInternal('UIColor.orangeColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_orangeColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// purpleColor
-  static UIColor getPurpleColor() {
-    objc.checkOsVersionInternal('UIColor.purpleColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_purpleColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// brownColor
-  static UIColor getBrownColor() {
-    objc.checkOsVersionInternal('UIColor.brownColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_brownColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// clearColor
-  static UIColor getClearColor() {
-    objc.checkOsVersionInternal('UIColor.clearColor', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_clearColor);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// new
-  static UIColor new$() {
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_new);
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// allocWithZone:
-  static UIColor allocWithZone(ffi.Pointer<objc.NSZone> zone) {
-    final _ret = _objc_msgSend_1cwp428(_class_UIColor, _sel_allocWithZone_, zone);
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// alloc
-  static UIColor alloc() {
-    final _ret = _objc_msgSend_151sglz(_class_UIColor, _sel_alloc);
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// supportsSecureCoding
-  static bool getSupportsSecureCoding() {
-    return _objc_msgSend_91o635(_class_UIColor, _sel_supportsSecureCoding);
-  }
-
-  /// objectWithItemProviderData:typeIdentifier:error:
-  static UIColor? objectWithItemProviderData(
-    objc.NSData data, {
-    required objc.NSString typeIdentifier,
-    required ffi.Pointer<ffi.Pointer<objc.ObjCObject>> error,
-  }) {
-    objc.checkOsVersionInternal(
-      'UIColor.objectWithItemProviderData:typeIdentifier:error:',
-      iOS: (false, (11, 0, 0)),
-      macOS: (false, (10, 13, 0)),
-    );
-    final _ret = _objc_msgSend_1pnyuds(
-      _class_UIColor,
-      _sel_objectWithItemProviderData_typeIdentifier_error_,
-      data.ref.pointer,
-      typeIdentifier.ref.pointer,
-      error,
-    );
-    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// Returns a new instance of UIColor constructed with the default `new` method.
-  factory UIColor() => new$();
-}
-
-extension UIColor$Methods on UIColor {
-  /// initWithWhite:alpha:
-  UIColor initWithWhite(double white, {required double alpha}) {
-    objc.checkOsVersionInternal('UIColor.initWithWhite:alpha:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_1n2vn5t(this.ref.retainAndReturnPointer(), _sel_initWithWhite_alpha_, white, alpha);
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// initWithHue:saturation:brightness:alpha:
-  UIColor initWithHue(double hue, {required double saturation, required double brightness, required double alpha}) {
-    objc.checkOsVersionInternal('UIColor.initWithHue:saturation:brightness:alpha:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_q2wq4h(
-      this.ref.retainAndReturnPointer(),
-      _sel_initWithHue_saturation_brightness_alpha_,
-      hue,
-      saturation,
-      brightness,
-      alpha,
-    );
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// initWithRed:green:blue:alpha:
-  UIColor initWithRed(double red, {required double green, required double blue, required double alpha}) {
-    objc.checkOsVersionInternal('UIColor.initWithRed:green:blue:alpha:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_q2wq4h(
-      this.ref.retainAndReturnPointer(),
-      _sel_initWithRed_green_blue_alpha_,
-      red,
-      green,
-      blue,
-      alpha,
-    );
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// initWithDisplayP3Red:green:blue:alpha:
-  UIColor initWithDisplayP3Red(
-    double displayP3Red, {
-    required double green,
-    required double blue,
-    required double alpha,
-  }) {
-    objc.checkOsVersionInternal('UIColor.initWithDisplayP3Red:green:blue:alpha:', iOS: (false, (10, 0, 0)));
-    final _ret = _objc_msgSend_q2wq4h(
-      this.ref.retainAndReturnPointer(),
-      _sel_initWithDisplayP3Red_green_blue_alpha_,
-      displayP3Red,
-      green,
-      blue,
-      alpha,
-    );
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// initWithCGColor:
-  UIColor initWithCGColor(ffi.Pointer<CGColor> cgColor) {
-    objc.checkOsVersionInternal('UIColor.initWithCGColor:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_1rsocyz(this.ref.retainAndReturnPointer(), _sel_initWithCGColor_, cgColor);
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// initWithPatternImage:
-  UIColor initWithPatternImage(UIImage image) {
-    objc.checkOsVersionInternal('UIColor.initWithPatternImage:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_1sotr3r(
-      this.ref.retainAndReturnPointer(),
-      _sel_initWithPatternImage_,
-      image.ref.pointer,
-    );
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// initWithCIColor:
-  UIColor initWithCIColor(CIColor ciColor) {
-    objc.checkOsVersionInternal('UIColor.initWithCIColor:', iOS: (false, (5, 0, 0)));
-    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCIColor_, ciColor.ref.pointer);
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// set
-  void set$() {
-    objc.checkOsVersionInternal('UIColor.set', iOS: (false, (2, 0, 0)));
-    _objc_msgSend_1pl9qdv(this.ref.pointer, _sel_set);
-  }
-
-  /// setFill
-  void setFill() {
-    objc.checkOsVersionInternal('UIColor.setFill', iOS: (false, (2, 0, 0)));
-    _objc_msgSend_1pl9qdv(this.ref.pointer, _sel_setFill);
-  }
-
-  /// setStroke
-  void setStroke() {
-    objc.checkOsVersionInternal('UIColor.setStroke', iOS: (false, (2, 0, 0)));
-    _objc_msgSend_1pl9qdv(this.ref.pointer, _sel_setStroke);
-  }
-
-  /// getWhite:alpha:
-  bool getWhite(ffi.Pointer<ffi.Double> white, {required ffi.Pointer<ffi.Double> alpha}) {
-    objc.checkOsVersionInternal('UIColor.getWhite:alpha:', iOS: (false, (5, 0, 0)));
-    return _objc_msgSend_kcpn4z(this.ref.pointer, _sel_getWhite_alpha_, white, alpha);
-  }
-
-  /// getHue:saturation:brightness:alpha:
-  bool getHue(
-    ffi.Pointer<ffi.Double> hue, {
-    required ffi.Pointer<ffi.Double> saturation,
-    required ffi.Pointer<ffi.Double> brightness,
-    required ffi.Pointer<ffi.Double> alpha,
-  }) {
-    objc.checkOsVersionInternal('UIColor.getHue:saturation:brightness:alpha:', iOS: (false, (5, 0, 0)));
-    return _objc_msgSend_xmvde7(
-      this.ref.pointer,
-      _sel_getHue_saturation_brightness_alpha_,
-      hue,
-      saturation,
-      brightness,
-      alpha,
-    );
-  }
-
-  /// getRed:green:blue:alpha:
-  bool getRed(
-    ffi.Pointer<ffi.Double> red, {
-    required ffi.Pointer<ffi.Double> green,
-    required ffi.Pointer<ffi.Double> blue,
-    required ffi.Pointer<ffi.Double> alpha,
-  }) {
-    objc.checkOsVersionInternal('UIColor.getRed:green:blue:alpha:', iOS: (false, (5, 0, 0)));
-    return _objc_msgSend_xmvde7(this.ref.pointer, _sel_getRed_green_blue_alpha_, red, green, blue, alpha);
-  }
-
-  /// colorWithAlphaComponent:
-  UIColor colorWithAlphaComponent(double alpha) {
-    objc.checkOsVersionInternal('UIColor.colorWithAlphaComponent:', iOS: (false, (2, 0, 0)));
-    final _ret = _objc_msgSend_oa8mke(this.ref.pointer, _sel_colorWithAlphaComponent_, alpha);
-    return UIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// CGColor
-  ffi.Pointer<CGColor> get CGColor$1 {
-    objc.checkOsVersionInternal('UIColor.CGColor', iOS: (false, (2, 0, 0)));
-    return _objc_msgSend_2u9jmz(this.ref.pointer, _sel_CGColor);
-  }
-
-  /// CIColor
-  CIColor get CIColor$1 {
-    objc.checkOsVersionInternal('UIColor.CIColor', iOS: (false, (5, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_CIColor);
-    return CIColor.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// init
-  UIColor init() {
-    objc.checkOsVersionInternal('UIColor.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
-    final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
-    return UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// encodeWithCoder:
-  void encodeWithCoder(objc.NSCoder coder) {
-    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
-  }
-
-  /// initWithCoder:
-  UIColor? initWithCoder(objc.NSCoder coder) {
-    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
-    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: false, release: true);
-  }
-}
-
 late final _sel_backgroundColor = objc.registerName("backgroundColor");
 late final _sel_setBackgroundColor_ = objc.registerName("setBackgroundColor:");
 late final _sel_alpha = objc.registerName("alpha");
@@ -13243,7 +16849,6 @@ late final _sel_contentStretch = objc.registerName("contentStretch");
 late final _sel_setContentStretch_ = objc.registerName("setContentStretch:");
 late final _sel_maskView = objc.registerName("maskView");
 late final _sel_setMaskView_ = objc.registerName("setMaskView:");
-late final _sel_setTintColor_ = objc.registerName("setTintColor:");
 
 enum UIViewTintAdjustmentMode {
   UIViewTintAdjustmentModeAutomatic(0),
@@ -14014,23 +17619,6 @@ extension UIViewKeyframeAnimations on UIView {
 
 late final _sel_gestureRecognizers = objc.registerName("gestureRecognizers");
 late final _sel_setGestureRecognizers_ = objc.registerName("setGestureRecognizers:");
-
-/// WARNING: UIGestureRecognizer is a stub. To generate bindings for this class, include
-/// UIGestureRecognizer in your config's objc-interfaces list.
-///
-/// UIGestureRecognizer
-class UIGestureRecognizer extends objc.ObjCObjectBase {
-  UIGestureRecognizer._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super(pointer, retain: retain, release: release);
-
-  /// Constructs a [UIGestureRecognizer] that points to the same underlying object as [other].
-  UIGestureRecognizer.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
-
-  /// Constructs a [UIGestureRecognizer] that wraps the given raw object pointer.
-  UIGestureRecognizer.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
-    : this._(other, retain: retain, release: release);
-}
-
 late final _sel_addGestureRecognizer_ = objc.registerName("addGestureRecognizer:");
 late final _sel_removeGestureRecognizer_ = objc.registerName("removeGestureRecognizer:");
 late final _sel_gestureRecognizerShouldBegin_ = objc.registerName("gestureRecognizerShouldBegin:");
@@ -14766,15 +18354,6 @@ extension UIStateRestoration$1 on UIView {
 }
 
 late final _sel_snapshotViewAfterScreenUpdates_ = objc.registerName("snapshotViewAfterScreenUpdates:");
-final _objc_msgSend_1t6aok9 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Bool)
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, bool)
-    >();
 late final _sel_resizableSnapshotViewFromRect_afterScreenUpdates_withCapInsets_ = objc.registerName(
   "resizableSnapshotViewFromRect:afterScreenUpdates:withCapInsets:",
 );
@@ -14874,15 +18453,6 @@ final _objc_msgSend_1lzqwav = objc.msgSendPointer
 late final _sel_commitAnimations = objc.registerName("commitAnimations");
 late final _sel_setAnimationDelegate_ = objc.registerName("setAnimationDelegate:");
 late final _sel_setAnimationWillStartSelector_ = objc.registerName("setAnimationWillStartSelector:");
-final _objc_msgSend_1d9e4oe = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCSelector>)
-      >
-    >()
-    .asFunction<
-      void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCSelector>)
-    >();
 late final _sel_setAnimationDidStopSelector_ = objc.registerName("setAnimationDidStopSelector:");
 late final _sel_setAnimationDuration_ = objc.registerName("setAnimationDuration:");
 late final _sel_setAnimationDelay_ = objc.registerName("setAnimationDelay:");
@@ -15215,16 +18785,6 @@ extension UITextField on UIView {
 
 late final _sel_isUserInteractionEnabled = objc.registerName("isUserInteractionEnabled");
 late final _sel_setUserInteractionEnabled_ = objc.registerName("setUserInteractionEnabled:");
-late final _sel_tag = objc.registerName("tag");
-final _objc_msgSend_1hz7y9r = objc.msgSendPointer
-    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
-    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
-late final _sel_setTag_ = objc.registerName("setTag:");
-final _objc_msgSend_4sp4xj = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
-    >()
-    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
 
 /// WARNING: CALayer is a stub. To generate bindings for this class, include
 /// CALayer in your config's objc-interfaces list.
@@ -15282,268 +18842,6 @@ late final _sel_effectiveUserInterfaceLayoutDirection = objc.registerName("effec
 final _objc_msgSend_qj4fey = objc.msgSendPointer
     .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
     .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
-objc.CGPoint _ObjCBlock_NSPoint_ffiVoid_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => block.ref.target
-    .cast<ffi.NativeFunction<objc.CGPoint Function(ffi.Pointer<ffi.Void> arg0)>>()
-    .asFunction<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>()(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_NSPoint_ffiVoid_fnPtrCallable =
-    ffi.Pointer.fromFunction<objc.CGPoint Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>(
-      _ObjCBlock_NSPoint_ffiVoid_fnPtrTrampoline,
-    ).cast();
-objc.CGPoint _ObjCBlock_NSPoint_ffiVoid_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => (objc.getBlockClosure(block) as objc.CGPoint Function(ffi.Pointer<ffi.Void>))(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_NSPoint_ffiVoid_closureCallable =
-    ffi.Pointer.fromFunction<objc.CGPoint Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>(
-      _ObjCBlock_NSPoint_ffiVoid_closureTrampoline,
-    ).cast();
-
-/// Construction methods for `objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>`.
-abstract final class ObjCBlock_NSPoint_ffiVoid {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>(pointer, retain: retain, release: release);
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<objc.CGPoint Function(ffi.Pointer<ffi.Void> arg0)>> ptr,
-  ) => objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>(
-    objc.newPointerBlock(_ObjCBlock_NSPoint_ffiVoid_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)> fromFunction(
-    objc.CGPoint Function(ffi.Pointer<ffi.Void>) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>(
-    objc.newClosureBlock(
-      _ObjCBlock_NSPoint_ffiVoid_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0) => fn(arg0),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)>`.
-extension ObjCBlock_NSPoint_ffiVoid_CallExtension on objc.ObjCBlock<objc.CGPoint Function(ffi.Pointer<ffi.Void>)> {
-  objc.CGPoint call(ffi.Pointer<ffi.Void> arg0) => ref.pointer.ref.invoke
-      .cast<
-        ffi.NativeFunction<objc.CGPoint Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<ffi.Void> arg0)>
-      >()
-      .asFunction<objc.CGPoint Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>()(ref.pointer, arg0);
-}
-
-void _ObjCBlock_ffiVoid_ffiVoid_NSPoint_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  objc.CGPoint arg1,
-) => block.ref.target
-    .cast<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1)>>()
-    .asFunction<void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>()(arg0, arg1);
-ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_ffiVoid_NSPoint_fnPtrCallable =
-    ffi.Pointer.fromFunction<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGPoint)>(
-      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_fnPtrTrampoline,
-    ).cast();
-void _ObjCBlock_ffiVoid_ffiVoid_NSPoint_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  objc.CGPoint arg1,
-) => (objc.getBlockClosure(block) as void Function(ffi.Pointer<ffi.Void>, objc.CGPoint))(arg0, arg1);
-ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_ffiVoid_NSPoint_closureCallable =
-    ffi.Pointer.fromFunction<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGPoint)>(
-      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_closureTrampoline,
-    ).cast();
-void _ObjCBlock_ffiVoid_ffiVoid_NSPoint_listenerTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  objc.CGPoint arg1,
-) {
-  (objc.getBlockClosure(block) as void Function(ffi.Pointer<ffi.Void>, objc.CGPoint))(arg0, arg1);
-  objc.objectRelease(block.cast());
-}
-
-ffi.NativeCallable<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGPoint)>
-_ObjCBlock_ffiVoid_ffiVoid_NSPoint_listenerCallable =
-    ffi.NativeCallable<
-        ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGPoint)
-      >.listener(_ObjCBlock_ffiVoid_ffiVoid_NSPoint_listenerTrampoline)
-      ..keepIsolateAlive = false;
-void _ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> waiter,
-  ffi.Pointer<ffi.Void> arg0,
-  objc.CGPoint arg1,
-) {
-  try {
-    (objc.getBlockClosure(block) as void Function(ffi.Pointer<ffi.Void>, objc.CGPoint))(arg0, arg1);
-  } catch (e) {
-  } finally {
-    objc.signalWaiter(waiter);
-    objc.objectRelease(block.cast());
-  }
-}
-
-ffi.NativeCallable<
-  ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<ffi.Void>, objc.CGPoint)
->
-_ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingCallable =
-    ffi.NativeCallable<
-        ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<ffi.Void>, objc.CGPoint)
-      >.isolateLocal(_ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingTrampoline)
-      ..keepIsolateAlive = false;
-ffi.NativeCallable<
-  ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<ffi.Void>, objc.CGPoint)
->
-_ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingListenerCallable =
-    ffi.NativeCallable<
-        ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<ffi.Void>, objc.CGPoint)
-      >.listener(_ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingTrampoline)
-      ..keepIsolateAlive = false;
-
-/// Construction methods for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>`.
-abstract final class ObjCBlock_ffiVoid_ffiVoid_NSPoint {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) =>
-      objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>(pointer, retain: retain, release: release);
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1)>> ptr,
-  ) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>(
-    objc.newPointerBlock(_ObjCBlock_ffiVoid_ffiVoid_NSPoint_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> fromFunction(
-    void Function(ffi.Pointer<ffi.Void>, objc.CGPoint) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>(
-    objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1) => fn(arg0, arg1),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a listener block from a Dart function.
-  ///
-  /// This is based on FFI's NativeCallable.listener, and has the same
-  /// capabilities and limitations. This block can be invoked from any thread,
-  /// but only supports void functions, and is not run synchronously. See
-  /// NativeCallable.listener for more details.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> listener(
-    void Function(ffi.Pointer<ffi.Void>, objc.CGPoint) fn, {
-    bool keepIsolateAlive = true,
-  }) {
-    final raw = objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_listenerCallable.nativeFunction.cast(),
-      (ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1) => fn(arg0, arg1),
-      keepIsolateAlive,
-    );
-    final wrapper = _UIKit_wrapListenerBlock_1bktu2(raw);
-    objc.objectRelease(raw.cast());
-    return objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>(
-      wrapper,
-      retain: false,
-      release: true,
-    );
-  }
-
-  /// Creates a blocking block from a Dart function.
-  ///
-  /// This callback can be invoked from any native thread, and will block the
-  /// caller until the callback is handled by the Dart isolate that created
-  /// the block. Async functions are not supported.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
-  /// has shut down, and the block is invoked by native code, it may block
-  /// indefinitely, or have other undefined behavior.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> blocking(
-    void Function(ffi.Pointer<ffi.Void>, objc.CGPoint) fn, {
-    bool keepIsolateAlive = true,
-  }) {
-    final raw = objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingCallable.nativeFunction.cast(),
-      (ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1) => fn(arg0, arg1),
-      keepIsolateAlive,
-    );
-    final rawListener = objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_ffiVoid_NSPoint_blockingListenerCallable.nativeFunction.cast(),
-      (ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1) => fn(arg0, arg1),
-      keepIsolateAlive,
-    );
-    final wrapper = _UIKit_wrapBlockingBlock_1bktu2(raw, rawListener, objc.objCContext);
-    objc.objectRelease(raw.cast());
-    objc.objectRelease(rawListener.cast());
-    return objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>(
-      wrapper,
-      retain: false,
-      release: true,
-    );
-  }
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)>`.
-extension ObjCBlock_ffiVoid_ffiVoid_NSPoint_CallExtension
-    on objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.CGPoint)> {
-  void call(ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1) =>
-      ref.pointer.ref.invoke
-          .cast<
-            ffi.NativeFunction<
-              ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<ffi.Void> arg0, objc.CGPoint arg1)
-            >
-          >()
-          .asFunction<void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGPoint)>()(
-        ref.pointer,
-        arg0,
-        arg1,
-      );
-}
-
 objc.CGRect _ObjCBlock_NSRect_ffiVoid_fnPtrTrampoline(
   ffi.Pointer<objc.ObjCBlockImpl> block,
   ffi.Pointer<ffi.Void> arg0,
@@ -16597,193 +19895,6 @@ extension ObjCBlock_ffiVoid_ffiVoid_UIFocusMovementHint_CallExtension
       >()(ref.pointer, arg0, arg1.ref.pointer);
 }
 
-late final _sel_coordinateSpace = objc.registerName("coordinateSpace");
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_idUICoordinateSpace_ffiVoid_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => block.ref.target
-    .cast<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>>()
-    .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>()(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_idUICoordinateSpace_ffiVoid_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-        >(_ObjCBlock_idUICoordinateSpace_ffiVoid_fnPtrTrampoline)
-        .cast();
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_idUICoordinateSpace_ffiVoid_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-) => (objc.getBlockClosure(block) as ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>))(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_idUICoordinateSpace_ffiVoid_closureCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-        >(_ObjCBlock_idUICoordinateSpace_ffiVoid_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>`.
-abstract final class ObjCBlock_idUICoordinateSpace_ffiVoid {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0)>> ptr,
-  ) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
-    objc.newPointerBlock(_ObjCBlock_idUICoordinateSpace_ffiVoid_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> fromFunction(
-    UICoordinateSpace Function(ffi.Pointer<ffi.Void>) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>(
-    objc.newClosureBlock(
-      _ObjCBlock_idUICoordinateSpace_ffiVoid_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0) => fn(arg0).ref.retainAndAutorelease(),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)>`.
-extension ObjCBlock_idUICoordinateSpace_ffiVoid_CallExtension
-    on objc.ObjCBlock<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>)> {
-  UICoordinateSpace call(ffi.Pointer<ffi.Void> arg0) => UICoordinateSpace.castFromPointer(
-    ref.pointer.ref.invoke
-        .cast<
-          ffi.NativeFunction<
-            ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<ffi.Void> arg0)
-          >
-        >()
-        .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)>()(
-      ref.pointer,
-      arg0,
-    ),
-    retain: true,
-    release: true,
-  );
-}
-
-late final _sel_focusItemsInRect_ = objc.registerName("focusItemsInRect:");
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSArray_ffiVoid_CGRect_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  objc.CGRect arg1,
-) => block.ref.target
-    .cast<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0, objc.CGRect arg1)>>()
-    .asFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.CGRect)>()(arg0, arg1);
-ffi.Pointer<ffi.Void> _ObjCBlock_NSArray_ffiVoid_CGRect_fnPtrCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGRect)
-        >(_ObjCBlock_NSArray_ffiVoid_CGRect_fnPtrTrampoline)
-        .cast();
-ffi.Pointer<objc.ObjCObject> _ObjCBlock_NSArray_ffiVoid_CGRect_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> arg0,
-  objc.CGRect arg1,
-) => (objc.getBlockClosure(block) as ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void>, objc.CGRect))(
-  arg0,
-  arg1,
-);
-ffi.Pointer<ffi.Void> _ObjCBlock_NSArray_ffiVoid_CGRect_closureCallable =
-    ffi.Pointer.fromFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGRect)
-        >(_ObjCBlock_NSArray_ffiVoid_CGRect_closureTrampoline)
-        .cast();
-
-/// Construction methods for `objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)>`.
-abstract final class ObjCBlock_NSArray_ffiVoid_CGRect {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<ffi.Void> arg0, objc.CGRect arg1)>>
-    ptr,
-  ) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)>(
-    objc.newPointerBlock(_ObjCBlock_NSArray_ffiVoid_CGRect_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)> fromFunction(
-    objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)>(
-    objc.newClosureBlock(
-      _ObjCBlock_NSArray_ffiVoid_CGRect_closureCallable,
-      (ffi.Pointer<ffi.Void> arg0, objc.CGRect arg1) => fn(arg0, arg1).ref.retainAndAutorelease(),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-}
-
-/// Call operator for `objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)>`.
-extension ObjCBlock_NSArray_ffiVoid_CGRect_CallExtension
-    on objc.ObjCBlock<objc.NSArray Function(ffi.Pointer<ffi.Void>, objc.CGRect)> {
-  objc.NSArray call(ffi.Pointer<ffi.Void> arg0, objc.CGRect arg1) => objc.NSArray.castFromPointer(
-    ref.pointer.ref.invoke
-        .cast<
-          ffi.NativeFunction<
-            ffi.Pointer<objc.ObjCObject> Function(
-              ffi.Pointer<objc.ObjCBlockImpl> block,
-              ffi.Pointer<ffi.Void> arg0,
-              objc.CGRect arg1,
-            )
-          >
-        >()
-        .asFunction<
-          ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, objc.CGRect)
-        >()(ref.pointer, arg0, arg1),
-    retain: true,
-    release: true,
-  );
-}
-
 late final _sel_displayLayer_ = objc.registerName("displayLayer:");
 void _ObjCBlock_ffiVoid_ffiVoid_CALayer_fnPtrTrampoline(
   ffi.Pointer<objc.ObjCBlockImpl> block,
@@ -17769,24 +20880,6 @@ extension UIView$Methods on UIView {
     objc.checkOsVersionInternal('UIView.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
     final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
     return UIView.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// self
-  UIView self$1() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_self);
-    return UIView.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// retain
-  UIView retain() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_retain);
-    return UIView.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// autorelease
-  UIView autorelease() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_autorelease);
-    return UIView.castFromPointer(_ret, retain: true, release: true);
   }
 
   /// encodeWithCoder:
@@ -19130,197 +22223,6 @@ late final _sel_decreaseSize_ = objc.registerName("decreaseSize:");
 late final _sel_updateTextAttributesWithConversionHandler_ = objc.registerName(
   "updateTextAttributesWithConversionHandler:",
 );
-void _ObjCBlock_ffiVoid_ffiVoid$1_fnPtrTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCBlockImpl> arg0,
-) => block.ref.target
-    .cast<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl> arg0)>>()
-    .asFunction<void Function(ffi.Pointer<objc.ObjCBlockImpl>)>()(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_ffiVoid$1_fnPtrCallable =
-    ffi.Pointer.fromFunction<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCBlockImpl>)>(
-      _ObjCBlock_ffiVoid_ffiVoid$1_fnPtrTrampoline,
-    ).cast();
-void _ObjCBlock_ffiVoid_ffiVoid$1_closureTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCBlockImpl> arg0,
-) => (objc.getBlockClosure(block) as void Function(ffi.Pointer<objc.ObjCBlockImpl>))(arg0);
-ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_ffiVoid$1_closureCallable =
-    ffi.Pointer.fromFunction<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCBlockImpl>)>(
-      _ObjCBlock_ffiVoid_ffiVoid$1_closureTrampoline,
-    ).cast();
-void _ObjCBlock_ffiVoid_ffiVoid$1_listenerTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCBlockImpl> arg0,
-) {
-  (objc.getBlockClosure(block) as void Function(ffi.Pointer<objc.ObjCBlockImpl>))(arg0);
-  objc.objectRelease(block.cast());
-}
-
-ffi.NativeCallable<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCBlockImpl>)>
-_ObjCBlock_ffiVoid_ffiVoid$1_listenerCallable =
-    ffi.NativeCallable<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCBlockImpl>)>.listener(
-      _ObjCBlock_ffiVoid_ffiVoid$1_listenerTrampoline,
-    )..keepIsolateAlive = false;
-void _ObjCBlock_ffiVoid_ffiVoid$1_blockingTrampoline(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<ffi.Void> waiter,
-  ffi.Pointer<objc.ObjCBlockImpl> arg0,
-) {
-  try {
-    (objc.getBlockClosure(block) as void Function(ffi.Pointer<objc.ObjCBlockImpl>))(arg0);
-  } catch (e) {
-  } finally {
-    objc.signalWaiter(waiter);
-    objc.objectRelease(block.cast());
-  }
-}
-
-ffi.NativeCallable<
-  ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCBlockImpl>)
->
-_ObjCBlock_ffiVoid_ffiVoid$1_blockingCallable =
-    ffi.NativeCallable<
-        ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCBlockImpl>)
-      >.isolateLocal(_ObjCBlock_ffiVoid_ffiVoid$1_blockingTrampoline)
-      ..keepIsolateAlive = false;
-ffi.NativeCallable<
-  ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCBlockImpl>)
->
-_ObjCBlock_ffiVoid_ffiVoid$1_blockingListenerCallable =
-    ffi.NativeCallable<
-        ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCBlockImpl>)
-      >.listener(_ObjCBlock_ffiVoid_ffiVoid$1_blockingTrampoline)
-      ..keepIsolateAlive = false;
-
-/// Construction methods for `objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)>`.
-abstract final class ObjCBlock_ffiVoid_ffiVoid$1 {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)> castFromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)> fromFunctionPointer(
-    ffi.Pointer<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl> arg0)>> ptr,
-  ) => objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)>(
-    objc.newPointerBlock(_ObjCBlock_ffiVoid_ffiVoid$1_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)> fromFunction(
-    void Function(objc.ObjCBlock<ffi.Void Function()>?) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)>(
-    objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_ffiVoid$1_closureCallable,
-      (ffi.Pointer<objc.ObjCBlockImpl> arg0) =>
-          fn(arg0.address == 0 ? null : ObjCBlock_ffiVoid.castFromPointer(arg0, retain: true, release: true)),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a listener block from a Dart function.
-  ///
-  /// This is based on FFI's NativeCallable.listener, and has the same
-  /// capabilities and limitations. This block can be invoked from any thread,
-  /// but only supports void functions, and is not run synchronously. See
-  /// NativeCallable.listener for more details.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)> listener(
-    void Function(objc.ObjCBlock<ffi.Void Function()>?) fn, {
-    bool keepIsolateAlive = true,
-  }) {
-    final raw = objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_ffiVoid$1_listenerCallable.nativeFunction.cast(),
-      (ffi.Pointer<objc.ObjCBlockImpl> arg0) =>
-          fn(arg0.address == 0 ? null : ObjCBlock_ffiVoid.castFromPointer(arg0, retain: false, release: true)),
-      keepIsolateAlive,
-    );
-    final wrapper = _UIKit_wrapListenerBlock_f167m6(raw);
-    objc.objectRelease(raw.cast());
-    return objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)>(
-      wrapper,
-      retain: false,
-      release: true,
-    );
-  }
-
-  /// Creates a blocking block from a Dart function.
-  ///
-  /// This callback can be invoked from any native thread, and will block the
-  /// caller until the callback is handled by the Dart isolate that created
-  /// the block. Async functions are not supported.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
-  /// has shut down, and the block is invoked by native code, it may block
-  /// indefinitely, or have other undefined behavior.
-  static objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)> blocking(
-    void Function(objc.ObjCBlock<ffi.Void Function()>?) fn, {
-    bool keepIsolateAlive = true,
-  }) {
-    final raw = objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_ffiVoid$1_blockingCallable.nativeFunction.cast(),
-      (ffi.Pointer<objc.ObjCBlockImpl> arg0) =>
-          fn(arg0.address == 0 ? null : ObjCBlock_ffiVoid.castFromPointer(arg0, retain: false, release: true)),
-      keepIsolateAlive,
-    );
-    final rawListener = objc.newClosureBlock(
-      _ObjCBlock_ffiVoid_ffiVoid$1_blockingListenerCallable.nativeFunction.cast(),
-      (ffi.Pointer<objc.ObjCBlockImpl> arg0) =>
-          fn(arg0.address == 0 ? null : ObjCBlock_ffiVoid.castFromPointer(arg0, retain: false, release: true)),
-      keepIsolateAlive,
-    );
-    final wrapper = _UIKit_wrapBlockingBlock_f167m6(raw, rawListener, objc.objCContext);
-    objc.objectRelease(raw.cast());
-    objc.objectRelease(rawListener.cast());
-    return objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)>(
-      wrapper,
-      retain: false,
-      release: true,
-    );
-  }
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)>`.
-extension ObjCBlock_ffiVoid_ffiVoid$1_CallExtension
-    on objc.ObjCBlock<ffi.Void Function(objc.ObjCBlock<ffi.Void Function()>?)> {
-  void call(objc.ObjCBlock<ffi.Void Function()>? arg0) =>
-      ref.pointer.ref.invoke
-          .cast<
-            ffi.NativeFunction<
-              ffi.Void Function(ffi.Pointer<objc.ObjCBlockImpl> block, ffi.Pointer<objc.ObjCBlockImpl> arg0)
-            >
-          >()
-          .asFunction<void Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<objc.ObjCBlockImpl>)>()(
-        ref.pointer,
-        arg0?.ref.pointer ?? ffi.nullptr,
-      );
-}
-
 void _ObjCBlock_ffiVoid_ffiVoid_UITextAttributesConversionHandler_fnPtrTrampoline(
   ffi.Pointer<objc.ObjCBlockImpl> block,
   ffi.Pointer<ffi.Void> arg0,
@@ -19832,24 +22734,6 @@ extension UIResponder$Methods on UIResponder {
     return UIResponder.castFromPointer(_ret, retain: false, release: true);
   }
 
-  /// self
-  UIResponder self$1() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_self);
-    return UIResponder.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// retain
-  UIResponder retain() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_retain);
-    return UIResponder.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// autorelease
-  UIResponder autorelease() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_autorelease);
-    return UIResponder.castFromPointer(_ret, retain: true, release: true);
-  }
-
   /// cut:
   void cut(objc.ObjCObjectBase? sender) {
     objc.checkOsVersionInternal('UIResponder.cut:', iOS: (false, (3, 0, 0)));
@@ -20027,6 +22911,24 @@ extension UIResponder$Methods on UIResponder {
   }
 }
 
+/// WARNING: UIScene is a stub. To generate bindings for this class, include
+/// UIScene in your config's objc-interfaces list.
+///
+/// UIScene
+class UIScene extends UIResponder {
+  UIScene._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIScene', iOS: (false, (13, 0, 0)));
+  }
+
+  /// Constructs a [UIScene] that points to the same underlying object as [other].
+  UIScene.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIScene] that wraps the given raw object pointer.
+  UIScene.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
 final class __CVBuffer extends ffi.Opaque {}
 
 final class CGImageSource extends ffi.Opaque {}
@@ -20183,9 +23085,127 @@ enum UIFontDescriptorSymbolicTraits {
   };
 }
 
-/// WARNING: UIFont is a stub. To generate bindings for this class, include
-/// UIFont in your config's objc-interfaces list.
+/// WARNING: UIFontDescriptor is a stub. To generate bindings for this class, include
+/// UIFontDescriptor in your config's objc-interfaces list.
 ///
+/// UIFontDescriptor
+class UIFontDescriptor extends objc.NSObject implements objc.NSCopying, objc.NSSecureCoding {
+  UIFontDescriptor._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIFontDescriptor', iOS: (false, (7, 0, 0)));
+  }
+
+  /// Constructs a [UIFontDescriptor] that points to the same underlying object as [other].
+  UIFontDescriptor.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIFontDescriptor] that wraps the given raw object pointer.
+  UIFontDescriptor.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _class_UIFont = objc.getClass("UIFont");
+late final _sel_labelFontSize = objc.registerName("labelFontSize");
+late final _sel_buttonFontSize = objc.registerName("buttonFontSize");
+late final _sel_smallSystemFontSize = objc.registerName("smallSystemFontSize");
+late final _sel_systemFontSize = objc.registerName("systemFontSize");
+late final _sel_defaultFontSize = objc.registerName("defaultFontSize");
+late final _sel_systemMinimumFontSize = objc.registerName("systemMinimumFontSize");
+
+/// UIFontSystemFonts
+extension UIFontSystemFonts on UIFont {
+  /// labelFontSize
+  static double getLabelFontSize() {
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(_class_UIFont, _sel_labelFontSize)
+        : _objc_msgSend_1ukqyt8(_class_UIFont, _sel_labelFontSize);
+  }
+
+  /// buttonFontSize
+  static double getButtonFontSize() {
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(_class_UIFont, _sel_buttonFontSize)
+        : _objc_msgSend_1ukqyt8(_class_UIFont, _sel_buttonFontSize);
+  }
+
+  /// smallSystemFontSize
+  static double getSmallSystemFontSize() {
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(_class_UIFont, _sel_smallSystemFontSize)
+        : _objc_msgSend_1ukqyt8(_class_UIFont, _sel_smallSystemFontSize);
+  }
+
+  /// systemFontSize
+  static double getSystemFontSize() {
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(_class_UIFont, _sel_systemFontSize)
+        : _objc_msgSend_1ukqyt8(_class_UIFont, _sel_systemFontSize);
+  }
+
+  /// defaultFontSize
+  static double getDefaultFontSize() {
+    objc.checkOsVersionInternal('UIFont.defaultFontSize', iOS: (true, null), macOS: (true, null));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(_class_UIFont, _sel_defaultFontSize)
+        : _objc_msgSend_1ukqyt8(_class_UIFont, _sel_defaultFontSize);
+  }
+
+  /// systemMinimumFontSize
+  static double getSystemMinimumFontSize() {
+    objc.checkOsVersionInternal('UIFont.systemMinimumFontSize', iOS: (true, null), macOS: (true, null));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(_class_UIFont, _sel_systemMinimumFontSize)
+        : _objc_msgSend_1ukqyt8(_class_UIFont, _sel_systemMinimumFontSize);
+  }
+}
+
+late final _sel_preferredFontForTextStyle_ = objc.registerName("preferredFontForTextStyle:");
+late final _sel_preferredFontForTextStyle_compatibleWithTraitCollection_ = objc.registerName(
+  "preferredFontForTextStyle:compatibleWithTraitCollection:",
+);
+late final _sel_fontWithName_size_ = objc.registerName("fontWithName:size:");
+final _objc_msgSend_6plvbo = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Double,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        double,
+      )
+    >();
+late final _sel_familyNames = objc.registerName("familyNames");
+late final _sel_fontNamesForFamilyName_ = objc.registerName("fontNamesForFamilyName:");
+late final _sel_systemFontOfSize_ = objc.registerName("systemFontOfSize:");
+late final _sel_boldSystemFontOfSize_ = objc.registerName("boldSystemFontOfSize:");
+late final _sel_italicSystemFontOfSize_ = objc.registerName("italicSystemFontOfSize:");
+late final _sel_systemFontOfSize_weight_ = objc.registerName("systemFontOfSize:weight:");
+late final _sel_monospacedDigitSystemFontOfSize_weight_ = objc.registerName("monospacedDigitSystemFontOfSize:weight:");
+late final _sel_monospacedSystemFontOfSize_weight_ = objc.registerName("monospacedSystemFontOfSize:weight:");
+late final _sel_familyName = objc.registerName("familyName");
+late final _sel_fontName = objc.registerName("fontName");
+late final _sel_pointSize = objc.registerName("pointSize");
+late final _sel_ascender = objc.registerName("ascender");
+late final _sel_descender = objc.registerName("descender");
+late final _sel_capHeight = objc.registerName("capHeight");
+late final _sel_xHeight = objc.registerName("xHeight");
+late final _sel_lineHeight = objc.registerName("lineHeight");
+late final _sel_leading = objc.registerName("leading");
+late final _sel_fontWithSize_ = objc.registerName("fontWithSize:");
+late final _sel_fontWithDescriptor_size_ = objc.registerName("fontWithDescriptor:size:");
+late final _sel_fontDescriptor = objc.registerName("fontDescriptor");
+late final _sel_self = objc.registerName("self");
+late final _sel_retain = objc.registerName("retain");
+late final _sel_autorelease = objc.registerName("autorelease");
+
 /// UIFont
 class UIFont extends objc.NSObject implements objc.NSCopying, objc.NSSecureCoding {
   UIFont._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
@@ -20199,6 +23219,251 @@ class UIFont extends objc.NSObject implements objc.NSCopying, objc.NSSecureCodin
   /// Constructs a [UIFont] that wraps the given raw object pointer.
   UIFont.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
     : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UIFont].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIFont);
+  }
+
+  /// preferredFontForTextStyle:
+  static UIFont preferredFontForTextStyle(objc.NSString style) {
+    objc.checkOsVersionInternal('UIFont.preferredFontForTextStyle:', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(_class_UIFont, _sel_preferredFontForTextStyle_, style.ref.pointer);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// preferredFontForTextStyle:compatibleWithTraitCollection:
+  static UIFont preferredFontForTextStyle$1(objc.NSString style, {UITraitCollection? compatibleWithTraitCollection}) {
+    objc.checkOsVersionInternal(
+      'UIFont.preferredFontForTextStyle:compatibleWithTraitCollection:',
+      iOS: (false, (10, 0, 0)),
+    );
+    final _ret = _objc_msgSend_15qeuct(
+      _class_UIFont,
+      _sel_preferredFontForTextStyle_compatibleWithTraitCollection_,
+      style.ref.pointer,
+      compatibleWithTraitCollection?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// fontWithName:size:
+  static UIFont? fontWithName(objc.NSString fontName, {required double size}) {
+    objc.checkOsVersionInternal('UIFont.fontWithName:size:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_6plvbo(_class_UIFont, _sel_fontWithName_size_, fontName.ref.pointer, size);
+    return _ret.address == 0 ? null : UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// familyNames
+  static objc.NSArray getFamilyNames() {
+    objc.checkOsVersionInternal('UIFont.familyNames', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIFont, _sel_familyNames);
+    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// fontNamesForFamilyName:
+  static objc.NSArray fontNamesForFamilyName(objc.NSString familyName) {
+    objc.checkOsVersionInternal('UIFont.fontNamesForFamilyName:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(_class_UIFont, _sel_fontNamesForFamilyName_, familyName.ref.pointer);
+    return objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemFontOfSize:
+  static UIFont systemFontOfSize(double fontSize) {
+    objc.checkOsVersionInternal('UIFont.systemFontOfSize:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_oa8mke(_class_UIFont, _sel_systemFontOfSize_, fontSize);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// boldSystemFontOfSize:
+  static UIFont boldSystemFontOfSize(double fontSize) {
+    objc.checkOsVersionInternal('UIFont.boldSystemFontOfSize:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_oa8mke(_class_UIFont, _sel_boldSystemFontOfSize_, fontSize);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// italicSystemFontOfSize:
+  static UIFont italicSystemFontOfSize(double fontSize) {
+    objc.checkOsVersionInternal('UIFont.italicSystemFontOfSize:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_oa8mke(_class_UIFont, _sel_italicSystemFontOfSize_, fontSize);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// systemFontOfSize:weight:
+  static UIFont systemFontOfSize$1(double fontSize, {required double weight}) {
+    objc.checkOsVersionInternal('UIFont.systemFontOfSize:weight:', iOS: (false, (8, 2, 0)));
+    final _ret = _objc_msgSend_1n2vn5t(_class_UIFont, _sel_systemFontOfSize_weight_, fontSize, weight);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// monospacedDigitSystemFontOfSize:weight:
+  static UIFont monospacedDigitSystemFontOfSize(double fontSize, {required double weight}) {
+    objc.checkOsVersionInternal('UIFont.monospacedDigitSystemFontOfSize:weight:', iOS: (false, (9, 0, 0)));
+    final _ret = _objc_msgSend_1n2vn5t(_class_UIFont, _sel_monospacedDigitSystemFontOfSize_weight_, fontSize, weight);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// monospacedSystemFontOfSize:weight:
+  static UIFont monospacedSystemFontOfSize(double fontSize, {required double weight}) {
+    objc.checkOsVersionInternal('UIFont.monospacedSystemFontOfSize:weight:', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_1n2vn5t(_class_UIFont, _sel_monospacedSystemFontOfSize_weight_, fontSize, weight);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// fontWithDescriptor:size:
+  static UIFont fontWithDescriptor(UIFontDescriptor descriptor, {required double size}) {
+    objc.checkOsVersionInternal('UIFont.fontWithDescriptor:size:', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_6plvbo(_class_UIFont, _sel_fontWithDescriptor_size_, descriptor.ref.pointer, size);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// new
+  static UIFont new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UIFont, _sel_new);
+    return UIFont.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static UIFont allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final _ret = _objc_msgSend_1cwp428(_class_UIFont, _sel_allocWithZone_, zone);
+    return UIFont.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// alloc
+  static UIFont alloc() {
+    final _ret = _objc_msgSend_151sglz(_class_UIFont, _sel_alloc);
+    return UIFont.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// supportsSecureCoding
+  static bool getSupportsSecureCoding() {
+    return _objc_msgSend_91o635(_class_UIFont, _sel_supportsSecureCoding);
+  }
+
+  /// Returns a new instance of UIFont constructed with the default `new` method.
+  factory UIFont() => new$();
+}
+
+extension UIFont$Methods on UIFont {
+  /// familyName
+  objc.NSString get familyName {
+    objc.checkOsVersionInternal('UIFont.familyName', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_familyName);
+    return objc.NSString.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// fontName
+  objc.NSString get fontName {
+    objc.checkOsVersionInternal('UIFont.fontName', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_fontName);
+    return objc.NSString.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// pointSize
+  double get pointSize {
+    objc.checkOsVersionInternal('UIFont.pointSize', iOS: (false, (2, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_pointSize)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_pointSize);
+  }
+
+  /// ascender
+  double get ascender {
+    objc.checkOsVersionInternal('UIFont.ascender', iOS: (false, (2, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_ascender)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_ascender);
+  }
+
+  /// descender
+  double get descender {
+    objc.checkOsVersionInternal('UIFont.descender', iOS: (false, (2, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_descender)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_descender);
+  }
+
+  /// capHeight
+  double get capHeight {
+    objc.checkOsVersionInternal('UIFont.capHeight', iOS: (false, (2, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_capHeight)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_capHeight);
+  }
+
+  /// xHeight
+  double get xHeight {
+    objc.checkOsVersionInternal('UIFont.xHeight', iOS: (false, (2, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_xHeight)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_xHeight);
+  }
+
+  /// lineHeight
+  double get lineHeight {
+    objc.checkOsVersionInternal('UIFont.lineHeight', iOS: (false, (4, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_lineHeight)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_lineHeight);
+  }
+
+  /// leading
+  double get leading {
+    objc.checkOsVersionInternal('UIFont.leading', iOS: (false, (2, 0, 0)));
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(this.ref.pointer, _sel_leading)
+        : _objc_msgSend_1ukqyt8(this.ref.pointer, _sel_leading);
+  }
+
+  /// fontWithSize:
+  UIFont fontWithSize(double fontSize) {
+    objc.checkOsVersionInternal('UIFont.fontWithSize:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_oa8mke(this.ref.pointer, _sel_fontWithSize_, fontSize);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// fontDescriptor
+  UIFontDescriptor get fontDescriptor {
+    objc.checkOsVersionInternal('UIFont.fontDescriptor', iOS: (false, (7, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_fontDescriptor);
+    return UIFontDescriptor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// init
+  UIFont init() {
+    objc.checkOsVersionInternal('UIFont.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
+    return UIFont.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// self
+  UIFont self$1() {
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_self);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// retain
+  UIFont retain() {
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_retain);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// autorelease
+  UIFont autorelease() {
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_autorelease);
+    return UIFont.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// encodeWithCoder:
+  void encodeWithCoder(objc.NSCoder coder) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
+  }
+
+  /// initWithCoder:
+  UIFont? initWithCoder(objc.NSCoder coder) {
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UIFont.castFromPointer(_ret, retain: false, release: true);
+  }
 }
 
 enum UIUserInterfaceSizeClass {
@@ -20644,6 +23909,24 @@ enum UITouchProperties {
   };
 }
 
+/// WARNING: UITouch is a stub. To generate bindings for this class, include
+/// UITouch in your config's objc-interfaces list.
+///
+/// UITouch
+class UITouch extends objc.NSObject {
+  UITouch._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UITouch', iOS: (false, (2, 0, 0)));
+  }
+
+  /// Constructs a [UITouch] that points to the same underlying object as [other].
+  UITouch.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UITouch] that wraps the given raw object pointer.
+  UITouch.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
 enum UIFocusHeading {
   UIFocusHeadingNone(0),
   UIFocusHeadingUp(1),
@@ -20858,6 +24141,28 @@ extension ObjCBlock_UIViewController_CallExtension on objc.ObjCBlock<UIViewContr
         );
 }
 
+/// WARNING: UIContextMenuConfiguration is a stub. To generate bindings for this class, include
+/// UIContextMenuConfiguration in your config's objc-interfaces list.
+///
+/// UIContextMenuConfiguration
+class UIContextMenuConfiguration extends objc.NSObject {
+  UIContextMenuConfiguration._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIContextMenuConfiguration', iOS: (false, (13, 0, 0)));
+  }
+
+  /// Constructs a [UIContextMenuConfiguration] that points to the same underlying object as [other].
+  UIContextMenuConfiguration.castFrom(objc.ObjCObjectBase other)
+    : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIContextMenuConfiguration] that wraps the given raw object pointer.
+  UIContextMenuConfiguration.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
+}
+
 enum UIContextMenuInteractionCommitStyle {
   UIContextMenuInteractionCommitStyleDismiss(0),
   UIContextMenuInteractionCommitStylePop(1);
@@ -20886,6 +24191,27 @@ enum UIContextMenuInteractionAppearance {
     2 => UIContextMenuInteractionAppearanceCompact,
     _ => throw ArgumentError('Unknown value for UIContextMenuInteractionAppearance: $value'),
   };
+}
+
+/// WARNING: UIContextMenuInteraction is a stub. To generate bindings for this class, include
+/// UIContextMenuInteraction in your config's objc-interfaces list.
+///
+/// UIContextMenuInteraction
+class UIContextMenuInteraction extends objc.NSObject implements UIInteraction {
+  UIContextMenuInteraction._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIContextMenuInteraction', iOS: (false, (13, 0, 0)));
+  }
+
+  /// Constructs a [UIContextMenuInteraction] that points to the same underlying object as [other].
+  UIContextMenuInteraction.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIContextMenuInteraction] that wraps the given raw object pointer.
+  UIContextMenuInteraction.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
 }
 
 enum UIControlEvents {
@@ -20980,33 +24306,713 @@ enum UIControlContentHorizontalAlignment {
   };
 }
 
-enum UIControlState {
-  UIControlStateNormal(0),
-  UIControlStateHighlighted(1),
-  UIControlStateDisabled(2),
-  UIControlStateSelected(4),
-  UIControlStateFocused(8),
-  UIControlStateApplication(16711680),
-  UIControlStateReserved(4278190080);
-
-  final int value;
-  const UIControlState(this.value);
-
-  static UIControlState fromValue(int value) => switch (value) {
-    0 => UIControlStateNormal,
-    1 => UIControlStateHighlighted,
-    2 => UIControlStateDisabled,
-    4 => UIControlStateSelected,
-    8 => UIControlStateFocused,
-    16711680 => UIControlStateApplication,
-    4278190080 => UIControlStateReserved,
-    _ => throw ArgumentError('Unknown value for UIControlState: $value'),
-  };
+late final _class_UIControl = objc.getClass("UIControl");
+late final _sel_initWithFrame_primaryAction_ = objc.registerName("initWithFrame:primaryAction:");
+final _objc_msgSend_gxusyk = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          objc.CGRect,
+          ffi.Pointer<objc.ObjCObject>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        objc.CGRect,
+        ffi.Pointer<objc.ObjCObject>,
+      )
+    >();
+late final _sel_isHighlighted = objc.registerName("isHighlighted");
+late final _sel_setHighlighted_ = objc.registerName("setHighlighted:");
+late final _sel_contentVerticalAlignment = objc.registerName("contentVerticalAlignment");
+final _objc_msgSend_nqfjlo = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setContentVerticalAlignment_ = objc.registerName("setContentVerticalAlignment:");
+final _objc_msgSend_1jk7esa = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_contentHorizontalAlignment = objc.registerName("contentHorizontalAlignment");
+final _objc_msgSend_18109rm = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setContentHorizontalAlignment_ = objc.registerName("setContentHorizontalAlignment:");
+final _objc_msgSend_96rhcc = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_effectiveContentHorizontalAlignment = objc.registerName("effectiveContentHorizontalAlignment");
+late final _sel_state = objc.registerName("state");
+final _objc_msgSend_1as6oil = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.UnsignedLong Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_isTouchInside = objc.registerName("isTouchInside");
+late final _sel_beginTrackingWithTouch_withEvent_ = objc.registerName("beginTrackingWithTouch:withEvent:");
+late final _sel_continueTrackingWithTouch_withEvent_ = objc.registerName("continueTrackingWithTouch:withEvent:");
+late final _sel_endTrackingWithTouch_withEvent_ = objc.registerName("endTrackingWithTouch:withEvent:");
+late final _sel_cancelTrackingWithEvent_ = objc.registerName("cancelTrackingWithEvent:");
+late final _sel_addTarget_action_forControlEvents_ = objc.registerName("addTarget:action:forControlEvents:");
+final _objc_msgSend_1tj22xm = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        int,
+      )
+    >();
+late final _sel_removeTarget_action_forControlEvents_ = objc.registerName("removeTarget:action:forControlEvents:");
+late final _sel_addAction_forControlEvents_ = objc.registerName("addAction:forControlEvents:");
+final _objc_msgSend_10736wn = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.UnsignedLong,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>, int)
+    >();
+late final _sel_removeAction_forControlEvents_ = objc.registerName("removeAction:forControlEvents:");
+late final _sel_removeActionForIdentifier_forControlEvents_ = objc.registerName(
+  "removeActionForIdentifier:forControlEvents:",
+);
+late final _sel_allTargets = objc.registerName("allTargets");
+late final _sel_allControlEvents = objc.registerName("allControlEvents");
+final _objc_msgSend_61dbeh = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.UnsignedLong Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_actionsForTarget_forControlEvent_ = objc.registerName("actionsForTarget:forControlEvent:");
+final _objc_msgSend_364s2b = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.UnsignedLong,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        int,
+      )
+    >();
+void _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_fnPtrTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCObject> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCSelector> arg2,
+  int arg3,
+  ffi.Pointer<ffi.Bool> arg4,
+) => block.ref.target
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObject> arg0,
+          ffi.Pointer<objc.ObjCObject> arg1,
+          ffi.Pointer<objc.ObjCSelector> arg2,
+          ffi.UnsignedLong arg3,
+          ffi.Pointer<ffi.Bool> arg4,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        int,
+        ffi.Pointer<ffi.Bool>,
+      )
+    >()(arg0, arg1, arg2, arg3, arg4);
+ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_fnPtrCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCSelector>,
+            ffi.UnsignedLong,
+            ffi.Pointer<ffi.Bool>,
+          )
+        >(_ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_fnPtrTrampoline)
+        .cast();
+void _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_closureTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCObject> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCSelector> arg2,
+  int arg3,
+  ffi.Pointer<ffi.Bool> arg4,
+) =>
+    (objc.getBlockClosure(block)
+        as void Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          int,
+          ffi.Pointer<ffi.Bool>,
+        ))(arg0, arg1, arg2, arg3, arg4);
+ffi.Pointer<ffi.Void> _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_closureCallable =
+    ffi.Pointer.fromFunction<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCObject>,
+            ffi.Pointer<objc.ObjCSelector>,
+            ffi.UnsignedLong,
+            ffi.Pointer<ffi.Bool>,
+          )
+        >(_ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_closureTrampoline)
+        .cast();
+void _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_listenerTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCObject> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCSelector> arg2,
+  int arg3,
+  ffi.Pointer<ffi.Bool> arg4,
+) {
+  (objc.getBlockClosure(block)
+      as void Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        int,
+        ffi.Pointer<ffi.Bool>,
+      ))(arg0, arg1, arg2, arg3, arg4);
+  objc.objectRelease(block.cast());
 }
 
-/// WARNING: UIControl is a stub. To generate bindings for this class, include
-/// UIControl in your config's objc-interfaces list.
+ffi.NativeCallable<
+  ffi.Void Function(
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCSelector>,
+    ffi.UnsignedLong,
+    ffi.Pointer<ffi.Bool>,
+  )
+>
+_ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_listenerCallable =
+    ffi.NativeCallable<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCBlockImpl>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+          ffi.Pointer<ffi.Bool>,
+        )
+      >.listener(_ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_listenerTrampoline)
+      ..keepIsolateAlive = false;
+void _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_blockingTrampoline(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<ffi.Void> waiter,
+  ffi.Pointer<objc.ObjCObject> arg0,
+  ffi.Pointer<objc.ObjCObject> arg1,
+  ffi.Pointer<objc.ObjCSelector> arg2,
+  int arg3,
+  ffi.Pointer<ffi.Bool> arg4,
+) {
+  try {
+    (objc.getBlockClosure(block)
+        as void Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          int,
+          ffi.Pointer<ffi.Bool>,
+        ))(arg0, arg1, arg2, arg3, arg4);
+  } catch (e) {
+  } finally {
+    objc.signalWaiter(waiter);
+    objc.objectRelease(block.cast());
+  }
+}
+
+ffi.NativeCallable<
+  ffi.Void Function(
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<ffi.Void>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCSelector>,
+    ffi.UnsignedLong,
+    ffi.Pointer<ffi.Bool>,
+  )
+>
+_ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_blockingCallable =
+    ffi.NativeCallable<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCBlockImpl>,
+          ffi.Pointer<ffi.Void>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+          ffi.Pointer<ffi.Bool>,
+        )
+      >.isolateLocal(
+        _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_blockingTrampoline,
+      )
+      ..keepIsolateAlive = false;
+ffi.NativeCallable<
+  ffi.Void Function(
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<ffi.Void>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCObject>,
+    ffi.Pointer<objc.ObjCSelector>,
+    ffi.UnsignedLong,
+    ffi.Pointer<ffi.Bool>,
+  )
+>
+_ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_blockingListenerCallable =
+    ffi.NativeCallable<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCBlockImpl>,
+          ffi.Pointer<ffi.Void>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+          ffi.Pointer<ffi.Bool>,
+        )
+      >.listener(_ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_blockingTrampoline)
+      ..keepIsolateAlive = false;
+
+/// Construction methods for `objc.ObjCBlock<ffi.Void Function(UIAction?, ffi.Pointer<objc.ObjCObject>?, ffi.Pointer<objc.ObjCSelector>, ffi.UnsignedLong, ffi.Pointer<ffi.Bool>)>`.
+abstract final class ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<
+    ffi.Void Function(
+      UIAction?,
+      ffi.Pointer<objc.ObjCObject>?,
+      ffi.Pointer<objc.ObjCSelector>,
+      ffi.UnsignedLong,
+      ffi.Pointer<ffi.Bool>,
+    )
+  >
+  castFromPointer(ffi.Pointer<objc.ObjCBlockImpl> pointer, {bool retain = false, bool release = false}) =>
+      objc.ObjCBlock<
+        ffi.Void Function(
+          UIAction?,
+          ffi.Pointer<objc.ObjCObject>?,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+          ffi.Pointer<ffi.Bool>,
+        )
+      >(pointer, retain: retain, release: release);
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<
+    ffi.Void Function(
+      UIAction?,
+      ffi.Pointer<objc.ObjCObject>?,
+      ffi.Pointer<objc.ObjCSelector>,
+      ffi.UnsignedLong,
+      ffi.Pointer<ffi.Bool>,
+    )
+  >
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObject> arg0,
+          ffi.Pointer<objc.ObjCObject> arg1,
+          ffi.Pointer<objc.ObjCSelector> arg2,
+          ffi.UnsignedLong arg3,
+          ffi.Pointer<ffi.Bool> arg4,
+        )
+      >
+    >
+    ptr,
+  ) =>
+      objc.ObjCBlock<
+        ffi.Void Function(
+          UIAction?,
+          ffi.Pointer<objc.ObjCObject>?,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+          ffi.Pointer<ffi.Bool>,
+        )
+      >(
+        objc.newPointerBlock(
+          _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_fnPtrCallable,
+          ptr.cast(),
+        ),
+        retain: false,
+        release: true,
+      );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<
+    ffi.Void Function(
+      UIAction?,
+      ffi.Pointer<objc.ObjCObject>?,
+      ffi.Pointer<objc.ObjCSelector>,
+      ffi.UnsignedLong,
+      ffi.Pointer<ffi.Bool>,
+    )
+  >
+  fromFunction(
+    void Function(
+      UIAction?,
+      objc.ObjCObjectBase?,
+      ffi.Pointer<objc.ObjCSelector>,
+      UIControlEvents,
+      ffi.Pointer<ffi.Bool>,
+    )
+    fn, {
+    bool keepIsolateAlive = true,
+  }) =>
+      objc.ObjCBlock<
+        ffi.Void Function(
+          UIAction?,
+          ffi.Pointer<objc.ObjCObject>?,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+          ffi.Pointer<ffi.Bool>,
+        )
+      >(
+        objc.newClosureBlock(
+          _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_closureCallable,
+          (
+            ffi.Pointer<objc.ObjCObject> arg0,
+            ffi.Pointer<objc.ObjCObject> arg1,
+            ffi.Pointer<objc.ObjCSelector> arg2,
+            int arg3,
+            ffi.Pointer<ffi.Bool> arg4,
+          ) => fn(
+            arg0.address == 0 ? null : UIAction.castFromPointer(arg0, retain: true, release: true),
+            arg1.address == 0 ? null : objc.ObjCObjectBase(arg1, retain: true, release: true),
+            arg2,
+            UIControlEvents.fromValue(arg3),
+            arg4,
+          ),
+          keepIsolateAlive,
+        ),
+        retain: false,
+        release: true,
+      );
+
+  /// Creates a listener block from a Dart function.
+  ///
+  /// This is based on FFI's NativeCallable.listener, and has the same
+  /// capabilities and limitations. This block can be invoked from any thread,
+  /// but only supports void functions, and is not run synchronously. See
+  /// NativeCallable.listener for more details.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<
+    ffi.Void Function(
+      UIAction?,
+      ffi.Pointer<objc.ObjCObject>?,
+      ffi.Pointer<objc.ObjCSelector>,
+      ffi.UnsignedLong,
+      ffi.Pointer<ffi.Bool>,
+    )
+  >
+  listener(
+    void Function(
+      UIAction?,
+      objc.ObjCObjectBase?,
+      ffi.Pointer<objc.ObjCSelector>,
+      UIControlEvents,
+      ffi.Pointer<ffi.Bool>,
+    )
+    fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_listenerCallable.nativeFunction
+          .cast(),
+      (
+        ffi.Pointer<objc.ObjCObject> arg0,
+        ffi.Pointer<objc.ObjCObject> arg1,
+        ffi.Pointer<objc.ObjCSelector> arg2,
+        int arg3,
+        ffi.Pointer<ffi.Bool> arg4,
+      ) => fn(
+        arg0.address == 0 ? null : UIAction.castFromPointer(arg0, retain: false, release: true),
+        arg1.address == 0 ? null : objc.ObjCObjectBase(arg1, retain: false, release: true),
+        arg2,
+        UIControlEvents.fromValue(arg3),
+        arg4,
+      ),
+      keepIsolateAlive,
+    );
+    final wrapper = _UIKit_wrapListenerBlock_1cxqo1i(raw);
+    objc.objectRelease(raw.cast());
+    return objc.ObjCBlock<
+      ffi.Void Function(
+        UIAction?,
+        ffi.Pointer<objc.ObjCObject>?,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.UnsignedLong,
+        ffi.Pointer<ffi.Bool>,
+      )
+    >(wrapper, retain: false, release: true);
+  }
+
+  /// Creates a blocking block from a Dart function.
+  ///
+  /// This callback can be invoked from any native thread, and will block the
+  /// caller until the callback is handled by the Dart isolate that created
+  /// the block. Async functions are not supported.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
+  /// has shut down, and the block is invoked by native code, it may block
+  /// indefinitely, or have other undefined behavior.
+  static objc.ObjCBlock<
+    ffi.Void Function(
+      UIAction?,
+      ffi.Pointer<objc.ObjCObject>?,
+      ffi.Pointer<objc.ObjCSelector>,
+      ffi.UnsignedLong,
+      ffi.Pointer<ffi.Bool>,
+    )
+  >
+  blocking(
+    void Function(
+      UIAction?,
+      objc.ObjCObjectBase?,
+      ffi.Pointer<objc.ObjCSelector>,
+      UIControlEvents,
+      ffi.Pointer<ffi.Bool>,
+    )
+    fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_blockingCallable.nativeFunction
+          .cast(),
+      (
+        ffi.Pointer<objc.ObjCObject> arg0,
+        ffi.Pointer<objc.ObjCObject> arg1,
+        ffi.Pointer<objc.ObjCSelector> arg2,
+        int arg3,
+        ffi.Pointer<ffi.Bool> arg4,
+      ) => fn(
+        arg0.address == 0 ? null : UIAction.castFromPointer(arg0, retain: false, release: true),
+        arg1.address == 0 ? null : objc.ObjCObjectBase(arg1, retain: false, release: true),
+        arg2,
+        UIControlEvents.fromValue(arg3),
+        arg4,
+      ),
+      keepIsolateAlive,
+    );
+    final rawListener = objc.newClosureBlock(
+      _ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_blockingListenerCallable
+          .nativeFunction
+          .cast(),
+      (
+        ffi.Pointer<objc.ObjCObject> arg0,
+        ffi.Pointer<objc.ObjCObject> arg1,
+        ffi.Pointer<objc.ObjCSelector> arg2,
+        int arg3,
+        ffi.Pointer<ffi.Bool> arg4,
+      ) => fn(
+        arg0.address == 0 ? null : UIAction.castFromPointer(arg0, retain: false, release: true),
+        arg1.address == 0 ? null : objc.ObjCObjectBase(arg1, retain: false, release: true),
+        arg2,
+        UIControlEvents.fromValue(arg3),
+        arg4,
+      ),
+      keepIsolateAlive,
+    );
+    final wrapper = _UIKit_wrapBlockingBlock_1cxqo1i(raw, rawListener, objc.objCContext);
+    objc.objectRelease(raw.cast());
+    objc.objectRelease(rawListener.cast());
+    return objc.ObjCBlock<
+      ffi.Void Function(
+        UIAction?,
+        ffi.Pointer<objc.ObjCObject>?,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.UnsignedLong,
+        ffi.Pointer<ffi.Bool>,
+      )
+    >(wrapper, retain: false, release: true);
+  }
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Void Function(UIAction?, ffi.Pointer<objc.ObjCObject>?, ffi.Pointer<objc.ObjCSelector>, ffi.UnsignedLong, ffi.Pointer<ffi.Bool>)>`.
+extension ObjCBlock_ffiVoid_UIAction_objcObjCObject_objcObjCSelector_UIControlEvents_bool_CallExtension
+    on
+        objc.ObjCBlock<
+          ffi.Void Function(
+            UIAction?,
+            ffi.Pointer<objc.ObjCObject>?,
+            ffi.Pointer<objc.ObjCSelector>,
+            ffi.UnsignedLong,
+            ffi.Pointer<ffi.Bool>,
+          )
+        > {
+  void call(
+    UIAction? arg0,
+    objc.ObjCObjectBase? arg1,
+    ffi.Pointer<objc.ObjCSelector> arg2,
+    UIControlEvents arg3,
+    ffi.Pointer<ffi.Bool> arg4,
+  ) => ref.pointer.ref.invoke
+      .cast<
+        ffi.NativeFunction<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl> block,
+            ffi.Pointer<objc.ObjCObject> arg0,
+            ffi.Pointer<objc.ObjCObject> arg1,
+            ffi.Pointer<objc.ObjCSelector> arg2,
+            ffi.UnsignedLong arg3,
+            ffi.Pointer<ffi.Bool> arg4,
+          )
+        >
+      >()
+      .asFunction<
+        void Function(
+          ffi.Pointer<objc.ObjCBlockImpl>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          int,
+          ffi.Pointer<ffi.Bool>,
+        )
+      >()(ref.pointer, arg0?.ref.pointer ?? ffi.nullptr, arg1?.ref.pointer ?? ffi.nullptr, arg2, arg3.value, arg4);
+}
+
+late final _sel_enumerateEventHandlers_ = objc.registerName("enumerateEventHandlers:");
+late final _sel_sendAction_to_forEvent_ = objc.registerName("sendAction:to:forEvent:");
+final _objc_msgSend_lzbvjm = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCObject>,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCObject>,
+      )
+    >();
+late final _sel_sendAction_ = objc.registerName("sendAction:");
+late final _sel_sendActionsForControlEvents_ = objc.registerName("sendActionsForControlEvents:");
+final _objc_msgSend_n08htp = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.UnsignedLong)
+      >
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_contextMenuInteraction = objc.registerName("contextMenuInteraction");
+late final _sel_isContextMenuInteractionEnabled = objc.registerName("isContextMenuInteractionEnabled");
+late final _sel_setContextMenuInteractionEnabled_ = objc.registerName("setContextMenuInteractionEnabled:");
+late final _sel_showsMenuAsPrimaryAction = objc.registerName("showsMenuAsPrimaryAction");
+late final _sel_setShowsMenuAsPrimaryAction_ = objc.registerName("setShowsMenuAsPrimaryAction:");
+late final _sel_menuAttachmentPointForConfiguration_ = objc.registerName("menuAttachmentPointForConfiguration:");
+final _objc_msgSend_1mpyy6y = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        objc.CGPoint Function(
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+        )
+      >
+    >()
+    .asFunction<
+      objc.CGPoint Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Pointer<objc.ObjCObject>)
+    >();
+final _objc_msgSend_1mpyy6yStret = objc.msgSendStretPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.CGPoint>,
+          ffi.Pointer<objc.ObjCObject>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObject>,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(
+        ffi.Pointer<objc.CGPoint>,
+        ffi.Pointer<objc.ObjCObject>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObject>,
+      )
+    >();
+late final _sel_toolTip = objc.registerName("toolTip");
+late final _sel_setToolTip_ = objc.registerName("setToolTip:");
+
+/// WARNING: UIToolTipInteraction is a stub. To generate bindings for this class, include
+/// UIToolTipInteraction in your config's objc-interfaces list.
 ///
+/// UIToolTipInteraction
+class UIToolTipInteraction extends objc.ObjCObjectBase {
+  UIToolTipInteraction._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super(pointer, retain: retain, release: release);
+
+  /// Constructs a [UIToolTipInteraction] that points to the same underlying object as [other].
+  UIToolTipInteraction.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIToolTipInteraction] that wraps the given raw object pointer.
+  UIToolTipInteraction.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+late final _sel_toolTipInteraction = objc.registerName("toolTipInteraction");
+
 /// UIControl
 class UIControl extends UIView {
   UIControl._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
@@ -21020,6 +25026,413 @@ class UIControl extends UIView {
   /// Constructs a [UIControl] that wraps the given raw object pointer.
   UIControl.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
     : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UIControl].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIControl);
+  }
+
+  /// layerClass
+  static objc.ObjCObjectBase getLayerClass() {
+    objc.checkOsVersionInternal('UIControl.layerClass', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UIControl, _sel_layerClass);
+    return objc.ObjCObjectBase(_ret, retain: true, release: true);
+  }
+
+  /// userInterfaceLayoutDirectionForSemanticContentAttribute:
+  static UIUserInterfaceLayoutDirection userInterfaceLayoutDirectionForSemanticContentAttribute(
+    UISemanticContentAttribute attribute,
+  ) {
+    objc.checkOsVersionInternal(
+      'UIControl.userInterfaceLayoutDirectionForSemanticContentAttribute:',
+      iOS: (false, (9, 0, 0)),
+    );
+    final _ret = _objc_msgSend_racczx(
+      _class_UIControl,
+      _sel_userInterfaceLayoutDirectionForSemanticContentAttribute_,
+      attribute.value,
+    );
+    return UIUserInterfaceLayoutDirection.fromValue(_ret);
+  }
+
+  /// userInterfaceLayoutDirectionForSemanticContentAttribute:relativeToLayoutDirection:
+  static UIUserInterfaceLayoutDirection userInterfaceLayoutDirectionForSemanticContentAttribute$1(
+    UISemanticContentAttribute semanticContentAttribute, {
+    required UIUserInterfaceLayoutDirection relativeToLayoutDirection,
+  }) {
+    objc.checkOsVersionInternal(
+      'UIControl.userInterfaceLayoutDirectionForSemanticContentAttribute:relativeToLayoutDirection:',
+      iOS: (false, (10, 0, 0)),
+    );
+    final _ret = _objc_msgSend_tz4p54(
+      _class_UIControl,
+      _sel_userInterfaceLayoutDirectionForSemanticContentAttribute_relativeToLayoutDirection_,
+      semanticContentAttribute.value,
+      relativeToLayoutDirection.value,
+    );
+    return UIUserInterfaceLayoutDirection.fromValue(_ret);
+  }
+}
+
+extension UIControl$Methods on UIControl {
+  /// initWithFrame:
+  // UIControl initWithFrame(objc.CGRect frame) {
+  //   objc.checkOsVersionInternal('UIControl.initWithFrame:', iOS: (false, (2, 0, 0)));
+  //   final _ret = _objc_msgSend_15yz4e6(this.ref.retainAndReturnPointer(), _sel_initWithFrame_, frame);
+  //   return UIControl.castFromPointer(_ret, retain: false, release: true);
+  // }
+
+  /// initWithCoder:
+  UIControl? initWithCoder(objc.NSCoder coder) {
+    objc.checkOsVersionInternal('UIControl.initWithCoder:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UIControl.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Initializes the control and adds primaryAction for the UIControlEventPrimaryActionTriggered control event. Subclasses of UIControl may alter or add behaviors around the usage of primaryAction, see subclass documentation of this initializer for additional information.
+  UIControl initWithFrame(objc.CGRect frame, {UIAction? primaryAction}) {
+    objc.checkOsVersionInternal('UIControl.initWithFrame:primaryAction:', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_gxusyk(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithFrame_primaryAction_,
+      frame,
+      primaryAction?.ref.pointer ?? ffi.nullptr,
+    );
+    return UIControl.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// isEnabled
+  bool get enabled {
+    objc.checkOsVersionInternal('UIControl.isEnabled', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isEnabled);
+  }
+
+  /// setEnabled:
+  set enabled(bool value) {
+    objc.checkOsVersionInternal('UIControl.setEnabled:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setEnabled_, value);
+  }
+
+  /// isSelected
+  bool get selected {
+    objc.checkOsVersionInternal('UIControl.isSelected', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isSelected);
+  }
+
+  /// setSelected:
+  set selected(bool value) {
+    objc.checkOsVersionInternal('UIControl.setSelected:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setSelected_, value);
+  }
+
+  /// isHighlighted
+  bool get highlighted {
+    objc.checkOsVersionInternal('UIControl.isHighlighted', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isHighlighted);
+  }
+
+  /// setHighlighted:
+  set highlighted(bool value) {
+    objc.checkOsVersionInternal('UIControl.setHighlighted:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setHighlighted_, value);
+  }
+
+  /// contentVerticalAlignment
+  UIControlContentVerticalAlignment get contentVerticalAlignment {
+    objc.checkOsVersionInternal('UIControl.contentVerticalAlignment', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_nqfjlo(this.ref.pointer, _sel_contentVerticalAlignment);
+    return UIControlContentVerticalAlignment.fromValue(_ret);
+  }
+
+  /// setContentVerticalAlignment:
+  set contentVerticalAlignment(UIControlContentVerticalAlignment value) {
+    objc.checkOsVersionInternal('UIControl.setContentVerticalAlignment:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1jk7esa(this.ref.pointer, _sel_setContentVerticalAlignment_, value.value);
+  }
+
+  /// contentHorizontalAlignment
+  UIControlContentHorizontalAlignment get contentHorizontalAlignment {
+    objc.checkOsVersionInternal('UIControl.contentHorizontalAlignment', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_18109rm(this.ref.pointer, _sel_contentHorizontalAlignment);
+    return UIControlContentHorizontalAlignment.fromValue(_ret);
+  }
+
+  /// setContentHorizontalAlignment:
+  set contentHorizontalAlignment(UIControlContentHorizontalAlignment value) {
+    objc.checkOsVersionInternal('UIControl.setContentHorizontalAlignment:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_96rhcc(this.ref.pointer, _sel_setContentHorizontalAlignment_, value.value);
+  }
+
+  /// effectiveContentHorizontalAlignment
+  UIControlContentHorizontalAlignment get effectiveContentHorizontalAlignment {
+    objc.checkOsVersionInternal('UIControl.effectiveContentHorizontalAlignment', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_18109rm(this.ref.pointer, _sel_effectiveContentHorizontalAlignment);
+    return UIControlContentHorizontalAlignment.fromValue(_ret);
+  }
+
+  /// state
+  UIControlState get state {
+    objc.checkOsVersionInternal('UIControl.state', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_1as6oil(this.ref.pointer, _sel_state);
+    return UIControlState.fromValue(_ret);
+  }
+
+  /// isTracking
+  bool get tracking {
+    objc.checkOsVersionInternal('UIControl.isTracking', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isTracking);
+  }
+
+  /// isTouchInside
+  bool get touchInside {
+    objc.checkOsVersionInternal('UIControl.isTouchInside', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isTouchInside);
+  }
+
+  /// beginTrackingWithTouch:withEvent:
+  bool beginTrackingWithTouch(UITouch touch, {UIEvent? withEvent}) {
+    objc.checkOsVersionInternal('UIControl.beginTrackingWithTouch:withEvent:', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_1lsax7n(
+      this.ref.pointer,
+      _sel_beginTrackingWithTouch_withEvent_,
+      touch.ref.pointer,
+      withEvent?.ref.pointer ?? ffi.nullptr,
+    );
+  }
+
+  /// continueTrackingWithTouch:withEvent:
+  bool continueTrackingWithTouch(UITouch touch, {UIEvent? withEvent}) {
+    objc.checkOsVersionInternal('UIControl.continueTrackingWithTouch:withEvent:', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_1lsax7n(
+      this.ref.pointer,
+      _sel_continueTrackingWithTouch_withEvent_,
+      touch.ref.pointer,
+      withEvent?.ref.pointer ?? ffi.nullptr,
+    );
+  }
+
+  /// endTrackingWithTouch:withEvent:
+  void endTrackingWithTouch(UITouch? touch, {UIEvent? withEvent}) {
+    objc.checkOsVersionInternal('UIControl.endTrackingWithTouch:withEvent:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_pfv6jd(
+      this.ref.pointer,
+      _sel_endTrackingWithTouch_withEvent_,
+      touch?.ref.pointer ?? ffi.nullptr,
+      withEvent?.ref.pointer ?? ffi.nullptr,
+    );
+  }
+
+  /// cancelTrackingWithEvent:
+  void cancelTrackingWithEvent(UIEvent? event) {
+    objc.checkOsVersionInternal('UIControl.cancelTrackingWithEvent:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_cancelTrackingWithEvent_, event?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// addTarget:action:forControlEvents:
+  void addTarget(
+    objc.ObjCObjectBase? target, {
+    required ffi.Pointer<objc.ObjCSelector> action,
+    required UIControlEvents forControlEvents,
+  }) {
+    objc.checkOsVersionInternal('UIControl.addTarget:action:forControlEvents:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1tj22xm(
+      this.ref.pointer,
+      _sel_addTarget_action_forControlEvents_,
+      target?.ref.pointer ?? ffi.nullptr,
+      action,
+      forControlEvents.value,
+    );
+  }
+
+  /// removeTarget:action:forControlEvents:
+  void removeTarget(
+    objc.ObjCObjectBase? target, {
+    required ffi.Pointer<objc.ObjCSelector> action,
+    required UIControlEvents forControlEvents,
+  }) {
+    objc.checkOsVersionInternal('UIControl.removeTarget:action:forControlEvents:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1tj22xm(
+      this.ref.pointer,
+      _sel_removeTarget_action_forControlEvents_,
+      target?.ref.pointer ?? ffi.nullptr,
+      action,
+      forControlEvents.value,
+    );
+  }
+
+  /// Adds the UIAction to a given event. UIActions are uniqued based on their identifier, and subsequent actions with the same identifier replace previously added actions. You may add multiple UIActions for corresponding controlEvents, and you may add the same action to multiple controlEvents.
+  void addAction(UIAction action, {required UIControlEvents forControlEvents}) {
+    objc.checkOsVersionInternal('UIControl.addAction:forControlEvents:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_10736wn(
+      this.ref.pointer,
+      _sel_addAction_forControlEvents_,
+      action.ref.pointer,
+      forControlEvents.value,
+    );
+  }
+
+  /// Removes the action from the set of passed control events.
+  void removeAction(UIAction action, {required UIControlEvents forControlEvents}) {
+    objc.checkOsVersionInternal('UIControl.removeAction:forControlEvents:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_10736wn(
+      this.ref.pointer,
+      _sel_removeAction_forControlEvents_,
+      action.ref.pointer,
+      forControlEvents.value,
+    );
+  }
+
+  /// Removes the action with the provided identifier from the set of passed control events.
+  void removeActionForIdentifier(objc.NSString actionIdentifier, {required UIControlEvents forControlEvents}) {
+    objc.checkOsVersionInternal('UIControl.removeActionForIdentifier:forControlEvents:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_10736wn(
+      this.ref.pointer,
+      _sel_removeActionForIdentifier_forControlEvents_,
+      actionIdentifier.ref.pointer,
+      forControlEvents.value,
+    );
+  }
+
+  /// allTargets
+  objc.NSSet get allTargets {
+    objc.checkOsVersionInternal('UIControl.allTargets', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_allTargets);
+    return objc.NSSet.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// allControlEvents
+  UIControlEvents get allControlEvents {
+    objc.checkOsVersionInternal('UIControl.allControlEvents', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_61dbeh(this.ref.pointer, _sel_allControlEvents);
+    return UIControlEvents.fromValue(_ret);
+  }
+
+  /// actionsForTarget:forControlEvent:
+  objc.NSArray? actionsForTarget(objc.ObjCObjectBase? target, {required UIControlEvents forControlEvent}) {
+    objc.checkOsVersionInternal('UIControl.actionsForTarget:forControlEvent:', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_364s2b(
+      this.ref.pointer,
+      _sel_actionsForTarget_forControlEvent_,
+      target?.ref.pointer ?? ffi.nullptr,
+      forControlEvent.value,
+    );
+    return _ret.address == 0 ? null : objc.NSArray.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Iterate over the event handlers installed on this control at the time this method is called. For each call, either actionHandler or action will be non-nil. controlEvents is always non-zero. Setting *stop to YES will terminate the enumeration early. It is legal to manipulate the control's event handlers within the block.
+  void enumerateEventHandlers(
+    objc.ObjCBlock<
+      ffi.Void Function(
+        UIAction?,
+        ffi.Pointer<objc.ObjCObject>?,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.UnsignedLong,
+        ffi.Pointer<ffi.Bool>,
+      )
+    >
+    iterator,
+  ) {
+    objc.checkOsVersionInternal('UIControl.enumerateEventHandlers:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_f167m6(this.ref.pointer, _sel_enumerateEventHandlers_, iterator.ref.pointer);
+  }
+
+  /// Dispatch the target-action pair. This method is called repeatedly by -sendActionsForControlEvents: and is a point at which you can observe or override behavior.
+  void sendAction(ffi.Pointer<objc.ObjCSelector> action, {objc.ObjCObjectBase? to, UIEvent? forEvent}) {
+    objc.checkOsVersionInternal('UIControl.sendAction:to:forEvent:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_lzbvjm(
+      this.ref.pointer,
+      _sel_sendAction_to_forEvent_,
+      action,
+      to?.ref.pointer ?? ffi.nullptr,
+      forEvent?.ref.pointer ?? ffi.nullptr,
+    );
+  }
+
+  /// Like -sendAction:to:forEvent:, this method is called by -sendActionsForControlEvents:. You may override this method to observe or modify behavior. If you override this method, you should call super precisely once to dispatch the action, or not call super to suppress sending that action.
+  void sendAction$1(UIAction action) {
+    objc.checkOsVersionInternal('UIControl.sendAction:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_sendAction_, action.ref.pointer);
+  }
+
+  /// send all actions associated with the given control events
+  void sendActionsForControlEvents(UIControlEvents controlEvents) {
+    objc.checkOsVersionInternal('UIControl.sendActionsForControlEvents:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_n08htp(this.ref.pointer, _sel_sendActionsForControlEvents_, controlEvents.value);
+  }
+
+  /// Returns a UIContextMenuInteraction with this control set as its delegate. Before constructing the UIContextMenuInteraction, UIControl verifies 'self' is a viable delegate. See 'Implementing UIControl Menus' below for more details.
+  UIContextMenuInteraction? get contextMenuInteraction {
+    objc.checkOsVersionInternal('UIControl.contextMenuInteraction', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_contextMenuInteraction);
+    return _ret.address == 0 ? null : UIContextMenuInteraction.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Specifies if the context menu interaction is enabled. NO by default.
+  bool get contextMenuInteractionEnabled {
+    objc.checkOsVersionInternal('UIControl.isContextMenuInteractionEnabled', iOS: (false, (14, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isContextMenuInteractionEnabled);
+  }
+
+  /// Specifies if the context menu interaction is enabled. NO by default.
+  set contextMenuInteractionEnabled(bool value) {
+    objc.checkOsVersionInternal('UIControl.setContextMenuInteractionEnabled:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setContextMenuInteractionEnabled_, value);
+  }
+
+  /// If the contextMenuInteraction is the primary action of the control, invoked on touch-down. NO by default.
+  bool get showsMenuAsPrimaryAction {
+    objc.checkOsVersionInternal('UIControl.showsMenuAsPrimaryAction', iOS: (false, (14, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_showsMenuAsPrimaryAction);
+  }
+
+  /// If the contextMenuInteraction is the primary action of the control, invoked on touch-down. NO by default.
+  set showsMenuAsPrimaryAction(bool value) {
+    objc.checkOsVersionInternal('UIControl.setShowsMenuAsPrimaryAction:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setShowsMenuAsPrimaryAction_, value);
+  }
+
+  /// Return a point in this control's coordinate space to which to attach the given configuration's menu.
+  objc.CGPoint menuAttachmentPointForConfiguration(UIContextMenuConfiguration configuration) {
+    objc.checkOsVersionInternal('UIControl.menuAttachmentPointForConfiguration:', iOS: (false, (14, 0, 0)));
+    final _ptr = pkg_ffi.calloc<objc.CGPoint>();
+    objc.useMsgSendVariants
+        ? _objc_msgSend_1mpyy6yStret(
+            _ptr,
+            this.ref.pointer,
+            _sel_menuAttachmentPointForConfiguration_,
+            configuration.ref.pointer,
+          )
+        : _ptr.ref = _objc_msgSend_1mpyy6y(
+            this.ref.pointer,
+            _sel_menuAttachmentPointForConfiguration_,
+            configuration.ref.pointer,
+          );
+    final _finalizable = _ptr.cast<ffi.Uint8>().asTypedList(
+      ffi.sizeOf<objc.CGPoint>(),
+      finalizer: pkg_ffi.calloc.nativeFree,
+    );
+    return ffi.Struct.create<objc.CGPoint>(_finalizable);
+  }
+
+  /// Assigning a value to this property causes the tool tip to be displayed for the view. Setting the property to nil cancels the display of the tool tip for the view.
+  objc.NSString? get toolTip {
+    objc.checkOsVersionInternal('UIControl.toolTip', iOS: (false, (15, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_toolTip);
+    return _ret.address == 0 ? null : objc.NSString.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// Assigning a value to this property causes the tool tip to be displayed for the view. Setting the property to nil cancels the display of the tool tip for the view.
+  set toolTip(objc.NSString? value) {
+    objc.checkOsVersionInternal('UIControl.setToolTip:', iOS: (false, (15, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setToolTip_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// Returns the control's default UIToolTipInteraction.
+  UIToolTipInteraction? get toolTipInteraction {
+    objc.checkOsVersionInternal('UIControl.toolTipInteraction', iOS: (false, (15, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_toolTipInteraction);
+    return _ret.address == 0 ? null : UIToolTipInteraction.castFromPointer(_ret, retain: true, release: true);
+  }
 }
 
 enum NSWritingDirection {
@@ -22959,8 +27372,6 @@ interface class UIApplicationDelegate extends objc.ObjCProtocolBase implements o
     : this._(other, retain: retain, release: release);
 }
 
-late final _sel_delegate = objc.registerName("delegate");
-late final _sel_setDelegate_ = objc.registerName("setDelegate:");
 late final _sel_beginIgnoringInteractionEvents = objc.registerName("beginIgnoringInteractionEvents");
 late final _sel_endIgnoringInteractionEvents = objc.registerName("endIgnoringInteractionEvents");
 late final _sel_isIgnoringInteractionEvents = objc.registerName("isIgnoringInteractionEvents");
@@ -23123,9 +27534,11 @@ class UISceneSession extends objc.ObjCObjectBase {
 /// UISceneActivationRequestOptions in your config's objc-interfaces list.
 ///
 /// UISceneActivationRequestOptions
-class UISceneActivationRequestOptions extends objc.ObjCObjectBase {
+class UISceneActivationRequestOptions extends objc.NSObject {
   UISceneActivationRequestOptions._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super(pointer, retain: retain, release: release);
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UISceneActivationRequestOptions', iOS: (false, (13, 0, 0)));
+  }
 
   /// Constructs a [UISceneActivationRequestOptions] that points to the same underlying object as [other].
   UISceneActivationRequestOptions.castFrom(objc.ObjCObjectBase other)
@@ -23340,9 +27753,11 @@ final _objc_msgSend_m7tls4 = objc.msgSendPointer
 /// UISceneDestructionRequestOptions in your config's objc-interfaces list.
 ///
 /// UISceneDestructionRequestOptions
-class UISceneDestructionRequestOptions extends objc.ObjCObjectBase {
+class UISceneDestructionRequestOptions extends objc.NSObject {
   UISceneDestructionRequestOptions._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
-    : super(pointer, retain: retain, release: release);
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UISceneDestructionRequestOptions', iOS: (false, (13, 0, 0)));
+  }
 
   /// Constructs a [UISceneDestructionRequestOptions] that points to the same underlying object as [other].
   UISceneDestructionRequestOptions.castFrom(objc.ObjCObjectBase other)
@@ -23766,23 +28181,343 @@ extension UIApplication$Methods on UIApplication {
     final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
     return UIApplication.castFromPointer(_ret, retain: false, release: true);
   }
+}
 
-  /// self
-  UIApplication self$1() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_self);
-    return UIApplication.castFromPointer(_ret, retain: true, release: true);
+enum UISceneCollectionJoinBehavior {
+  UISceneCollectionJoinBehaviorAutomatic(0),
+  UISceneCollectionJoinBehaviorPreferred(1),
+  UISceneCollectionJoinBehaviorDisallowed(2),
+  UISceneCollectionJoinBehaviorPreferredWithoutActivating(3);
+
+  final int value;
+  const UISceneCollectionJoinBehavior(this.value);
+
+  static UISceneCollectionJoinBehavior fromValue(int value) => switch (value) {
+    0 => UISceneCollectionJoinBehaviorAutomatic,
+    1 => UISceneCollectionJoinBehaviorPreferred,
+    2 => UISceneCollectionJoinBehaviorDisallowed,
+    3 => UISceneCollectionJoinBehaviorPreferredWithoutActivating,
+    _ => throw ArgumentError('Unknown value for UISceneCollectionJoinBehavior: $value'),
+  };
+}
+
+enum NSMenuPresentationStyle {
+  NSMenuPresentationStyleRegular(0),
+  NSMenuPresentationStylePalette(1);
+
+  final int value;
+  const NSMenuPresentationStyle(this.value);
+
+  static NSMenuPresentationStyle fromValue(int value) => switch (value) {
+    0 => NSMenuPresentationStyleRegular,
+    1 => NSMenuPresentationStylePalette,
+    _ => throw ArgumentError('Unknown value for NSMenuPresentationStyle: $value'),
+  };
+}
+
+enum NSMenuSelectionMode {
+  NSMenuSelectionModeAutomatic(0),
+  NSMenuSelectionModeSelectOne(1),
+  NSMenuSelectionModeSelectAny(2);
+
+  final int value;
+  const NSMenuSelectionMode(this.value);
+
+  static NSMenuSelectionMode fromValue(int value) => switch (value) {
+    0 => NSMenuSelectionModeAutomatic,
+    1 => NSMenuSelectionModeSelectOne,
+    2 => NSMenuSelectionModeSelectAny,
+    _ => throw ArgumentError('Unknown value for NSMenuSelectionMode: $value'),
+  };
+}
+
+enum NSMenuProperties {
+  NSMenuPropertyItemTitle(1),
+  NSMenuPropertyItemAttributedTitle(2),
+  NSMenuPropertyItemKeyEquivalent(4),
+  NSMenuPropertyItemImage(8),
+  NSMenuPropertyItemEnabled(16),
+  NSMenuPropertyItemAccessibilityDescription(32);
+
+  final int value;
+  const NSMenuProperties(this.value);
+
+  static NSMenuProperties fromValue(int value) => switch (value) {
+    1 => NSMenuPropertyItemTitle,
+    2 => NSMenuPropertyItemAttributedTitle,
+    4 => NSMenuPropertyItemKeyEquivalent,
+    8 => NSMenuPropertyItemImage,
+    16 => NSMenuPropertyItemEnabled,
+    32 => NSMenuPropertyItemAccessibilityDescription,
+    _ => throw ArgumentError('Unknown value for NSMenuProperties: $value'),
+  };
+}
+
+enum NSToolbarDisplayMode {
+  NSToolbarDisplayModeDefault(0),
+  NSToolbarDisplayModeIconAndLabel(1),
+  NSToolbarDisplayModeIconOnly(2),
+  NSToolbarDisplayModeLabelOnly(3);
+
+  final int value;
+  const NSToolbarDisplayMode(this.value);
+
+  static NSToolbarDisplayMode fromValue(int value) => switch (value) {
+    0 => NSToolbarDisplayModeDefault,
+    1 => NSToolbarDisplayModeIconAndLabel,
+    2 => NSToolbarDisplayModeIconOnly,
+    3 => NSToolbarDisplayModeLabelOnly,
+    _ => throw ArgumentError('Unknown value for NSToolbarDisplayMode: $value'),
+  };
+}
+
+enum NSToolbarSizeMode {
+  NSToolbarSizeModeDefault(0),
+  NSToolbarSizeModeRegular(1),
+  NSToolbarSizeModeSmall(2);
+
+  final int value;
+  const NSToolbarSizeMode(this.value);
+
+  static NSToolbarSizeMode fromValue(int value) => switch (value) {
+    0 => NSToolbarSizeModeDefault,
+    1 => NSToolbarSizeModeRegular,
+    2 => NSToolbarSizeModeSmall,
+    _ => throw ArgumentError('Unknown value for NSToolbarSizeMode: $value'),
+  };
+}
+
+/// WARNING: NSToolbar is a stub. To generate bindings for this class, include
+/// NSToolbar in your config's objc-interfaces list.
+///
+/// NSToolbar
+class NSToolbar extends objc.NSObject {
+  NSToolbar._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('NSToolbar', iOS: (false, (13, 0, 0)));
   }
 
-  /// retain
-  UIApplication retain() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_retain);
-    return UIApplication.castFromPointer(_ret, retain: true, release: true);
+  /// Constructs a [NSToolbar] that points to the same underlying object as [other].
+  NSToolbar.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [NSToolbar] that wraps the given raw object pointer.
+  NSToolbar.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+}
+
+enum NSToolbarItemStyle {
+  NSToolbarItemStylePlain(0),
+  NSToolbarItemStyleProminent(1);
+
+  final int value;
+  const NSToolbarItemStyle(this.value);
+
+  static NSToolbarItemStyle fromValue(int value) => switch (value) {
+    0 => NSToolbarItemStylePlain,
+    1 => NSToolbarItemStyleProminent,
+    _ => throw ArgumentError('Unknown value for NSToolbarItemStyle: $value'),
+  };
+}
+
+enum UITitlebarSeparatorStyle {
+  UITitlebarSeparatorStyleAutomatic(0),
+  UITitlebarSeparatorStyleNone(1),
+  UITitlebarSeparatorStyleLine(2),
+  UITitlebarSeparatorStyleShadow(3);
+
+  final int value;
+  const UITitlebarSeparatorStyle(this.value);
+
+  static UITitlebarSeparatorStyle fromValue(int value) => switch (value) {
+    0 => UITitlebarSeparatorStyleAutomatic,
+    1 => UITitlebarSeparatorStyleNone,
+    2 => UITitlebarSeparatorStyleLine,
+    3 => UITitlebarSeparatorStyleShadow,
+    _ => throw ArgumentError('Unknown value for UITitlebarSeparatorStyle: $value'),
+  };
+}
+
+enum UITitlebarTitleVisibility {
+  UITitlebarTitleVisibilityVisible(0),
+  UITitlebarTitleVisibilityHidden(1);
+
+  final int value;
+  const UITitlebarTitleVisibility(this.value);
+
+  static UITitlebarTitleVisibility fromValue(int value) => switch (value) {
+    0 => UITitlebarTitleVisibilityVisible,
+    1 => UITitlebarTitleVisibilityHidden,
+    _ => throw ArgumentError('Unknown value for UITitlebarTitleVisibility: $value'),
+  };
+}
+
+enum UITitlebarToolbarStyle {
+  UITitlebarToolbarStyleAutomatic(0),
+  UITitlebarToolbarStyleExpanded(1),
+  UITitlebarToolbarStylePreference(2),
+  UITitlebarToolbarStyleUnified(3),
+  UITitlebarToolbarStyleUnifiedCompact(4);
+
+  final int value;
+  const UITitlebarToolbarStyle(this.value);
+
+  static UITitlebarToolbarStyle fromValue(int value) => switch (value) {
+    0 => UITitlebarToolbarStyleAutomatic,
+    1 => UITitlebarToolbarStyleExpanded,
+    2 => UITitlebarToolbarStylePreference,
+    3 => UITitlebarToolbarStyleUnified,
+    4 => UITitlebarToolbarStyleUnifiedCompact,
+    _ => throw ArgumentError('Unknown value for UITitlebarToolbarStyle: $value'),
+  };
+}
+
+late final _class_UITitlebar = objc.getClass("UITitlebar");
+late final _sel_titleVisibility = objc.registerName("titleVisibility");
+final _objc_msgSend_1w8h4wm = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setTitleVisibility_ = objc.registerName("setTitleVisibility:");
+final _objc_msgSend_91112w = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_toolbarStyle = objc.registerName("toolbarStyle");
+final _objc_msgSend_1p2m5do = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setToolbarStyle_ = objc.registerName("setToolbarStyle:");
+final _objc_msgSend_jgznzi = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_separatorStyle = objc.registerName("separatorStyle");
+final _objc_msgSend_15x21aw = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setSeparatorStyle_ = objc.registerName("setSeparatorStyle:");
+final _objc_msgSend_rbhdpu = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_setToolbar_ = objc.registerName("setToolbar:");
+late final _sel_autoHidesToolbarInFullScreen = objc.registerName("autoHidesToolbarInFullScreen");
+late final _sel_setAutoHidesToolbarInFullScreen_ = objc.registerName("setAutoHidesToolbarInFullScreen:");
+late final _sel_representedURL = objc.registerName("representedURL");
+late final _sel_setRepresentedURL_ = objc.registerName("setRepresentedURL:");
+
+/// UITitlebar
+class UITitlebar extends objc.NSObject {
+  UITitlebar._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release);
+
+  /// Constructs a [UITitlebar] that points to the same underlying object as [other].
+  UITitlebar.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UITitlebar] that wraps the given raw object pointer.
+  UITitlebar.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UITitlebar].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UITitlebar);
   }
 
-  /// autorelease
-  UIApplication autorelease() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_autorelease);
-    return UIApplication.castFromPointer(_ret, retain: true, release: true);
+  /// new
+  static UITitlebar new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UITitlebar, _sel_new);
+    return UITitlebar.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static UITitlebar allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final _ret = _objc_msgSend_1cwp428(_class_UITitlebar, _sel_allocWithZone_, zone);
+    return UITitlebar.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// alloc
+  static UITitlebar alloc() {
+    final _ret = _objc_msgSend_151sglz(_class_UITitlebar, _sel_alloc);
+    return UITitlebar.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Returns a new instance of UITitlebar constructed with the default `new` method.
+  factory UITitlebar() => new$();
+}
+
+extension UITitlebar$Methods on UITitlebar {
+  /// titleVisibility
+  UITitlebarTitleVisibility get titleVisibility {
+    final _ret = _objc_msgSend_1w8h4wm(this.ref.pointer, _sel_titleVisibility);
+    return UITitlebarTitleVisibility.fromValue(_ret);
+  }
+
+  /// setTitleVisibility:
+  set titleVisibility(UITitlebarTitleVisibility value) {
+    _objc_msgSend_91112w(this.ref.pointer, _sel_setTitleVisibility_, value.value);
+  }
+
+  /// toolbarStyle
+  UITitlebarToolbarStyle get toolbarStyle {
+    final _ret = _objc_msgSend_1p2m5do(this.ref.pointer, _sel_toolbarStyle);
+    return UITitlebarToolbarStyle.fromValue(_ret);
+  }
+
+  /// setToolbarStyle:
+  set toolbarStyle(UITitlebarToolbarStyle value) {
+    _objc_msgSend_jgznzi(this.ref.pointer, _sel_setToolbarStyle_, value.value);
+  }
+
+  /// separatorStyle
+  UITitlebarSeparatorStyle get separatorStyle {
+    final _ret = _objc_msgSend_15x21aw(this.ref.pointer, _sel_separatorStyle);
+    return UITitlebarSeparatorStyle.fromValue(_ret);
+  }
+
+  /// setSeparatorStyle:
+  set separatorStyle(UITitlebarSeparatorStyle value) {
+    _objc_msgSend_rbhdpu(this.ref.pointer, _sel_setSeparatorStyle_, value.value);
+  }
+
+  /// toolbar
+  NSToolbar? get toolbar {
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_toolbar);
+    return _ret.address == 0 ? null : NSToolbar.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setToolbar:
+  set toolbar(NSToolbar? value) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setToolbar_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// autoHidesToolbarInFullScreen
+  bool get autoHidesToolbarInFullScreen {
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_autoHidesToolbarInFullScreen);
+  }
+
+  /// setAutoHidesToolbarInFullScreen:
+  set autoHidesToolbarInFullScreen(bool value) {
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setAutoHidesToolbarInFullScreen_, value);
+  }
+
+  /// representedURL
+  objc.NSURL? get representedURL {
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_representedURL);
+    return _ret.address == 0 ? null : objc.NSURL.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setRepresentedURL:
+  set representedURL(objc.NSURL? value) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setRepresentedURL_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// init
+  UITitlebar init() {
+    objc.checkOsVersionInternal('UITitlebar.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
+    return UITitlebar.castFromPointer(_ret, retain: false, release: true);
   }
 }
 
@@ -24009,12 +28744,9 @@ final _objc_msgSend_cb5j6t = objc.msgSendPointer
         ffi.Pointer<objc.ObjCBlockImpl>,
       )
     >();
-late final _sel_style = objc.registerName("style");
 final _objc_msgSend_11gy616 = objc.msgSendPointer
     .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
     .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
-late final _sel_isEnabled = objc.registerName("isEnabled");
-late final _sel_setEnabled_ = objc.registerName("setEnabled:");
 
 /// UIAlertAction
 class UIAlertAction extends objc.NSObject implements objc.NSCopying {
@@ -24373,27 +29105,6 @@ class UIAlertController extends UIViewController {
     );
     return UIAlertController.castFromPointer(_ret, retain: true, release: true);
   }
-
-  /// new
-  static UIAlertController new$() {
-    final _ret = _objc_msgSend_151sglz(_class_UIAlertController, _sel_new);
-    return UIAlertController.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// allocWithZone:
-  static UIAlertController allocWithZone(ffi.Pointer<objc.NSZone> zone) {
-    final _ret = _objc_msgSend_1cwp428(_class_UIAlertController, _sel_allocWithZone_, zone);
-    return UIAlertController.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// alloc
-  static UIAlertController alloc() {
-    final _ret = _objc_msgSend_151sglz(_class_UIAlertController, _sel_alloc);
-    return UIAlertController.castFromPointer(_ret, retain: false, release: true);
-  }
-
-  /// Returns a new instance of UIAlertController constructed with the default `new` method.
-  factory UIAlertController() => new$();
 }
 
 extension UIAlertController$Methods on UIAlertController {
@@ -24490,30 +29201,181 @@ extension UIAlertController$Methods on UIAlertController {
     final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
     return _ret.address == 0 ? null : UIAlertController.castFromPointer(_ret, retain: false, release: true);
   }
+}
 
+/// WARNING: UIBarButtonItemStateAppearance is a stub. To generate bindings for this class, include
+/// UIBarButtonItemStateAppearance in your config's objc-interfaces list.
+///
+/// UIBarButtonItemStateAppearance
+class UIBarButtonItemStateAppearance extends objc.NSObject {
+  UIBarButtonItemStateAppearance._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIBarButtonItemStateAppearance', iOS: (false, (13, 0, 0)));
+  }
+
+  /// Constructs a [UIBarButtonItemStateAppearance] that points to the same underlying object as [other].
+  UIBarButtonItemStateAppearance.castFrom(objc.ObjCObjectBase other)
+    : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIBarButtonItemStateAppearance] that wraps the given raw object pointer.
+  UIBarButtonItemStateAppearance.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
+}
+
+late final _class_UIBarButtonItemAppearance = objc.getClass("UIBarButtonItemAppearance");
+late final _sel_initWithStyle_ = objc.registerName("initWithStyle:");
+final _objc_msgSend_1f28exy = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObject> Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)
+    >();
+late final _sel_copy = objc.registerName("copy");
+late final _sel_configureWithDefaultForStyle_ = objc.registerName("configureWithDefaultForStyle:");
+late final _sel_normal = objc.registerName("normal");
+late final _sel_highlighted = objc.registerName("highlighted");
+late final _sel_disabled = objc.registerName("disabled");
+late final _sel_focused = objc.registerName("focused");
+
+/// UIBarButtonItemAppearance
+class UIBarButtonItemAppearance extends objc.NSObject implements objc.NSCopying, objc.NSSecureCoding {
+  UIBarButtonItemAppearance._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UIBarButtonItemAppearance', iOS: (false, (13, 0, 0)));
+  }
+
+  /// Constructs a [UIBarButtonItemAppearance] that points to the same underlying object as [other].
+  UIBarButtonItemAppearance.castFrom(objc.ObjCObjectBase other)
+    : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UIBarButtonItemAppearance] that wraps the given raw object pointer.
+  UIBarButtonItemAppearance.castFromPointer(
+    ffi.Pointer<objc.ObjCObject> other, {
+    bool retain = false,
+    bool release = false,
+  }) : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UIBarButtonItemAppearance].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UIBarButtonItemAppearance);
+  }
+
+  /// new
+  static UIBarButtonItemAppearance new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UIBarButtonItemAppearance, _sel_new);
+    return UIBarButtonItemAppearance.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static UIBarButtonItemAppearance allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final _ret = _objc_msgSend_1cwp428(_class_UIBarButtonItemAppearance, _sel_allocWithZone_, zone);
+    return UIBarButtonItemAppearance.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// alloc
+  static UIBarButtonItemAppearance alloc() {
+    final _ret = _objc_msgSend_151sglz(_class_UIBarButtonItemAppearance, _sel_alloc);
+    return UIBarButtonItemAppearance.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// supportsSecureCoding
+  static bool getSupportsSecureCoding() {
+    return _objc_msgSend_91o635(_class_UIBarButtonItemAppearance, _sel_supportsSecureCoding);
+  }
+
+  /// Returns a new instance of UIBarButtonItemAppearance constructed with the default `new` method.
+  factory UIBarButtonItemAppearance() => new$();
+}
+
+extension UIBarButtonItemAppearance$Methods on UIBarButtonItemAppearance {
   /// init
-  UIAlertController init() {
-    objc.checkOsVersionInternal('UIAlertController.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
+  UIBarButtonItemAppearance init() {
+    objc.checkOsVersionInternal('UIBarButtonItemAppearance.init', iOS: (false, (2, 0, 0)), macOS: (false, (10, 0, 0)));
     final _ret = _objc_msgSend_151sglz(this.ref.retainAndReturnPointer(), _sel_init);
-    return UIAlertController.castFromPointer(_ret, retain: false, release: true);
+    return UIBarButtonItemAppearance.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Construct an appearance with default values for the given style.
+  UIBarButtonItemAppearance initWithStyle(UIBarButtonItemStyle style) {
+    objc.checkOsVersionInternal('UIBarButtonItemAppearance.initWithStyle:', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_1f28exy(this.ref.retainAndReturnPointer(), _sel_initWithStyle_, style.value);
+    return UIBarButtonItemAppearance.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// initWithCoder:
+  UIBarButtonItemAppearance? initWithCoder(objc.NSCoder coder) {
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UIBarButtonItemAppearance.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// copy
+  UIBarButtonItemAppearance copy() {
+    objc.checkOsVersionInternal('UIBarButtonItemAppearance.copy', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_copy);
+    return UIBarButtonItemAppearance.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Reset this appearance to that of a given style.
+  void configureWithDefaultForStyle(UIBarButtonItemStyle style) {
+    objc.checkOsVersionInternal('UIBarButtonItemAppearance.configureWithDefaultForStyle:', iOS: (false, (13, 0, 0)));
+    _objc_msgSend_11ist7u(this.ref.pointer, _sel_configureWithDefaultForStyle_, style.value);
+  }
+
+  /// The appearance when the bar button item is in the normal control state.
+  UIBarButtonItemStateAppearance get normal {
+    objc.checkOsVersionInternal('UIBarButtonItemAppearance.normal', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_normal);
+    return UIBarButtonItemStateAppearance.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// The appearance when the bar button item is in the highlighted control state. If unspecified, then synthesized from the normal state.
+  UIBarButtonItemStateAppearance get highlighted {
+    objc.checkOsVersionInternal('UIBarButtonItemAppearance.highlighted', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_highlighted);
+    return UIBarButtonItemStateAppearance.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// The appearance when the bar button item is in the disabled control state. If unspecified, then synthesized from the normal state.
+  UIBarButtonItemStateAppearance get disabled {
+    objc.checkOsVersionInternal('UIBarButtonItemAppearance.disabled', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_disabled);
+    return UIBarButtonItemStateAppearance.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// The appearance when the bar button item is in the focused control state. If unspecified, then synthesized from the highlighted state.
+  UIBarButtonItemStateAppearance get focused {
+    objc.checkOsVersionInternal('UIBarButtonItemAppearance.focused', iOS: (false, (13, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_focused);
+    return UIBarButtonItemStateAppearance.castFromPointer(_ret, retain: true, release: true);
   }
 
   /// self
-  UIAlertController self$1() {
+  UIBarButtonItemAppearance self$1() {
     final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_self);
-    return UIAlertController.castFromPointer(_ret, retain: true, release: true);
+    return UIBarButtonItemAppearance.castFromPointer(_ret, retain: true, release: true);
   }
 
   /// retain
-  UIAlertController retain() {
+  UIBarButtonItemAppearance retain() {
     final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_retain);
-    return UIAlertController.castFromPointer(_ret, retain: true, release: true);
+    return UIBarButtonItemAppearance.castFromPointer(_ret, retain: true, release: true);
   }
 
   /// autorelease
-  UIAlertController autorelease() {
+  UIBarButtonItemAppearance autorelease() {
     final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_autorelease);
-    return UIAlertController.castFromPointer(_ret, retain: true, release: true);
+    return UIBarButtonItemAppearance.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// encodeWithCoder:
+  void encodeWithCoder(objc.NSCoder coder) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
   }
 }
 
@@ -24554,8 +29416,6 @@ late final _sel_attributedText = objc.registerName("attributedText");
 late final _sel_setAttributedText_ = objc.registerName("setAttributedText:");
 late final _sel_highlightedTextColor = objc.registerName("highlightedTextColor");
 late final _sel_setHighlightedTextColor_ = objc.registerName("setHighlightedTextColor:");
-late final _sel_isHighlighted = objc.registerName("isHighlighted");
-late final _sel_setHighlighted_ = objc.registerName("setHighlighted:");
 late final _sel_numberOfLines = objc.registerName("numberOfLines");
 late final _sel_setNumberOfLines_ = objc.registerName("setNumberOfLines:");
 late final _sel_adjustsFontSizeToFitWidth = objc.registerName("adjustsFontSizeToFitWidth");
@@ -25309,24 +30169,6 @@ extension UILabel$Methods on UILabel {
     return UILabel.castFromPointer(_ret, retain: false, release: true);
   }
 
-  /// self
-  UILabel self$1() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_self);
-    return UILabel.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// retain
-  UILabel retain() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_retain);
-    return UILabel.castFromPointer(_ret, retain: true, release: true);
-  }
-
-  /// autorelease
-  UILabel autorelease() {
-    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_autorelease);
-    return UILabel.castFromPointer(_ret, retain: true, release: true);
-  }
-
   /// encodeWithCoder:
   void encodeWithCoder(objc.NSCoder coder) {
     _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
@@ -25342,5 +30184,322 @@ extension UILabel$Methods on UILabel {
   set adjustsFontForContentSizeCategory(bool value) {
     objc.checkOsVersionInternal('UILabel.setAdjustsFontForContentSizeCategory:', iOS: (false, (10, 0, 0)));
     _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setAdjustsFontForContentSizeCategory_, value);
+  }
+}
+
+enum UIGestureRecognizerState {
+  UIGestureRecognizerStatePossible(0),
+  UIGestureRecognizerStateBegan(1),
+  UIGestureRecognizerStateChanged(2),
+  UIGestureRecognizerStateEnded(3),
+  UIGestureRecognizerStateCancelled(4),
+  UIGestureRecognizerStateFailed(5);
+
+  static const UIGestureRecognizerStateRecognized = UIGestureRecognizerStateEnded;
+
+  final int value;
+  const UIGestureRecognizerState(this.value);
+
+  static UIGestureRecognizerState fromValue(int value) => switch (value) {
+    0 => UIGestureRecognizerStatePossible,
+    1 => UIGestureRecognizerStateBegan,
+    2 => UIGestureRecognizerStateChanged,
+    3 => UIGestureRecognizerStateEnded,
+    4 => UIGestureRecognizerStateCancelled,
+    5 => UIGestureRecognizerStateFailed,
+    _ => throw ArgumentError('Unknown value for UIGestureRecognizerState: $value'),
+  };
+
+  @override
+  String toString() {
+    if (this == UIGestureRecognizerStateEnded)
+      return "UIGestureRecognizerState.UIGestureRecognizerStateEnded, UIGestureRecognizerState.UIGestureRecognizerStateRecognized";
+    return super.toString();
+  }
+}
+
+enum UIScrollTypeMask {
+  UIScrollTypeMaskDiscrete(1),
+  UIScrollTypeMaskContinuous(2),
+  UIScrollTypeMaskAll(3);
+
+  final int value;
+  const UIScrollTypeMask(this.value);
+
+  static UIScrollTypeMask fromValue(int value) => switch (value) {
+    1 => UIScrollTypeMaskDiscrete,
+    2 => UIScrollTypeMaskContinuous,
+    3 => UIScrollTypeMaskAll,
+    _ => throw ArgumentError('Unknown value for UIScrollTypeMask: $value'),
+  };
+}
+
+/// !
+/// UINavigationController manages a stack of view controllers and a navigation bar.
+/// It performs horizontal view transitions for pushed and popped views while keeping the navigation bar in sync.
+///
+/// Most clients will not need to subclass UINavigationController.
+///
+/// If a navigation controller is nested in a tab bar controller, it uses the title and toolbar attributes of the bottom view controller on the stack.
+///
+/// UINavigationController is rotatable if its top view controller is rotatable.
+/// Navigation between controllers with non-uniform rotatability is currently not supported.
+enum UINavigationControllerOperation {
+  UINavigationControllerOperationNone(0),
+  UINavigationControllerOperationPush(1),
+  UINavigationControllerOperationPop(2);
+
+  final int value;
+  const UINavigationControllerOperation(this.value);
+
+  static UINavigationControllerOperation fromValue(int value) => switch (value) {
+    0 => UINavigationControllerOperationNone,
+    1 => UINavigationControllerOperationPush,
+    2 => UINavigationControllerOperationPop,
+    _ => throw ArgumentError('Unknown value for UINavigationControllerOperation: $value'),
+  };
+}
+
+enum UISwitchStyle {
+  UISwitchStyleAutomatic(0),
+  UISwitchStyleCheckbox(1),
+  UISwitchStyleSliding(2);
+
+  final int value;
+  const UISwitchStyle(this.value);
+
+  static UISwitchStyle fromValue(int value) => switch (value) {
+    0 => UISwitchStyleAutomatic,
+    1 => UISwitchStyleCheckbox,
+    2 => UISwitchStyleSliding,
+    _ => throw ArgumentError('Unknown value for UISwitchStyle: $value'),
+  };
+}
+
+late final _class_UISwitch = objc.getClass("UISwitch");
+late final _sel_onTintColor = objc.registerName("onTintColor");
+late final _sel_setOnTintColor_ = objc.registerName("setOnTintColor:");
+late final _sel_thumbTintColor = objc.registerName("thumbTintColor");
+late final _sel_setThumbTintColor_ = objc.registerName("setThumbTintColor:");
+late final _sel_onImage = objc.registerName("onImage");
+late final _sel_setOnImage_ = objc.registerName("setOnImage:");
+late final _sel_offImage = objc.registerName("offImage");
+late final _sel_setOffImage_ = objc.registerName("setOffImage:");
+final _objc_msgSend_ums1js = objc.msgSendPointer
+    .cast<ffi.NativeFunction<ffi.Long Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>>()
+    .asFunction<int Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>)>();
+late final _sel_setPreferredStyle_ = objc.registerName("setPreferredStyle:");
+final _objc_msgSend_1bkwtnu = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, ffi.Long)>
+    >()
+    .asFunction<void Function(ffi.Pointer<objc.ObjCObject>, ffi.Pointer<objc.ObjCSelector>, int)>();
+late final _sel_isOn = objc.registerName("isOn");
+late final _sel_setOn_ = objc.registerName("setOn:");
+late final _sel_setOn_animated_ = objc.registerName("setOn:animated:");
+
+/// UISwitch
+class UISwitch extends UIControl implements objc.NSCoding {
+  UISwitch._(ffi.Pointer<objc.ObjCObject> pointer, {bool retain = false, bool release = false})
+    : super.castFromPointer(pointer, retain: retain, release: release) {
+    objc.checkOsVersionInternal('UISwitch', iOS: (false, (2, 0, 0)));
+  }
+
+  /// Constructs a [UISwitch] that points to the same underlying object as [other].
+  UISwitch.castFrom(objc.ObjCObjectBase other) : this._(other.ref.pointer, retain: true, release: true);
+
+  /// Constructs a [UISwitch] that wraps the given raw object pointer.
+  UISwitch.castFromPointer(ffi.Pointer<objc.ObjCObject> other, {bool retain = false, bool release = false})
+    : this._(other, retain: retain, release: release);
+
+  /// Returns whether [obj] is an instance of [UISwitch].
+  static bool isInstance(objc.ObjCObjectBase obj) {
+    return _objc_msgSend_19nvye5(obj.ref.pointer, _sel_isKindOfClass_, _class_UISwitch);
+  }
+
+      static UISwitch new$() {
+    final _ret = _objc_msgSend_151sglz(_class_UISwitch, _sel_new);
+    return UISwitch.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// Returns a new instance of UISwitch constructed with the default `new` method.
+  factory UISwitch() => new$();
+
+  /// layerClass
+  static objc.ObjCObjectBase getLayerClass() {
+    objc.checkOsVersionInternal('UISwitch.layerClass', iOS: (false, (2, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(_class_UISwitch, _sel_layerClass);
+    return objc.ObjCObjectBase(_ret, retain: true, release: true);
+  }
+
+  /// userInterfaceLayoutDirectionForSemanticContentAttribute:
+  static UIUserInterfaceLayoutDirection userInterfaceLayoutDirectionForSemanticContentAttribute(
+    UISemanticContentAttribute attribute,
+  ) {
+    objc.checkOsVersionInternal(
+      'UISwitch.userInterfaceLayoutDirectionForSemanticContentAttribute:',
+      iOS: (false, (9, 0, 0)),
+    );
+    final _ret = _objc_msgSend_racczx(
+      _class_UISwitch,
+      _sel_userInterfaceLayoutDirectionForSemanticContentAttribute_,
+      attribute.value,
+    );
+    return UIUserInterfaceLayoutDirection.fromValue(_ret);
+  }
+
+  /// userInterfaceLayoutDirectionForSemanticContentAttribute:relativeToLayoutDirection:
+  static UIUserInterfaceLayoutDirection userInterfaceLayoutDirectionForSemanticContentAttribute$1(
+    UISemanticContentAttribute semanticContentAttribute, {
+    required UIUserInterfaceLayoutDirection relativeToLayoutDirection,
+  }) {
+    objc.checkOsVersionInternal(
+      'UISwitch.userInterfaceLayoutDirectionForSemanticContentAttribute:relativeToLayoutDirection:',
+      iOS: (false, (10, 0, 0)),
+    );
+    final _ret = _objc_msgSend_tz4p54(
+      _class_UISwitch,
+      _sel_userInterfaceLayoutDirectionForSemanticContentAttribute_relativeToLayoutDirection_,
+      semanticContentAttribute.value,
+      relativeToLayoutDirection.value,
+    );
+    return UIUserInterfaceLayoutDirection.fromValue(_ret);
+  }
+}
+
+extension UISwitch$Methods on UISwitch {
+  /// onTintColor
+  UIColor? get onTintColor {
+    objc.checkOsVersionInternal('UISwitch.onTintColor', iOS: (false, (5, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_onTintColor);
+    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setOnTintColor:
+  set onTintColor(UIColor? value) {
+    objc.checkOsVersionInternal('UISwitch.setOnTintColor:', iOS: (false, (5, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setOnTintColor_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// thumbTintColor
+  UIColor? get thumbTintColor {
+    objc.checkOsVersionInternal('UISwitch.thumbTintColor', iOS: (false, (6, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_thumbTintColor);
+    return _ret.address == 0 ? null : UIColor.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setThumbTintColor:
+  set thumbTintColor(UIColor? value) {
+    objc.checkOsVersionInternal('UISwitch.setThumbTintColor:', iOS: (false, (6, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setThumbTintColor_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// onImage
+  UIImage? get onImage {
+    objc.checkOsVersionInternal('UISwitch.onImage', iOS: (false, (6, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_onImage);
+    return _ret.address == 0 ? null : UIImage.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setOnImage:
+  set onImage(UIImage? value) {
+    objc.checkOsVersionInternal('UISwitch.setOnImage:', iOS: (false, (6, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setOnImage_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// offImage
+  UIImage? get offImage {
+    objc.checkOsVersionInternal('UISwitch.offImage', iOS: (false, (6, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_offImage);
+    return _ret.address == 0 ? null : UIImage.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// setOffImage:
+  set offImage(UIImage? value) {
+    objc.checkOsVersionInternal('UISwitch.setOffImage:', iOS: (false, (6, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setOffImage_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// The title displayed alongside the switch, positioned appropriately for the @c UIUserInterfaceIdiom.
+  /// @note This property is only supported for Catalyst in the Mac idiom.
+  objc.NSString? get title {
+    objc.checkOsVersionInternal('UISwitch.title', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_151sglz(this.ref.pointer, _sel_title);
+    return _ret.address == 0 ? null : objc.NSString.castFromPointer(_ret, retain: true, release: true);
+  }
+
+  /// The title displayed alongside the switch, positioned appropriately for the @c UIUserInterfaceIdiom.
+  /// @note This property is only supported for Catalyst in the Mac idiom.
+  set title(objc.NSString? value) {
+    objc.checkOsVersionInternal('UISwitch.setTitle:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_setTitle_, value?.ref.pointer ?? ffi.nullptr);
+  }
+
+  /// The switch's display style. This property always returns a concrete, resolved style (never UISwitchStyleAutomatic).
+  UISwitchStyle get style {
+    objc.checkOsVersionInternal('UISwitch.style', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_ums1js(this.ref.pointer, _sel_style);
+    return UISwitchStyle.fromValue(_ret);
+  }
+
+  /// Request a style for the switch. If the style changed, then the switch may resize.
+  UISwitchStyle get preferredStyle {
+    objc.checkOsVersionInternal('UISwitch.preferredStyle', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_ums1js(this.ref.pointer, _sel_preferredStyle);
+    return UISwitchStyle.fromValue(_ret);
+  }
+
+  /// Request a style for the switch. If the style changed, then the switch may resize.
+  set preferredStyle(UISwitchStyle value) {
+    objc.checkOsVersionInternal('UISwitch.setPreferredStyle:', iOS: (false, (14, 0, 0)));
+    _objc_msgSend_1bkwtnu(this.ref.pointer, _sel_setPreferredStyle_, value.value);
+  }
+
+  /// isOn
+  bool get on$ {
+    objc.checkOsVersionInternal('UISwitch.isOn', iOS: (false, (2, 0, 0)));
+    return _objc_msgSend_91o635(this.ref.pointer, _sel_isOn);
+  }
+
+  /// setOn:
+  set on$(bool value) {
+    objc.checkOsVersionInternal('UISwitch.setOn:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_1s56lr9(this.ref.pointer, _sel_setOn_, value);
+  }
+
+  /// initWithFrame:
+  // UISwitch initWithFrame(objc.CGRect frame) {
+  //   objc.checkOsVersionInternal('UISwitch.initWithFrame:', iOS: (false, (2, 0, 0)));
+  //   final _ret = _objc_msgSend_15yz4e6(this.ref.retainAndReturnPointer(), _sel_initWithFrame_, frame);
+  //   return UISwitch.castFromPointer(_ret, retain: false, release: true);
+  // }
+
+  /// initWithCoder:
+  UISwitch? initWithCoder(objc.NSCoder coder) {
+    final _ret = _objc_msgSend_1sotr3r(this.ref.retainAndReturnPointer(), _sel_initWithCoder_, coder.ref.pointer);
+    return _ret.address == 0 ? null : UISwitch.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// setOn:animated:
+  void setOn(bool on$1, {required bool animated}) {
+    objc.checkOsVersionInternal('UISwitch.setOn:animated:', iOS: (false, (2, 0, 0)));
+    _objc_msgSend_14iqu8t(this.ref.pointer, _sel_setOn_animated_, on$1, animated);
+  }
+
+  /// Initializes the control and adds primaryAction for the UIControlEventPrimaryActionTriggered control event. Subclasses of UIControl may alter or add behaviors around the usage of primaryAction, see subclass documentation of this initializer for additional information.
+  UISwitch initWithFrame(objc.CGRect frame, {UIAction? primaryAction}) {
+    objc.checkOsVersionInternal('UISwitch.initWithFrame:primaryAction:', iOS: (false, (14, 0, 0)));
+    final _ret = _objc_msgSend_gxusyk(
+      this.ref.retainAndReturnPointer(),
+      _sel_initWithFrame_primaryAction_,
+      frame,
+      primaryAction?.ref.pointer ?? ffi.nullptr,
+    );
+    return UISwitch.castFromPointer(_ret, retain: false, release: true);
+  }
+
+  /// encodeWithCoder:
+  void encodeWithCoder(objc.NSCoder coder) {
+    _objc_msgSend_xtuoz7(this.ref.pointer, _sel_encodeWithCoder_, coder.ref.pointer);
   }
 }
