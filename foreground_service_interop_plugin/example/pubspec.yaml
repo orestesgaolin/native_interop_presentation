@@ -1,0 +1,27 @@
+name: foreground_service_interop_plugin_example
+description: "Demonstrates how to use the foreground_service_interop_plugin plugin."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  foreground_service_interop_plugin:
+    path: ../
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

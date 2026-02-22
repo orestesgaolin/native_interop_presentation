@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foreground_service_interop_plugin">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING" />
+
+    <application>
+        <service
+            android:name=".ExampleForegroundService"
+            android:enabled="true"
+            android:foregroundServiceType="remoteMessaging"
+            android:exported="true"></service>
+
+        <receiver
+            android:name=".NotificationReplyReceiver"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>
