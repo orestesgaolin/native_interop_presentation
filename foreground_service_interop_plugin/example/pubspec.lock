@@ -99,7 +99,7 @@ packages:
     source: path
     version: "0.0.1"
   jni:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: jni
       sha256: "8706a77e94c76fe9ec9315e18949cc9479cc03af97085ca9c1077b61323ea12d"

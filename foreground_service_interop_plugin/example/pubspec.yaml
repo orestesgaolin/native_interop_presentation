@@ -16,6 +16,7 @@ dependencies:
     path: ../
 
   cupertino_icons: ^1.0.8
+  jni: ^0.15.2
 
 dev_dependencies:
   flutter_test:

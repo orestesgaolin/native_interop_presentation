@@ -5,7 +5,7 @@ import 'dart:async';
 import 'package:jni/jni.dart' as jni;
 
 import 'package:foreground_service_interop_plugin/foreground_service_interop_plugin.dart'
-    as foreground_service_interop_plugin;
+    as native;
 
 void main() {
   runApp(const MyApp());
@@ -19,45 +19,79 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final plugin = foreground_service_interop_plugin.ForegroundServicePlugin();
+  native.ServiceConnection? serviceConnection;
   StreamSubscription<String>? repliesSubscription;
-  StreamSubscription<void>? disconnectedSubscription;
+  native.ExampleForegroundService$LocalBinder? localBinder;
+  native.ExampleForegroundService? service;
 
-  bool isServiceRunning = false;
+  bool get isServiceRunning => service != null;
   bool hasPermission = false;
   List<(DateTime, String, String)> messages = [];
 
   @override
   void initState() {
     super.initState();
-    repliesSubscription = plugin.replyStream.replies.listen((reply) {
-      setState(() {
-        messages.add((DateTime.now(), 'Service', reply));
-      });
-    });
-    disconnectedSubscription = plugin.replyStream.disconnected.listen((_) {
-      setState(() {
-        isServiceRunning = false;
-      });
-    });
-    // You can check synchronously if the permission is already granted or not
-    hasPermission = plugin.hasPostNotificationsPermission(
-      jni.Jni.androidApplicationContext,
+
+    serviceConnection = native.ServiceConnection.implement(
+      native.$ServiceConnection(
+        onServiceConnected: (componentName, iBinder) {
+          localBinder = iBinder?.as(
+            native.ExampleForegroundService$LocalBinder.type,
+          );
+          service = localBinder?.getService();
+
+          // Converting proxy callback to stream subscription
+          repliesSubscription = service?.replyStream.replies.listen((reply) {
+            setState(() {
+              messages.add((DateTime.now(), 'Service', reply));
+            });
+          });
+
+          setState(() {});
+        },
+        onServiceDisconnected: (componentName) {
+          service = null;
+          localBinder = null;
+          repliesSubscription?.cancel();
+          setState(() {});
+        },
+        onBindingDied: (componentName) {
+          service = null;
+          localBinder = null;
+          repliesSubscription?.cancel();
+          setState(() {});
+        },
+        onNullBinding: (componentName) {
+          service = null;
+          localBinder = null;
+          repliesSubscription?.cancel();
+          setState(() {});
+        },
+      ),
     );
+
+    // You can check synchronously if the permission is already granted or not
+    hasPermission = checkPermission();
   }
 
   @override
   void dispose() {
     repliesSubscription?.cancel();
-    disconnectedSubscription?.cancel();
     super.dispose();
   }
 
   void startAndBind() {
-    final context = jni.Jni.androidApplicationContext;
+    final context = jni.Jni.androidApplicationContext.as(native.Context.type);
+    final intent = native.Intent.new$1(
+      context,
+      native.ExampleForegroundService.type.jClass,
+    );
+    context.bindService$1(
+      intent,
+      serviceConnection,
+      native.Context$BindServiceFlags.of(native.Context.BIND_AUTO_CREATE),
+    );
 
-    plugin.startAndBind(context);
-    isServiceRunning = true;
     setState(() {});
   }
 
@@ -67,28 +101,55 @@ class _MyAppState extends State<MyApp> {
       print('Engine ID is null, cannot request permission');
       return;
     }
-    final activity = jni.Jni.androidActivity(engineId);
+    // This is how you cast the Android Activity from JNI
+    final activity = jni.Jni.androidActivity(
+      engineId,
+    )?.as(native.Activity.type);
     if (activity == null) {
       print('Activity is null, cannot request permission');
       return;
     }
-    plugin.requestPostNotificationsPermission(activity, 0);
 
-    final context = jni.Jni.androidApplicationContext;
+    native.ActivityCompat.requestPermissions(
+      activity,
+      jni.JArray.of(jni.JString.type, [
+        'android.permission.POST_NOTIFICATIONS'.toJString(),
+      ]),
+      0,
+    );
 
-    setState(() {
-      hasPermission = plugin.hasPostNotificationsPermission(context);
+    // set timer to poll for permissions (up to 30 seconds)
+    Timer.periodic(const Duration(seconds: 1), (timer) {
+      final granted = checkPermission();
+      if (granted) {
+        setState(() {
+          hasPermission = true;
+        });
+        timer.cancel();
+      } else {
+        print('Permission not granted yet, checking again...');
+      }
     });
   }
 
-  void sendMessage() {
-    if (plugin.isBound()) {
-      final msg = 'Hello from Flutter at ${DateTime.now()}';
-      messages.add((DateTime.now(), 'Flutter', msg));
-      plugin.getService()?.receiveMessage(msg.toJString());
-    }
-    setState(() {});
+  bool checkPermission() {
+    final context = jni.Jni.androidApplicationContext.as(native.Context.type);
+
+    final result = native.ContextCompat.checkSelfPermission(
+      context,
+      'android.permission.POST_NOTIFICATIONS'.toJString(),
+    );
+    return result == 0;
   }
+
+void sendMessage() {
+  if (service != null) {
+    final msg = 'Hello from Flutter at ${DateTime.now()}';
+    messages.add((DateTime.now(), 'Flutter', msg));
+    service?.receiveMessage(msg.toJString());
+  }
+  setState(() {});
+}
 
   @override
   Widget build(BuildContext context) {
@@ -114,12 +175,12 @@ class _MyAppState extends State<MyApp> {
                   onPressed: requestPermission,
                   child: Text('Request permissions'),
                 ),
-              if (!plugin.isBound())
+              if (service == null)
                 ElevatedButton(
                   onPressed: hasPermission ? startAndBind : null,
                   child: const Text('Start and Bind to Foreground Service'),
                 ),
-              if (isServiceRunning)
+              if (service != null)
                 ElevatedButton(
                   onPressed: sendMessage,
                   child: const Text('Send Message to Service'),

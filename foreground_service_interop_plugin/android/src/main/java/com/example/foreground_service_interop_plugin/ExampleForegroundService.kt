@@ -7,16 +7,13 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.app.Service
-import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
-import android.content.ServiceConnection
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Binder
 import android.os.IBinder
 import androidx.annotation.Keep
-import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.RemoteInput
 import androidx.core.content.ContextCompat
@@ -24,7 +21,7 @@ import androidx.core.content.ContextCompat
 class ExampleForegroundService : Service() {
     private val binder = LocalBinder()
     private var lastMessage: String = "Waiting for messages..."
-    private lateinit var  replyListener: (String) -> Unit
+    private lateinit var replyListener: ReplyListenerProxy.OnReplyListener
 
     inner class LocalBinder : Binder() {
         fun getService(): ExampleForegroundService = this@ExampleForegroundService
@@ -66,14 +63,14 @@ class ExampleForegroundService : Service() {
         updateNotification(title = "Message received", text = message)
     }
 
-    fun setOnReplyListener(listener: (String) -> Unit) {
+    fun setOnReplyListener(listener:  ReplyListenerProxy.OnReplyListener) {
         replyListener = listener
     }
 
     private fun handleReply(reply: String) {
         updateNotification(title = "Reply sent", text = reply)
         if (::replyListener.isInitialized) {
-            replyListener(reply)
+            replyListener.onReply(reply)
         }
     }
 
@@ -185,100 +182,5 @@ class ExampleForegroundService : Service() {
 class ReplyListenerProxy {
     public interface OnReplyListener {
         fun onReply(replyText: String)
-        fun onDisconnected()
-    }
-}
-
-@Keep
-class ForegroundServicePlugin {
-    private var bound = false;
-    public var service: ExampleForegroundService? = null
-    private lateinit var callback: ReplyListenerProxy.OnReplyListener
-
-    private val connection = object : ServiceConnection {
-        override fun onServiceConnected(name: ComponentName, binder: IBinder) {
-            val localBinder = binder as ExampleForegroundService.LocalBinder
-            service = localBinder.getService()
-            bound = true
-
-            // pass a callback to service and then pass it to OnReplyListener
-            if (::callback.isInitialized) {
-                service?.setOnReplyListener { reply ->
-                    callback.onReply(reply)
-                }
-            }
-        }
-
-        override fun onServiceDisconnected(name: ComponentName) {
-            bound = false
-            service = null
-            if (::callback.isInitialized) {
-                callback.onDisconnected()
-            }
-        }
-    }
-
-    @Keep
-    fun isBound(): Boolean {
-        return bound
-    }
-
-    @Keep
-    fun startAndBind(context: Context) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
-            ContextCompat.checkSelfPermission(
-                context,
-                Manifest.permission.POST_NOTIFICATIONS
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            return
-        }
-        val intent = Intent(context, ExampleForegroundService::class.java)
-        ContextCompat.startForegroundService(context, intent)
-
-        context.bindService(intent, connection, Context.BIND_AUTO_CREATE)
-    }
-
-    @Keep
-    fun unbind(context: Context) {
-        if (bound) {
-            context.unbindService(connection)
-            bound = false
-        }
-    }
-
-    @Keep
-    fun stopAndUnbind(context: Context) {
-        if (bound) {
-            context.unbindService(connection)
-            bound = false
-        }
-
-        val intent = Intent(context, ExampleForegroundService::class.java)
-        context.stopService(intent)
-    }
-
-    @Keep
-    fun setOnReplyListener(listener: ReplyListenerProxy.OnReplyListener) {
-        callback = listener
-    }
-
-    @Keep
-    fun hasPostNotificationsPermission(context: Context): Boolean {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return true
-        return ContextCompat.checkSelfPermission(
-            context,
-            Manifest.permission.POST_NOTIFICATIONS
-        ) == PackageManager.PERMISSION_GRANTED
-    }
-
-    @Keep
-    fun requestPostNotificationsPermission(activity: Activity, requestCode: Int) {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
-        ActivityCompat.requestPermissions(
-            activity,
-            arrayOf(Manifest.permission.POST_NOTIFICATIONS),
-            requestCode
-        )
     }
 }

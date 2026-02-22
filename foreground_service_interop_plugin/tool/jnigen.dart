@@ -20,10 +20,15 @@ void main(List<String> args) {
       ),
       sourcePath: [packageRoot.resolve('android/src/main/java')],
       classes: [
-        'com.example.foreground_service_interop_plugin.ForegroundServicePlugin',
         'com.example.foreground_service_interop_plugin.ExampleForegroundService',
         'com.example.foreground_service_interop_plugin.ReplyListenerProxy',
         'android.content.ServiceConnection',
+        'android.content.Intent',
+        'android.content.Context',
+        'android.app.Activity',
+        'androidx.core.content.ContextCompat',
+        'androidx.core.app.ActivityCompat',
+        'android.os.Build',
       ],
     ),
   );
