@@ -39,14 +39,14 @@ class ForegroundServiceReplyStream {
 
     final impl = $ReplyListenerProxy$OnReplyListener(
       onReply: (string) {
-        _replies.add(string.toDartString());
+        _replies.add(string.toString());
       },
 
       onReply$async: true,
     );
 
     _listener = ReplyListenerProxy$OnReplyListener.implement(impl);
-    _service.setOnReplyListener(_listener!);
+    _service.onReplyListener = _listener!;
   }
 
   void _detachIfNoSubscribers() {
@@ -60,7 +60,7 @@ class ForegroundServiceReplyStream {
     final noop = ReplyListenerProxy$OnReplyListener.implement(
       $ReplyListenerProxy$OnReplyListener(onReply: (_) {}),
     );
-    _service.setOnReplyListener(noop);
+    _service.onReplyListener = noop;
     _listener = null;
   }
 }

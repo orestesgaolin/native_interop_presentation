@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:jni/jni.dart' as jni;
+import 'package:jni_flutter/jni_flutter.dart' as jnif;
 
 import 'package:foreground_service_interop_plugin/foreground_service_interop_plugin.dart'
     as native;
@@ -38,7 +39,7 @@ class _MyAppState extends State<MyApp> {
           localBinder = iBinder?.as(
             native.ExampleForegroundService$LocalBinder.type,
           );
-          service = localBinder?.getService();
+          service = localBinder?.service;
 
           // Converting proxy callback to stream subscription
           repliesSubscription = service?.replyStream.replies.listen((reply) {
@@ -81,7 +82,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   void startAndBind() {
-    final context = jni.Jni.androidApplicationContext.as(native.Context.type);
+    final context = jnif.androidApplicationContext.as(native.Context.type);
     final intent = native.Intent.new$1(
       context,
       native.ExampleForegroundService.type.jClass,
@@ -102,9 +103,7 @@ class _MyAppState extends State<MyApp> {
       return;
     }
     // This is how you cast the Android Activity from JNI
-    final activity = jni.Jni.androidActivity(
-      engineId,
-    )?.as(native.Activity.type);
+    final activity = jnif.androidActivity(engineId)?.as(native.Activity.type);
     if (activity == null) {
       print('Activity is null, cannot request permission');
       return;
@@ -133,7 +132,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   bool checkPermission() {
-    final context = jni.Jni.androidApplicationContext.as(native.Context.type);
+    final context = jnif.androidApplicationContext.as(native.Context.type);
 
     final result = native.ContextCompat.checkSelfPermission(
       context,
@@ -142,14 +141,14 @@ class _MyAppState extends State<MyApp> {
     return result == 0;
   }
 
-void sendMessage() {
-  if (service != null) {
-    final msg = 'Hello from Flutter at ${DateTime.now()}';
-    messages.add((DateTime.now(), 'Flutter', msg));
-    service?.receiveMessage(msg.toJString());
+  void sendMessage() {
+    if (service != null) {
+      final msg = 'Hello from Flutter at ${DateTime.now()}';
+      messages.add((DateTime.now(), 'Flutter', msg));
+      service?.receiveMessage(msg.toJString());
+    }
+    setState(() {});
   }
-  setState(() {});
-}
 
   @override
   Widget build(BuildContext context) {
@@ -166,7 +165,7 @@ void sendMessage() {
               spacerSmall,
               const Text(
                 'You can start a foreground service from Flutter and then send messages to it using JNI. '
-                'You can swipe awawy the app, and on coming back you can bind to '
+                'You can swipe away the app, and on coming back you can bind to '
                 'the running foreground service and send messages to it.',
               ),
               spacerSmall,
