@@ -1,1 +1,1 @@
-export 'src/bindings.dart';
+export 'src/bindings.g.dart';

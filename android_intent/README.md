@@ -37,14 +37,24 @@ void openEmailRaw() {
 
 ```dart
 void selectContact() {
-  final intent = a.Intent.new$2(a.Intent.ACTION_PICK);
+  final intent = a.Intent.new$3(a.Intent.ACTION_PICK);
   intent.setType(a.ContactsContract$Contacts.CONTENT_TYPE);
 
-  final listener = a.ActivityResultListenerProxy.Companion.getInstance();
-  listener.setOnResultListener(/* handle result */);
+  final listener = a.ActivityResultListenerProxy.Companion.instance;
+  listener.onResultListener = /* handle result */;
 
-  final activity = a.Activity.fromReference(Jni.getCurrentActivity());
-  activity.startActivityForResult(intent, 1);
+  final engineId = PlatformDispatcher.instance.engineId;
+  if (engineId == null) {
+    print('Error: Engine ID is null');
+    return;
+  }
+
+  final activity = androidActivity(engineId);
+  if (activity == null) {
+    print('Error: Activity is null');
+    return;
+  }
+  activity.as(a.Activity.type).startActivityForResult(intent, 1);
 }
 ```
 
@@ -55,7 +65,7 @@ Add this plugin to your `pubspec.yaml`:
 ```yaml
 dependencies:
   android_intent: ^0.0.1
-  jni: ^0.14.2
+  jni: ^1.0.0
 ```
 
 Then import and use the generated bindings:
@@ -65,26 +75,26 @@ import 'package:android_intent/android_intent.dart' as android_intent;
 import 'package:jni/jni.dart';
 
 // Create and send an Intent
-final intent = android_intent.Intent.new$2(android_intent.Intent.ACTION_VIEW);
+final intent = android_intent.Intent.new$3(android_intent.Intent.ACTION_VIEW);
 intent.setData(android_intent.Uri.parse("https://flutter.dev".toJString()));
 
-final context = android_intent.Context.fromReference(Jni.getCachedApplicationContext());
-context.startActivity(intent);
+a.Context contextInstance = androidApplicationContext.as(a.Context.type);
+contextInstance.startActivity(intent);
 ```
 
 ## Contributing
 
 ### Regenerating Bindings
 
-Before regenerating bindings you need to build the example app in release at lest once.
+Before regenerating bindings you need to build the example app at least once.
 
 ```
 cd example
-flutter build apk --release
+flutter build apk
 ```
 
 Then you can regenerate bindings with:
 
 ```
-dart run jnigen --config jnigen.yaml
+dart run tool/jnigen.dart
 ```
